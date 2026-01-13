@@ -1,7 +1,4 @@
-import axios from 'axios';
 
-const API_BASE_URL = 'https://api.opendota.com/api';
-// Using official Valve CDN for reliable images
 const CDN_BASE_URL = 'https://cdn.cloudflare.steamstatic.com';
 
 export interface Hero {
@@ -25,10 +22,10 @@ export interface Matchup {
     wins: number;
 }
 
-const CACHE_KEY_MATCHUPS = 'dota_matchups_cache_';
-const CACHE_DURATION_MATCHUPS = 60 * 60 * 1000;
-
 import heroesUrl from '../data/heroes.json';
+import allMatchupsRaw from '../data/all_matchups.json';
+
+const allMatchups = allMatchupsRaw as unknown as Record<string, Matchup[]>;
 
 export const api = {
     fetchHeroes: async (): Promise<Hero[]> => {
@@ -44,23 +41,8 @@ export const api = {
     },
 
     fetchMatchups: async (heroId: number): Promise<Matchup[]> => {
-        const cacheKey = `${CACHE_KEY_MATCHUPS}${heroId}`;
-        const cached = localStorage.getItem(cacheKey);
-        if (cached) {
-            const { data, timestamp } = JSON.parse(cached);
-            if (Date.now() - timestamp < CACHE_DURATION_MATCHUPS) {
-                return data;
-            }
-        }
-
-        try {
-            const response = await axios.get<Matchup[]>(`${API_BASE_URL}/heroes/${heroId}/matchups`);
-            const data = response.data;
-            localStorage.setItem(cacheKey, JSON.stringify({ data, timestamp: Date.now() }));
-            return data;
-        } catch (error) {
-            console.error(`Failed to fetch matchups for hero ${heroId}`, error);
-            return [];
-        }
+        // Instant return from local data
+        const data = allMatchups[heroId.toString()] || allMatchups[heroId];
+        return data || [];
     }
 };
