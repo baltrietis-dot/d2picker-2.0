@@ -3,12 +3,17 @@ import type { CounterPick } from '../hooks/useCounterPicker';
 import { Sparkles, Trophy, X } from 'lucide-react';
 import { useState } from 'react';
 
+import { recommendItems, recommendSkillStrategy } from '../data/smartBuilds';
+import { HERO_TAGS } from '../data/heroTags';
+import type { Hero } from '../services/api';
+
 interface CounterListProps {
     counters: CounterPick[];
     loading: boolean;
+    selectedEnemies: Hero[];
 }
 
-export const CounterList: React.FC<CounterListProps> = ({ counters, loading }) => {
+export const CounterList: React.FC<CounterListProps> = ({ counters, loading, selectedEnemies }) => {
     if (loading && counters.length === 0) {
         return (
             <div className="bg-slate-800 rounded-xl p-8 border border-slate-700 flex justify-center items-center h-full">
@@ -124,7 +129,7 @@ export const CounterList: React.FC<CounterListProps> = ({ counters, loading }) =
                             </div>
 
                             {counters[0].reasons && counters[0].reasons.length > 0 && (
-                                <div className="text-left bg-indigo-900/20 rounded-lg p-4 border border-indigo-500/20">
+                                <div className="text-left bg-indigo-900/20 rounded-lg p-4 border border-indigo-500/20 mb-4">
                                     <h4 className="text-xs font-bold text-indigo-300 uppercase mb-2 flex items-center gap-2">
                                         <Sparkles className="h-3 w-3" />
                                         Why this hero?
@@ -139,6 +144,66 @@ export const CounterList: React.FC<CounterListProps> = ({ counters, loading }) =
                                     </ul>
                                 </div>
                             )}
+
+                            {/* Recommended Items & Skills logic */}
+                            {(() => {
+                                // Re-derive traits logic locally for display
+                                const enemyTraits = new Set<string>();
+                                selectedEnemies.forEach(e => {
+                                    Object.keys(HERO_TAGS).forEach(tag => {
+                                        if (HERO_TAGS[tag].includes(e.id)) {
+                                            enemyTraits.add(tag);
+                                        }
+                                    });
+                                });
+
+                                const hero = counters[0].hero;
+                                const isSupport = hero.roles.includes('Support');
+                                const role = isSupport ? 'Support' : 'Core';
+                                const items = recommendItems(enemyTraits, role, hero.attack_type);
+                                const strategies = recommendSkillStrategy(enemyTraits);
+
+                                if (items.length === 0 && strategies.length === 0) return null;
+
+                                return (
+                                    <div className="text-left bg-emerald-900/20 rounded-lg p-4 border border-emerald-500/20">
+                                        <h4 className="text-xs font-bold text-emerald-300 uppercase mb-2 flex items-center gap-2">
+                                            <Sparkles className="h-3 w-3" />
+                                            Situational Build
+                                        </h4>
+
+                                        {items.length > 0 && (
+                                            <div className="mb-3">
+                                                <div className="text-[10px] text-slate-400 uppercase font-bold mb-1">Key Items vs Enemy Team</div>
+                                                <div className="grid grid-cols-4 gap-2">
+                                                    {items.map(item => (
+                                                        <div key={item.id} className="relative group/item">
+                                                            <img src={item.img} alt={item.name} className="w-full aspect-square rounded border border-slate-600 object-cover" />
+                                                            <div className="absolute inset-0 bg-black/80 opacity-0 group-hover/item:opacity-100 flex items-center justify-center p-1 transition-opacity z-10">
+                                                                <p className="text-[8px] text-white text-center leading-tight">{item.reason}</p>
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
+
+                                        {strategies.length > 0 && (
+                                            <div>
+                                                <div className="text-[10px] text-slate-400 uppercase font-bold mb-1">Strategy</div>
+                                                <ul className="space-y-1">
+                                                    {strategies.map((strat, idx) => (
+                                                        <li key={idx} className="text-sm text-slate-300 flex items-start gap-2">
+                                                            <span className="text-emerald-500 mt-1">•</span>
+                                                            {strat}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+                                    </div>
+                                );
+                            })()}
 
                             <button
                                 onClick={() => setShowTailored(false)}

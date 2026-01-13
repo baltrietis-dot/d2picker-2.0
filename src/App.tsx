@@ -172,7 +172,7 @@ function App() {
             <div className="mb-2 flex items-center justify-between text-xs text-slate-500 px-1">
               <span>* Pro Data + Heuristics</span>
             </div>
-            <CounterList counters={topCounters} loading={loading} />
+            <CounterList counters={topCounters} loading={loading} selectedEnemies={selectedEnemies} />
           </div>
         </div>
 
