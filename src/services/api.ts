@@ -25,9 +25,7 @@ export interface Matchup {
     wins: number;
 }
 
-const CACHE_KEY_HEROES = 'dota_heroes_cache_v3'; // Bump version
 const CACHE_KEY_MATCHUPS = 'dota_matchups_cache_';
-const CACHE_DURATION_HEROES = 24 * 60 * 60 * 1000;
 const CACHE_DURATION_MATCHUPS = 60 * 60 * 1000;
 
 import heroesUrl from '../data/heroes.json';
