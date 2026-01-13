@@ -30,31 +30,19 @@ const CACHE_KEY_MATCHUPS = 'dota_matchups_cache_';
 const CACHE_DURATION_HEROES = 24 * 60 * 60 * 1000;
 const CACHE_DURATION_MATCHUPS = 60 * 60 * 1000;
 
+import heroesUrl from '../data/heroes.json';
+
 export const api = {
     fetchHeroes: async (): Promise<Hero[]> => {
-        const cached = localStorage.getItem(CACHE_KEY_HEROES);
-        if (cached) {
-            const { data, timestamp } = JSON.parse(cached);
-            if (Date.now() - timestamp < CACHE_DURATION_HEROES) {
-                return data;
-            }
-        }
+        // Use local data instead of fetching
+        // We still need to map the CDN URLs because the raw JSON has partial paths
+        const data = (heroesUrl as any[]).map((hero: any) => ({
+            ...hero,
+            img: `${CDN_BASE_URL}${hero.img}`,
+            icon: `${CDN_BASE_URL}${hero.icon}`
+        }));
 
-        try {
-            const response = await axios.get<Hero[]>(`${API_BASE_URL}/heroStats`);
-            const data = response.data.map((hero: any) => ({
-                ...hero,
-                // Extract the hero short name from the image path (e.g., "/apps/dota2/images/dota_react/heroes/antimage.png?")
-                // and construct a reliable CDN URL: "/apps/dota2/images/dota_react/heroes/antimage.png"
-                img: `${CDN_BASE_URL}${hero.img}`,
-                icon: `${CDN_BASE_URL}${hero.icon}`
-            }));
-            localStorage.setItem(CACHE_KEY_HEROES, JSON.stringify({ data, timestamp: Date.now() }));
-            return data;
-        } catch (error) {
-            console.error('Failed to fetch heroes', error);
-            return [];
-        }
+        return data;
     },
 
     fetchMatchups: async (heroId: number): Promise<Matchup[]> => {
