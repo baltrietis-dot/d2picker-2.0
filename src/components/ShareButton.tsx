@@ -1,10 +1,19 @@
 import { useState } from 'react';
 import { Share2, Copy, Check, Twitter } from 'lucide-react';
 
+interface Hero {
+    id: number;
+    localized_name: string;
+}
+
+interface CounterPick {
+    hero: Hero;
+}
+
 interface ShareButtonProps {
-    selectedEnemies: { id: number; localized_name: string }[];
-    myTeam: { id: number; localized_name: string }[];
-    topCounters: { id: number; localized_name: string }[];
+    selectedEnemies: Hero[];
+    myTeam: Hero[];
+    topCounters: CounterPick[];
 }
 
 export function ShareButton({ selectedEnemies, myTeam, topCounters }: ShareButtonProps) {
@@ -31,7 +40,7 @@ export function ShareButton({ selectedEnemies, myTeam, topCounters }: ShareButto
     // Generate tweet text
     const generateTweetText = () => {
         const enemyNames = selectedEnemies.map(h => h.localized_name).slice(0, 3).join(', ');
-        const counterNames = topCounters.slice(0, 2).map(h => h.localized_name).join(' & ');
+        const counterNames = topCounters.slice(0, 2).map(c => c.hero.localized_name).join(' & ');
 
         let text = `🎮 Dota 2 Draft Analysis:\n`;
         if (selectedEnemies.length > 0) {
@@ -60,7 +69,7 @@ export function ShareButton({ selectedEnemies, myTeam, topCounters }: ShareButto
 
     const handleDiscordShare = async () => {
         const url = generateShareUrl();
-        const text = `🎮 **Dota 2 Counter Picks**\n${selectedEnemies.length > 0 ? `Enemy: ${selectedEnemies.map(h => h.localized_name).join(', ')}\n` : ''}${topCounters.length > 0 ? `Best Counters: ${topCounters.slice(0, 3).map(h => h.localized_name).join(', ')}\n` : ''}\n${url}`;
+        const text = `🎮 **Dota 2 Counter Picks**\n${selectedEnemies.length > 0 ? `Enemy: ${selectedEnemies.map(h => h.localized_name).join(', ')}\n` : ''}${topCounters.length > 0 ? `Best Counters: ${topCounters.slice(0, 3).map(c => c.hero.localized_name).join(', ')}\n` : ''}\n${url}`;
         await navigator.clipboard.writeText(text);
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
