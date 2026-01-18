@@ -4,7 +4,8 @@ import { HeroGrid } from './components/HeroGrid';
 import { CounterList } from './components/CounterList';
 import { HeaderAd, SidebarAd, FooterAd } from './components/AdBanner';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
-import { Swords, RotateCcw, Shield, Users } from 'lucide-react';
+import { ShareButton } from './components/ShareButton';
+import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target } from 'lucide-react';
 import { type Position } from './data/heroPositions';
 
 function App() {
@@ -44,15 +45,26 @@ function App() {
       <header className="bg-slate-900 border-b border-slate-800 p-4 shadow-md z-20">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-indigo-600 rounded-lg shadow-lg shadow-indigo-500/20">
+            <div className="p-2 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg shadow-lg shadow-indigo-500/20">
               <Swords className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold tracking-tight">Dota 2 Counter Picker</h1>
-              <p className="text-xs text-slate-400">Fast drafts & advantage stats</p>
+              <div className="flex items-center gap-2">
+                <h1 className="text-xl font-bold tracking-tight">Dota 2 Counter Picker</h1>
+                <span className="px-2 py-0.5 text-[10px] font-bold bg-green-500/20 text-green-400 rounded-full border border-green-500/30">
+                  7.37 Ready
+                </span>
+              </div>
+              <p className="text-xs text-slate-400">Pro match data • 126 heroes • Instant counters</p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            {/* Share Button */}
+            <ShareButton
+              selectedEnemies={selectedEnemies}
+              myTeam={myTeam}
+              topCounters={topCounters}
+            />
             {/* Clear All */}
             {(selectedEnemies.length > 0 || myTeam.length > 0) && (
               <button
@@ -60,12 +72,42 @@ function App() {
                 className="flex items-center gap-1 text-xs text-slate-400 hover:text-white transition-colors bg-slate-800 border border-slate-700 hover:bg-slate-700 px-3 py-1.5 rounded-full"
               >
                 <RotateCcw className="h-3 w-3" />
-                Reset Draft
+                Reset
               </button>
             )}
           </div>
         </div>
       </header>
+
+      {/* Hero CTA Section - Only show when no heroes selected */}
+      {selectedEnemies.length === 0 && myTeam.length === 0 && (
+        <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-700 py-6 px-4">
+          <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-2">
+              <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Dominate Your Drafts
+              </span>
+            </h2>
+            <p className="text-slate-400 mb-4 max-w-xl mx-auto">
+              Select enemy heroes below to get instant counter-pick recommendations powered by pro match data.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+              <div className="flex items-center gap-2 text-slate-400">
+                <Zap className="h-4 w-4 text-yellow-400" />
+                <span>Instant Results</span>
+              </div>
+              <div className="flex items-center gap-2 text-slate-400">
+                <TrendingUp className="h-4 w-4 text-green-400" />
+                <span>Pro Win Rates</span>
+              </div>
+              <div className="flex items-center gap-2 text-slate-400">
+                <Target className="h-4 w-4 text-red-400" />
+                <span>Role-Based Picks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <main className="flex-1 max-w-7xl w-full mx-auto p-4 overflow-hidden flex flex-col gap-6">
 
