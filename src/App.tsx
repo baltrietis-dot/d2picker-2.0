@@ -3,6 +3,7 @@ import { useCounterPicker } from './hooks/useCounterPicker';
 import { HeroGrid } from './components/HeroGrid';
 import { CounterList } from './components/CounterList';
 import { HeaderAd, SidebarAd, FooterAd } from './components/AdBanner';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { Swords, RotateCcw, Shield, Users } from 'lucide-react';
 import { type Position } from './data/heroPositions';
 
@@ -28,6 +29,7 @@ function App() {
   }, [loadHeroes]);
 
   const [selectionMode, setSelectionMode] = useState<'enemy' | 'friendly'>('enemy');
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
 
   return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
@@ -197,6 +199,24 @@ function App() {
           <FooterAd />
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-slate-950 border-t border-slate-800 py-4 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-slate-500">
+          <p>© 2026 Dota2Picker.com - Not affiliated with Valve Corporation</p>
+          <div className="flex items-center gap-4">
+            <button
+              onClick={() => setShowPrivacyPolicy(true)}
+              className="hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </button>
+          </div>
+        </div>
+      </footer>
+
+      {/* Privacy Policy Modal */}
+      <PrivacyPolicy isOpen={showPrivacyPolicy} onClose={() => setShowPrivacyPolicy(false)} />
     </div>
   );
 }
