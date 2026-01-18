@@ -1,6 +1,6 @@
 import React from 'react';
 import type { CounterPick } from '../hooks/useCounterPicker';
-import { Sparkles, Trophy, X } from 'lucide-react';
+import { Sparkles, Trophy, X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 
 import { recommendItems, recommendSkillStrategy } from '../data/smartBuilds';
@@ -40,10 +40,10 @@ export const CounterList: React.FC<CounterListProps> = ({ counters, loading, sel
                     </div>
                 </div>
 
-                <div className="mt-auto pt-4 border-t border-slate-700/50 w-full">
-                    <a href="#guide" className="text-xs font-bold text-slate-500 hover:text-indigo-400 transition-colors block">
-                        How it works & Drafting Guide →
-                    </a>
+                <div className="mt-auto pt-4 border-t border-slate-700/50 w-full text-center">
+                    <div className="text-xs font-bold text-slate-500 flex items-center justify-center gap-1">
+                        How it works & Drafting Guide <ChevronDown className="h-3 w-3" />
+                    </div>
                 </div>
             </div>
         );
