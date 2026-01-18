@@ -52,9 +52,9 @@ export function AdBanner({
 export function HeaderAd() {
     return (
         <AdBanner
-            slot="HEADER_AD_SLOT_ID"
-            format="horizontal"
-            className="w-full max-h-[90px] overflow-hidden"
+            slot="4352701520"
+            format="auto"
+            className="w-full"
         />
     );
 }
@@ -62,8 +62,8 @@ export function HeaderAd() {
 export function SidebarAd() {
     return (
         <AdBanner
-            slot="SIDEBAR_AD_SLOT_ID"
-            format="vertical"
+            slot="1316486406"
+            format="auto"
             className="min-h-[250px]"
         />
     );
@@ -72,7 +72,7 @@ export function SidebarAd() {
 export function InContentAd() {
     return (
         <AdBanner
-            slot="IN_CONTENT_AD_SLOT_ID"
+            slot="1316486406"
             format="rectangle"
             className="mx-auto max-w-[336px]"
         />
@@ -82,9 +82,9 @@ export function InContentAd() {
 export function FooterAd() {
     return (
         <AdBanner
-            slot="FOOTER_AD_SLOT_ID"
-            format="horizontal"
-            className="w-full max-h-[90px] overflow-hidden"
+            slot="8898451193"
+            format="auto"
+            className="w-full"
         />
     );
 }
