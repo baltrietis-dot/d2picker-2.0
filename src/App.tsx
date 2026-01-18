@@ -302,8 +302,8 @@ function App() {
 
       </main>
 
-      {/* SEO Content - Only show on initial load */}
-      {selectedEnemies.length === 0 && myTeam.length === 0 && (
+      {/* SEO Content - Only show when no enemies selected (so guide link always works) */}
+      {selectedEnemies.length === 0 && (
         <LandingContent />
       )}
 
