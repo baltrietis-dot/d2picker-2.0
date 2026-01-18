@@ -9,6 +9,11 @@ import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target } from 'lucid
 import { type Position } from './data/heroPositions';
 
 function App() {
+  // Version Log
+  useEffect(() => {
+    console.log('App Version: 2.1 (Share Fix)');
+  }, []);
+
   const [targetRole, setTargetRole] = useState<Position | 'Any'>('Any');
 
   const {
