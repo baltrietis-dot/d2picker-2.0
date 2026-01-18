@@ -25,16 +25,9 @@ export function ShareButton({ selectedEnemies, myTeam, topCounters }: ShareButto
         return null;
     }
 
-    // Generate shareable URL with hero IDs
+    // Generate shareable URL (now just uses current URL as it's kept in sync)
     const generateShareUrl = () => {
-        const params = new URLSearchParams();
-        if (selectedEnemies.length > 0) {
-            params.set('e', selectedEnemies.map(h => h.id).join(','));
-        }
-        if (myTeam.length > 0) {
-            params.set('t', myTeam.map(h => h.id).join(','));
-        }
-        return `${window.location.origin}?${params.toString()}`;
+        return window.location.href;
     };
 
     // Generate tweet text

@@ -3,9 +3,12 @@ import { useCounterPicker } from './hooks/useCounterPicker';
 import { HeroGrid } from './components/HeroGrid';
 import { CounterList } from './components/CounterList';
 import { HeaderAd, SidebarAd, FooterAd } from './components/AdBanner';
+import { LandingContent } from './components/LandingContent';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
+import { TermsOfService } from './components/TermsOfService';
+import { WelcomeModal } from './components/WelcomeModal';
 import { ShareButton } from './components/ShareButton';
-import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target } from 'lucide-react';
+import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen } from 'lucide-react';
 import { type Position } from './data/heroPositions';
 
 function App() {
@@ -34,6 +37,9 @@ function App() {
     loadHeroes();
   }, [loadHeroes]);
 
+  // State to track if we've processed the initial URL params
+  const [isUrlLoaded, setIsUrlLoaded] = useState(false);
+
   // Load shared draft from URL parameters
   useEffect(() => {
     if (heroes.length === 0) return; // Wait for heroes to load
@@ -43,7 +49,7 @@ function App() {
     const teamIds = params.get('t')?.split(',').map(Number).filter(n => !isNaN(n)) || [];
 
     // Only load if we have params and haven't already loaded
-    if ((enemyIds.length > 0 || teamIds.length > 0) && selectedEnemies.length === 0 && myTeam.length === 0) {
+    if (!isUrlLoaded && (enemyIds.length > 0 || teamIds.length > 0) && selectedEnemies.length === 0 && myTeam.length === 0) {
       enemyIds.forEach(id => {
         const hero = heroes.find(h => h.id === id);
         if (hero) addEnemy(hero);
@@ -52,24 +58,49 @@ function App() {
         const hero = heroes.find(h => h.id === id);
         if (hero) addMyTeam(hero);
       });
-
-      // Clean up URL after loading (optional - keeps URL clean)
-      if (window.history.replaceState) {
-        window.history.replaceState({}, '', window.location.pathname);
-      }
     }
-  }, [heroes, selectedEnemies.length, myTeam.length, addEnemy, addMyTeam]);
+
+    // Mark as loaded so we can start syncing updates to URL
+    setIsUrlLoaded(true);
+  }, [heroes, isUrlLoaded, selectedEnemies.length, myTeam.length, addEnemy, addMyTeam]);
+
+  // Update document title dynamically
+  useEffect(() => {
+    if (selectedEnemies.length > 0) {
+      const heroNames = selectedEnemies.map(h => h.localized_name).slice(0, 3).join(', ');
+      const suffix = selectedEnemies.length > 3 ? '...' : '';
+      document.title = `Counter ${heroNames}${suffix} | Dota 2 Picker`;
+    } else {
+      document.title = 'Dota 2 Counter Picker | Free Hero Draft Tool - Dota2Picker';
+    }
+  }, [selectedEnemies]);
+
+  // Sync state to URL
+  useEffect(() => {
+    if (!isUrlLoaded) return; // Don't overwrite URL until we've loaded initial state
+
+    const params = new URLSearchParams();
+    if (selectedEnemies.length > 0) {
+      params.set('e', selectedEnemies.map(h => h.id).join(','));
+    }
+    if (myTeam.length > 0) {
+      params.set('t', myTeam.map(h => h.id).join(','));
+    }
+
+    const newUrl = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
+    window.history.replaceState({}, '', newUrl);
+
+  }, [selectedEnemies, myTeam, isUrlLoaded]);
 
   const [selectionMode, setSelectionMode] = useState<'enemy' | 'friendly'>('enemy');
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
 
   return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
       {/* Header Ad Banner */}
-      <div className="bg-slate-950 border-b border-slate-800 py-2 px-4">
-        <div className="max-w-7xl mx-auto">
-          <HeaderAd />
-        </div>
+      <div className="max-w-7xl mx-auto px-4">
+        <HeaderAd />
       </div>
 
       {/* Header */}
@@ -122,7 +153,7 @@ function App() {
             <p className="text-slate-400 mb-4 max-w-xl mx-auto">
               Select enemy heroes below to get instant counter-pick recommendations powered by pro match data.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-4 text-sm mb-4">
               <div className="flex items-center gap-2 text-slate-400">
                 <Zap className="h-4 w-4 text-yellow-400" />
                 <span>Instant Results</span>
@@ -136,6 +167,11 @@ function App() {
                 <span>Role-Based Picks</span>
               </div>
             </div>
+
+            <a href="#guide" className="inline-flex items-center gap-2 text-xs font-bold text-indigo-400 hover:text-indigo-300 hover:underline transition-colors">
+              <BookOpen className="h-3 w-3" />
+              Read Drafting Guide
+            </a>
           </div>
         </div>
       )}
@@ -266,6 +302,11 @@ function App() {
 
       </main>
 
+      {/* SEO Content - Only show on initial load */}
+      {selectedEnemies.length === 0 && myTeam.length === 0 && (
+        <LandingContent />
+      )}
+
       {/* Footer Ad Banner */}
       <div className="bg-slate-950 border-t border-slate-800 py-2 px-4 mt-auto">
         <div className="max-w-7xl mx-auto">
@@ -284,12 +325,23 @@ function App() {
             >
               Privacy Policy
             </button>
+            <button
+              onClick={() => setShowTerms(true)}
+              className="hover:text-white transition-colors"
+            >
+              Terms of Service
+            </button>
           </div>
         </div>
       </footer>
 
-      {/* Privacy Policy Modal */}
+      {/* Modals */}
       <PrivacyPolicy isOpen={showPrivacyPolicy} onClose={() => setShowPrivacyPolicy(false)} />
+      <TermsOfService isOpen={showTerms} onClose={() => setShowTerms(false)} />
+      <WelcomeModal
+        onOpenTerms={() => setShowTerms(true)}
+        onOpenPrivacy={() => setShowPrivacyPolicy(true)}
+      />
     </div>
   );
 }

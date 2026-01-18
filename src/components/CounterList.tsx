@@ -24,8 +24,27 @@ export const CounterList: React.FC<CounterListProps> = ({ counters, loading, sel
 
     if (counters.length === 0) {
         return (
-            <div className="bg-slate-800 rounded-xl p-8 border border-slate-700 flex flex-col justify-center items-center h-full text-slate-400 text-center">
-                <p>Select heroes from either team to see suggestions.</p>
+            <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 flex flex-col items-center h-full text-center">
+                <div className="flex-1 flex flex-col justify-center items-center space-y-4">
+                    <div className="p-3 bg-indigo-500/10 rounded-full">
+                        <Sparkles className="h-6 w-6 text-indigo-400" />
+                    </div>
+                    <div>
+                        <h3 className="text-white font-bold mb-1">Ready to Draft?</h3>
+                        <p className="text-sm text-slate-400">
+                            Select enemy heroes to generate <strong className="text-indigo-400">Patch 7.37</strong> counter picks powered by pro match data.
+                        </p>
+                    </div>
+                    <div className="text-xs text-slate-500 max-w-[240px] leading-relaxed">
+                        Our algorithm calculates real advantage scores using thousands of high-MMR replays.
+                    </div>
+                </div>
+
+                <div className="mt-auto pt-4 border-t border-slate-700/50 w-full">
+                    <a href="#guide" className="text-xs font-bold text-slate-500 hover:text-indigo-400 transition-colors block">
+                        How it works & Drafting Guide →
+                    </a>
+                </div>
             </div>
         );
     }
