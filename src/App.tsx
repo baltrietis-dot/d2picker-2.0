@@ -29,6 +29,32 @@ function App() {
     loadHeroes();
   }, [loadHeroes]);
 
+  // Load shared draft from URL parameters
+  useEffect(() => {
+    if (heroes.length === 0) return; // Wait for heroes to load
+
+    const params = new URLSearchParams(window.location.search);
+    const enemyIds = params.get('e')?.split(',').map(Number).filter(n => !isNaN(n)) || [];
+    const teamIds = params.get('t')?.split(',').map(Number).filter(n => !isNaN(n)) || [];
+
+    // Only load if we have params and haven't already loaded
+    if ((enemyIds.length > 0 || teamIds.length > 0) && selectedEnemies.length === 0 && myTeam.length === 0) {
+      enemyIds.forEach(id => {
+        const hero = heroes.find(h => h.id === id);
+        if (hero) addEnemy(hero);
+      });
+      teamIds.forEach(id => {
+        const hero = heroes.find(h => h.id === id);
+        if (hero) addMyTeam(hero);
+      });
+
+      // Clean up URL after loading (optional - keeps URL clean)
+      if (window.history.replaceState) {
+        window.history.replaceState({}, '', window.location.pathname);
+      }
+    }
+  }, [heroes, selectedEnemies.length, myTeam.length, addEnemy, addMyTeam]);
+
   const [selectionMode, setSelectionMode] = useState<'enemy' | 'friendly'>('enemy');
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
 
