@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import { Shield, Cookie, FileText, ArrowRight } from 'lucide-react';
+import { Shield, Cookie, ArrowRight } from 'lucide-react';
 
 interface WelcomeModalProps {
-    onOpenTerms: () => void;
     onOpenPrivacy: () => void;
 }
 
-export function WelcomeModal({ onOpenTerms, onOpenPrivacy }: WelcomeModalProps) {
+export function WelcomeModal({ onOpenPrivacy }: WelcomeModalProps) {
     const [isOpen, setIsOpen] = useState(() => {
         // PERMANENT FIX: Bumped to V2 to ensure all users (new and returning) see this update
         return !localStorage.getItem('terms_accepted_v2');
@@ -57,13 +56,6 @@ export function WelcomeModal({ onOpenTerms, onOpenPrivacy }: WelcomeModalProps) 
                                     We use cookies and local storage to save your preferences. By entering, you agree to our policies.
                                 </p>
                                 <div className="flex gap-4 text-xs font-bold">
-                                    <button
-                                        onClick={onOpenTerms}
-                                        className="text-indigo-400 hover:text-indigo-300 hover:underline flex items-center gap-1"
-                                    >
-                                        <FileText className="h-3 w-3" />
-                                        Terms of Service
-                                    </button>
                                     <button
                                         onClick={onOpenPrivacy}
                                         className="text-indigo-400 hover:text-indigo-300 hover:underline flex items-center gap-1"
