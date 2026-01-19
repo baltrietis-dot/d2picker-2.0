@@ -79,7 +79,7 @@ export function LandingContent() {
             </div>
 
             {/* Drafting Guide */}
-            <section className="space-y-6">
+            <section id="guide" className="space-y-6">
                 <div className="flex items-center gap-3 border-b border-slate-700 pb-4">
                     <div className="p-2 bg-amber-500/10 rounded-lg">
                         <TrendingUp className="h-6 w-6 text-amber-400" />

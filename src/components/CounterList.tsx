@@ -41,9 +41,9 @@ export const CounterList: React.FC<CounterListProps> = ({ counters, loading, sel
                 </div>
 
                 <div className="mt-auto pt-4 border-t border-slate-700/50 w-full text-center">
-                    <div className="text-xs font-bold text-slate-500 flex items-center justify-center gap-1">
+                    <a href="#guide" className="text-xs font-bold text-slate-500 hover:text-indigo-400 flex items-center justify-center gap-1 transition-colors cursor-pointer">
                         How it works & Drafting Guide <ChevronDown className="h-3 w-3" />
-                    </div>
+                    </a>
                 </div>
             </div>
         );
