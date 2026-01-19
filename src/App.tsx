@@ -5,6 +5,7 @@ import { CounterList } from './components/CounterList';
 import { HeaderAd, SidebarAd, FooterAd } from './components/AdBanner';
 import { LandingContent } from './components/LandingContent';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
+import { TermsOfService } from './components/TermsOfService';
 import { WelcomeModal } from './components/WelcomeModal';
 import { ShareButton } from './components/ShareButton';
 import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen } from 'lucide-react';
@@ -93,6 +94,7 @@ function App() {
 
   const [selectionMode, setSelectionMode] = useState<'enemy' | 'friendly'>('enemy');
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
 
   return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
@@ -323,13 +325,21 @@ function App() {
             >
               Privacy Policy
             </button>
+            <button
+              onClick={() => setShowTerms(true)}
+              className="hover:text-white transition-colors"
+            >
+              Terms of Service
+            </button>
           </div>
         </div>
       </footer>
 
       {/* Modals */}
       <PrivacyPolicy isOpen={showPrivacyPolicy} onClose={() => setShowPrivacyPolicy(false)} />
+      <TermsOfService isOpen={showTerms} onClose={() => setShowTerms(false)} />
       <WelcomeModal
+        onOpenTerms={() => setShowTerms(true)}
         onOpenPrivacy={() => setShowPrivacyPolicy(true)}
       />
     </div>
