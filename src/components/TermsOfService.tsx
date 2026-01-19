@@ -13,7 +13,7 @@ export function TermsOfService({ isOpen, onClose }: TermsOfServiceProps) {
             <div className="bg-slate-800 rounded-xl max-w-3xl w-full max-h-[80vh] overflow-hidden border border-slate-700 shadow-2xl">
                 {/* Header */}
                 <div className="flex items-center justify-between p-4 border-b border-slate-700">
-                    <h2 className="text-xl font-bold text-white">Terms by Service</h2>
+                    <h2 className="text-xl font-bold text-white">Terms of Service</h2>
                     <button
                         onClick={onClose}
                         className="p-2 hover:bg-slate-700 rounded-lg transition-colors"
@@ -72,7 +72,7 @@ export function TermsOfService({ isOpen, onClose }: TermsOfServiceProps) {
                     <section>
                         <h3 className="text-lg font-semibold text-white mb-2">Contact Us</h3>
                         <p>
-                            If you have any questions about these Terms, please contact us.
+                            If you have any questions about these Terms, please join our <a href="https://discord.com/invite/xrPY4de57" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">Discord community</a>.
                         </p>
                     </section>
                 </div>

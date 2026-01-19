@@ -8,7 +8,7 @@ import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { TermsOfService } from './components/TermsOfService';
 import { WelcomeModal } from './components/WelcomeModal';
 import { ShareButton } from './components/ShareButton';
-import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen } from 'lucide-react';
+import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, MessageCircle } from 'lucide-react';
 import { type Position } from './data/heroPositions';
 
 function App() {
@@ -319,6 +319,15 @@ function App() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-slate-500">
           <p>© 2026 Dota2Picker.com - Not affiliated with Valve Corporation</p>
           <div className="flex items-center gap-4">
+            <a
+              href="https://discord.com/invite/xrPY4de57"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 hover:text-white transition-colors"
+            >
+              <MessageCircle className="h-4 w-4" />
+              <span>Join our Discord</span>
+            </a>
             <button
               onClick={() => setShowPrivacyPolicy(true)}
               className="hover:text-white transition-colors"

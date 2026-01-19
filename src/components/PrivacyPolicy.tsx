@@ -109,7 +109,7 @@ export function PrivacyPolicy({ isOpen, onClose }: PrivacyPolicyProps) {
                     <section>
                         <h3 className="text-lg font-semibold text-white mb-2">Contact Us</h3>
                         <p>
-                            If you have any questions about this Privacy Policy, please contact us through the website.
+                            If you have any questions about this Privacy Policy, please join our <a href="https://discord.com/invite/xrPY4de57" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">Discord community</a>.
                         </p>
                     </section>
                 </div>
