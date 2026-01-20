@@ -8,6 +8,8 @@ import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { TermsOfService } from './components/TermsOfService';
 import { WelcomeModal } from './components/WelcomeModal';
 import { ShareButton } from './components/ShareButton';
+import { AboutUs } from './components/AboutUs';
+import { Contact } from './components/Contact';
 import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, MessageCircle } from 'lucide-react';
 import { type Position } from './data/heroPositions';
 
@@ -95,6 +97,8 @@ function App() {
   const [selectionMode, setSelectionMode] = useState<'enemy' | 'friendly'>('enemy');
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
   const [showTerms, setShowTerms] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
+  const [showContact, setShowContact] = useState(false);
 
   return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
@@ -329,6 +333,18 @@ function App() {
               <span>Join our Discord</span>
             </a>
             <button
+              onClick={() => setShowAbout(true)}
+              className="hover:text-white transition-colors"
+            >
+              About Us
+            </button>
+            <button
+              onClick={() => setShowContact(true)}
+              className="hover:text-white transition-colors"
+            >
+              Contact
+            </button>
+            <button
               onClick={() => setShowPrivacyPolicy(true)}
               className="hover:text-white transition-colors"
             >
@@ -345,6 +361,8 @@ function App() {
       </footer>
 
       {/* Modals */}
+      <AboutUs isOpen={showAbout} onClose={() => setShowAbout(false)} />
+      <Contact isOpen={showContact} onClose={() => setShowContact(false)} />
       <PrivacyPolicy isOpen={showPrivacyPolicy} onClose={() => setShowPrivacyPolicy(false)} />
       <TermsOfService isOpen={showTerms} onClose={() => setShowTerms(false)} />
       <WelcomeModal
