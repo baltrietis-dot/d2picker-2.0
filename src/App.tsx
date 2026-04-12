@@ -11,6 +11,7 @@ import { ShareButton } from './components/ShareButton';
 import { AboutUs } from './components/AboutUs';
 import { Contact } from './components/Contact';
 import { CryptoDonate } from './components/CryptoDonate';
+import { InstallPrompt } from './components/InstallPrompt';
 import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, MessageCircle } from 'lucide-react';
 import { type Position } from './data/heroPositions';
 import meta from './data/meta.json';
@@ -398,6 +399,9 @@ function App() {
         onOpenTerms={() => setShowTerms(true)}
         onOpenPrivacy={() => setShowPrivacyPolicy(true)}
       />
+
+      {/* PWA Install Prompt */}
+      <InstallPrompt />
     </div>
   );
 }
