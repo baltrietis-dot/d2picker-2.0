@@ -12,6 +12,7 @@ import { AboutUs } from './components/AboutUs';
 import { Contact } from './components/Contact';
 import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, MessageCircle } from 'lucide-react';
 import { type Position } from './data/heroPositions';
+import meta from './data/meta.json';
 
 function App() {
   // Version Log
@@ -118,7 +119,7 @@ function App() {
               <div className="flex items-center gap-2">
                 <h1 className="text-xl font-bold tracking-tight">Dota 2 Counter Picker</h1>
                 <span className="px-2 py-0.5 text-[10px] font-bold bg-green-500/20 text-green-400 rounded-full border border-green-500/30">
-                  Updated Weekly
+                  Patch {meta.patch}
                 </span>
               </div>
               <p className="text-xs text-slate-400">Pro match data • 126 heroes • Instant counters</p>

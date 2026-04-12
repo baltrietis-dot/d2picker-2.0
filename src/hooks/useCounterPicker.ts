@@ -2,6 +2,7 @@ import { useState, useCallback, useMemo } from 'react';
 import { api, type Hero, type Matchup } from '../services/api';
 import { HERO_TAGS, COUNTER_TAGS } from '../data/heroTags';
 import { getHeroRoles, type Position } from '../data/heroPositions';
+import { HEURISTIC_WEIGHTS, SYNERGY_WEIGHTS } from '../config/heuristics';
 
 export interface CounterPick {
     hero: Hero;
@@ -110,15 +111,15 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
 
                         // Heuristics (Countering)
                         if (enemyTraits.has('ILLUSIONIST') && COUNTER_TAGS['ANTI_ILLUSION'].includes(m.hero_id)) {
-                            scores[m.hero_id].heuristicBonus += 0.50;
+                            scores[m.hero_id].heuristicBonus += HEURISTIC_WEIGHTS.ANTI_ILLUSION;
                             if (!scores[m.hero_id].reasons.includes('Counters Illusions')) scores[m.hero_id].reasons.push('Counters Illusions');
                         }
                         if (enemyTraits.has('HEALER') && COUNTER_TAGS['ANTI_HEALER'].includes(m.hero_id)) {
-                            scores[m.hero_id].heuristicBonus += 0.40;
+                            scores[m.hero_id].heuristicBonus += HEURISTIC_WEIGHTS.ANTI_HEALER;
                             if (!scores[m.hero_id].reasons.includes('Counters Healers')) scores[m.hero_id].reasons.push('Counters Healers');
                         }
                         if (enemyTraits.has('TANKY_CORE') && COUNTER_TAGS['ANTI_TANK'].includes(m.hero_id)) {
-                            scores[m.hero_id].heuristicBonus += 0.30;
+                            scores[m.hero_id].heuristicBonus += HEURISTIC_WEIGHTS.ANTI_TANK;
                             if (!scores[m.hero_id].reasons.includes('Counters Tanks')) scores[m.hero_id].reasons.push('Counters Tanks');
                         }
                     }
@@ -163,19 +164,18 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
             const reasons: string[] = [];
 
             // Role Balance Logic (Boost relevant roles based on team comp)
-            // If we have many cores, prioritize support
             if (myCoreCount >= 3 && hero.roles.includes('Support')) {
-                synergyScore += 0.25;
+                synergyScore += SYNERGY_WEIGHTS.NEEDS_SUPPORT;
                 reasons.push('Needs Support');
             }
             if (mySupportCount >= 2 && myCoreCount < 2 && hero.roles.includes('Carry')) {
-                synergyScore += 0.25;
+                synergyScore += SYNERGY_WEIGHTS.NEEDS_CORE;
                 reasons.push('Needs Core');
             }
 
             const myMeleeCount = myTeam.filter(h => h.attack_type === 'Melee').length;
             if (myMeleeCount >= 3 && hero.attack_type === 'Ranged') {
-                synergyScore += 0.10;
+                synergyScore += SYNERGY_WEIGHTS.RANGED_BALANCE;
             }
 
             scores[heroId].synergyBonus += synergyScore;

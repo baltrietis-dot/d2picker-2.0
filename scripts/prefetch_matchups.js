@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const HEROES_PATH = path.join(__dirname, '../src/data/heroes.json');
 const MATCHUPS_OUTPUT_PATH = path.join(__dirname, '../src/data/all_matchups.json');
+const META_OUTPUT_PATH = path.join(__dirname, '../src/data/meta.json');
 
 // Simple delay to respect API rate limits
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -35,6 +36,18 @@ async function fetchAllMatchups() {
 
         fs.writeFileSync(MATCHUPS_OUTPUT_PATH, JSON.stringify(allMatchups));
         console.log(`Done! Saved all matchups to ${MATCHUPS_OUTPUT_PATH}`);
+
+        // Fetch current patch version
+        try {
+            const patchRes = await axios.get('https://api.opendota.com/api/constants/patch');
+            const patches = patchRes.data;
+            const latestPatch = patches[patches.length - 1]?.name ?? 'Unknown';
+            const meta = { patch: latestPatch, updatedAt: new Date().toISOString() };
+            fs.writeFileSync(META_OUTPUT_PATH, JSON.stringify(meta));
+            console.log(`Patch version: ${latestPatch}`);
+        } catch (err) {
+            console.error('Failed to fetch patch version:', err.message);
+        }
 
     } catch (error) {
         console.error("Fatal error:", error);
