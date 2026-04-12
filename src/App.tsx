@@ -14,6 +14,7 @@ import { CryptoDonate } from './components/CryptoDonate';
 import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, MessageCircle } from 'lucide-react';
 import { type Position } from './data/heroPositions';
 import meta from './data/meta.json';
+import { getSlugFromPath, heroFromSlug } from './utils/heroSlug';
 
 function App() {
   // Version Log
@@ -44,15 +45,23 @@ function App() {
   // State to track if we've processed the initial URL params
   const [isUrlLoaded, setIsUrlLoaded] = useState(false);
 
-  // Load shared draft from URL parameters
+  // Load hero from /counter/:slug path OR shared draft from URL parameters
   useEffect(() => {
-    if (heroes.length === 0) return; // Wait for heroes to load
+    if (heroes.length === 0) return;
+
+    // Handle /counter/anti-mage style pages
+    const slug = getSlugFromPath();
+    if (slug && !isUrlLoaded) {
+      const hero = heroFromSlug(slug, heroes);
+      if (hero) addEnemy(hero);
+      setIsUrlLoaded(true);
+      return;
+    }
 
     const params = new URLSearchParams(window.location.search);
     const enemyIds = params.get('e')?.split(',').map(Number).filter(n => !isNaN(n)) || [];
     const teamIds = params.get('t')?.split(',').map(Number).filter(n => !isNaN(n)) || [];
 
-    // Only load if we have params and haven't already loaded
     if (!isUrlLoaded && (enemyIds.length > 0 || teamIds.length > 0) && selectedEnemies.length === 0 && myTeam.length === 0) {
       enemyIds.forEach(id => {
         const hero = heroes.find(h => h.id === id);
@@ -64,7 +73,6 @@ function App() {
       });
     }
 
-    // Mark as loaded so we can start syncing updates to URL
     setIsUrlLoaded(true);
   }, [heroes, isUrlLoaded, selectedEnemies.length, myTeam.length, addEnemy, addMyTeam]);
 
