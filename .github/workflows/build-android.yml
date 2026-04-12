@@ -37,7 +37,7 @@ jobs:
 
       # ── Decode keystore from GitHub Secret ───────────────────────────────────
       - name: Decode keystore
-        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android.keystore
+        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d --ignore-garbage > android.keystore
 
       # ── Inject signing credentials into twa-manifest.json ────────────────────
       - name: Patch twa-manifest signing fields
