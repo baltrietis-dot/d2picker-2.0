@@ -58,7 +58,7 @@ jobs:
       # ── Bubblewrap: generate Android project ──────────────────────────────────
       - name: Init TWA project
         working-directory: twa
-        run: bubblewrap init --manifest https://dota2picker.com/manifest.webmanifest --skip-pwa-shell-check
+        run: printf 'n\n' | bubblewrap init --manifest https://dota2picker.com/manifest.webmanifest --skip-pwa-shell-check --jdk-path "$JAVA_HOME"
         continue-on-error: true   # init may fail if twa-manifest.json already present; that's fine
 
       # ── Bubblewrap: build release AAB + APK ──────────────────────────────────
@@ -67,7 +67,7 @@ jobs:
         env:
           BUBBLEWRAP_KEYSTORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
           BUBBLEWRAP_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-        run: bubblewrap build --skipPwaValidation
+        run: printf 'n\n' | bubblewrap build --skipPwaValidation --jdk-path "$JAVA_HOME"
 
       # ── Upload artifacts ──────────────────────────────────────────────────────
       - name: Upload AAB (Play Store)
