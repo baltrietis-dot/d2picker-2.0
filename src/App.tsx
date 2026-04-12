@@ -10,6 +10,7 @@ import { WelcomeModal } from './components/WelcomeModal';
 import { ShareButton } from './components/ShareButton';
 import { AboutUs } from './components/AboutUs';
 import { Contact } from './components/Contact';
+import { CryptoDonate } from './components/CryptoDonate';
 import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, MessageCircle } from 'lucide-react';
 import { type Position } from './data/heroPositions';
 import meta from './data/meta.json';
@@ -135,6 +136,8 @@ function App() {
             >
               ☕ Support
             </a>
+            {/* Crypto */}
+            <CryptoDonate />
             {/* Share Button */}
             <ShareButton
               selectedEnemies={selectedEnemies}
