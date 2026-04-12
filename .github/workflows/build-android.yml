@@ -1,95 +1,13 @@
 name: Build Android APK
 
+# Disabled — use PWABuilder.com to generate the signed AAB manually.
+# Re-enable by removing the 'if: false' lines once a proper CI solution is set up.
 on:
-  workflow_dispatch:          # manual trigger from GitHub UI
-  push:
-    tags:
-      - 'v*'                  # triggers on  git tag v1.0.0 && git push origin v1.0.0
+  workflow_dispatch:
 
 jobs:
   build:
+    if: false   # disabled until CI build is fixed
     runs-on: ubuntu-latest
-
     steps:
-      # ── Checkout ─────────────────────────────────────────────────────────────
-      - uses: actions/checkout@v4
-
-      # ── Java 17 ──────────────────────────────────────────────────────────────
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-
-      # ── Android SDK command-line tools ────────────────────────────────────────
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
-      # ── Node (for Bubblewrap CLI) ─────────────────────────────────────────────
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      # ── Bubblewrap ────────────────────────────────────────────────────────────
-      - name: Install Bubblewrap CLI
-        run: npm install -g @bubblewrap/cli
-
-      # ── Decode keystore from GitHub Secret ───────────────────────────────────
-      - name: Decode keystore
-        env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-        run: node -e "require('fs').writeFileSync('android.keystore', Buffer.from(process.env.KEYSTORE_BASE64, 'base64'))"
-
-      # ── Inject signing credentials into twa-manifest.json ────────────────────
-      - name: Patch twa-manifest signing fields
-        working-directory: twa
-        run: |
-          node -e "
-            const fs = require('fs');
-            const m = JSON.parse(fs.readFileSync('twa-manifest.json', 'utf8'));
-            m.signingKey = {
-              path: '../android.keystore',
-              alias: '${{ secrets.KEY_ALIAS }}'
-            };
-            fs.writeFileSync('twa-manifest.json', JSON.stringify(m, null, 2));
-          "
-
-      # ── Bubblewrap: generate Android project ──────────────────────────────────
-      - name: Init TWA project
-        working-directory: twa
-        run: printf 'n\n' | bubblewrap init --manifest https://dota2picker.com/manifest.webmanifest --skip-pwa-shell-check --jdk-path "$JAVA_HOME"
-        continue-on-error: true   # init may fail if twa-manifest.json already present; that's fine
-
-      # ── Bubblewrap: build release AAB + APK ──────────────────────────────────
-      - name: Build release AAB
-        working-directory: twa
-        env:
-          BUBBLEWRAP_KEYSTORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
-          BUBBLEWRAP_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-        run: printf 'n\n' | bubblewrap build --skipPwaValidation --jdk-path "$JAVA_HOME"
-
-      # ── Upload artifacts ──────────────────────────────────────────────────────
-      - name: Upload AAB (Play Store)
-        uses: actions/upload-artifact@v4
-        with:
-          name: dota2picker-release-${{ github.ref_name }}.aab
-          path: twa/app-release-bundle.aab
-          if-no-files-found: warn
-
-      - name: Upload APK (sideload / testing)
-        uses: actions/upload-artifact@v4
-        with:
-          name: dota2picker-release-${{ github.ref_name }}.apk
-          path: twa/app-release-signed.apk
-          if-no-files-found: warn
-
-      # ── Print SHA-256 fingerprint (needed for assetlinks.json) ────────────────
-      - name: Print certificate fingerprint
-        run: |
-          echo "=== SHA-256 for assetlinks.json ==="
-          keytool -list -v \
-            -keystore android.keystore \
-            -alias ${{ secrets.KEY_ALIAS }} \
-            -storepass ${{ secrets.STORE_PASSWORD }} \
-            | grep "SHA256:" | awk '{print $2}'
+      - run: echo "Use pwabuilder.com to generate the AAB manually."
