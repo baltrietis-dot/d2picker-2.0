@@ -126,6 +126,15 @@ function App() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            {/* Ko-fi */}
+            <a
+              href="https://ko-fi.com/dota2picker"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-[#FF5E5B] hover:bg-[#ff4744] text-white text-xs font-bold rounded-full transition-colors shadow-sm"
+            >
+              ☕ Support
+            </a>
             {/* Share Button */}
             <ShareButton
               selectedEnemies={selectedEnemies}
