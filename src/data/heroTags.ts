@@ -16,14 +16,13 @@ export const HERO_TAGS: Record<string, number[]> = {
     ],
     // Heroes with heavy healing/sustain
     HEALER: [
-        23, // Kunkka (kinda)
         57, // Omniknight
         54, // Lifestealer
         102, // Abaddon
         36, // Necrophos
         111, // Oracle
         91, // Io
-        68, // AA (He counters healers)
+        84, // Warlock (Upheaval/Golem regen)
     ],
     // Heroes vulnerable to kiting / magic burst
     TANKY_CORE: [

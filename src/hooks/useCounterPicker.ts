@@ -112,11 +112,11 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
                         // Heuristics (Countering)
                         if (enemyTraits.has('ILLUSIONIST') && COUNTER_TAGS['ANTI_ILLUSION'].includes(m.hero_id)) {
                             scores[m.hero_id].heuristicBonus += HEURISTIC_WEIGHTS.ANTI_ILLUSION;
-                            if (!scores[m.hero_id].reasons.includes('Counters Illusions')) scores[m.hero_id].reasons.push('Counters Illusions');
+                            if (!scores[m.hero_id].reasons.includes('AoE vs Multiple Units')) scores[m.hero_id].reasons.push('AoE vs Multiple Units');
                         }
                         if (enemyTraits.has('HEALER') && COUNTER_TAGS['ANTI_HEALER'].includes(m.hero_id)) {
                             scores[m.hero_id].heuristicBonus += HEURISTIC_WEIGHTS.ANTI_HEALER;
-                            if (!scores[m.hero_id].reasons.includes('Counters Healers')) scores[m.hero_id].reasons.push('Counters Healers');
+                            if (!scores[m.hero_id].reasons.includes('Cuts Healing')) scores[m.hero_id].reasons.push('Cuts Healing');
                         }
                         if (enemyTraits.has('TANKY_CORE') && COUNTER_TAGS['ANTI_TANK'].includes(m.hero_id)) {
                             scores[m.hero_id].heuristicBonus += HEURISTIC_WEIGHTS.ANTI_TANK;
