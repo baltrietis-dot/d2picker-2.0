@@ -1,0 +1,248 @@
+export const translations = {
+    en: {
+        // Header
+        tagline: 'Pro match data • 126 heroes • Instant counters',
+        support: '☕ Support',
+        donateCrypto: '₿ Donate Crypto',
+        reset: 'Reset',
+
+        // CTA
+        dominateDrafts: 'Dominate Your Drafts',
+        ctaDesc: 'Select enemy heroes below to get instant counter-pick recommendations powered by pro match data.',
+        instantResults: 'Instant Results',
+        proWinRates: 'Pro Win Rates',
+        roleBasedPicks: 'Role-Based Picks',
+        readGuide: 'Read Drafting Guide',
+
+        // Teams
+        enemyTeam: 'Enemy Team',
+        myTeam: 'My Team',
+        pickingFor: 'Picking for:',
+
+        // Role filters
+        targetRole: 'Target Role:',
+        roleAny: 'Any',
+        roleCarry: 'Carry',
+        roleMid: 'Mid',
+        roleOfflane: 'Offlane',
+        roleSupport: 'Support',
+        proDataHeuristics: '* Pro Data + Heuristics',
+
+        // Footer
+        copyright: '© 2026 Dota2Picker.com — Not affiliated with Valve Corporation',
+        joinDiscord: 'Join our Discord',
+        aboutUs: 'About Us',
+        contact: 'Contact',
+        privacyPolicy: 'Privacy Policy',
+        termsOfService: 'Terms of Service',
+
+        // Counter List
+        readyToDraft: 'Ready to Draft?',
+        selectEnemies: 'Select enemy heroes to generate current patch counter picks powered by pro match data.',
+        algorithmDesc: 'Our algorithm calculates real advantage scores using thousands of high-MMR replays.',
+        howItWorksLink: 'How it works & Drafting Guide',
+        topPicks: 'Top Picks',
+        basedOnPro: 'Based on Pro Matchups',
+        tailoredPick: 'Tailored Pick',
+        advantage: 'Advantage',
+        winRate: 'Win Rate',
+        whyThisHero: 'Why this hero?',
+        situationalBuild: 'Situational Build',
+        keyItems: 'Key Items vs Enemy Team',
+        strategy: 'Strategy',
+        gotIt: 'Got it',
+        basedOnComposition: 'Based on your team & enemy composition',
+
+        // Hero Grid
+        searchPlaceholder: "Search heroes (e.g. 'pl', 'axe', 'am')...",
+        noHeroesFound: 'No heroes found.',
+
+        // Welcome Modal
+        welcomeTitle: 'Welcome to Dota 2 Picker',
+        welcomeDesc: 'Dominate your drafts with our advanced counter-picking algorithm, powered by thousands of Pro Match replays.',
+        realStats: 'Real Stats',
+        realStatsDesc: 'Based on verified high-MMR gameplay data.',
+        freeForever: 'Free Forever',
+        freeForeverDesc: 'No paywalls, just pure drafting advantage.',
+        cookieNotice: 'We use cookies and local storage to save your preferences. By entering, you agree to our policies.',
+        startDrafting: 'Start drafting',
+
+        // Share
+        shareDraft: 'Share Draft',
+        copyLink: 'Copy Link',
+        copied: 'Copied!',
+        shareOnX: 'Share on X',
+        copyForDiscord: 'Copy for Discord',
+
+        // About
+        aboutTitle: 'About Us',
+        ourMission: 'Our Mission',
+        missionDesc: 'Dota 2 Counter Picker was created with a simple goal: to help Dota 2 players of all skill levels draft better and win more games. We believe that the draft phase is one of the most critical parts of the game, and having the right information at your fingertips can make all the difference.',
+        howItWorksFull: 'How It Works',
+        howItWorksDesc: 'Our tool analyzes thousands of professional matches to identify the most statistically effective counters for every hero. We consider various factors, including:',
+        howItWorksList: ['Win rates in professional play', 'Lane-specific matchups', 'Synergy with teammates', 'Meta trends and recent patches'],
+        developedForCommunity: 'Developed for the Community',
+        communityDesc: 'We are passionate Dota 2 players ourselves, dedicated to maintaining and improving this tool for the community. Features are regularly updated to reflect the latest game patches and meta shifts.',
+        disclaimer: 'Disclaimer',
+        disclaimerDesc: 'Dota 2 is a registered trademark of Valve Corporation. This site is not affiliated with, endorsed by, or sponsored by Valve Corporation. All game images and names are property of their respective owners.',
+
+        // Contact
+        contactTitle: 'Contact Us',
+        contactDesc: "Have feedback, found a bug, or just want to chat? We'd love to hear from you! Choose the method that works best for you below.",
+        joinDiscordFull: 'Join our Discord',
+        discordDesc: 'Best for quick chats, bug reports, and community discussion.',
+        responseTime: 'We aim to respond to all inquiries within 24-48 hours.',
+
+        // Landing
+        landingTitle: 'The Ultimate Dota 2 Counter Picker',
+        landingIntro1: 'Welcome to the most advanced Dota 2 Counter Picker tool, always up to date with the latest patch. Unlike other drafting tools that rely on low-mmr pub data or subjective tier lists, our algorithm is powered exclusively by professional match data. We analyze thousands of high-level matches to determine which heroes statistically dominate specific matchups in the current meta.',
+        landingIntro2: 'Whether you are drafting for a Battle Cup, ranking up in Immortal, or just want to crush your pub games, picking the right hero is half the battle. This tool gives you the statistical edge you need to outdraft your opponents before the horn even sounds.',
+        algorithmTitle: 'How the Algorithm Works',
+        algorithmDesc2: 'We don\'t just look at general win rates. Our engine calculates a specific "Advantage Score" for every potential matchup.',
+        counterSynergyTitle: 'Direct Counter Synergy:',
+        counterSynergyDesc: 'How much better does a hero perform against a specific enemy compared to their average win rate?',
+        metaWeightTitle: 'Meta Weighting:',
+        metaWeightDesc: 'Heroes that are currently strong in the pro meta are naturally prioritized, but only if they fit the matchup.',
+        laneMatchupTitle: 'Lane Matchups:',
+        laneMatchupDesc: "We consider laning dynamics to ensure you don't just counter the game, but also survive the laning stage.",
+        understandingStats: 'Understanding the Stats',
+        advantageStatTitle: 'Advantage (+%)',
+        advantageStatDesc: 'This is the most important metric. A +2.00% advantage means this hero wins 2% more often against this specific enemy team than they do on average. It isolates the matchup quality from the hero\'s raw strength.',
+        winRateStatTitle: 'Win Rate (%)',
+        winRateStatDesc: "The hero's raw win rate in high-level pubs and pro matches. A hero with a high win rate is generally strong in the meta, but might not be a specific hard counter.",
+        masteringDraft: 'Mastering the Draft',
+        phase1Title: '1. The "First Phase" Trap',
+        phase1Desc: 'Never reveal your win-conditions early. Use the first phase to pick flexible supports or offlaners that don\'t have hard counters. Our tool can help you find "Safe First Picks" by looking for heroes with high general win rates and few bad matchups.',
+        cheeseTitle: '2. Countering the "Cheese"',
+        cheeseDesc: 'Last pick Meepo, Arc Warden, or Huskar can destroy unprepared teams. Use our tool to instantly find the hard counters if you spot a cheese pick. Usually, heavy disable or specific mechanics (like AA blast vs Huskar) are required.',
+        synergyTitle: '3. Synergy vs Counter',
+        synergyDesc: 'Don\'t just counter—picked heroes must also fit your team. If you need a stun, don\'t pick a Silencer just because he counters Enigma. Use our "Role" filters to find a counter that also fills the gap in your lineup (e.g., "Hard Support" that counters "Spectre").',
+        whyUsTitle: 'Why use Dota2Picker?',
+        whyUsDesc: 'This project is maintained by passionate Dota 2 developers who wanted a cleaner, faster, and more accurate alternative to ad-cluttered drafting sites. We believe in free access to high-quality data. Our database is updated weekly with the latest pro matches to ensure you\'re always ahead of the meta.',
+    },
+
+    ru: {
+        // Header
+        tagline: 'Данные про-матчей • 126 героев • Мгновенный результат',
+        support: '☕ Поддержать',
+        donateCrypto: '₿ Донат криптой',
+        reset: 'Сбросить',
+
+        // CTA
+        dominateDrafts: 'Доминируй в драфте',
+        ctaDesc: 'Выбери героев противника и получи мгновенные рекомендации по контрпику на основе данных про-матчей.',
+        instantResults: 'Мгновенный результат',
+        proWinRates: 'Про винрейты',
+        roleBasedPicks: 'Пики по ролям',
+        readGuide: 'Читать гайд по драфту',
+
+        // Teams
+        enemyTeam: 'Команда врага',
+        myTeam: 'Моя команда',
+        pickingFor: 'Пикую для:',
+
+        // Role filters
+        targetRole: 'Роль:',
+        roleAny: 'Любая',
+        roleCarry: 'Carry',
+        roleMid: 'Mid',
+        roleOfflane: 'Offlane',
+        roleSupport: 'Support',
+        proDataHeuristics: '* Про данные + эвристика',
+
+        // Footer
+        copyright: '© 2026 Dota2Picker.com — Не аффилирован с Valve Corporation',
+        joinDiscord: 'Наш Discord',
+        aboutUs: 'О нас',
+        contact: 'Контакты',
+        privacyPolicy: 'Политика конфиденциальности',
+        termsOfService: 'Условия использования',
+
+        // Counter List
+        readyToDraft: 'Готов к драфту?',
+        selectEnemies: 'Выбери героев противника для контрпиков текущего патча на основе данных про-матчей.',
+        algorithmDesc: 'Наш алгоритм рассчитывает реальные показатели преимущества на основе тысяч реплеев высокого MMR.',
+        howItWorksLink: 'Как это работает & Гайд по драфту',
+        topPicks: 'Лучшие пики',
+        basedOnPro: 'На основе про-матчей',
+        tailoredPick: 'Персональный пик',
+        advantage: 'Преимущество',
+        winRate: 'Винрейт',
+        whyThisHero: 'Почему этот герой?',
+        situationalBuild: 'Ситуативная сборка',
+        keyItems: 'Ключевые предметы против команды',
+        strategy: 'Стратегия',
+        gotIt: 'Понятно',
+        basedOnComposition: 'На основе состава твоей команды и противника',
+
+        // Hero Grid
+        searchPlaceholder: "Поиск героев (напр. 'pl', 'axe', 'am')...",
+        noHeroesFound: 'Герои не найдены.',
+
+        // Welcome Modal
+        welcomeTitle: 'Добро пожаловать в Dota 2 Picker',
+        welcomeDesc: 'Доминируй в драфте с нашим продвинутым алгоритмом контрпика, основанным на тысячах про-матчей.',
+        realStats: 'Реальная статистика',
+        realStatsDesc: 'На основе верифицированных данных высокого MMR.',
+        freeForever: 'Бесплатно навсегда',
+        freeForeverDesc: 'Без пейволлов, только чистое преимущество в драфте.',
+        cookieNotice: 'Мы используем cookies для сохранения настроек. Продолжая, вы соглашаетесь с нашей политикой.',
+        startDrafting: 'Начать драфт',
+
+        // Share
+        shareDraft: 'Поделиться драфтом',
+        copyLink: 'Скопировать ссылку',
+        copied: 'Скопировано!',
+        shareOnX: 'Поделиться в X',
+        copyForDiscord: 'Скопировать для Discord',
+
+        // About
+        aboutTitle: 'О нас',
+        ourMission: 'Наша миссия',
+        missionDesc: 'Dota 2 Counter Picker создан с простой целью: помочь игрокам всех уровней мастерства лучше драфтить и выигрывать больше игр. Мы считаем, что фаза драфта — один из самых важных этапов игры, и наличие правильной информации под рукой может изменить всё.',
+        howItWorksFull: 'Как это работает',
+        howItWorksDesc: 'Наш инструмент анализирует тысячи профессиональных матчей для определения наиболее статистически эффективных контрпиков для каждого героя. Мы учитываем различные факторы, в том числе:',
+        howItWorksList: ['Винрейты в профессиональной игре', 'Матчапы на конкретных лайнах', 'Синергия с союзниками', 'Тренды меты и последние патчи'],
+        developedForCommunity: 'Создано для комьюнити',
+        communityDesc: 'Мы сами страстные игроки Dota 2, посвятившие себя поддержке и развитию этого инструмента для комьюнити. Функции регулярно обновляются с учётом последних патчей и изменений меты.',
+        disclaimer: 'Отказ от ответственности',
+        disclaimerDesc: 'Dota 2 является зарегистрированным товарным знаком Valve Corporation. Этот сайт не аффилирован с Valve Corporation и не спонсируется ею. Все игровые изображения и названия являются собственностью их владельцев.',
+
+        // Contact
+        contactTitle: 'Связаться с нами',
+        contactDesc: 'Есть обратная связь, нашли баг или просто хотите пообщаться? Мы рады вас слышать!',
+        joinDiscordFull: 'Присоединиться к Discord',
+        discordDesc: 'Лучший вариант для быстрого общения, репортов об ошибках и обсуждений комьюнити.',
+        responseTime: 'Мы стараемся отвечать на все запросы в течение 24–48 часов.',
+
+        // Landing
+        landingTitle: 'Лучший инструмент контрпика Dota 2',
+        landingIntro1: 'Добро пожаловать в самый продвинутый инструмент контрпика Dota 2, всегда актуальный для текущего патча. В отличие от других инструментов для драфта, основанных на паб-данных низкого MMR или субъективных тир-листах, наш алгоритм работает исключительно на данных профессиональных матчей. Мы анализируем тысячи матчей высокого уровня, чтобы определить, какие герои статистически доминируют в конкретных матчапах.',
+        landingIntro2: 'Участвуешь в Battle Cup, поднимаешься в Immortal или просто хочешь побеждать в паб-играх — правильный пик решает половину игры. Этот инструмент даёт тебе статистическое преимущество, чтобы передрафтить соперников ещё до начала матча.',
+        algorithmTitle: 'Как работает алгоритм',
+        algorithmDesc2: 'Мы не просто смотрим на общий винрейт. Наш движок рассчитывает «Показатель преимущества» для каждого потенциального матчапа.',
+        counterSynergyTitle: 'Прямая контр-синергия:',
+        counterSynergyDesc: 'Насколько лучше герой показывает себя против конкретного врага по сравнению со своим средним винрейтом?',
+        metaWeightTitle: 'Вес в мете:',
+        metaWeightDesc: 'Герои, сильные в текущей про-мете, получают приоритет, но только если они подходят под матчап.',
+        laneMatchupTitle: 'Матчапы на лайне:',
+        laneMatchupDesc: 'Мы учитываем динамику лайнинга, чтобы ты не просто контрил врага, но и уверенно себя чувствовал на лайне.',
+        understandingStats: 'Разбираемся в статистике',
+        advantageStatTitle: 'Преимущество (+%)',
+        advantageStatDesc: 'Самый важный показатель. Преимущество +2.00% означает, что этот герой побеждает на 2% чаще против конкретной команды врага, чем в среднем. Это изолирует качество матчапа от базовой силы героя.',
+        winRateStatTitle: 'Винрейт (%)',
+        winRateStatDesc: 'Базовый винрейт героя в паб-играх и про-матчах высокого уровня. Герой с высоким винрейтом силён в мете, но может не быть жёстким контром.',
+        masteringDraft: 'Мастерство драфта',
+        phase1Title: '1. Ловушка «первой фазы»',
+        phase1Desc: 'Никогда не раскрывай свои победные условия в первой фазе. Пикуй гибких саппортов или офлейнеров без жёстких контров. Наш инструмент поможет найти «безопасные первые пики» — героев с высоким общим винрейтом и минимумом плохих матчапов.',
+        cheeseTitle: '2. Контрим «чиз»',
+        cheeseDesc: 'Ластпик Meepo, Arc Warden или Huskar может уничтожить неподготовленную команду. Используй наш инструмент, чтобы мгновенно найти жёсткие контры при обнаружении чиз-пика.',
+        synergyTitle: '3. Синергия vs Контрпик',
+        synergyDesc: 'Не просто контри — пикнутые герои должны вписываться в команду. Если нужен стан, не бери Silencer только потому, что он контрит Enigma. Используй фильтры «Роль», чтобы найти контра, который также закрывает нужную позицию.',
+        whyUsTitle: 'Почему Dota2Picker?',
+        whyUsDesc: 'Проект поддерживается увлечёнными разработчиками Dota 2, которые хотели создать более чистую, быструю и точную альтернативу сайтам, заваленным рекламой. Мы верим в свободный доступ к качественным данным. База обновляется еженедельно с последними про-матчами.',
+    },
+} as const;
+
+export type Language = keyof typeof translations;
+export type TranslationKey = keyof typeof translations.en;

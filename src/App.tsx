@@ -15,6 +15,7 @@ import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, Me
 import { type Position } from './data/heroPositions';
 import meta from './data/meta.json';
 import { getSlugFromPath, heroFromSlug } from './utils/heroSlug';
+import { useLanguage } from './context/LanguageContext';
 
 function App() {
   // Version Log
@@ -22,6 +23,7 @@ function App() {
     console.log('App Version: 2.1 (Share Fix)');
   }, []);
 
+  const { t, language, setLanguage } = useLanguage();
   const [targetRole, setTargetRole] = useState<Position | 'Any'>('Any');
 
   const {
@@ -131,10 +133,15 @@ function App() {
                   Patch {meta.patch}
                 </span>
               </div>
-              <p className="text-xs text-slate-400">Pro match data • 126 heroes • Instant counters</p>
+              <p className="text-xs text-slate-400">{t('tagline')}</p>
             </div>
           </div>
           <div className="flex items-center gap-3">
+            {/* Language Toggle */}
+            <div className="flex items-center gap-1 bg-slate-800 border border-slate-700 rounded-full p-0.5">
+              <button onClick={() => setLanguage('en')} className={`px-2.5 py-1 text-xs font-bold rounded-full transition-colors ${language === 'en' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white'}`}>EN</button>
+              <button onClick={() => setLanguage('ru')} className={`px-2.5 py-1 text-xs font-bold rounded-full transition-colors ${language === 'ru' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white'}`}>RU</button>
+            </div>
             {/* Ko-fi */}
             <a
               href="https://ko-fi.com/dota2picker"
@@ -142,7 +149,7 @@ function App() {
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-3 py-1.5 bg-[#FF5E5B] hover:bg-[#ff4744] text-white text-xs font-bold rounded-full transition-colors shadow-sm"
             >
-              ☕ Support
+              {t('support')}
             </a>
             {/* Crypto */}
             <CryptoDonate />
@@ -159,7 +166,7 @@ function App() {
                 className="flex items-center gap-1 text-xs text-slate-400 hover:text-white transition-colors bg-slate-800 border border-slate-700 hover:bg-slate-700 px-3 py-1.5 rounded-full"
               >
                 <RotateCcw className="h-3 w-3" />
-                Reset
+                {t('reset')}
               </button>
             )}
           </div>
@@ -172,30 +179,30 @@ function App() {
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-2">
               <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Dominate Your Drafts
+                {t('dominateDrafts')}
               </span>
             </h2>
             <p className="text-slate-400 mb-4 max-w-xl mx-auto">
-              Select enemy heroes below to get instant counter-pick recommendations powered by pro match data.
+              {t('ctaDesc')}
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm mb-4">
               <div className="flex items-center gap-2 text-slate-400">
                 <Zap className="h-4 w-4 text-yellow-400" />
-                <span>Instant Results</span>
+                <span>{t('instantResults')}</span>
               </div>
               <div className="flex items-center gap-2 text-slate-400">
                 <TrendingUp className="h-4 w-4 text-green-400" />
-                <span>Pro Win Rates</span>
+                <span>{t('proWinRates')}</span>
               </div>
               <div className="flex items-center gap-2 text-slate-400">
                 <Target className="h-4 w-4 text-red-400" />
-                <span>Role-Based Picks</span>
+                <span>{t('roleBasedPicks')}</span>
               </div>
             </div>
 
             <a href="#guide" className="inline-flex items-center gap-2 text-xs font-bold text-indigo-400 hover:text-indigo-300 hover:underline transition-colors">
               <BookOpen className="h-3 w-3" />
-              Read Drafting Guide
+              {t('readGuide')}
             </a>
           </div>
         </div>
@@ -210,7 +217,7 @@ function App() {
             <div className="flex justify-between items-center mb-4">
               <h2 className={`flex items-center gap-2 font-bold uppercase tracking-wider text-sm ${selectionMode === 'enemy' ? 'text-red-400' : 'text-slate-500'}`}>
                 <Shield className="h-4 w-4" />
-                Enemy Team
+                {t('enemyTeam')}
               </h2>
             </div>
             <div className="flex gap-2 overflow-x-auto pb-1">
@@ -241,7 +248,7 @@ function App() {
             <div className="flex justify-between items-center mb-4">
               <h2 className={`flex items-center gap-2 font-bold uppercase tracking-wider text-sm ${selectionMode === 'friendly' ? 'text-green-400' : 'text-slate-500'}`}>
                 <Users className="h-4 w-4" />
-                My Team
+                {t('myTeam')}
               </h2>
             </div>
             <div className="flex gap-2 overflow-x-auto pb-1">
@@ -272,20 +279,20 @@ function App() {
         <div className="flex-1 flex flex-col lg:flex-row gap-6 min-h-0 overflow-hidden">
           <div className="flex-1 min-h-0 flex flex-col">
             <div className="flex items-center gap-4 mb-4 bg-slate-800 p-2 rounded-lg border border-slate-700">
-              <span className="text-sm font-bold text-slate-400 pl-2">Picking for:</span>
+              <span className="text-sm font-bold text-slate-400 pl-2">{t('pickingFor')}</span>
               <button
                 onClick={() => setSelectionMode('enemy')}
                 className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-md font-bold text-sm transition-all ${selectionMode === 'enemy' ? 'bg-red-500/20 text-red-400 border border-red-500/50 shadow-lg shadow-red-500/10' : 'text-slate-500 hover:bg-slate-700'}`}
               >
                 <Shield className="h-4 w-4" />
-                Enemy Team
+                {t('enemyTeam')}
               </button>
               <button
                 onClick={() => setSelectionMode('friendly')}
                 className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-md font-bold text-sm transition-all ${selectionMode === 'friendly' ? 'bg-green-500/20 text-green-400 border border-green-500/50 shadow-lg shadow-green-500/10' : 'text-slate-500 hover:bg-slate-700'}`}
               >
                 <Users className="h-4 w-4" />
-                My Team
+                {t('myTeam')}
               </button>
             </div>
 
@@ -298,7 +305,7 @@ function App() {
 
           <div className="flex-none lg:w-96 min-h-[300px] lg:min-h-0 flex flex-col">
             <div className="mb-2 flex items-center justify-between text-xs text-slate-500 px-1">
-              <span>Target Role:</span>
+              <span>{t('targetRole')}</span>
             </div>
 
             <div className="flex gap-1 mb-2 bg-slate-800 p-1 rounded-lg border border-slate-700 overflow-x-auto">
@@ -308,13 +315,13 @@ function App() {
                   onClick={() => setTargetRole(role)}
                   className={`flex-1 px-2 py-1 text-[10px] uppercase font-bold rounded transition-colors ${targetRole === role ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-500/20' : 'text-slate-500 hover:bg-slate-700 hover:text-slate-300'}`}
                 >
-                  {role}
+                  {t(`role${role}` as any)}
                 </button>
               ))}
             </div>
 
             <div className="mb-2 flex items-center justify-between text-xs text-slate-500 px-1">
-              <span>* Pro Data + Heuristics</span>
+              <span>{t('proDataHeuristics')}</span>
             </div>
             <CounterList counters={topCounters} loading={loading} selectedEnemies={selectedEnemies} />
 
@@ -342,7 +349,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-slate-950 border-t border-slate-800 py-4 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-slate-500">
-          <p>© 2026 Dota2Picker.com - Not affiliated with Valve Corporation</p>
+          <p>{t('copyright')}</p>
           <div className="flex items-center gap-4">
             <a
               href="https://discord.com/invite/xrPY4de57"
@@ -351,31 +358,31 @@ function App() {
               className="flex items-center gap-1 hover:text-white transition-colors"
             >
               <MessageCircle className="h-4 w-4" />
-              <span>Join our Discord</span>
+              <span>{t('joinDiscord')}</span>
             </a>
             <button
               onClick={() => setShowAbout(true)}
               className="hover:text-white transition-colors"
             >
-              About Us
+              {t('aboutUs')}
             </button>
             <button
               onClick={() => setShowContact(true)}
               className="hover:text-white transition-colors"
             >
-              Contact
+              {t('contact')}
             </button>
             <button
               onClick={() => setShowPrivacyPolicy(true)}
               className="hover:text-white transition-colors"
             >
-              Privacy Policy
+              {t('privacyPolicy')}
             </button>
             <button
               onClick={() => setShowTerms(true)}
               className="hover:text-white transition-colors"
             >
-              Terms of Service
+              {t('termsOfService')}
             </button>
           </div>
         </div>

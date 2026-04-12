@@ -1,4 +1,5 @@
 import { X, MessageCircle } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 interface ContactProps {
     isOpen: boolean;
@@ -6,6 +7,7 @@ interface ContactProps {
 }
 
 export function Contact({ isOpen, onClose }: ContactProps) {
+    const { t } = useLanguage();
     if (!isOpen) return null;
 
     return (
@@ -13,7 +15,7 @@ export function Contact({ isOpen, onClose }: ContactProps) {
             <div className="bg-slate-800 rounded-xl max-w-xl w-full max-h-[80vh] overflow-hidden border border-slate-700 shadow-2xl">
                 {/* Header */}
                 <div className="flex items-center justify-between p-4 border-b border-slate-700">
-                    <h2 className="text-xl font-bold text-white">Contact Us</h2>
+                    <h2 className="text-xl font-bold text-white">{t('contactTitle')}</h2>
                     <button
                         onClick={onClose}
                         className="p-2 hover:bg-slate-700 rounded-lg transition-colors"
@@ -26,8 +28,7 @@ export function Contact({ isOpen, onClose }: ContactProps) {
                 <div className="p-6 overflow-y-auto max-h-[calc(80vh-80px)] text-slate-300 space-y-6">
                     <div>
                         <p className="mb-6">
-                            Have feedback, found a bug, or just want to chat? We'd love to hear from you!
-                            Choose the method that works best for you below.
+                            {t('contactDesc')}
                         </p>
                     </div>
 
@@ -42,8 +43,8 @@ export function Contact({ isOpen, onClose }: ContactProps) {
                                 <MessageCircle className="h-6 w-6" />
                             </div>
                             <div>
-                                <h3 className="font-bold text-white group-hover:text-indigo-300 transition-colors">Join our Discord</h3>
-                                <p className="text-sm text-slate-400">Best for quick chats, bug reports, and community discussion.</p>
+                                <h3 className="font-bold text-white group-hover:text-indigo-300 transition-colors">{t('joinDiscordFull')}</h3>
+                                <p className="text-sm text-slate-400">{t('discordDesc')}</p>
                             </div>
                         </a>
 
@@ -51,7 +52,7 @@ export function Contact({ isOpen, onClose }: ContactProps) {
 
                     <div className="pt-4 border-t border-slate-700">
                         <p className="text-xs text-slate-500 text-center">
-                            We aim to respond to all inquiries within 24-48 hours.
+                            {t('responseTime')}
                         </p>
                     </div>
                 </div>

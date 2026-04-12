@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Shield, Cookie, FileText, ArrowRight } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 interface WelcomeModalProps {
     onOpenTerms: () => void;
@@ -7,6 +8,7 @@ interface WelcomeModalProps {
 }
 
 export function WelcomeModal({ onOpenTerms, onOpenPrivacy }: WelcomeModalProps) {
+    const { t } = useLanguage();
     const [isOpen, setIsOpen] = useState(() => {
         // PERMANENT FIX: Bumped to V2 to ensure all users (new and returning) see this update
         return !localStorage.getItem('terms_accepted_v2');
@@ -30,21 +32,19 @@ export function WelcomeModal({ onOpenTerms, onOpenPrivacy }: WelcomeModalProps) 
 
                     {/* Content */}
                     <div>
-                        <h2 className="text-3xl font-bold text-white mb-3">Welcome to Dota 2 Picker</h2>
-                        <p className="text-slate-400 leading-relaxed">
-                            Dominate your drafts with our advanced counter-picking algorithm, powered by thousands of <strong>Pro Match</strong> replays.
-                        </p>
+                        <h2 className="text-3xl font-bold text-white mb-3">{t('welcomeTitle')}</h2>
+                        <p className="text-slate-400 leading-relaxed">{t('welcomeDesc')}</p>
                     </div>
 
                     {/* Features Grid */}
                     <div className="grid grid-cols-2 gap-3 text-left">
                         <div className="bg-slate-800/50 p-3 rounded-lg border border-slate-700">
-                            <h4 className="font-bold text-indigo-400 text-sm mb-1">Real Stats</h4>
-                            <p className="text-xs text-slate-500">Based on verified high-MMR gameplay data.</p>
+                            <h4 className="font-bold text-indigo-400 text-sm mb-1">{t('realStats')}</h4>
+                            <p className="text-xs text-slate-500">{t('realStatsDesc')}</p>
                         </div>
                         <div className="bg-slate-800/50 p-3 rounded-lg border border-slate-700">
-                            <h4 className="font-bold text-green-400 text-sm mb-1">Free Forever</h4>
-                            <p className="text-xs text-slate-500">No paywalls, just pure drafting advantage.</p>
+                            <h4 className="font-bold text-green-400 text-sm mb-1">{t('freeForever')}</h4>
+                            <p className="text-xs text-slate-500">{t('freeForeverDesc')}</p>
                         </div>
                     </div>
 
@@ -53,23 +53,21 @@ export function WelcomeModal({ onOpenTerms, onOpenPrivacy }: WelcomeModalProps) 
                         <div className="flex items-start gap-3">
                             <Cookie className="h-5 w-5 text-slate-400 mt-0.5 shrink-0" />
                             <div className="space-y-3">
-                                <p className="text-sm text-slate-300">
-                                    We use cookies and local storage to save your preferences. By entering, you agree to our policies.
-                                </p>
+                                <p className="text-sm text-slate-300">{t('cookieNotice')}</p>
                                 <div className="flex gap-4 text-xs font-bold">
                                     <button
                                         onClick={onOpenTerms}
                                         className="text-indigo-400 hover:text-indigo-300 hover:underline flex items-center gap-1"
                                     >
                                         <FileText className="h-3 w-3" />
-                                        Terms of Service
+                                        {t('termsOfService')}
                                     </button>
                                     <button
                                         onClick={onOpenPrivacy}
                                         className="text-indigo-400 hover:text-indigo-300 hover:underline flex items-center gap-1"
                                     >
                                         <Shield className="h-3 w-3" />
-                                        Privacy Policy
+                                        {t('privacyPolicy')}
                                     </button>
                                 </div>
                             </div>
@@ -81,7 +79,7 @@ export function WelcomeModal({ onOpenTerms, onOpenPrivacy }: WelcomeModalProps) 
                         onClick={handleAccept}
                         className="w-full py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-lg rounded-xl transition-all shadow-lg hover:shadow-indigo-500/25 flex items-center justify-center gap-2 group"
                     >
-                        Start drafting
+                        {t('startDrafting')}
                         <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </button>
                 </div>
