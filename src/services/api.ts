@@ -23,13 +23,20 @@ export interface Matchup {
 }
 
 import heroesUrl from '../data/heroes.json';
-import allMatchupsRaw from '../data/all_matchups.json';
 
-const allMatchups = allMatchupsRaw as unknown as Record<string, Matchup[]>;
+// Lazy-loaded matchups — not bundled in the initial chunk
+let matchupsCache: Record<string, Matchup[]> | null = null;
+
+const loadMatchups = async (): Promise<Record<string, Matchup[]>> => {
+    if (!matchupsCache) {
+        const raw = await import('../data/all_matchups.json');
+        matchupsCache = raw.default as unknown as Record<string, Matchup[]>;
+    }
+    return matchupsCache;
+};
 
 export const api = {
     fetchHeroes: async (): Promise<Hero[]> => {
-        // Use local data instead of fetching
         // We still need to map the CDN URLs because the raw JSON has partial paths
         const data = (heroesUrl as any[]).map((hero: any) => ({
             ...hero,
@@ -41,8 +48,7 @@ export const api = {
     },
 
     fetchMatchups: async (heroId: number): Promise<Matchup[]> => {
-        // Instant return from local data
-        const data = allMatchups[heroId.toString()] || allMatchups[heroId];
-        return data || [];
+        const allMatchups = await loadMatchups();
+        return allMatchups[heroId.toString()] || allMatchups[heroId] || [];
     }
 };

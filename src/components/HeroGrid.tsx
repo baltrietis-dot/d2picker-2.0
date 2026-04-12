@@ -13,18 +13,25 @@ export const HeroGrid = ({ heroes, onSelect, selectedIds }: HeroGridProps) => {
     const [search, setSearch] = useState('');
 
     const filteredHeroes = useMemo(() => {
-        // Check for exact abbreviation match first
         const abbrMatches = getHeroesByAbbreviation(search);
 
         return heroes.filter(h => {
-            // Search filter
             if (!search) return true;
 
             const searchLower = search.toLowerCase();
-            const nameMatch = h.localized_name.toLowerCase().includes(searchLower);
-            const abbrMatch = abbrMatches.some(name => h.localized_name === name); // Exact match via abbreviation map
+            const nameLower = h.localized_name.toLowerCase();
 
-            return nameMatch || abbrMatch;
+            // Substring match
+            if (nameLower.includes(searchLower)) return true;
+
+            // Abbreviation map match
+            if (abbrMatches.some(name => h.localized_name === name)) return true;
+
+            // Initials match: "sf" → "Shadow Fiend", "dp" → "Death Prophet"
+            const initials = nameLower.split(/[\s'-]+/).map(w => w[0]).join('');
+            if (initials === searchLower) return true;
+
+            return false;
         }).sort((a, b) => a.localized_name.localeCompare(b.localized_name));
     }, [heroes, search]);
 
