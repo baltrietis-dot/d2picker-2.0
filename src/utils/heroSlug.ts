@@ -4,10 +4,15 @@ import type { Hero } from '../services/api';
 export const toSlug = (name: string): string =>
     name.toLowerCase().replace(/'/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-// Read slug from path like /counter/anti-mage
-export const getSlugFromPath = (): string | null => {
-    const match = window.location.pathname.match(/^\/counter\/([^/]+)\/?$/);
-    return match ? match[1] : null;
+// Read slug and language from path like /counter/anti-mage or /ru/counter/anti-mage
+export const getSlugFromPath = (): { slug: string; lang: 'en' | 'ru' } | null => {
+    const enMatch = window.location.pathname.match(/^\/counter\/([^/]+)\/?$/);
+    if (enMatch) return { slug: enMatch[1], lang: 'en' };
+
+    const ruMatch = window.location.pathname.match(/^\/ru\/counter\/([^/]+)\/?$/);
+    if (ruMatch) return { slug: ruMatch[1], lang: 'ru' };
+
+    return null;
 };
 
 // Find hero by slug

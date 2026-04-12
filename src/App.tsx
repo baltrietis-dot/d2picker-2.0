@@ -51,11 +51,12 @@ function App() {
   useEffect(() => {
     if (heroes.length === 0) return;
 
-    // Handle /counter/anti-mage style pages
-    const slug = getSlugFromPath();
-    if (slug && !isUrlLoaded) {
-      const hero = heroFromSlug(slug, heroes);
+    // Handle /counter/anti-mage and /ru/counter/anti-mage pages
+    const pathInfo = getSlugFromPath();
+    if (pathInfo && !isUrlLoaded) {
+      const hero = heroFromSlug(pathInfo.slug, heroes);
       if (hero) addEnemy(hero);
+      if (pathInfo.lang === 'ru') setLanguage('ru');
       setIsUrlLoaded(true);
       return;
     }
