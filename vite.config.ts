@@ -17,8 +17,25 @@ export default defineConfig({
         theme_color: '#0f172a',
         background_color: '#0f172a',
         display: 'standalone',
+        id: '/',
         start_url: '/',
         orientation: 'portrait-primary',
+        screenshots: [
+          {
+            src: '/og-image.png',
+            sizes: '1200x630',
+            type: 'image/png',
+            form_factor: 'wide',
+            label: 'Dota 2 Counter Picker — desktop view',
+          },
+          {
+            src: '/og-image.png',
+            sizes: '1200x630',
+            type: 'image/png',
+            form_factor: 'narrow',
+            label: 'Dota 2 Counter Picker — mobile view',
+          },
+        ],
         icons: [
           {
             src: '/icons/manifest-icon-192.maskable.png',
