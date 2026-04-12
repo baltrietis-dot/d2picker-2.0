@@ -1,0 +1,37 @@
+{
+  "packageId": "com.dota2picker.app",
+  "host": "dota2picker.com",
+  "name": "Dota 2 Counter Picker",
+  "launcherName": "D2Picker",
+  "display": "standalone",
+  "themeColor": "#0f172a",
+  "navigationColor": "#0f172a",
+  "navigationColorDark": "#0f172a",
+  "navigationDividerColor": "#0f172a",
+  "navigationDividerColorDark": "#0f172a",
+  "backgroundColor": "#0f172a",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://dota2picker.com/icons/manifest-icon-512.maskable.png",
+  "maskableIconUrl": "https://dota2picker.com/icons/manifest-icon-512.maskable.png",
+  "monochromeIconUrl": "https://dota2picker.com/icons/manifest-icon-512.maskable.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "../android.keystore",
+    "alias": "dota2picker"
+  },
+  "appVersionCode": 1,
+  "appVersion": "1.0.0",
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://dota2picker.com/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "orientation": "portrait"
+}

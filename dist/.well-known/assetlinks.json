@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.dota2picker.app",
+      "sha256_cert_fingerprints": [
+        "28:2D:5D:CF:6B:F9:84:83:A8:8E:E3:83:4F:C7:73:F5:D1:86:0E:5E:68:4B:57:1C:91:41:6F:06:CF:32:C1:54"
+      ]
+    }
+  }
+]

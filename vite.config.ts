@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'icons/*.png'],
+      includeAssets: ['favicon.svg', 'icons/*.png', '.well-known/assetlinks.json'],
       manifest: {
         name: 'Dota 2 Counter Picker',
         short_name: 'D2Picker',
