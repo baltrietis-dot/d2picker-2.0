@@ -1,12 +1,11 @@
 import React from 'react';
 import type { CounterPick } from '../hooks/useCounterPicker';
-import { Sparkles, Trophy, X, ChevronDown, Lock } from 'lucide-react';
+import { Sparkles, Trophy, X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 
 import { recommendItems, recommendSkillStrategy } from '../data/smartBuilds';
 import { HERO_TAGS } from '../data/heroTags';
 import type { Hero } from '../services/api';
-import { useSupporter } from '../hooks/useSupporter';
 
 interface CounterListProps {
     counters: CounterPick[];
@@ -51,9 +50,6 @@ export const CounterList: React.FC<CounterListProps> = ({ counters, loading, sel
     }
 
     const [showTailored, setShowTailored] = useState(false);
-    const { isSupporter, unlock } = useSupporter();
-    const [codeInput, setCodeInput] = useState('');
-    const [codeError, setCodeError] = useState(false);
 
     return (
         <div className="bg-slate-800 rounded-xl border border-slate-700 shadow-xl overflow-hidden flex flex-col h-full">
@@ -185,68 +181,39 @@ export const CounterList: React.FC<CounterListProps> = ({ counters, loading, sel
                                 if (items.length === 0 && strategies.length === 0) return null;
 
                                 return (
-                                    <div className="relative text-left bg-emerald-900/20 rounded-lg p-4 border border-emerald-500/20">
+                                    <div className="text-left bg-emerald-900/20 rounded-lg p-4 border border-emerald-500/20">
                                         <h4 className="text-xs font-bold text-emerald-300 uppercase mb-2 flex items-center gap-2">
                                             <Sparkles className="h-3 w-3" />
                                             Situational Build
                                         </h4>
 
-                                        {/* Blurred preview for non-supporters */}
-                                        <div className={isSupporter ? '' : 'blur-sm pointer-events-none select-none'}>
-                                            {items.length > 0 && (
-                                                <div className="mb-3">
-                                                    <div className="text-[10px] text-slate-400 uppercase font-bold mb-1">Key Items vs Enemy Team</div>
-                                                    <div className="grid grid-cols-4 gap-2">
-                                                        {items.map(item => (
-                                                            <div key={item.id} className="relative group/item">
-                                                                <img src={item.img} alt={item.name} className="w-full aspect-square rounded border border-slate-600 object-cover" />
-                                                                <div className="absolute inset-0 bg-black/80 opacity-0 group-hover/item:opacity-100 flex items-center justify-center p-1 transition-opacity z-10">
-                                                                    <p className="text-[8px] text-white text-center leading-tight">{item.reason}</p>
-                                                                </div>
+                                        {items.length > 0 && (
+                                            <div className="mb-3">
+                                                <div className="text-[10px] text-slate-400 uppercase font-bold mb-1">Key Items vs Enemy Team</div>
+                                                <div className="grid grid-cols-4 gap-2">
+                                                    {items.map(item => (
+                                                        <div key={item.id} className="relative group/item">
+                                                            <img src={item.img} alt={item.name} className="w-full aspect-square rounded border border-slate-600 object-cover" />
+                                                            <div className="absolute inset-0 bg-black/80 opacity-0 group-hover/item:opacity-100 flex items-center justify-center p-1 transition-opacity z-10">
+                                                                <p className="text-[8px] text-white text-center leading-tight">{item.reason}</p>
                                                             </div>
-                                                        ))}
-                                                    </div>
+                                                        </div>
+                                                    ))}
                                                 </div>
-                                            )}
-                                            {strategies.length > 0 && (
-                                                <div>
-                                                    <div className="text-[10px] text-slate-400 uppercase font-bold mb-1">Strategy</div>
-                                                    <ul className="space-y-1">
-                                                        {strategies.map((strat, idx) => (
-                                                            <li key={idx} className="text-sm text-slate-300 flex items-start gap-2">
-                                                                <span className="text-emerald-500 mt-1">•</span>
-                                                                {strat}
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                </div>
-                                            )}
-                                        </div>
+                                            </div>
+                                        )}
 
-                                        {/* Gate overlay */}
-                                        {!isSupporter && (
-                                            <div className="absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-black/60 backdrop-blur-[2px] p-4 gap-3">
-                                                <Lock className="h-5 w-5 text-amber-400" />
-                                                <p className="text-xs text-center text-slate-300">
-                                                    <strong className="text-white">Supporter feature.</strong><br />
-                                                    <a href="https://ko-fi.com/dota2picker" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:underline">Support on Ko-fi</a> to get your access code.
-                                                </p>
-                                                <div className="flex gap-2 w-full">
-                                                    <input
-                                                        type="text"
-                                                        placeholder="Enter code"
-                                                        value={codeInput}
-                                                        onChange={e => { setCodeInput(e.target.value); setCodeError(false); }}
-                                                        className={`flex-1 bg-slate-900 border ${codeError ? 'border-red-500' : 'border-slate-600'} rounded px-2 py-1 text-xs text-white focus:outline-none focus:border-amber-400`}
-                                                    />
-                                                    <button
-                                                        onClick={() => { if (!unlock(codeInput)) setCodeError(true); }}
-                                                        className="px-3 py-1 bg-amber-500 hover:bg-amber-400 text-black text-xs font-bold rounded transition-colors"
-                                                    >
-                                                        Unlock
-                                                    </button>
-                                                </div>
-                                                {codeError && <p className="text-[10px] text-red-400">Invalid code. Try again.</p>}
+                                        {strategies.length > 0 && (
+                                            <div>
+                                                <div className="text-[10px] text-slate-400 uppercase font-bold mb-1">Strategy</div>
+                                                <ul className="space-y-1">
+                                                    {strategies.map((strat, idx) => (
+                                                        <li key={idx} className="text-sm text-slate-300 flex items-start gap-2">
+                                                            <span className="text-emerald-500 mt-1">•</span>
+                                                            {strat}
+                                                        </li>
+                                                    ))}
+                                                </ul>
                                             </div>
                                         )}
                                     </div>
