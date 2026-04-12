@@ -32,7 +32,7 @@ export const CounterList: React.FC<CounterListProps> = ({ counters, loading, sel
                     <div>
                         <h3 className="text-white font-bold mb-1">Ready to Draft?</h3>
                         <p className="text-sm text-slate-400">
-                            Select enemy heroes to generate <strong className="text-indigo-400">Patch 7.37</strong> counter picks powered by pro match data.
+                            Select enemy heroes to generate <strong className="text-indigo-400">current patch</strong> counter picks powered by pro match data.
                         </p>
                     </div>
                     <div className="text-xs text-slate-500 max-w-[240px] leading-relaxed">

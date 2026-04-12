@@ -13,7 +13,7 @@ export function LandingContent() {
                     <h2 className="text-2xl font-bold text-white">The Ultimate Dota 2 Counter Picker</h2>
                 </div>
                 <p className="leading-relaxed text-slate-400">
-                    Welcome to the most advanced <strong>Dota 2 Counter Picker</strong> tool, updated for Patch 7.37.
+                    Welcome to the most advanced <strong>Dota 2 Counter Picker</strong> tool, always up to date with the latest patch.
                     Unlike other drafting tools that rely on low-mmr pub data or subjective tier lists, our algorithm is powered exclusively by
                     <strong> professional match data</strong>. We analyze thousands of high-level matches to determine which heroes statistically
                     dominate specific matchups in the current meta.
@@ -84,7 +84,7 @@ export function LandingContent() {
                     <div className="p-2 bg-amber-500/10 rounded-lg">
                         <TrendingUp className="h-6 w-6 text-amber-400" />
                     </div>
-                    <h2 className="text-2xl font-bold text-white">Mastering the Draft in 7.37</h2>
+                    <h2 className="text-2xl font-bold text-white">Mastering the Draft</h2>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6">
@@ -128,7 +128,7 @@ export function LandingContent() {
                 <h3 className="text-xl font-bold text-white">Why use Dota2Picker?</h3>
                 <p className="max-w-2xl mx-auto text-slate-400">
                     This project is maintained by passionate Dota 2 developers who wanted a cleaner, faster, and more accurate alternative to ad-cluttered drafting sites.
-                    We believe in free access to high-quality data. Our database is updated daily with the latest pro matches to ensure you're always ahead of the meta.
+                    We believe in free access to high-quality data. Our database is updated weekly with the latest pro matches to ensure you're always ahead of the meta.
                 </p>
             </section>
 
