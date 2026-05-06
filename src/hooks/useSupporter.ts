@@ -2,7 +2,7 @@ import { useState, useCallback } from 'react';
 
 const STORAGE_KEY = 'd2picker_supporter';
 // Change this code whenever you want to rotate it (e.g. per month)
-const VALID_CODE = 'D2PRO2025';
+const VALID_CODE = 'D2PRO2026';
 
 export const useSupporter = () => {
     const [isSupporter, setIsSupporter] = useState<boolean>(() => {

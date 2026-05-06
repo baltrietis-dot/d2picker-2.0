@@ -3,14 +3,19 @@ import { type Hero } from '../services/api';
 import { Search } from 'lucide-react';
 import { getHeroesByAbbreviation } from '../data/heroAbbreviations';
 import { useLanguage } from '../context/LanguageContext';
+import { getHeroRoles, type Position } from '../data/heroPositions';
 
 interface HeroGridProps {
     heroes: Hero[];
     onSelect: (hero: Hero) => void;
     selectedIds: number[];
+    /** When set, heroes that can't play this position are dimmed (or hidden if hideOffRole). */
+    filterRole?: Position | null;
+    /** If true AND filterRole is set, heroes that can't play the role are hidden instead of dimmed. */
+    hideOffRole?: boolean;
 }
 
-export const HeroGrid = ({ heroes, onSelect, selectedIds }: HeroGridProps) => {
+export const HeroGrid = ({ heroes, onSelect, selectedIds, filterRole, hideOffRole }: HeroGridProps) => {
     const { t } = useLanguage();
     const [search, setSearch] = useState('');
 
@@ -58,6 +63,14 @@ export const HeroGrid = ({ heroes, onSelect, selectedIds }: HeroGridProps) => {
                 <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2">
                     {filteredHeroes.map(hero => {
                         const isSelected = selectedIds.includes(hero.id);
+                        const canPlayRole = filterRole
+                            ? getHeroRoles(hero.id, hero.roles, hero.primary_attr).includes(filterRole)
+                            : true;
+
+                        if (filterRole && hideOffRole && !canPlayRole) return null;
+
+                        const offRoleDim = filterRole && !canPlayRole && !hideOffRole;
+
                         return (
                             <button
                                 key={hero.id}
@@ -66,8 +79,11 @@ export const HeroGrid = ({ heroes, onSelect, selectedIds }: HeroGridProps) => {
                                 className={`group relative aspect-[16/9] bg-slate-900 rounded overflow-hidden border transition-all
                     ${isSelected
                                         ? 'border-slate-800 opacity-40 grayscale cursor-not-allowed'
-                                        : 'border-slate-700 hover:border-indigo-500 hover:shadow-[0_0_15px_-3px_rgba(99,102,241,0.4)]'
+                                        : offRoleDim
+                                            ? 'border-slate-800 opacity-35 hover:opacity-75 hover:border-amber-500/40'
+                                            : 'border-slate-700 hover:border-indigo-500 hover:shadow-[0_0_15px_-3px_rgba(99,102,241,0.4)]'
                                     }`}
+                                title={offRoleDim ? `Off-role pick` : undefined}
                             >
                                 <img
                                     src={hero.img}
@@ -79,6 +95,11 @@ export const HeroGrid = ({ heroes, onSelect, selectedIds }: HeroGridProps) => {
                                 <span className="absolute bottom-1 left-1.5 text-[10px] font-bold text-slate-200 leading-none truncate w-[90%] text-left">
                                     {hero.localized_name}
                                 </span>
+                                {offRoleDim && (
+                                    <span className="absolute top-1 right-1 text-[8px] uppercase font-black bg-amber-500/30 text-amber-200 px-1 rounded">
+                                        flex
+                                    </span>
+                                )}
                             </button>
                         );
                     })}

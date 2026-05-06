@@ -12,9 +12,8 @@ import { AboutUs } from './components/AboutUs';
 import { Contact } from './components/Contact';
 import { CryptoDonate } from './components/CryptoDonate';
 import { InstallPrompt } from './components/InstallPrompt';
-import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, MessageCircle } from 'lucide-react';
-import { type Position } from './data/heroPositions';
-import meta from './data/meta.json';
+import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, MessageCircle, Filter } from 'lucide-react';
+import { type Position, type PositionNumber, NUMBER_TO_POSITION, getHeroRoles } from './data/heroPositions';
 import { getSlugFromPath, heroFromSlug } from './utils/heroSlug';
 import { useLanguage } from './context/LanguageContext';
 
@@ -31,13 +30,15 @@ function App() {
     heroes,
     selectedEnemies,
     myTeam,
+    myTeamSlots,
     topCounters,
+    matchupsMap,
     loading,
     loadHeroes,
     addEnemy,
     removeEnemy,
-    addMyTeam,
-    removeMyTeam,
+    setMyTeamAt,
+    removeMyTeamAt,
     clearAll
   } = useCounterPicker(targetRole);
 
@@ -64,21 +65,44 @@ function App() {
 
     const params = new URLSearchParams(window.location.search);
     const enemyIds = params.get('e')?.split(',').map(Number).filter(n => !isNaN(n)) || [];
-    const teamIds = params.get('t')?.split(',').map(Number).filter(n => !isNaN(n)) || [];
+    // New URL format: t=ID.POS,ID.POS (dot-separated). Legacy: t=ID,ID,ID
+    const teamParam = params.get('t')?.split(',') || [];
+    const teamEntries: { id: number; pos: PositionNumber | null }[] = teamParam
+      .map(entry => {
+        const [idStr, posStr] = entry.split('.');
+        const id = Number(idStr);
+        const pos = posStr ? (Number(posStr) as PositionNumber) : null;
+        return { id, pos };
+      })
+      .filter(e => !isNaN(e.id));
 
-    if (!isUrlLoaded && (enemyIds.length > 0 || teamIds.length > 0) && selectedEnemies.length === 0 && myTeam.length === 0) {
+    if (!isUrlLoaded && (enemyIds.length > 0 || teamEntries.length > 0) && selectedEnemies.length === 0 && myTeam.length === 0) {
       enemyIds.forEach(id => {
         const hero = heroes.find(h => h.id === id);
         if (hero) addEnemy(hero);
       });
-      teamIds.forEach(id => {
-        const hero = heroes.find(h => h.id === id);
-        if (hero) addMyTeam(hero);
+
+      // Place heroes into slots. If pos is encoded, use it; otherwise auto-pick first fitting empty slot.
+      const usedSlots = new Set<PositionNumber>();
+      teamEntries.forEach(entry => {
+        const hero = heroes.find(h => h.id === entry.id);
+        if (!hero) return;
+
+        let pos = entry.pos;
+        if (!pos || pos < 1 || pos > 5 || usedSlots.has(pos)) {
+          // Fall back: find first empty slot that matches the hero's preferred roles
+          const heroPositions = getHeroRoles(hero.id, hero.roles, hero.primary_attr);
+          const preferredNumbers: PositionNumber[] = heroPositions
+            .map(p => ({ Carry: 1, Mid: 2, Offlane: 3, SoftSupport: 4, HardSupport: 5 }[p] as PositionNumber));
+          pos = (preferredNumbers.find(n => !usedSlots.has(n)) ?? ([1, 2, 3, 4, 5] as PositionNumber[]).find(n => !usedSlots.has(n))) || 1;
+        }
+        usedSlots.add(pos);
+        setMyTeamAt(pos, hero);
       });
     }
 
     setIsUrlLoaded(true);
-  }, [heroes, isUrlLoaded, selectedEnemies.length, myTeam.length, addEnemy, addMyTeam]);
+  }, [heroes, isUrlLoaded, selectedEnemies.length, myTeam.length, addEnemy, setMyTeamAt]);
 
   // Update document title dynamically
   useEffect(() => {
@@ -99,16 +123,25 @@ function App() {
     if (selectedEnemies.length > 0) {
       params.set('e', selectedEnemies.map(h => h.id).join(','));
     }
-    if (myTeam.length > 0) {
-      params.set('t', myTeam.map(h => h.id).join(','));
+    if (myTeamSlots.some(h => h)) {
+      const teamStr = myTeamSlots
+        .map((h, idx) => h ? `${h.id}.${idx + 1}` : null)
+        .filter(Boolean)
+        .join(',');
+      params.set('t', teamStr);
     }
 
     const newUrl = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
     window.history.replaceState({}, '', newUrl);
 
-  }, [selectedEnemies, myTeam, isUrlLoaded]);
+  }, [selectedEnemies, myTeamSlots, isUrlLoaded]);
 
-  const [selectionMode, setSelectionMode] = useState<'enemy' | 'friendly'>('enemy');
+  // Selection mode:
+  //   'enemy'                  → clicking hero adds to enemy pool
+  //   { pos: N }               → clicking hero assigns to my-team slot N
+  type SelectionMode = 'enemy' | { pos: PositionNumber };
+  const [selectionMode, setSelectionMode] = useState<SelectionMode>('enemy');
+  const [hideOffRole, setHideOffRole] = useState(true);
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
   const [showTerms, setShowTerms] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
@@ -131,9 +164,6 @@ function App() {
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-xl font-bold tracking-tight">Dota 2 Counter Picker</h1>
-                <span className="px-2 py-0.5 text-[10px] font-bold bg-green-500/20 text-green-400 rounded-full border border-green-500/30">
-                  Patch {meta.patch}
-                </span>
               </div>
               <p className="text-xs text-slate-400">{t('tagline')}</p>
             </div>
@@ -245,31 +275,47 @@ function App() {
             </div>
           </section>
 
-          {/* My Team Display */}
-          <section className={`rounded-xl p-4 border transition-colors ${selectionMode === 'friendly' ? 'bg-slate-800 border-green-500/50 shadow-[0_0_15px_-3px_rgba(34,197,94,0.3)]' : 'bg-slate-800/50 border-slate-700'}`}>
+          {/* My Team Display — positioned slots 1–5 */}
+          <section className={`rounded-xl p-4 border transition-colors ${selectionMode !== 'enemy' ? 'bg-slate-800 border-green-500/50 shadow-[0_0_15px_-3px_rgba(34,197,94,0.3)]' : 'bg-slate-800/50 border-slate-700'}`}>
             <div className="flex justify-between items-center mb-4">
-              <h2 className={`flex items-center gap-2 font-bold uppercase tracking-wider text-sm ${selectionMode === 'friendly' ? 'text-green-400' : 'text-slate-500'}`}>
+              <h2 className={`flex items-center gap-2 font-bold uppercase tracking-wider text-sm ${selectionMode !== 'enemy' ? 'text-green-400' : 'text-slate-500'}`}>
                 <Users className="h-4 w-4" />
                 {t('myTeam')}
               </h2>
             </div>
             <div className="flex gap-2 overflow-x-auto pb-1">
-              {Array.from({ length: 5 }).map((_, idx) => {
-                const hero = myTeam[idx];
+              {([1, 2, 3, 4, 5] as PositionNumber[]).map((pos) => {
+                const hero = myTeamSlots[pos - 1];
+                const isActive = selectionMode !== 'enemy' && selectionMode.pos === pos;
+                const posKey = NUMBER_TO_POSITION[pos];
                 return (
-                  <div
-                    key={idx}
-                    onClick={() => hero && removeMyTeam(hero.id)}
-                    className={`relative flex-1 min-w-[60px] aspect-[16/9] rounded border-2 border-dashed flex items-center justify-center transition-all bg-slate-900/50 overflow-hidden group ${hero ? 'border-green-500/50 cursor-pointer hover:border-green-500' : 'border-slate-700'}`}
-                  >
-                    {hero ? (
-                      <>
-                        <img src={hero.img} alt={hero.localized_name} className="w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                          <span className="text-xs text-green-500 font-bold">X</span>
-                        </div>
-                      </>
-                    ) : <span className="text-slate-700 text-lg font-bold">{idx + 1}</span>}
+                  <div key={pos} className="flex-1 min-w-[60px] flex flex-col gap-1">
+                    <div className={`text-[9px] uppercase font-black tracking-wider text-center leading-none ${isActive ? 'text-green-400' : 'text-slate-500'}`}>
+                      <span className="inline-block px-1 py-0.5 rounded bg-slate-900/60">{pos}</span>{' '}
+                      {t(`posShort${posKey}` as any)}
+                    </div>
+                    <div
+                      onClick={() => {
+                        if (hero) removeMyTeamAt(pos);
+                        else setSelectionMode({ pos });
+                      }}
+                      className={`relative aspect-[16/9] rounded border-2 flex items-center justify-center transition-all bg-slate-900/50 overflow-hidden group cursor-pointer
+                        ${hero
+                          ? 'border-green-500/50 hover:border-green-500 border-solid'
+                          : isActive
+                            ? 'border-green-400 border-dashed animate-pulse'
+                            : 'border-slate-700 border-dashed hover:border-green-500/50'}`}
+                      title={hero ? hero.localized_name : t('emptySlotHint')}
+                    >
+                      {hero ? (
+                        <>
+                          <img src={hero.img} alt={hero.localized_name} className="w-full h-full object-cover" />
+                          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                            <span className="text-xs text-green-500 font-bold">X</span>
+                          </div>
+                        </>
+                      ) : <span className="text-slate-700 text-lg font-bold">+</span>}
+                    </div>
                   </div>
                 );
               })}
@@ -280,28 +326,63 @@ function App() {
         {/* Selection Tabs & Grid */}
         <div className="flex-1 flex flex-col lg:flex-row gap-6 min-h-0 overflow-hidden">
           <div className="flex-1 min-h-0 flex flex-col">
-            <div className="flex items-center gap-4 mb-4 bg-slate-800 p-2 rounded-lg border border-slate-700">
-              <span className="text-sm font-bold text-slate-400 pl-2">{t('pickingFor')}</span>
-              <button
-                onClick={() => setSelectionMode('enemy')}
-                className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-md font-bold text-sm transition-all ${selectionMode === 'enemy' ? 'bg-red-500/20 text-red-400 border border-red-500/50 shadow-lg shadow-red-500/10' : 'text-slate-500 hover:bg-slate-700'}`}
-              >
-                <Shield className="h-4 w-4" />
-                {t('enemyTeam')}
-              </button>
-              <button
-                onClick={() => setSelectionMode('friendly')}
-                className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-md font-bold text-sm transition-all ${selectionMode === 'friendly' ? 'bg-green-500/20 text-green-400 border border-green-500/50 shadow-lg shadow-green-500/10' : 'text-slate-500 hover:bg-slate-700'}`}
-              >
-                <Users className="h-4 w-4" />
-                {t('myTeam')}
-              </button>
+            <div className="flex flex-col gap-2 mb-4 bg-slate-800 p-2 rounded-lg border border-slate-700">
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold text-slate-400 pl-1 shrink-0">{t('pickingFor')}</span>
+                <button
+                  onClick={() => setSelectionMode('enemy')}
+                  className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-md font-bold text-xs transition-all ${selectionMode === 'enemy' ? 'bg-red-500/20 text-red-400 border border-red-500/50 shadow-lg shadow-red-500/10' : 'text-slate-500 hover:bg-slate-700 border border-transparent'}`}
+                >
+                  <Shield className="h-3.5 w-3.5" />
+                  {t('enemyTeam')}
+                </button>
+                {([1, 2, 3, 4, 5] as PositionNumber[]).map((pos) => {
+                  const posKey = NUMBER_TO_POSITION[pos];
+                  const isActive = selectionMode !== 'enemy' && selectionMode.pos === pos;
+                  return (
+                    <button
+                      key={pos}
+                      onClick={() => setSelectionMode({ pos })}
+                      className={`flex-1 flex flex-col items-center justify-center py-1 rounded-md font-bold transition-all ${isActive ? 'bg-green-500/20 text-green-400 border border-green-500/50 shadow-lg shadow-green-500/10' : 'text-slate-500 hover:bg-slate-700 border border-transparent'}`}
+                      title={t(`posFull${posKey}` as any)}
+                    >
+                      <span className="text-[10px] leading-none opacity-70">{pos}</span>
+                      <span className="text-[10px] leading-tight">{t(`posShort${posKey}` as any)}</span>
+                    </button>
+                  );
+                })}
+              </div>
+              {selectionMode !== 'enemy' && (
+                <div className="flex items-center gap-2 pl-1 text-[11px]">
+                  <Filter className="h-3 w-3 text-slate-500" />
+                  <button
+                    onClick={() => setHideOffRole(true)}
+                    className={`px-2 py-0.5 rounded-full font-bold transition-colors ${hideOffRole ? 'bg-green-500/20 text-green-400 border border-green-500/40' : 'text-slate-500 hover:text-slate-300 border border-transparent'}`}
+                  >
+                    {t('onlyThisRole')}
+                  </button>
+                  <button
+                    onClick={() => setHideOffRole(false)}
+                    className={`px-2 py-0.5 rounded-full font-bold transition-colors ${!hideOffRole ? 'bg-green-500/20 text-green-400 border border-green-500/40' : 'text-slate-500 hover:text-slate-300 border border-transparent'}`}
+                  >
+                    {t('showAllHeroes')}
+                  </button>
+                </div>
+              )}
             </div>
 
             <HeroGrid
               heroes={heroes}
-              onSelect={selectionMode === 'enemy' ? addEnemy : addMyTeam}
+              onSelect={(hero) => {
+                if (selectionMode === 'enemy') {
+                  addEnemy(hero);
+                } else {
+                  setMyTeamAt(selectionMode.pos, hero);
+                }
+              }}
               selectedIds={[...selectedEnemies, ...myTeam].map(e => e.id)}
+              filterRole={selectionMode === 'enemy' ? null : NUMBER_TO_POSITION[selectionMode.pos]}
+              hideOffRole={hideOffRole}
             />
           </div>
 
@@ -311,7 +392,7 @@ function App() {
             </div>
 
             <div className="flex gap-1 mb-2 bg-slate-800 p-1 rounded-lg border border-slate-700 overflow-x-auto">
-              {(['Any', 'Carry', 'Mid', 'Offlane', 'Support'] as const).map(role => (
+              {(['Any', 'Carry', 'Mid', 'Offlane', 'SoftSupport', 'HardSupport'] as const).map(role => (
                 <button
                   key={role}
                   onClick={() => setTargetRole(role)}
@@ -325,7 +406,7 @@ function App() {
             <div className="mb-2 flex items-center justify-between text-xs text-slate-500 px-1">
               <span>{t('proDataHeuristics')}</span>
             </div>
-            <CounterList counters={topCounters} loading={loading} selectedEnemies={selectedEnemies} />
+            <CounterList counters={topCounters} loading={loading} selectedEnemies={selectedEnemies} matchupsMap={matchupsMap} />
 
             {/* Sidebar Ad */}
             <div className="mt-4 rounded-lg overflow-hidden">

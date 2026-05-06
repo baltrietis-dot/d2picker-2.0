@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
 import { api, type Hero, type Matchup } from '../services/api';
 import { HERO_TAGS, COUNTER_TAGS } from '../data/heroTags';
-import { getHeroRoles, type Position } from '../data/heroPositions';
+import { getHeroRoles, type Position, type PositionNumber, NUMBER_TO_POSITION } from '../data/heroPositions';
 import { HEURISTIC_WEIGHTS, SYNERGY_WEIGHTS } from '../config/heuristics';
 
 export interface CounterPick {
@@ -12,15 +12,22 @@ export interface CounterPick {
     reasons?: string[];
 }
 
+/** My-team slot layout: index 0 = pos 1 (Carry), index 4 = pos 5 (Hard Sup). */
+export type MyTeamSlots = (Hero | null)[];
+
+const emptySlots = (): MyTeamSlots => [null, null, null, null, null];
+
 export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
     const [heroes, setHeroes] = useState<Hero[]>([]);
     const [selectedEnemies, setSelectedEnemies] = useState<Hero[]>([]);
-    const [myTeam, setMyTeam] = useState<Hero[]>([]);
+    const [myTeamSlots, setMyTeamSlots] = useState<MyTeamSlots>(emptySlots());
 
     const [matchupsMap, setMatchupsMap] = useState<Record<number, Matchup[]>>({});
     const [loading, setLoading] = useState(false);
 
-    // Initial load
+    // Derived: flat picked-only list for consumers that don't care about slots
+    const myTeam = useMemo(() => myTeamSlots.filter((h): h is Hero => h !== null), [myTeamSlots]);
+
     const loadHeroes = useCallback(async () => {
         setLoading(true);
         const data = await api.fetchHeroes();
@@ -34,12 +41,12 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
                 const matchups = await api.fetchMatchups(heroId);
                 setMatchupsMap(prev => ({ ...prev, [heroId]: matchups }));
             } catch (e) {
-                console.error("Error loading matchups", e);
+                console.error('Error loading matchups', e);
             }
         }
     }, [matchupsMap]);
 
-    // Add enemy and fetch matchups
+    // Enemy side: unchanged flat pool
     const addEnemy = useCallback((hero: Hero) => {
         if (selectedEnemies.find(e => e.id === hero.id)) return;
         if (myTeam.find(e => e.id === hero.id)) return;
@@ -49,32 +56,51 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         fetchMatchupsForHero(hero.id);
     }, [selectedEnemies, myTeam, fetchMatchupsForHero]);
 
-    const addMyTeam = useCallback((hero: Hero) => {
-        if (myTeam.find(e => e.id === hero.id)) return;
-        if (selectedEnemies.find(e => e.id === hero.id)) return;
-        if (myTeam.length >= 5) return;
-
-        setMyTeam(prev => [...prev, hero]);
-    }, [myTeam, selectedEnemies]);
-
     const removeEnemy = useCallback((heroId: number) => {
         setSelectedEnemies(prev => prev.filter(h => h.id !== heroId));
     }, []);
 
+    /**
+     * Place a hero at a specific my-team position (1-5).
+     * If the hero is already in my team at a different slot, it's moved (not duplicated).
+     * Existing occupant of the target slot is evicted.
+     */
+    const setMyTeamAt = useCallback((position: PositionNumber, hero: Hero | null) => {
+        setMyTeamSlots(prev => {
+            const next = [...prev];
+            // Evict duplicates elsewhere
+            if (hero) {
+                for (let i = 0; i < next.length; i++) {
+                    if (next[i]?.id === hero.id) next[i] = null;
+                }
+            }
+            next[position - 1] = hero;
+            return next;
+        });
+    }, []);
+
+    const removeMyTeamAt = useCallback((position: PositionNumber) => {
+        setMyTeamSlots(prev => {
+            const next = [...prev];
+            next[position - 1] = null;
+            return next;
+        });
+    }, []);
+
+    /** Legacy: remove hero by id (used by X-click on my-team portraits). */
     const removeMyTeam = useCallback((heroId: number) => {
-        setMyTeam(prev => prev.filter(h => h.id !== heroId));
+        setMyTeamSlots(prev => prev.map(h => (h?.id === heroId ? null : h)));
     }, []);
 
     const clearAll = useCallback(() => {
         setSelectedEnemies([]);
-        setMyTeam([]);
+        setMyTeamSlots(emptySlots());
     }, []);
 
     // Calculate counters
     const topCounters = useMemo(() => {
         if (selectedEnemies.length === 0 && myTeam.length === 0) return [];
 
-        // Scores now track accumulated Advantage
         const scores: Record<number, {
             totalAdvantage: number;
             totalWinRate: number;
@@ -84,17 +110,14 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
             reasons: string[];
         }> = {};
 
-        // --- 1. Analyze Enemy Composition (Counter Logic) ---
+        // --- 1. Enemy composition traits ---
         const enemyTraits: Set<string> = new Set();
         selectedEnemies.forEach(e => {
             Object.keys(HERO_TAGS).forEach(tag => {
-                if (HERO_TAGS[tag].includes(e.id)) {
-                    enemyTraits.add(tag);
-                }
+                if (HERO_TAGS[tag].includes(e.id)) enemyTraits.add(tag);
             });
         });
 
-        // Populate scores based on Matchups (if enemies exist)
         if (selectedEnemies.length > 0) {
             selectedEnemies.forEach(enemy => {
                 const matchups = matchupsMap[enemy.id];
@@ -109,7 +132,6 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
                     if (!scores[m.hero_id]) {
                         scores[m.hero_id] = { totalAdvantage: 0, totalWinRate: 0, matchCount: 0, heuristicBonus: 0, synergyBonus: 0, reasons: [] };
 
-                        // Heuristics (Countering)
                         if (enemyTraits.has('ILLUSIONIST') && COUNTER_TAGS['ANTI_ILLUSION'].includes(m.hero_id)) {
                             scores[m.hero_id].heuristicBonus += HEURISTIC_WEIGHTS.ANTI_ILLUSION;
                             if (!scores[m.hero_id].reasons.includes('AoE vs Multiple Units')) scores[m.hero_id].reasons.push('AoE vs Multiple Units');
@@ -137,23 +159,20 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
                 });
             });
         } else {
-            // specific case: No Enemies, only My Team. 
             heroes.forEach(h => {
                 const globalWinRate = (h.pro_pick && h.pro_pick > 0) ? (h.pro_win || 0) / h.pro_pick : 0.5;
                 scores[h.id] = { totalAdvantage: 0, totalWinRate: globalWinRate, matchCount: 0, heuristicBonus: 0, synergyBonus: 0, reasons: [] };
             });
         }
 
-        // --- 2. Analyze My Team Composition (Synergy Logic) ---
-        const myRoles = new Set<string>();
-        let myCoreCount = 0;
-        let mySupportCount = 0;
-
-        myTeam.forEach(hero => {
-            hero.roles.forEach(r => myRoles.add(r));
-            if (hero.roles.includes('Carry') || hero.roles.includes('Mid')) myCoreCount++;
-            if (hero.roles.includes('Support')) mySupportCount++;
+        // --- 2. My team synergy — now role-aware ---
+        // Count filled positions by slot index (0=carry … 4=hard sup)
+        const filledPositions = new Set<PositionNumber>();
+        myTeamSlots.forEach((h, idx) => {
+            if (h) filledPositions.add((idx + 1) as PositionNumber);
         });
+        const myCoreCount = [1, 2, 3].filter(p => filledPositions.has(p as PositionNumber)).length;
+        const mySupportCount = [4, 5].filter(p => filledPositions.has(p as PositionNumber)).length;
 
         Object.keys(scores).forEach(heroIdStr => {
             const heroId = Number(heroIdStr);
@@ -163,7 +182,6 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
             let synergyScore = 0;
             const reasons: string[] = [];
 
-            // Role Balance Logic (Boost relevant roles based on team comp)
             if (myCoreCount >= 3 && hero.roles.includes('Support')) {
                 synergyScore += SYNERGY_WEIGHTS.NEEDS_SUPPORT;
                 reasons.push('Needs Support');
@@ -185,7 +203,7 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         const results: CounterPick[] = [];
         const threshold = selectedEnemies.length > 0 ? Math.max(1, Math.ceil(selectedEnemies.length * 0.5)) : 0;
 
-        // --- 3. FILTER BY TARGET ROLE ---
+        // --- 3. Filter by target role ---
         Object.keys(scores).forEach(heroIdStr => {
             const heroId = Number(heroIdStr);
             const score = scores[heroId];
@@ -193,7 +211,6 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
             const hero = heroes.find(h => h.id === heroId);
             if (!hero) return;
 
-            // Check Role Fit
             let matchesRole = true;
             if (targetRole !== 'Any') {
                 const heroRoles = getHeroRoles(hero.id, hero.roles, hero.primary_attr);
@@ -223,21 +240,25 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
             }
         });
 
-        // Sort by Score descending
         return results.sort((a, b) => b.score - a.score).slice(0, 20);
-    }, [selectedEnemies, myTeam, matchupsMap, heroes, targetRole]);
+    }, [selectedEnemies, myTeam, myTeamSlots, matchupsMap, heroes, targetRole]);
 
     return {
         heroes,
         selectedEnemies,
-        myTeam,
+        myTeam,              // flat picked-only list (back-compat)
+        myTeamSlots,         // length-5 sparse array indexed by pos-1
         topCounters,
+        matchupsMap,
         loading,
         loadHeroes,
         addEnemy,
         removeEnemy,
-        addMyTeam,
-        removeMyTeam,
-        clearAll
+        setMyTeamAt,         // (pos, hero|null) — place/evict at specific position
+        removeMyTeamAt,      // (pos) — clear a specific slot
+        removeMyTeam,        // (heroId) — back-compat: remove by id
+        clearAll,
+        // Helpers
+        NUMBER_TO_POSITION,
     };
 };
