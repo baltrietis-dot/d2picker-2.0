@@ -15,6 +15,31 @@ const ITEMS_OUTPUT_PATH = path.join(__dirname, '../src/data/items.json');
 // Simple delay to respect API rate limits
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+// OpenDota's unauthenticated tier is ~60 calls/min. We pace at slightly over
+// 1s between calls to stay safely below that. Previous setting of 250ms was
+// ~4× over the limit and silently dropped half the heroes' matchup data.
+const REQUEST_INTERVAL_MS = 1100;
+
+// Wrap an axios.get with 429/5xx retry. Honours Retry-After when the server
+// sends it, otherwise backs off 30 → 60 → 120s.
+async function fetchWithRetry(url, label, maxRetries = 4) {
+    for (let attempt = 0; attempt <= maxRetries; attempt++) {
+        try {
+            return await axios.get(url);
+        } catch (err) {
+            const status = err.response?.status;
+            const transient = status === 429 || (status >= 500 && status < 600);
+            if (!transient || attempt === maxRetries) throw err;
+            const retryAfter = Number(err.response?.headers?.['retry-after']);
+            const backoffSec = Number.isFinite(retryAfter) && retryAfter > 0
+                ? retryAfter
+                : Math.min(120, 30 * Math.pow(2, attempt));
+            console.warn(`  ${label} got ${status}, backing off ${backoffSec}s (retry ${attempt + 1}/${maxRetries})`);
+            await delay(backoffSec * 1000);
+        }
+    }
+}
+
 // Bucket item popularity data into early/mid/late purchase windows
 function summariseItemBuilds(itemPopularityData) {
     const buckets = {
@@ -68,27 +93,27 @@ async function fetchAllData() {
 
             // Matchups
             try {
-                const res = await axios.get(`https://api.opendota.com/api/heroes/${hero.id}/matchups`);
+                const res = await fetchWithRetry(`https://api.opendota.com/api/heroes/${hero.id}/matchups`, 'Matchups');
                 allMatchups[hero.id] = res.data;
-                await delay(250);
+                await delay(REQUEST_INTERVAL_MS);
             } catch (err) {
                 console.error(`  Matchups failed: ${err.message}`);
             }
 
             // Item popularity (premium data)
             try {
-                const res = await axios.get(`https://api.opendota.com/api/heroes/${hero.id}/itemPopularity`);
+                const res = await fetchWithRetry(`https://api.opendota.com/api/heroes/${hero.id}/itemPopularity`, 'Item popularity');
                 allBuilds[hero.id] = summariseItemBuilds(res.data);
-                await delay(250);
+                await delay(REQUEST_INTERVAL_MS);
             } catch (err) {
                 console.error(`  Item popularity failed: ${err.message}`);
             }
 
             // Duration win rates (power spike data — premium)
             try {
-                const res = await axios.get(`https://api.opendota.com/api/heroes/${hero.id}/durations`);
+                const res = await fetchWithRetry(`https://api.opendota.com/api/heroes/${hero.id}/durations`, 'Durations');
                 allDurations[hero.id] = summariseDurations(res.data);
-                await delay(250);
+                await delay(REQUEST_INTERVAL_MS);
             } catch (err) {
                 console.error(`  Durations failed: ${err.message}`);
             }
