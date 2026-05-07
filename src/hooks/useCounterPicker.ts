@@ -201,7 +201,11 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         });
 
         const results: CounterPick[] = [];
-        const threshold = selectedEnemies.length > 0 ? Math.max(1, Math.ceil(selectedEnemies.length * 0.5)) : 0;
+        // Base threshold on enemies whose matchups have actually loaded — otherwise
+        // picks vanish while async fetches are in flight (threshold demands evidence
+        // from data that hasn't arrived yet).
+        const loadedEnemyCount = selectedEnemies.filter(e => matchupsMap[e.id]).length;
+        const threshold = loadedEnemyCount > 0 ? Math.max(1, Math.ceil(loadedEnemyCount * 0.5)) : 0;
 
         // --- 3. Filter by target role ---
         Object.keys(scores).forEach(heroIdStr => {
