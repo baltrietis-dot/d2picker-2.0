@@ -39,7 +39,9 @@ function App() {
     removeEnemy,
     setMyTeamAt,
     removeMyTeamAt,
-    clearAll
+    clearAll,
+    drafting,
+    revealDraft
   } = useCounterPicker(targetRole);
 
   useEffect(() => {
@@ -48,6 +50,12 @@ function App() {
 
   // State to track if we've processed the initial URL params
   const [isUrlLoaded, setIsUrlLoaded] = useState(false);
+
+  // Tracks whether we should auto-reveal once the URL-loaded selection
+  // settles. Only true for genuinely shared drafts (URL had selection),
+  // not for someone who navigated to a /counter/<hero> page and is about
+  // to keep picking.
+  const [autoRevealPending, setAutoRevealPending] = useState(false);
 
   // Load hero from /counter/:slug path OR shared draft from URL parameters
   useEffect(() => {
@@ -77,6 +85,9 @@ function App() {
       .filter(e => !isNaN(e.id));
 
     if (!isUrlLoaded && (enemyIds.length > 0 || teamEntries.length > 0) && selectedEnemies.length === 0 && myTeam.length === 0) {
+      // Shared draft: auto-reveal once selection settles so the visitor
+      // doesn't have to click after opening someone else's link.
+      setAutoRevealPending(true);
       enemyIds.forEach(id => {
         const hero = heroes.find(h => h.id === id);
         if (hero) addEnemy(hero);
@@ -103,6 +114,14 @@ function App() {
 
     setIsUrlLoaded(true);
   }, [heroes, isUrlLoaded, selectedEnemies.length, myTeam.length, addEnemy, setMyTeamAt]);
+
+  // Fire auto-reveal once a shared-draft URL has populated selection.
+  useEffect(() => {
+    if (!autoRevealPending) return;
+    if (selectedEnemies.length === 0 && myTeam.length === 0) return;
+    setAutoRevealPending(false);
+    revealDraft();
+  }, [autoRevealPending, selectedEnemies.length, myTeam.length, revealDraft]);
 
   // Update document title dynamically
   useEffect(() => {
@@ -406,7 +425,15 @@ function App() {
             <div className="mb-2 flex items-center justify-between text-xs text-slate-500 px-1">
               <span>{t('proDataHeuristics')}</span>
             </div>
-            <CounterList counters={topCounters} loading={loading} selectedEnemies={selectedEnemies} matchupsMap={matchupsMap} />
+            <CounterList
+              counters={topCounters}
+              loading={loading}
+              selectedEnemies={selectedEnemies}
+              matchupsMap={matchupsMap}
+              drafting={drafting}
+              hasSelection={selectedEnemies.length > 0 || myTeam.length > 0}
+              onReveal={revealDraft}
+            />
 
             {/* Sidebar Ad */}
             <div className="mt-4 rounded-lg overflow-hidden">

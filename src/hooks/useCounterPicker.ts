@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect } from 'react';
 import { api, type Hero, type Matchup } from '../services/api';
 import { HERO_TAGS, COUNTER_TAGS } from '../data/heroTags';
 import { getHeroRoles, type Position, type PositionNumber, NUMBER_TO_POSITION } from '../data/heroPositions';
@@ -25,6 +25,12 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
     const [matchupsMap, setMatchupsMap] = useState<Record<number, Matchup[]>>({});
     const [loading, setLoading] = useState(false);
 
+    // Picks are gated behind an explicit Reveal action — nothing shows up
+    // until the user is ready, which avoids burning API calls on partial
+    // selections and removes the loading-race jitter.
+    const [isDrafted, setIsDrafted] = useState(false);
+    const [drafting, setDrafting] = useState(false);
+
     // Derived: flat picked-only list for consumers that don't care about slots
     const myTeam = useMemo(() => myTeamSlots.filter((h): h is Hero => h !== null), [myTeamSlots]);
 
@@ -35,26 +41,16 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         setLoading(false);
     }, []);
 
-    const fetchMatchupsForHero = useCallback(async (heroId: number) => {
-        if (!matchupsMap[heroId]) {
-            try {
-                const matchups = await api.fetchMatchups(heroId);
-                setMatchupsMap(prev => ({ ...prev, [heroId]: matchups }));
-            } catch (e) {
-                console.error('Error loading matchups', e);
-            }
-        }
-    }, [matchupsMap]);
-
-    // Enemy side: unchanged flat pool
+    // Enemy side: unchanged flat pool. Matchup data is now fetched lazily
+    // by revealDraft() rather than on every add — saves bandwidth while
+    // the user is still picking.
     const addEnemy = useCallback((hero: Hero) => {
         if (selectedEnemies.find(e => e.id === hero.id)) return;
         if (myTeam.find(e => e.id === hero.id)) return;
         if (selectedEnemies.length >= 5) return;
 
         setSelectedEnemies(prev => [...prev, hero]);
-        fetchMatchupsForHero(hero.id);
-    }, [selectedEnemies, myTeam, fetchMatchupsForHero]);
+    }, [selectedEnemies, myTeam]);
 
     const removeEnemy = useCallback((heroId: number) => {
         setSelectedEnemies(prev => prev.filter(h => h.id !== heroId));
@@ -97,8 +93,40 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         setMyTeamSlots(emptySlots());
     }, []);
 
-    // Calculate counters
+    // Reveal the draft: fetch matchups for any selected enemies that
+    // haven't been loaded yet, then unhide the picks.
+    const revealDraft = useCallback(async () => {
+        const needed = selectedEnemies.filter(e => !matchupsMap[e.id]);
+        if (needed.length > 0) {
+            setDrafting(true);
+            try {
+                const fetched = await Promise.all(
+                    needed.map(async e => [e.id, await api.fetchMatchups(e.id)] as const)
+                );
+                setMatchupsMap(prev => {
+                    const next = { ...prev };
+                    for (const [id, matchups] of fetched) next[id] = matchups;
+                    return next;
+                });
+            } catch (e) {
+                console.error('Error revealing draft', e);
+            } finally {
+                setDrafting(false);
+            }
+        }
+        setIsDrafted(true);
+    }, [selectedEnemies, matchupsMap]);
+
+    // Any change to the selection invalidates the revealed draft so the
+    // user must re-reveal — picks vanish to avoid showing stale advice.
+    useEffect(() => {
+        setIsDrafted(false);
+    }, [selectedEnemies, myTeamSlots]);
+
+    // Calculate counters — gated behind isDrafted so nothing renders until
+    // the user explicitly clicks Reveal.
     const topCounters = useMemo(() => {
+        if (!isDrafted) return [];
         if (selectedEnemies.length === 0 && myTeam.length === 0) return [];
 
         const scores: Record<number, {
@@ -245,7 +273,7 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         });
 
         return results.sort((a, b) => b.score - a.score).slice(0, 20);
-    }, [selectedEnemies, myTeam, myTeamSlots, matchupsMap, heroes, targetRole]);
+    }, [isDrafted, selectedEnemies, myTeam, myTeamSlots, matchupsMap, heroes, targetRole]);
 
     return {
         heroes,
@@ -262,6 +290,10 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         removeMyTeamAt,      // (pos) — clear a specific slot
         removeMyTeam,        // (heroId) — back-compat: remove by id
         clearAll,
+        // Reveal-Draft flow
+        isDrafted,
+        drafting,
+        revealDraft,
         // Helpers
         NUMBER_TO_POSITION,
     };

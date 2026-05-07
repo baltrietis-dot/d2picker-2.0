@@ -16,14 +16,26 @@ interface CounterListProps {
     loading: boolean;
     selectedEnemies: Hero[];
     matchupsMap: Record<number, Matchup[]>;
+    drafting: boolean;
+    hasSelection: boolean;
+    onReveal: () => void;
 }
 
-export const CounterList: React.FC<CounterListProps> = ({ counters, loading, selectedEnemies, matchupsMap }) => {
+export const CounterList: React.FC<CounterListProps> = ({ counters, loading, selectedEnemies, matchupsMap, drafting, hasSelection, onReveal }) => {
     const { t } = useLanguage();
     const { isSupporter } = useSupporter();
     const [expandedId, setExpandedId] = useState<number | null>(null);
     const [strategyHero, setStrategyHero] = useState<Hero | null>(null);
     const [showTailored, setShowTailored] = useState(false);
+
+    if (drafting) {
+        return (
+            <div className="bg-slate-800 rounded-xl p-8 border border-slate-700 flex flex-col justify-center items-center gap-3 h-full">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-500"></div>
+                <div className="text-xs text-slate-400 font-medium">{t('revealing')}</div>
+            </div>
+        );
+    }
 
     if (loading && counters.length === 0) {
         return (
@@ -42,11 +54,24 @@ export const CounterList: React.FC<CounterListProps> = ({ counters, loading, sel
                     </div>
                     <div>
                         <h3 className="text-white font-bold mb-1">{t('readyToDraft')}</h3>
-                        <p className="text-sm text-slate-400">{t('selectEnemies')}</p>
+                        <p className="text-sm text-slate-400">
+                            {hasSelection ? t('revealHint') : t('selectEnemies')}
+                        </p>
                     </div>
-                    <div className="text-xs text-slate-500 max-w-[240px] leading-relaxed">
-                        {t('algorithmDesc')}
-                    </div>
+
+                    {hasSelection ? (
+                        <button
+                            onClick={onReveal}
+                            className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold rounded-xl shadow-lg shadow-indigo-500/30 transition-all hover:scale-[1.03] hover:shadow-indigo-500/50"
+                        >
+                            <Sparkles className="h-4 w-4 group-hover:rotate-12 transition-transform" />
+                            {t('revealDraft')}
+                        </button>
+                    ) : (
+                        <div className="text-xs text-slate-500 max-w-[240px] leading-relaxed">
+                            {t('algorithmDesc')}
+                        </div>
+                    )}
                 </div>
 
                 <div className="mt-auto pt-4 border-t border-slate-700/50 w-full text-center">
