@@ -1,22 +1,9 @@
-import { useState, useCallback } from 'react';
+import { useCallback } from 'react';
 
-const STORAGE_KEY = 'd2picker_supporter';
-// Change this code whenever you want to rotate it (e.g. per month)
-const VALID_CODE = 'D2PRO2026';
-
+// Paywall temporarily disabled — all users get premium access until real
+// premium-only features ship. Restore the localStorage + code-check logic
+// (see git history) when re-enabling.
 export const useSupporter = () => {
-    const [isSupporter, setIsSupporter] = useState<boolean>(() => {
-        return localStorage.getItem(STORAGE_KEY) === VALID_CODE;
-    });
-
-    const unlock = useCallback((code: string): boolean => {
-        if (code.trim().toUpperCase() === VALID_CODE) {
-            localStorage.setItem(STORAGE_KEY, VALID_CODE);
-            setIsSupporter(true);
-            return true;
-        }
-        return false;
-    }, []);
-
-    return { isSupporter, unlock };
+    const unlock = useCallback((_code: string): boolean => true, []);
+    return { isSupporter: true, unlock };
 };
