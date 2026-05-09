@@ -100,8 +100,8 @@ let generated = 0;
 
 for (const hero of heroes) {
     const slug   = toSlug(hero.localized_name);
-    const enUrl  = `${BASE_URL}/counter/${slug}`;
-    const ruUrl  = `${BASE_URL}/ru/counter/${slug}`;
+    const enUrl  = `${BASE_URL}/counter/${slug}/`;
+    const ruUrl  = `${BASE_URL}/ru/counter/${slug}/`;
     const ruName = RU_HERO_NAMES[hero.localized_name] || hero.localized_name;
 
     // English page
@@ -136,16 +136,16 @@ const urlEntries = heroes.map(h => {
     const slug = toSlug(h.localized_name);
     return `
   <url>
-    <loc>${BASE_URL}/counter/${slug}</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/counter/${slug}"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="${BASE_URL}/ru/counter/${slug}"/>
+    <loc>${BASE_URL}/counter/${slug}/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/counter/${slug}/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="${BASE_URL}/ru/counter/${slug}/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>${BASE_URL}/ru/counter/${slug}</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/counter/${slug}"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="${BASE_URL}/ru/counter/${slug}"/>
+    <loc>${BASE_URL}/ru/counter/${slug}/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/counter/${slug}/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="${BASE_URL}/ru/counter/${slug}/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`;
