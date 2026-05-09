@@ -3,7 +3,7 @@
  * - /counter/[slug]/          → English page
  * - /ru/counter/[slug]/       → Russian page
  * Each page has hreflang tags pointing to its counterpart.
- * Also regenerates sitemap.xml with all URLs.
+ * Also regenerates sitemap.xml with all URLs and counter directory pages.
  */
 
 import fs from 'fs';
@@ -63,6 +63,147 @@ const RU_HERO_NAMES = {
 
 const heroes = JSON.parse(fs.readFileSync(HEROES_PATH, 'utf-8'));
 
+const HTML_ENTITIES = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+};
+
+const escapeHtml = (value) =>
+    String(value).replace(/[&<>"']/g, char => HTML_ENTITIES[char]);
+
+const heroCounterLinks = heroes
+    .map(hero => ({
+        name: hero.localized_name,
+        slug: toSlug(hero.localized_name),
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+const insertBeforeBodyEnd = (html, snippet) =>
+    html.replace(/<\/body>/i, `${snippet}\n</body>`);
+
+function counterDirectoryFooter(lang) {
+    const primaryHref = lang === 'ru' ? '/ru/counters/' : '/counters/';
+    const secondaryHref = lang === 'ru' ? '/counters/' : '/ru/counters/';
+    const secondaryText = lang === 'ru' ? 'English counter directory' : 'Russian counter directory';
+
+    return `
+  <section aria-label="Hero counter page directory" style="background:#080a0f;border-top:1px solid rgba(251,191,36,0.18);padding:18px 16px;color:#d1d5db;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+    <div style="max-width:1120px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;font-size:14px;">
+      <span style="color:#f9fafb;font-weight:700;">Hero counter pages</span>
+      <a href="${primaryHref}" style="color:#fbbf24;text-decoration:none;font-weight:700;">All Dota 2 hero counters</a>
+      <a href="${secondaryHref}" style="color:#9ca3af;text-decoration:none;">${secondaryText}</a>
+    </div>
+  </section>`;
+}
+
+function withCounterDirectoryFooter(html, lang) {
+    return insertBeforeBodyEnd(html, counterDirectoryFooter(lang));
+}
+
+function buildCounterDirectoryPage(lang) {
+    const canonical = lang === 'ru' ? `${BASE_URL}/ru/counters/` : `${BASE_URL}/counters/`;
+    const title = 'Dota 2 Hero Counter Pages | Dota2Picker';
+    const desc = 'Browse every Dota 2 hero counter page on Dota2Picker, with direct links to English and Russian counter pick pages.';
+
+    const buildHeroList = (targetLang) => heroCounterLinks.map(({ name, slug }) => {
+        const href = targetLang === 'ru' ? `/ru/counter/${slug}/` : `/counter/${slug}/`;
+        const label = targetLang === 'ru' ? `${name} counter (RU)` : `Counter ${name}`;
+        return `        <li><a href="${href}">${escapeHtml(label)}</a></li>`;
+    }).join('\n');
+
+    return `<!doctype html>
+<html lang="${lang}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${title}</title>
+  <meta name="description" content="${desc}" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="${canonical}" />
+  <link rel="alternate" hreflang="en" href="${BASE_URL}/counters/" />
+  <link rel="alternate" hreflang="ru" href="${BASE_URL}/ru/counters/" />
+  <link rel="alternate" hreflang="x-default" href="${BASE_URL}/counters/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="${canonical}" />
+  <meta property="og:title" content="${title}" />
+  <meta property="og:description" content="${desc}" />
+  <meta property="og:image" content="${BASE_URL}/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="${canonical}" />
+  <meta name="twitter:title" content="${title}" />
+  <meta name="twitter:description" content="${desc}" />
+  <meta name="twitter:image" content="${BASE_URL}/og-image.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #0b0d12;
+      color: #e5e7eb;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    header, main, footer { max-width: 1120px; margin: 0 auto; padding: 24px; }
+    header { display: flex; justify-content: space-between; gap: 16px; align-items: center; border-bottom: 1px solid rgba(251,191,36,0.18); }
+    a { color: #fbbf24; }
+    .brand { color: #f9fafb; font-weight: 800; text-decoration: none; }
+    h1 { margin: 32px 0 8px; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1; }
+    h2 { margin: 36px 0 16px; font-size: 1.2rem; }
+    p { color: #9ca3af; max-width: 760px; }
+    ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; list-style: none; padding: 0; margin: 0; }
+    li a {
+      display: block;
+      min-height: 44px;
+      padding: 10px 12px;
+      border: 1px solid rgba(251,191,36,0.16);
+      border-radius: 8px;
+      background: #111827;
+      color: #f3f4f6;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    li a:hover { border-color: rgba(251,191,36,0.5); color: #fbbf24; }
+    footer { color: #6b7280; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">Dota2Picker</a>
+    <nav>
+      <a href="/counters/">English</a>
+      <span aria-hidden="true"> / </span>
+      <a href="/ru/counters/">Russian</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Dota 2 Hero Counter Pages</h1>
+    <p>Use this directory to reach every static hero counter page on Dota2Picker. These links help players and search engines find the full counter pick library.</p>
+
+    <section aria-labelledby="english-counters">
+      <h2 id="english-counters">English hero counter pages</h2>
+      <ul>
+${buildHeroList('en')}
+      </ul>
+    </section>
+
+    <section aria-labelledby="russian-counters">
+      <h2 id="russian-counters">Russian hero counter pages</h2>
+      <ul>
+${buildHeroList('ru')}
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Dota2Picker.com is not affiliated with Valve Corporation.</p>
+  </footer>
+</body>
+</html>`;
+}
+
 // Build page HTML by replacing meta tags in the template
 function buildPage({ title, desc, url, enUrl, ruUrl, lang }) {
     const hreflang = `
@@ -86,6 +227,7 @@ function buildPage({ title, desc, url, enUrl, ruUrl, lang }) {
 
 // 404.html — catches any path GitHub Pages can't serve directly
 fs.writeFileSync(path.join(DIST_PATH, '404.html'), TEMPLATE);
+fs.writeFileSync(path.join(DIST_PATH, 'index.html'), withCounterDirectoryFooter(TEMPLATE, 'en'));
 
 // Russian homepage /ru/index.html
 const ruHomeHtml = TEMPLATE
@@ -94,7 +236,7 @@ const ruHomeHtml = TEMPLATE
     .replace(/(<meta name="description"\s+content=")[^"]*(")/,  '$1Бесплатный инструмент контрпика Dota 2. Мгновенные рекомендации по героям на основе данных про-матчей. Доминируй в драфте.$2')
     .replace(/(<link rel="canonical"\s+href=")[^"]*(")/,  `$1${BASE_URL}/ru/$2`);
 fs.mkdirSync(path.join(DIST_PATH, 'ru'), { recursive: true });
-fs.writeFileSync(path.join(DIST_PATH, 'ru', 'index.html'), ruHomeHtml);
+fs.writeFileSync(path.join(DIST_PATH, 'ru', 'index.html'), withCounterDirectoryFooter(ruHomeHtml, 'ru'));
 
 let generated = 0;
 
@@ -131,6 +273,11 @@ for (const hero of heroes) {
     generated++;
 }
 
+fs.mkdirSync(path.join(DIST_PATH, 'counters'), { recursive: true });
+fs.writeFileSync(path.join(DIST_PATH, 'counters', 'index.html'), buildCounterDirectoryPage('en'));
+fs.mkdirSync(path.join(DIST_PATH, 'ru', 'counters'), { recursive: true });
+fs.writeFileSync(path.join(DIST_PATH, 'ru', 'counters', 'index.html'), buildCounterDirectoryPage('ru'));
+
 // Sitemap with hreflang xhtml namespace
 const urlEntries = heroes.map(h => {
     const slug = toSlug(h.localized_name);
@@ -163,6 +310,20 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <loc>${BASE_URL}/ru/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>${BASE_URL}/counters/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/counters/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="${BASE_URL}/ru/counters/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>${BASE_URL}/ru/counters/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/counters/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="${BASE_URL}/ru/counters/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>${urlEntries}
 </urlset>`;
 
