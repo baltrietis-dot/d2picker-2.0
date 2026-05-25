@@ -1,5 +1,5 @@
 import { X } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 
 interface AboutUsProps {
     isOpen: boolean;
@@ -35,7 +35,7 @@ export function AboutUs({ isOpen, onClose }: AboutUsProps) {
                         <h3 className="text-lg font-semibold text-white mb-2">{t('howItWorksFull')}</h3>
                         <p className="mb-2">{t('howItWorksDesc')}</p>
                         <ul className="list-disc list-inside space-y-1 ml-2 text-slate-400">
-                            {(t('howItWorksList') as string[]).map((item, i) => <li key={i}>{item}</li>)}
+                            {t('howItWorksList').map((item, i) => <li key={i}>{item}</li>)}
                         </ul>
                     </section>
 

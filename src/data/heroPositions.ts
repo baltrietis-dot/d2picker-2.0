@@ -4,6 +4,9 @@ export type Position = 'Carry' | 'Mid' | 'Offlane' | 'SoftSupport' | 'HardSuppor
 export type PositionNumber = 1 | 2 | 3 | 4 | 5;
 
 export const ALL_POSITIONS: Position[] = ['Carry', 'Mid', 'Offlane', 'SoftSupport', 'HardSupport'];
+export const SUPPORT_POSITIONS: Position[] = ['SoftSupport', 'HardSupport'];
+
+export const isSupportPosition = (position: Position): boolean => SUPPORT_POSITIONS.includes(position);
 
 export const POSITION_TO_NUMBER: Record<Position, PositionNumber> = {
     Carry: 1,
@@ -31,6 +34,7 @@ export const NUMBER_TO_POSITION: Record<PositionNumber, Position> = {
 export const HERO_POSITIONS: Record<number, Position[]> = {
     // Cores — Carry
     1:   ['Carry'],                                           // Anti-Mage
+    4:   ['Carry', 'Mid'],                                    // Bloodseeker
     6:   ['Carry'],                                           // Drow Ranger
     8:   ['Carry'],                                           // Juggernaut
     10:  ['Carry'],                                           // Morphling
@@ -44,6 +48,7 @@ export const HERO_POSITIONS: Record<number, Position[]> = {
     48:  ['Carry', 'Mid'],                                    // Luna
     54:  ['Carry'],                                           // Lifestealer
     56:  ['Carry'],                                           // Clinkz
+    59:  ['Carry', 'Mid'],                                    // Huskar
     67:  ['Carry'],                                           // Spectre
     70:  ['Carry', 'Offlane'],                                // Ursa
     73:  ['Carry'],                                           // Alchemist
@@ -53,20 +58,21 @@ export const HERO_POSITIONS: Record<number, Position[]> = {
     109: ['Carry'],                                           // Terrorblade
     114: ['Carry', 'Mid'],                                    // Monkey King
     135: ['Carry', 'Offlane'],                                // Dawnbreaker
+    145: ['Carry'],                                           // Kez
 
     // Cores — Mid
     11:  ['Mid', 'Carry'],                                    // Shadow Fiend
     15:  ['Carry', 'Mid'],                                    // Razor
     17:  ['Mid'],                                             // Storm Spirit
+    22:  ['Mid', 'SoftSupport'],                              // Zeus
     34:  ['Mid'],                                             // Tinker
     39:  ['Mid', 'Carry'],                                    // Queen of Pain
     43:  ['Mid'],                                             // Death Prophet
     52:  ['Mid', 'Offlane'],                                  // Leshrac
-    62:  ['Carry', 'Mid'],                                    // Huskar
     63:  ['Carry', 'Mid'],                                    // Weaver
     72:  ['Carry', 'Mid'],                                    // Gyrocopter
     74:  ['Mid'],                                             // Invoker
-    76:  ['Mid'],                                             // Outworld Destroyer
+    76:  ['Mid'],                                             // Outworld Devourer
     82:  ['Mid', 'Carry'],                                    // Meepo
     97:  ['Mid', 'Offlane'],                                  // Magnus
     98:  ['Offlane', 'Mid'],                                  // Timbersaw
@@ -81,13 +87,15 @@ export const HERO_POSITIONS: Record<number, Position[]> = {
     36:  ['Mid', 'Offlane'],                                  // Necrophos
     38:  ['Offlane', 'SoftSupport'],                          // Beastmaster
     49:  ['Offlane', 'Mid'],                                  // Dragon Knight
-    51:  ['Offlane'],                                         // Clockwerk
+    51:  ['Offlane', 'SoftSupport'],                          // Clockwerk
+    55:  ['Offlane'],                                         // Dark Seer
     60:  ['Offlane', 'Mid'],                                  // Night Stalker
     61:  ['Offlane', 'Mid'],                                  // Broodmother
     65:  ['Mid', 'Offlane'],                                  // Batrider
     69:  ['Offlane', 'Mid'],                                  // Doom
-    71:  ['Offlane'],                                         // Spirit Breaker
+    71:  ['Offlane', 'SoftSupport'],                          // Spirit Breaker
     77:  ['Offlane', 'Carry'],                                // Lycan
+    78:  ['Offlane'],                                         // Brewmaster
     81:  ['Carry', 'Offlane'],                                // Chaos Knight
     96:  ['Offlane'],                                         // Centaur
     99:  ['Offlane', 'Carry'],                                // Bristleback
@@ -95,8 +103,8 @@ export const HERO_POSITIONS: Record<number, Position[]> = {
     108: ['Offlane'],                                         // Underlord
     120: ['Mid', 'Offlane', 'SoftSupport'],                   // Pangolier
     129: ['Offlane', 'Mid'],                                  // Mars
-    136: ['Offlane', 'Mid'],                                  // Marci
-    137: ['Offlane', 'SoftSupport'],                          // Primal Beast
+    136: ['SoftSupport', 'Offlane', 'Carry'],                 // Marci
+    137: ['Offlane', 'Mid', 'SoftSupport'],                   // Primal Beast
 
     // Flex cores / hybrid
     7:   ['Offlane', 'SoftSupport'],                          // Earthshaker
@@ -108,23 +116,30 @@ export const HERO_POSITIONS: Record<number, Position[]> = {
     21:  ['Mid', 'Offlane', 'SoftSupport'],                   // Windranger
     23:  ['Mid', 'Offlane'],                                  // Kunkka
     45:  ['Mid', 'SoftSupport'],                              // Pugna
+    47:  ['Mid', 'Offlane', 'Carry'],                         // Viper
     53:  ['Offlane', 'SoftSupport', 'Carry'],                 // Nature's Prophet
     75:  ['Mid', 'SoftSupport'],                              // Silencer
+    80:  ['Carry', 'Mid'],                                    // Lone Druid
     89:  ['Carry', 'SoftSupport'],                            // Naga Siren
     110: ['Offlane', 'SoftSupport'],                          // Phoenix
+    113: ['Mid', 'Carry'],                                    // Arc Warden
     123: ['SoftSupport', 'Mid'],                              // Hoodwink
-    138: ['SoftSupport', 'Mid', 'Offlane'],                   // Muerta
+    138: ['Carry', 'Mid', 'SoftSupport'],                     // Muerta
 
     // Pos 4 — Soft support (roamer/ganker lean)
     25:  ['Mid', 'SoftSupport'],                              // Lina (flex; 4/2)
-    46:  ['SoftSupport', 'Offlane'],                          // Bounty Hunter
+    46:  ['Mid', 'Carry'],                                    // Templar Assassin
     58:  ['SoftSupport', 'HardSupport', 'Offlane'],           // Enchantress
+    62:  ['SoftSupport', 'Offlane'],                          // Bounty Hunter
     88:  ['SoftSupport', 'Offlane'],                          // Nyx Assassin
     100: ['SoftSupport', 'Offlane'],                          // Tusk
-    85:  ['SoftSupport', 'HardSupport'],                      // Rubick
-    92:  ['SoftSupport', 'HardSupport'],                      // Dark Seer? (92 = Magnus? let's verify via overrides)
+    103: ['SoftSupport', 'HardSupport', 'Offlane'],           // Elder Titan
+    107: ['SoftSupport', 'Offlane'],                          // Earth Spirit
+    119: ['SoftSupport', 'HardSupport'],                      // Dark Willow
+    131: ['SoftSupport', 'HardSupport'],                      // Ring Master
 
     // Pos 5 — Hard support lean
+    3:   ['HardSupport', 'SoftSupport'],                      // Bane
     5:   ['HardSupport'],                                     // Crystal Maiden
     20:  ['HardSupport', 'SoftSupport'],                      // Vengeful Spirit
     26:  ['HardSupport'],                                     // Lion
@@ -132,20 +147,26 @@ export const HERO_POSITIONS: Record<number, Position[]> = {
     30:  ['SoftSupport', 'HardSupport'],                      // Witch Doctor
     31:  ['HardSupport'],                                     // Lich
     37:  ['HardSupport', 'SoftSupport'],                      // Warlock
-    40:  ['HardSupport', 'SoftSupport'],                      // Bane
+    40:  ['SoftSupport', 'HardSupport', 'Offlane'],           // Venomancer
     50:  ['HardSupport', 'SoftSupport'],                      // Dazzle
     57:  ['SoftSupport', 'HardSupport', 'Offlane'],           // Omniknight
     64:  ['HardSupport', 'SoftSupport'],                      // Jakiro
+    66:  ['HardSupport', 'SoftSupport'],                      // Chen
     68:  ['SoftSupport', 'HardSupport'],                      // Ancient Apparition
     79:  ['HardSupport', 'SoftSupport'],                      // Shadow Demon
     83:  ['HardSupport', 'SoftSupport', 'Offlane'],           // Treant Protector
     84:  ['HardSupport', 'SoftSupport'],                      // Ogre Magi
-    86:  ['HardSupport', 'SoftSupport'],                      // Disruptor
-    87:  ['HardSupport', 'SoftSupport'],                      // Keeper of the Light
-    90:  ['SoftSupport', 'HardSupport'],                      // Visage
+    85:  ['HardSupport', 'SoftSupport', 'Offlane'],           // Undying
+    86:  ['SoftSupport', 'HardSupport'],                      // Rubick
+    87:  ['HardSupport', 'SoftSupport'],                      // Disruptor
+    90:  ['SoftSupport', 'HardSupport'],                      // Keeper of the Light
     91:  ['SoftSupport', 'HardSupport'],                      // Io / Wisp
+    92:  ['Offlane', 'SoftSupport', 'Mid'],                   // Visage
     101: ['SoftSupport', 'HardSupport'],                      // Skywrath Mage
     102: ['SoftSupport', 'HardSupport', 'Offlane'],           // Abaddon
+    105: ['SoftSupport', 'HardSupport'],                      // Techies
+    111: ['HardSupport', 'SoftSupport'],                      // Oracle
+    112: ['HardSupport', 'SoftSupport'],                      // Winter Wyvern
     121: ['HardSupport', 'SoftSupport'],                      // Grimstroke
     128: ['SoftSupport', 'HardSupport'],                      // Snapfire
 };
@@ -160,6 +181,7 @@ export const getHeroRoles = (heroId: number, apiRoles: string[], primaryAttr: st
 
     // 2. Heuristic fallback
     const pos: Position[] = [];
+    const isUniversal = primaryAttr === 'all' || primaryAttr === 'universal';
 
     if (apiRoles.includes('Carry')) pos.push('Carry');
 
@@ -175,10 +197,10 @@ export const getHeroRoles = (heroId: number, apiRoles: string[], primaryAttr: st
     }
 
     // Mid detection: Nuker on int/universal
-    if (apiRoles.includes('Nuker') && (primaryAttr === 'int' || primaryAttr === 'universal')) pos.push('Mid');
+    if (apiRoles.includes('Nuker') && (primaryAttr === 'int' || isUniversal)) pos.push('Mid');
 
     // Offlane detection: Initiator on str/universal
-    if (apiRoles.includes('Initiator') && (primaryAttr === 'str' || primaryAttr === 'universal')) pos.push('Offlane');
+    if (apiRoles.includes('Initiator') && (primaryAttr === 'str' || isUniversal)) pos.push('Offlane');
 
     if (pos.length === 0) return ['SoftSupport', 'HardSupport']; // Default fallback
     return [...new Set(pos)];

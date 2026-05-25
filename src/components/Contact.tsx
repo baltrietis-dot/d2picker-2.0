@@ -1,5 +1,5 @@
 import { X, MessageCircle } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 
 interface ContactProps {
     isOpen: boolean;

@@ -1,3 +1,6 @@
+/* Display typography: Cinzel for headings, Inter for UI/body */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,41 +12,138 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
-}
 
-body {
-  @apply bg-slate-900 text-white;
+  body {
+    @apply text-white font-sans;
+    background-color: #0b0d12;
+    overflow-x: hidden;
+    /* Layered atmosphere:
+       1. Warm gold vignette top-left  (ancient throne lighting)
+       2. Cool dire vignette bottom-right
+       3. Subtle noise grain via SVG
+    */
+    background-image:
+      radial-gradient(ellipse 80% 60% at 15% -10%, rgba(180, 83, 9, 0.10), transparent 60%),
+      radial-gradient(ellipse 70% 50% at 90% 110%, rgba(127, 29, 29, 0.10), transparent 60%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    background-attachment: fixed, fixed, fixed;
+    background-size: auto, auto, 140px 140px;
+  }
+
+  /* Selection style - gold instead of indigo */
+  ::selection {
+    background: rgba(251, 191, 36, 0.35);
+    color: #fffbeb;
+  }
 }
 
 @layer utilities {
-  .animate-fadeIn {
-    animation: fadeIn 0.3s ease-out forwards;
+  /* Display / heading font */
+  .font-display { font-family: 'Cinzel', Georgia, serif; letter-spacing: 0.01em; }
+
+  /* Section labels - small caps, wide tracking, muted */
+  .label-sm {
+    @apply text-[11px] font-bold uppercase tracking-[0.18em] text-white/45;
   }
 
-  .animate-scaleIn {
-    animation: scaleIn 0.3s ease-out forwards;
+  /* Glass panel surface - warm dark with gold-tinted border */
+  .panel {
+    background: linear-gradient(180deg, rgba(24, 28, 39, 0.85) 0%, rgba(17, 20, 28, 0.85) 100%);
+    border: 1px solid rgba(180, 83, 9, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 24px 48px -24px rgba(0, 0, 0, 0.6);
   }
 
-  .animate-slideDown {
-    animation: slideDown 0.25s ease-out forwards;
+  .panel-flat {
+    background: #11141c;
+    border: 1px solid rgba(180, 83, 9, 0.12);
   }
 
-  .animate-shimmer {
-    background-size: 200% 100%;
-    animation: shimmer 2.5s linear infinite;
+  .surface {
+    background:
+      linear-gradient(180deg, rgba(24, 28, 39, 0.86), rgba(12, 15, 22, 0.94));
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.04) inset,
+      0 20px 52px -30px rgba(0, 0, 0, 0.78);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
-  .animate-pulseGlow {
-    animation: pulseGlow 2s ease-in-out infinite;
+  .surface-quiet {
+    background: rgba(13, 16, 23, 0.76);
+    border: 1px solid rgba(148, 163, 184, 0.10);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.035) inset;
   }
 
-  .bg-premium-gradient {
-    background: linear-gradient(110deg, #f59e0b 0%, #f97316 40%, #f59e0b 60%, #fbbf24 100%);
-    background-size: 200% 100%;
+  .surface-active-gold {
+    background:
+      linear-gradient(180deg, rgba(251, 191, 36, 0.11), rgba(13, 16, 23, 0.92));
+    border-color: rgba(251, 191, 36, 0.34);
+    box-shadow:
+      0 1px 0 rgba(253, 230, 138, 0.12) inset,
+      0 18px 44px -28px rgba(251, 191, 36, 0.72);
   }
 
-  .text-premium-gradient {
+  .toolbar-button {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-md px-3 py-2 text-[11px] font-black uppercase tracking-[0.14em] transition-all duration-200 ease-expo-out;
+    background: rgba(17, 20, 28, 0.82);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    color: rgba(255, 255, 255, 0.62);
+  }
+  .toolbar-button:hover {
+    border-color: rgba(251, 191, 36, 0.28);
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(24, 28, 39, 0.9);
+  }
+
+  .toolbar-button-feature {
+    @apply inline-flex min-h-[38px] items-center justify-center gap-2 overflow-hidden rounded-md px-4 py-2 text-[11px] font-black uppercase tracking-[0.14em] transition-all duration-200 ease-expo-out;
+    background:
+      linear-gradient(135deg, rgba(253, 230, 138, 0.96), rgba(251, 191, 36, 0.98) 52%, rgba(249, 115, 22, 0.98));
+    border: 1px solid rgba(253, 230, 138, 0.72);
+    color: #080b11;
+    box-shadow:
+      0 16px 34px -24px rgba(251, 191, 36, 0.98),
+      inset 0 1px 0 rgba(255, 255, 255, 0.42);
+  }
+  .toolbar-button-feature:hover {
+    border-color: rgba(254, 243, 199, 0.9);
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+    box-shadow:
+      0 18px 38px -22px rgba(251, 191, 36, 1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .control-chip {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-md px-2.5 py-1.5 text-[10px] font-black uppercase tracking-[0.14em] transition-all duration-200 ease-expo-out;
+    border: 1px solid rgba(148, 163, 184, 0.10);
+    background: rgba(11, 13, 18, 0.52);
+    color: rgba(255, 255, 255, 0.46);
+  }
+  .control-chip:hover {
+    border-color: rgba(251, 191, 36, 0.24);
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .slot-shell {
+    background:
+      linear-gradient(180deg, rgba(6, 8, 13, 0.36), rgba(6, 8, 13, 0.78));
+    border: 1px solid rgba(148, 163, 184, 0.11);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.035) inset;
+  }
+
+  .status-dot {
+    @apply inline-block h-1.5 w-1.5 rounded-full;
+    background: #fbbf24;
+    box-shadow: 0 0 12px rgba(251, 191, 36, 0.6);
+  }
+
+  .text-gold-gradient {
     background: linear-gradient(110deg, #fbbf24, #f97316, #fbbf24);
     background-size: 200% 100%;
     -webkit-background-clip: text;
@@ -52,64 +152,89 @@ body {
     animation: shimmer 3s linear infinite;
   }
 
-  .premium-border {
+  /* 1px gold gradient border on rounded surfaces (mask-composite trick) */
+  .gold-frame {
     position: relative;
     isolation: isolate;
   }
-
-  .premium-border::before {
+  .gold-frame::before {
     content: '';
     position: absolute;
     inset: 0;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(120deg, rgba(251, 191, 36, 0.6), rgba(249, 115, 22, 0.3), rgba(251, 191, 36, 0.6));
+    background: linear-gradient(135deg, rgba(253, 230, 138, 0.7) 0%, rgba(180, 83, 9, 0.35) 50%, rgba(253, 230, 138, 0.6) 100%);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-    mask-composite: exclude;
+            mask-composite: exclude;
     pointer-events: none;
   }
 
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 8px;
+  /* Gold button - embossed metal feel */
+  .btn-gold {
+    background: linear-gradient(180deg, #fbbf24 0%, #d97706 100%);
+    color: #1a1408;
+    border: 1px solid #b45309;
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.4) inset,
+      0 -1px 0 rgba(0, 0, 0, 0.3) inset,
+      0 4px 14px -4px rgba(217, 119, 6, 0.5);
+    transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s ease, filter 0.18s ease;
   }
+  .btn-gold:hover {
+    filter: brightness(1.08);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.45) inset,
+      0 -1px 0 rgba(0, 0, 0, 0.3) inset,
+      0 8px 22px -4px rgba(217, 119, 6, 0.6);
+    transform: translateY(-1px);
+  }
+  .btn-gold:active { transform: translateY(0); filter: brightness(0.96); }
 
+  /* Animations */
+  .animate-fadeIn   { animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+  .animate-scaleIn  { animation: scaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+  .animate-slideDown{ animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+  .animate-shimmer  { background-size: 200% 100%; animation: shimmer 2.5s linear infinite; }
+  .animate-pulseGlow{ animation: pulseGlow 2s ease-in-out infinite; }
+
+  /* Custom scrollbars - gold accent */
+  .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+  .custom-scrollbar::-webkit-scrollbar:horizontal { height: 0; }
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: rgba(15, 23, 42, 0.4);
+    background: rgba(11, 13, 18, 0.6);
     border-radius: 4px;
   }
-
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: rgba(99, 102, 241, 0.3);
+    background: linear-gradient(180deg, rgba(217, 119, 6, 0.45), rgba(180, 83, 9, 0.45));
     border-radius: 4px;
   }
-
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: rgba(99, 102, 241, 0.5);
+    background: linear-gradient(180deg, rgba(251, 191, 36, 0.7), rgba(217, 119, 6, 0.7));
   }
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
 
 @keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
 @keyframes slideDown {
   from { opacity: 0; transform: translateY(-8px); max-height: 0; }
-  to { opacity: 1; transform: translateY(0); max-height: 800px; }
+  to   { opacity: 1; transform: translateY(0);     max-height: 800px; }
 }
 
 @keyframes shimmer {
-  0% { background-position: 200% 0; }
+  0%   { background-position: 200% 0; }
   100% { background-position: -200% 0; }
 }
 
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4); }
-  50% { box-shadow: 0 0 0 8px rgba(251, 191, 36, 0); }
+  0%, 100% { box-shadow: 0 0 0 0   rgba(251, 191, 36, 0.4); }
+  50%      { box-shadow: 0 0 0 8px rgba(251, 191, 36, 0); }
 }

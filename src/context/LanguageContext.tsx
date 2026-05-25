@@ -1,13 +1,6 @@
-import { createContext, useContext, useState, type ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { translations, type Language, type TranslationKey } from '../i18n/translations';
-
-interface LanguageContextValue {
-    language: Language;
-    setLanguage: (lang: Language) => void;
-    t: (key: TranslationKey) => any;
-}
-
-const LanguageContext = createContext<LanguageContextValue | null>(null);
+import { LanguageContext, type Translate } from './languageContextCore';
 
 const STORAGE_KEY = 'd2picker_lang';
 
@@ -26,7 +19,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         setLanguageState(lang);
     };
 
-    const t = (key: TranslationKey) => translations[language][key];
+    const t: Translate = <K extends TranslationKey>(key: K) => (
+        translations[language][key] as (typeof translations.en)[K]
+    );
 
     return (
         <LanguageContext.Provider value={{ language, setLanguage, t }}>
@@ -34,9 +29,3 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         </LanguageContext.Provider>
     );
 }
-
-export const useLanguage = () => {
-    const ctx = useContext(LanguageContext);
-    if (!ctx) throw new Error('useLanguage must be used inside LanguageProvider');
-    return ctx;
-};

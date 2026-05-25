@@ -16,6 +16,11 @@ export interface Hero {
     pub_win?: number;
 }
 
+type RawHero = Omit<Hero, 'img' | 'icon'> & {
+    img: string;
+    icon: string;
+};
+
 export interface Matchup {
     hero_id: number;
     games_played: number;
@@ -105,7 +110,7 @@ const loadItems = async (): Promise<ItemsMap> => {
 export const api = {
     fetchHeroes: async (): Promise<Hero[]> => {
         // We still need to map the CDN URLs because the raw JSON has partial paths
-        const data = (heroesUrl as any[]).map((hero: any) => ({
+        const data = (heroesUrl as RawHero[]).map((hero) => ({
             ...hero,
             img: `${CDN_BASE_URL}${hero.img}`,
             icon: `${CDN_BASE_URL}${hero.icon}`
@@ -116,7 +121,21 @@ export const api = {
 
     fetchMatchups: async (heroId: number): Promise<Matchup[]> => {
         const allMatchups = await loadMatchups();
-        return allMatchups[heroId.toString()] || allMatchups[heroId] || [];
+        const direct = allMatchups[heroId.toString()] || allMatchups[heroId];
+        if (direct && direct.length > 0) return direct;
+
+        // Some heroes are missing as top-level matchup keys in the source data.
+        // Rebuild those rows from the reverse matchup records so drafts never go blank.
+        return Object.entries(allMatchups).flatMap(([sourceHeroId, rows]) => {
+            const reverse = rows.find(row => row.hero_id === heroId);
+            if (!reverse) return [];
+
+            return [{
+                hero_id: Number(sourceHeroId),
+                games_played: reverse.games_played,
+                wins: reverse.games_played - reverse.wins
+            }];
+        });
     },
 
     fetchBuild: async (heroId: number): Promise<HeroBuild | null> => {

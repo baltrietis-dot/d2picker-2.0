@@ -1,4 +1,6 @@
 
+import type { Position } from './heroPositions';
+
 export interface ItemRecommendation {
     id: string; // internal id or name
     name: string;
@@ -20,97 +22,235 @@ const CDN_ITEM_BASE = 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/
 // Known Item Map to CDN Name
 const ITEMS = {
     BKB: { name: 'Black King Bar', img: 'black_king_bar.png' },
+    BLINK: { name: 'Blink Dagger', img: 'blink.png' },
+    DUST: { name: 'Dust of Appearance', img: 'dust.png' },
+    SENTRY: { name: 'Sentry Ward', img: 'ward_sentry.png' },
+    GEM: { name: 'Gem of True Sight', img: 'gem.png' },
     MKB: { name: 'Monkey King Bar', img: 'monkey_king_bar.png' },
     PIPE: { name: 'Pipe of Insight', img: 'pipe.png' },
+    CRIMSON: { name: 'Crimson Guard', img: 'crimson_guard.png' },
     VESSEL: { name: 'Spirit Vessel', img: 'spirit_vessel.png' },
     SHIVA: { name: "Shiva's Guard", img: 'shivas_guard.png' },
     LOTUS: { name: 'Lotus Orb', img: 'lotus_orb.png' },
-    EUILS: { name: "Eul's Scepter", img: 'cyclone.png' },
+    EULS: { name: "Eul's Scepter", img: 'cyclone.png' },
     FORCE: { name: 'Force Staff', img: 'force_staff.png' },
     GLIMMER: { name: 'Glimmer Cape', img: 'glimmer_cape.png' },
     MJOLNIR: { name: 'Mjollnir', img: 'mjollnir.png' },
     RADIANCE: { name: 'Radiance', img: 'radiance.png' },
     BLOODTHORN: { name: 'Bloodthorn', img: 'bloodthorn.png' },
     SILVER_EDGE: { name: 'Silver Edge', img: 'silver_edge.png' },
+    SKADI: { name: 'Eye of Skadi', img: 'skadi.png' },
     GHOST: { name: 'Ghost Scepter', img: 'ghost.png' },
     HALBERD: { name: "Heaven's Halberd", img: 'heavens_halberd.png' },
     LINKENS: { name: "Linken's Sphere", img: 'sphere.png' },
 };
 
+interface ItemRecommendationContext {
+    targetRole: Position | 'Any';
+    heroRoles: Position[];
+    heroApiRoles: string[];
+    heroAttackType: string;
+}
+
+const SUPPORT_ROLES: Position[] = ['SoftSupport', 'HardSupport'];
+const CORE_ROLES: Position[] = ['Carry', 'Mid', 'Offlane'];
+
+const isSupportRole = (role: Position): boolean => SUPPORT_ROLES.includes(role);
+const isCoreRole = (role: Position): boolean => CORE_ROLES.includes(role);
+
+const resolveRole = (targetRole: Position | 'Any', heroRoles: Position[]): Position => {
+    if (targetRole !== 'Any') return targetRole;
+    return heroRoles[0] ?? 'SoftSupport';
+};
+
+const hasApiRole = (apiRoles: string[], role: string): boolean => apiRoles.includes(role);
+
+const uniqueRecommendations = (items: ItemRecommendation[]): ItemRecommendation[] => {
+    const seen = new Set<string>();
+    return items.filter(item => {
+        if (seen.has(item.id)) return false;
+        seen.add(item.id);
+        return true;
+    });
+};
+
 // Map Enemy Traits/Tags to Recommended Items
-// We need to define some simple logic.
-// Traits come from our 'heroTags.ts' (we'll need to export/use that logic or re-derive it)
+// Traits come from heroTags.ts. Keep this deliberately conservative: item
+// suggestions should be plausible for the selected role, not just the API tags.
 
 export const recommendItems = (
     enemyTraits: Set<string>,
-    heroRole: string,
-    heroAttackType: string
+    context: ItemRecommendationContext
 ): ItemRecommendation[] => {
     const recs: ItemRecommendation[] = [];
+    const resolvedRole = resolveRole(context.targetRole, context.heroRoles);
+    const isSupport = isSupportRole(resolvedRole);
+    const isCore = isCoreRole(resolvedRole);
+    const isCarry = resolvedRole === 'Carry';
+    const isMid = resolvedRole === 'Mid';
+    const isOfflane = resolvedRole === 'Offlane';
+    const isHardSupport = resolvedRole === 'HardSupport';
+    const isSoftSupport = resolvedRole === 'SoftSupport';
+    const canBuyAuraItems = isOfflane || isSoftSupport || isHardSupport;
+    const canBuySupportAuras = isOfflane || isSoftSupport;
+    const isFightStarter = hasApiRole(context.heroApiRoles, 'Initiator');
+    const isDisabler = hasApiRole(context.heroApiRoles, 'Disabler');
+    const isDurable = hasApiRole(context.heroApiRoles, 'Durable');
+    const isFrontliner = isFightStarter || isOfflane || context.heroRoles.includes('Offlane');
+    const isBacklineSupport = isSupport && !isFrontliner && !context.heroRoles.some(role => CORE_ROLES.includes(role));
+    const canBuySaveItems = isHardSupport || isBacklineSupport;
+    const isRightClickCore = isCarry || (isMid && hasApiRole(context.heroApiRoles, 'Carry'));
+    const canBuyCatchItems = isFightStarter || (isDisabler && (isMid || isOfflane || isSoftSupport));
+    const canBuyUtilityItems = isSupport || isOfflane || isMid;
+    const canBuyFrontlineItems = isOfflane || (isMid && (isFightStarter || isDurable));
 
-    const isSupport = heroRole === 'Support';
-    const isCore = heroRole === 'Carry' || heroRole === 'Mid' || heroRole === 'Offlane';
+    const isAllowedItem = (id: string): boolean => {
+        switch (id) {
+            case 'glimmer':
+                return canBuySaveItems;
+            case 'dust':
+                return true;
+            case 'sentry':
+                return isSupport;
+            case 'gem':
+                return isOfflane || isSoftSupport || (isMid && isFightStarter);
+            case 'pipe':
+                return canBuyAuraItems;
+            case 'crimson':
+                return canBuySupportAuras;
+            case 'bkb':
+            case 'linkens':
+                return isCore;
+            case 'blink':
+                return canBuyCatchItems;
+            case 'euls':
+                return canBuyUtilityItems;
+            case 'mkb':
+            case 'bloodthorn':
+            case 'silver':
+                return isRightClickCore;
+            case 'mjolnir':
+            case 'radiance':
+            case 'skadi':
+                return isCarry;
+            case 'ghost':
+            case 'force':
+                return isSupport;
+            case 'halberd':
+                return isOfflane;
+            case 'lotus':
+                return isOfflane || isSupport;
+            case 'shiva':
+                return canBuyFrontlineItems;
+            case 'vessel':
+                return !isCarry && canBuyUtilityItems;
+            default:
+                return false;
+        }
+    };
+
+    const add = (item: Omit<ItemRecommendation, 'id' | 'reason'>, id: string, reason: string) => {
+        if (!isAllowedItem(id)) return;
+        recs.push({ ...item, id, reason });
+    };
 
     // 1. High Magic Damage Enemies
     if (enemyTraits.has('NUKE')) {
-        if (isSupport) {
-            recs.push({ ...ITEMS.GLIMMER, id: 'glimmer', reason: 'Save allies from magic burst' });
-            recs.push({ ...ITEMS.PIPE, id: 'pipe', reason: 'Team magic resistance' });
-        } else {
-            recs.push({ ...ITEMS.BKB, id: 'bkb', reason: 'Essential vs Magic Burst' });
-        }
+        if (canBuySaveItems) add(ITEMS.GLIMMER, 'glimmer', 'Save allies from magic burst');
+        if (canBuyAuraItems) add(ITEMS.PIPE, 'pipe', 'Team magic resistance');
+        if (isCore) add(ITEMS.BKB, 'bkb', 'Protect your initiation from burst');
     }
 
     // 2. Evasion Enemies (PA, Windranger)
     if (enemyTraits.has('EVASION')) {
-        if (isCore && heroAttackType !== 'Mage') { // simplified check
-            recs.push({ ...ITEMS.MKB, id: 'mkb', reason: 'Counter Evasion (True Strike)' });
-            recs.push({ ...ITEMS.BLOODTHORN, id: 'bloodthorn', reason: 'Silences and pierces evasion' });
+        if (isRightClickCore && context.heroAttackType !== 'Melee') {
+            add(ITEMS.MKB, 'mkb', 'Counter evasion with true strike');
+            add(ITEMS.BLOODTHORN, 'bloodthorn', 'Silence evasive cores');
+        } else if (isRightClickCore) {
+            add(ITEMS.MKB, 'mkb', 'Reliable hits against evasion');
         }
     }
 
-    // 3. Illusion/Summon Spammers (PL, Naga)
+    // 3. Mobile drafts. Fight starters need catch before defensive luxuries.
+    if (enemyTraits.has('ESCAPE')) {
+        if (isFightStarter) {
+            add(ITEMS.BLINK, 'blink', 'Start fights before mobile heroes reset');
+            add(ITEMS.EULS, 'euls', 'Set up or interrupt elusive heroes');
+        } else if (isCore && hasApiRole(context.heroApiRoles, 'Disabler')) {
+            add(ITEMS.EULS, 'euls', 'Interrupt elusive heroes');
+        }
+    }
+
+    // 4. Invisibility and pickoff drafts
+    if (enemyTraits.has('INVISIBILITY')) {
+        add(ITEMS.DUST, 'dust', 'Reveal invis heroes during pickoffs');
+        add(ITEMS.SENTRY, 'sentry', 'Control common invis paths');
+        add(ITEMS.GEM, 'gem', 'Hold map control with durable reveal');
+    }
+
+    if (enemyTraits.has('PICKOFF')) {
+        if (isSupport) {
+            add(ITEMS.FORCE, 'force', 'Break pickoff chains');
+            add(ITEMS.GHOST, 'ghost', 'Survive physical burst from pickoffs');
+        } else if (isFightStarter) {
+            add(ITEMS.BLINK, 'blink', 'Start first before pickoff heroes choose fights');
+        }
+    }
+
+    // 5. Illusion/Summon Spammers (PL, Naga)
     if (enemyTraits.has('ILLUSIONIST') || enemyTraits.has('SUMMONER')) {
-        if (isCore) {
-            recs.push({ ...ITEMS.MJOLNIR, id: 'mjolnir', reason: 'Clear illusions quickly' });
-            if (heroRole === 'Offlane') recs.push({ ...ITEMS.SHIVA, id: 'shiva', reason: 'AoE Slow & Damage' });
-            if (heroRole === 'Carry') recs.push({ ...ITEMS.RADIANCE, id: 'radiance', reason: 'Burn illusions' });
-        } else {
-            recs.push({ ...ITEMS.GLIMMER, id: 'glimmer', reason: 'Hide from swarms' });
+        if (isCarry) {
+            add(ITEMS.MJOLNIR, 'mjolnir', 'Clear illusions quickly');
+            add(ITEMS.RADIANCE, 'radiance', 'Burn grouped units');
+        } else if (isCore || (isFightStarter && !isSupport)) {
+            add(ITEMS.SHIVA, 'shiva', 'AoE slow and illusion clear');
+            if (canBuyAuraItems) add(ITEMS.CRIMSON, 'crimson', 'Block summon and illusion chip damage');
+        } else if (isSupport) {
+            add(ITEMS.FORCE, 'force', 'Create distance from swarms');
+            if (canBuyAuraItems) add(ITEMS.PIPE, 'pipe', 'Protect the team in grouped fights');
         }
     }
 
-    // 4. Heavy Physical/Right Clickers (Ursa, PA, Sniper)
+    // 6. Heavy Physical/Right Clickers (Ursa, PA, Sniper)
     if (enemyTraits.has('CARRY')) { // Assuming 'CARRY' implies heavy physical in our tag system
         if (isSupport) {
-            recs.push({ ...ITEMS.GHOST, id: 'ghost', reason: 'Immunity to physical attacks' });
-            recs.push({ ...ITEMS.FORCE, id: 'force', reason: 'Kite melee carries' });
-        } else {
-            recs.push({ ...ITEMS.SHIVA, id: 'shiva', reason: 'Reduce attack speed' });
-            recs.push({ ...ITEMS.HALBERD, id: 'halberd', reason: 'Disarm heavy hitters' });
+            add(ITEMS.GHOST, 'ghost', 'Immunity to physical attacks');
+            add(ITEMS.FORCE, 'force', 'Kite melee carries');
+        } else if (isOfflane) {
+            add(ITEMS.SHIVA, 'shiva', 'Reduce attack speed');
+            add(ITEMS.HALBERD, 'halberd', 'Disarm heavy hitters');
+        } else if (isMid && (isFightStarter || isDurable)) {
+            add(ITEMS.SHIVA, 'shiva', 'Reduce attack speed in extended fights');
+        } else if (isCarry) {
+            add(ITEMS.SKADI, 'skadi', 'Slow and kite enemy carries');
         }
     }
 
-    // 5. Stunning/Lockdown Heavy
+    // 7. Stunning/Lockdown Heavy
     if (enemyTraits.has('STUNNER') || enemyTraits.has('INITIATOR')) {
         if (isSupport) {
-            recs.push({ ...ITEMS.LOTUS, id: 'lotus', reason: 'Dispel stuns/silences' });
-        } else {
-            recs.push({ ...ITEMS.BKB, id: 'bkb', reason: 'Avoid getting locked down' });
-            recs.push({ ...ITEMS.LINKENS, id: 'linkens', reason: 'Block single target initiation' });
+            add(ITEMS.FORCE, 'force', 'Reposition through initiation');
+            add(ITEMS.LOTUS, 'lotus', 'Dispel stuns and silences');
+        } else if (isOfflane) {
+            add(ITEMS.BKB, 'bkb', 'Avoid getting locked down');
+            add(ITEMS.LOTUS, 'lotus', 'Dispel silences after committing');
+            add(ITEMS.LINKENS, 'linkens', 'Block single-target initiation');
+        } else if (isCore) {
+            add(ITEMS.BKB, 'bkb', 'Avoid getting locked down');
+            add(ITEMS.LINKENS, 'linkens', 'Block single-target initiation');
         }
     }
 
-    // 6. Tanky/Healers
+    // 8. Tanky/Healers
     if (enemyTraits.has('HEALER') || enemyTraits.has('TANKY_CORE')) {
-        recs.push({ ...ITEMS.VESSEL, id: 'vessel', reason: 'Reduce healing & % HP damage' });
-        if (isCore) {
-            recs.push({ ...ITEMS.SILVER_EDGE, id: 'silver', reason: 'Break passives (Anti-Tank)' });
-        }
+        add(ITEMS.VESSEL, 'vessel', 'Reduce healing and punish high HP heroes');
+        if (isRightClickCore) add(ITEMS.SILVER_EDGE, 'silver', 'Break passives on tanky cores');
+        if (isCarry) add(ITEMS.SKADI, 'skadi', 'Reduce healing on durable enemies');
+        if (isOfflane || (isFightStarter && isCore)) add(ITEMS.SHIVA, 'shiva', 'Slow durable heroes in long fights');
     }
 
     // Filter and Format
-    return recs.slice(0, 4).map(item => ({
+    return uniqueRecommendations(recs).slice(0, 4).map(item => ({
         ...item,
         img: `${CDN_ITEM_BASE}/${item.img}`
     }));

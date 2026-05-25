@@ -5,9 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && node scripts/generate_hero_pages.js",
+    "build": "node scripts/check_roles.js --quiet && node scripts/check_matchups.js && node scripts/check_role_recommendations.js && node scripts/check_item_recommendations.js && node scripts/check_precision_recommendations.js && tsc -b && vite build && node scripts/generate_hero_pages.js",
+    "check:items": "node scripts/check_item_recommendations.js",
+    "check:matchups": "node scripts/check_matchups.js",
+    "check:precision": "node scripts/check_precision_recommendations.js",
+    "check:recommendations": "node scripts/check_role_recommendations.js",
+    "check:roles": "node scripts/check_roles.js",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "streams:refresh": "node scripts/fetch-streams.mjs"
   },
   "dependencies": {
     "axios": "^1.13.2",

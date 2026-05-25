@@ -1,11 +1,17 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { X, Sparkles, Swords, TrendingUp, Map, Zap, Coins, Crown } from 'lucide-react';
+import { X, Sparkles, Swords, TrendingUp, Map, Zap, Coins } from 'lucide-react';
 import { api, type Hero, type HeroBuild, type HeroDurations, type ItemsMap, type ItemBucket } from '../services/api';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 import { HERO_TAGS } from '../data/heroTags';
 import { getHeroRoles } from '../data/heroPositions';
 
 type Tab = 'build' | 'spike' | 'laning' | 'ability';
+type DraftData = {
+    heroId: number;
+    build: HeroBuild | null;
+    durations: HeroDurations;
+    items: ItemsMap;
+};
 
 interface StrategyGuideProps {
     hero: Hero;
@@ -15,25 +21,27 @@ interface StrategyGuideProps {
 export const StrategyGuide: React.FC<StrategyGuideProps> = ({ hero, onClose }) => {
     const { t } = useLanguage();
     const [tab, setTab] = useState<Tab>('build');
-
-    const [build, setBuild] = useState<HeroBuild | null>(null);
-    const [durations, setDurations] = useState<HeroDurations>({});
-    const [items, setItems] = useState<ItemsMap>({});
-    const [loading, setLoading] = useState(true);
+    const [draftData, setDraftData] = useState<DraftData | null>(null);
+    const activeDraftData = draftData?.heroId === hero.id ? draftData : null;
+    const build = activeDraftData?.build ?? null;
+    const durations = activeDraftData?.durations ?? {};
+    const items = activeDraftData?.items ?? {};
+    const loading = !activeDraftData;
 
     useEffect(() => {
         let cancelled = false;
-        setLoading(true);
         Promise.all([
             api.fetchBuild(hero.id),
             api.fetchDurations(hero.id),
             api.fetchItems()
         ]).then(([b, d, i]) => {
             if (cancelled) return;
-            setBuild(b);
-            setDurations(d);
-            setItems(i);
-            setLoading(false);
+            setDraftData({
+                heroId: hero.id,
+                build: b,
+                durations: d,
+                items: i,
+            });
         });
         return () => { cancelled = true; };
     }, [hero.id]);
@@ -60,26 +68,26 @@ export const StrategyGuide: React.FC<StrategyGuideProps> = ({ hero, onClose }) =
 
     return (
         <div
-            className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fadeIn"
+            className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-obsidian-900/85 backdrop-blur-md animate-fadeIn"
             onClick={onClose}
         >
             <div
-                className="relative bg-gradient-to-b from-slate-800 to-slate-900 rounded-2xl shadow-2xl shadow-indigo-500/25 max-w-2xl w-full max-h-[92vh] flex flex-col overflow-hidden animate-scaleIn"
+                className="relative bg-gradient-to-b from-obsidian-700 to-obsidian-900 rounded-2xl shadow-gold-lg max-w-2xl w-full max-h-[92vh] flex flex-col overflow-hidden animate-scaleIn gold-frame"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Ambient glow */}
-                <div className="absolute top-0 right-0 w-96 h-48 bg-indigo-500/10 blur-3xl pointer-events-none" />
-                <div className="absolute bottom-0 left-0 w-96 h-48 bg-purple-500/10 blur-3xl pointer-events-none" />
+                <div className="absolute top-0 right-0 w-96 h-48 bg-gold-500/10 blur-3xl pointer-events-none" />
+                <div className="absolute bottom-0 left-0 w-96 h-48 bg-gold-700/15 blur-3xl pointer-events-none" />
 
                 <button
                     onClick={onClose}
-                    className="absolute top-3 right-3 p-1.5 rounded-full bg-black/40 text-slate-300 hover:text-white hover:bg-black/60 transition-colors z-20"
+                    className="absolute top-3 right-3 p-1.5 rounded-full bg-obsidian-900/60 text-white/55 hover:text-white hover:bg-obsidian-900/80 transition-colors z-20"
                     aria-label="Close"
                 >
                     <X className="h-5 w-5" />
                 </button>
 
-                {/* Header — hero banner */}
+                {/* Header - hero banner */}
                 <div className="relative overflow-hidden">
                     <img
                         src={hero.img}
@@ -87,35 +95,35 @@ export const StrategyGuide: React.FC<StrategyGuideProps> = ({ hero, onClose }) =
                         aria-hidden
                         className="absolute inset-0 w-full h-full object-cover opacity-30 blur-sm scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/70" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-obsidian-900/95 via-obsidian-900/85 to-obsidian-900/70" />
 
-                    <div className="relative flex items-center gap-4 p-5 border-b border-slate-700">
-                        <div className="relative">
+                    <div className="relative flex items-center gap-4 p-5 border-b border-gold-700/20">
+                        <div className="relative gold-frame rounded-lg">
                             <img
                                 src={hero.img}
                                 alt={hero.localized_name}
-                                className="w-24 h-14 rounded-lg object-cover shadow-xl ring-2 ring-indigo-500/40"
+                                className="w-24 h-14 rounded-lg object-cover shadow-gold"
                             />
-                            <div className="absolute -top-1.5 -right-1.5 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full p-1 shadow-lg shadow-amber-500/40">
-                                <Crown className="h-3 w-3 text-white" />
+                            <div className="absolute -top-1.5 -right-1.5 bg-gradient-to-br from-gold-300 to-gold-600 rounded-full p-1 shadow-[0_4px_12px_-2px_rgba(217,119,6,0.6)]">
+                                <Sparkles className="h-3 w-3 text-obsidian-900" />
                             </div>
                         </div>
                         <div className="min-w-0 flex-1">
-                            <div className="flex items-center gap-2 text-[10px] text-indigo-300 uppercase tracking-widest font-bold mb-0.5">
+                            <div className="flex items-center gap-2 text-[10px] text-gold-300 uppercase tracking-[0.2em] font-bold mb-0.5">
                                 <Sparkles className="h-3 w-3" />
                                 {t('strategyGuide')}
                             </div>
-                            <h2 className="text-2xl font-black text-white truncate drop-shadow">{hero.localized_name}</h2>
+                            <h2 className="font-display text-2xl font-black text-white truncate drop-shadow tracking-wide">{hero.localized_name}</h2>
                             <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
                                 {heroRoles.map(role => (
-                                    <span key={role} className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-indigo-500/20 text-indigo-200 rounded border border-indigo-500/30">
+                                    <span key={role} className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-gold-500/15 text-gold-200 rounded border border-gold-500/30">
                                         {role}
                                     </span>
                                 ))}
-                                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-slate-700/60 text-slate-300 rounded border border-slate-600">
+                                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-obsidian-700/60 text-white/70 rounded border border-obsidian-500/60">
                                     {hero.attack_type}
                                 </span>
-                                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-slate-700/60 text-slate-300 rounded border border-slate-600">
+                                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-obsidian-700/60 text-white/70 rounded border border-obsidian-500/60">
                                     {hero.primary_attr}
                                 </span>
                             </div>
@@ -124,7 +132,7 @@ export const StrategyGuide: React.FC<StrategyGuideProps> = ({ hero, onClose }) =
                 </div>
 
                 {/* Tabs */}
-                <div className="relative flex border-b border-slate-700 bg-slate-950/50">
+                <div className="relative flex border-b border-gold-700/20 bg-obsidian-900/60">
                     <TabButton active={tab === 'build'} onClick={() => setTab('build')} icon={<Swords className="h-4 w-4" />} label={t('itemBuild')} />
                     <TabButton active={tab === 'spike'} onClick={() => setTab('spike')} icon={<TrendingUp className="h-4 w-4" />} label={t('powerSpike')} />
                     <TabButton active={tab === 'laning'} onClick={() => setTab('laning')} icon={<Map className="h-4 w-4" />} label={t('laning')} />
@@ -135,8 +143,8 @@ export const StrategyGuide: React.FC<StrategyGuideProps> = ({ hero, onClose }) =
                 <div className="relative overflow-y-auto flex-1 p-5 custom-scrollbar">
                     {loading ? (
                         <div className="flex flex-col items-center justify-center py-16 gap-3">
-                            <div className="animate-spin rounded-full h-10 w-10 border-2 border-indigo-500/20 border-t-indigo-500" />
-                            <div className="text-xs text-slate-500 uppercase tracking-widest">Loading pro data…</div>
+                            <div className="animate-spin rounded-full h-10 w-10 border-2 border-gold-500/20 border-t-gold-400" />
+                            <div className="text-xs text-white/40 uppercase tracking-widest">Loading draft data...</div>
                         </div>
                     ) : (
                         <div className="animate-fadeIn">
@@ -162,16 +170,16 @@ const TabButton: React.FC<{
 }> = ({ active, onClick, icon, label }) => (
     <button
         onClick={onClick}
-        className={`relative flex-1 flex items-center justify-center gap-2 px-3 py-3.5 text-xs font-bold uppercase tracking-wider transition-all ${
+        className={`relative flex-1 flex items-center justify-center gap-2 px-3 py-3.5 text-xs font-bold uppercase tracking-wider transition-all duration-200 ease-expo-out ${
             active
-                ? 'text-white bg-gradient-to-b from-indigo-500/20 to-transparent'
-                : 'text-slate-500 hover:text-slate-300 hover:bg-slate-800/40'
+                ? 'text-white bg-gradient-to-b from-gold-500/15 to-transparent'
+                : 'text-white/40 hover:text-white/80 hover:bg-obsidian-700/40'
         }`}
     >
-        <span className={active ? 'text-indigo-400' : ''}>{icon}</span>
+        <span className={active ? 'text-gold-400' : ''}>{icon}</span>
         <span className="hidden sm:inline">{label}</span>
         {active && (
-            <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-transparent via-indigo-400 to-transparent" />
+            <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent" />
         )}
     </button>
 );
@@ -187,10 +195,10 @@ const ItemBuildTab: React.FC<{ build: HeroBuild | null; items: ItemsMap }> = ({ 
     }
 
     const stages: { key: keyof HeroBuild; label: string; accent: string; iconColor: string }[] = [
-        { key: 'start', label: t('startingItems'), accent: 'from-slate-600 to-slate-700', iconColor: 'text-slate-400' },
-        { key: 'early', label: t('earlyGame'), accent: 'from-emerald-600 to-emerald-700', iconColor: 'text-emerald-400' },
-        { key: 'mid', label: t('midGame'), accent: 'from-amber-600 to-amber-700', iconColor: 'text-amber-400' },
-        { key: 'late', label: t('lateGame'), accent: 'from-rose-600 to-rose-700', iconColor: 'text-rose-400' },
+        { key: 'start', label: t('startingItems'), accent: 'from-obsidian-500 to-obsidian-600', iconColor: 'text-white/55' },
+        { key: 'early', label: t('earlyGame'), accent: 'from-radiant-500 to-radiant-700', iconColor: 'text-radiant-400' },
+        { key: 'mid', label: t('midGame'), accent: 'from-gold-500 to-gold-700', iconColor: 'text-gold-400' },
+        { key: 'late', label: t('lateGame'), accent: 'from-dire-600 to-dire-800', iconColor: 'text-dire-400' },
     ];
 
     return (
@@ -226,9 +234,9 @@ const BuildStage: React.FC<{
         <div>
             <div className="flex items-center gap-2 mb-2.5">
                 <div className={`h-1.5 w-1.5 rounded-full bg-gradient-to-br ${accent}`} />
-                <div className={`text-[10px] uppercase tracking-widest font-black ${iconColor}`}>{label}</div>
-                <div className="flex-1 h-px bg-slate-800" />
-                <div className="text-[10px] text-slate-600 font-mono">{totalGames.toLocaleString()} total</div>
+                <div className={`text-[10px] uppercase tracking-[0.2em] font-black ${iconColor}`}>{label}</div>
+                <div className="flex-1 h-px bg-gold-700/15" />
+                <div className="text-[10px] text-white/35 font-mono">{totalGames.toLocaleString()} total</div>
             </div>
             <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
                 {bucket.slice(0, 6).map(entry => {
@@ -236,7 +244,7 @@ const BuildStage: React.FC<{
                     const pct = totalGames > 0 ? Math.round((entry.games / totalGames) * 100) : 0;
                     return (
                         <div key={entry.id} className="relative group/item">
-                            <div className="relative aspect-[88/64] rounded-md overflow-hidden border border-slate-700 group-hover/item:border-indigo-500/60 transition-all shadow-md bg-slate-900">
+                            <div className="relative aspect-[88/64] rounded-md overflow-hidden border border-obsidian-500 group-hover/item:border-gold-400 group-hover/item:-translate-y-0.5 group-hover/item:shadow-[0_0_18px_-4px_rgba(251,191,36,0.5)] transition-all duration-200 ease-expo-out shadow-md bg-obsidian-900">
                                 {meta ? (
                                     <img
                                         src={api.resolveItemImg(meta)}
@@ -245,26 +253,26 @@ const BuildStage: React.FC<{
                                         loading="lazy"
                                     />
                                 ) : (
-                                    <div className="w-full h-full flex items-center justify-center text-[9px] text-slate-500">
+                                    <div className="w-full h-full flex items-center justify-center text-[9px] text-white/40">
                                         #{entry.id}
                                     </div>
                                 )}
                                 {/* Popularity bar */}
-                                <div className="absolute bottom-0 inset-x-0 h-1 bg-black/40">
-                                    <div className="h-full bg-gradient-to-r from-indigo-500 to-cyan-400" style={{ width: `${pct}%` }} />
+                                <div className="absolute bottom-0 inset-x-0 h-1 bg-obsidian-900/60">
+                                    <div className="h-full bg-gradient-to-r from-gold-600 to-gold-300" style={{ width: `${pct}%` }} />
                                 </div>
                                 {/* % badge */}
-                                <div className="absolute top-0 right-0 bg-black/70 text-[9px] text-white font-black px-1 rounded-bl">
+                                <div className="absolute top-0 right-0 bg-obsidian-900/85 text-[9px] text-gold-300 font-black px-1 rounded-bl">
                                     {pct}%
                                 </div>
                             </div>
 
                             {/* Tooltip */}
                             <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-1.5 opacity-0 group-hover/item:opacity-100 pointer-events-none transition-opacity z-20">
-                                <div className="bg-slate-950 text-white text-[10px] px-2 py-1.5 rounded shadow-xl whitespace-nowrap border border-slate-700">
+                                <div className="bg-obsidian-900 text-white text-[10px] px-2 py-1.5 rounded shadow-xl whitespace-nowrap border border-gold-700/30">
                                     <div className="font-bold">{meta?.name || `Item ${entry.id}`}</div>
                                     {meta?.cost ? (
-                                        <div className="flex items-center gap-1 text-amber-400 mt-0.5">
+                                        <div className="flex items-center gap-1 text-gold-400 mt-0.5">
                                             <Coins className="h-2.5 w-2.5" />
                                             {meta.cost.toLocaleString()}
                                         </div>
@@ -299,62 +307,62 @@ const PowerSpikeTab: React.FC<{ durations: HeroDurations }> = ({ durations }) =>
     let badgeColour: string;
     if (winRateSpread < 0.03) {
         label = t('flatCurve');
-        badgeColour = 'from-slate-600 to-slate-700';
+        badgeColour = 'from-obsidian-500 to-obsidian-700';
     } else if (peak.bin <= 15) {
         label = t('peaksEarly');
-        badgeColour = 'from-emerald-600 to-emerald-700';
+        badgeColour = 'from-radiant-500 to-radiant-800';
     } else if (peak.bin <= 35) {
         label = t('peaksMid');
-        badgeColour = 'from-amber-600 to-amber-700';
+        badgeColour = 'from-gold-500 to-gold-700';
     } else {
         label = t('peaksLate');
-        badgeColour = 'from-rose-600 to-rose-700';
+        badgeColour = 'from-dire-600 to-dire-900';
     }
 
     return (
         <div className="space-y-5">
             {/* Summary card */}
-            <div className={`relative overflow-hidden rounded-xl p-4 bg-gradient-to-br ${badgeColour} shadow-lg`}>
+            <div className={`relative overflow-hidden rounded-xl p-4 bg-gradient-to-br ${badgeColour} shadow-lg gold-frame`}>
                 <Sparkles className="absolute top-2 right-2 h-20 w-20 text-white/5" />
                 <div className="relative">
-                    <div className="text-[10px] uppercase tracking-widest font-bold text-white/70 mb-1">Power curve</div>
-                    <div className="text-base font-bold text-white">{label}</div>
+                    <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-white/75 mb-1">Power curve</div>
+                    <div className="font-display text-base font-bold text-white tracking-wide">{label}</div>
                 </div>
             </div>
 
             {/* Chart */}
-            <div className="bg-slate-950/40 rounded-xl p-4 border border-slate-800">
+            <div className="bg-obsidian-900/60 rounded-xl p-4 border border-gold-700/15">
                 <div className="space-y-2">
                     {bins.map(b => {
                         const pct = b.winRate * 100;
-                        let colour = 'from-slate-600 to-slate-500';
-                        let textColour = 'text-slate-300';
-                        if (pct >= 52) { colour = 'from-emerald-600 to-emerald-400'; textColour = 'text-emerald-300'; }
-                        else if (pct >= 50) { colour = 'from-amber-600 to-amber-400'; textColour = 'text-amber-300'; }
-                        else if (pct < 48) { colour = 'from-rose-600 to-rose-400'; textColour = 'text-rose-300'; }
+                        let colour = 'from-obsidian-600 to-obsidian-500';
+                        let textColour = 'text-white/70';
+                        if (pct >= 52) { colour = 'from-radiant-700 to-radiant-400'; textColour = 'text-radiant-300'; }
+                        else if (pct >= 50) { colour = 'from-gold-700 to-gold-300'; textColour = 'text-gold-200'; }
+                        else if (pct < 48) { colour = 'from-dire-700 to-dire-500'; textColour = 'text-dire-300'; }
 
-                        // Map 42–56% → 0–100% width for better visual spread
+                        // Map 42-56% to 0-100% width for better visual spread
                         const widthPct = Math.max(4, Math.min(100, ((b.winRate - 0.42) / 0.14) * 100));
                         const isPeak = b.bin === peak.bin;
 
                         return (
                             <div key={b.bin} className="flex items-center gap-2">
-                                <div className={`w-14 text-[11px] font-mono font-bold text-right ${isPeak ? 'text-amber-300' : 'text-slate-500'}`}>
+                                <div className={`w-14 text-[11px] font-mono font-bold text-right ${isPeak ? 'text-gold-300' : 'text-white/40'}`}>
                                     {b.bin}–{b.bin + 10}'
                                 </div>
-                                <div className="flex-1 bg-slate-900 rounded h-7 overflow-hidden relative border border-slate-800">
+                                <div className="flex-1 bg-obsidian-900 rounded h-7 overflow-hidden relative border border-obsidian-600">
                                     <div
-                                        className={`h-full bg-gradient-to-r ${colour} transition-all duration-500`}
+                                        className={`h-full bg-gradient-to-r ${colour} transition-all duration-500 ease-expo-out`}
                                         style={{ width: `${widthPct}%` }}
                                     />
                                     {/* 50% reference line */}
                                     <div className="absolute top-0 bottom-0 w-px bg-white/30" style={{ left: `${((0.50 - 0.42) / 0.14) * 100}%` }} />
                                     <div className={`absolute inset-0 flex items-center px-2.5 text-xs font-black ${textColour} drop-shadow`}>
                                         {pct.toFixed(1)}%
-                                        {isPeak && <Sparkles className="h-3 w-3 ml-1.5 text-amber-300" />}
+                                        {isPeak && <Sparkles className="h-3 w-3 ml-1.5 text-gold-300" />}
                                     </div>
                                 </div>
-                                <div className="w-14 text-[10px] text-slate-600 font-mono text-right">
+                                <div className="w-14 text-[10px] text-white/35 font-mono text-right">
                                     {b.games > 999 ? `${Math.round(b.games / 1000)}k` : b.games}
                                 </div>
                             </div>
@@ -363,11 +371,11 @@ const PowerSpikeTab: React.FC<{ durations: HeroDurations }> = ({ durations }) =>
                 </div>
 
                 {/* Legend */}
-                <div className="flex items-center justify-center gap-4 mt-4 pt-3 border-t border-slate-800 text-[10px] text-slate-500">
-                    <LegendDot colour="bg-emerald-500" label="52%+" />
-                    <LegendDot colour="bg-amber-500" label="50–52%" />
-                    <LegendDot colour="bg-slate-500" label="48–50%" />
-                    <LegendDot colour="bg-rose-500" label="<48%" />
+                <div className="flex items-center justify-center gap-4 mt-4 pt-3 border-t border-gold-700/15 text-[10px] text-white/45">
+                    <LegendDot colour="bg-radiant-500" label="52%+" />
+                    <LegendDot colour="bg-gold-400" label="50–52%" />
+                    <LegendDot colour="bg-obsidian-400" label="48–50%" />
+                    <LegendDot colour="bg-dire-500" label="<48%" />
                 </div>
             </div>
         </div>
@@ -429,13 +437,14 @@ const AbilityTab: React.FC<{ heroTags: Set<string> }> = ({ heroTags }) => {
 /* ---------------- Shared ---------------- */
 
 const ACCENT_MAP: Record<string, { bg: string; border: string; text: string; icon: string }> = {
-    emerald: { bg: 'bg-emerald-500/5', border: 'border-emerald-500/20', text: 'text-emerald-300', icon: 'text-emerald-400' },
-    indigo:  { bg: 'bg-indigo-500/5',  border: 'border-indigo-500/20',  text: 'text-indigo-300',  icon: 'text-indigo-400' },
-    rose:    { bg: 'bg-rose-500/5',    border: 'border-rose-500/20',    text: 'text-rose-300',    icon: 'text-rose-400' },
-    cyan:    { bg: 'bg-cyan-500/5',    border: 'border-cyan-500/20',    text: 'text-cyan-300',    icon: 'text-cyan-400' },
-    amber:   { bg: 'bg-amber-500/5',   border: 'border-amber-500/20',   text: 'text-amber-300',   icon: 'text-amber-400' },
-    pink:    { bg: 'bg-pink-500/5',    border: 'border-pink-500/20',    text: 'text-pink-300',    icon: 'text-pink-400' },
-    slate:   { bg: 'bg-slate-500/5',   border: 'border-slate-500/20',   text: 'text-slate-300',   icon: 'text-slate-400' },
+    // Mapped to 3-color palette: gold (primary), dire (warning/late), radiant (positive/early)
+    emerald: { bg: 'bg-radiant-500/5', border: 'border-radiant-500/25', text: 'text-radiant-300', icon: 'text-radiant-400' },
+    indigo:  { bg: 'bg-gold-500/5',    border: 'border-gold-500/25',    text: 'text-gold-200',    icon: 'text-gold-400' },
+    rose:    { bg: 'bg-dire-500/5',    border: 'border-dire-500/25',    text: 'text-dire-300',    icon: 'text-dire-400' },
+    cyan:    { bg: 'bg-radiant-500/5', border: 'border-radiant-500/25', text: 'text-radiant-300', icon: 'text-radiant-400' },
+    amber:   { bg: 'bg-gold-500/5',    border: 'border-gold-500/25',    text: 'text-gold-200',    icon: 'text-gold-400' },
+    pink:    { bg: 'bg-dire-500/5',    border: 'border-dire-500/25',    text: 'text-dire-300',    icon: 'text-dire-400' },
+    slate:   { bg: 'bg-obsidian-700/40', border: 'border-obsidian-500/40', text: 'text-white/75',  icon: 'text-white/55' },
 };
 
 const TipCard: React.FC<{ text: string; accent: string; index: number; icon: React.ReactNode }> = ({ text, accent, index, icon }) => {
@@ -445,7 +454,7 @@ const TipCard: React.FC<{ text: string; accent: string; index: number; icon: Rea
             className={`flex items-start gap-3 ${a.bg} rounded-xl p-3.5 border ${a.border} animate-fadeIn`}
             style={{ animationDelay: `${index * 60}ms` }}
         >
-            <div className={`flex-shrink-0 w-8 h-8 rounded-lg bg-slate-900/60 flex items-center justify-center ${a.icon}`}>
+            <div className={`flex-shrink-0 w-8 h-8 rounded-lg bg-obsidian-900/60 flex items-center justify-center ${a.icon}`}>
                 {icon}
             </div>
             <span className={`text-sm leading-relaxed pt-1 ${a.text}`}>{text}</span>
@@ -455,7 +464,7 @@ const TipCard: React.FC<{ text: string; accent: string; index: number; icon: Rea
 
 const EmptyState: React.FC<{ text: string; icon: React.ReactNode }> = ({ text, icon }) => (
     <div className="flex flex-col items-center justify-center py-12 text-center">
-        <div className="text-slate-700 mb-3">{icon}</div>
-        <div className="text-sm text-slate-500">{text}</div>
+        <div className="text-white/25 mb-3">{icon}</div>
+        <div className="text-sm text-white/45">{text}</div>
     </div>
 );

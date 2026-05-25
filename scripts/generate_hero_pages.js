@@ -15,6 +15,32 @@ const HEROES_PATH = path.join(__dirname, '../src/data/heroes.json');
 const DIST_PATH   = path.join(__dirname, '../dist');
 const TEMPLATE    = fs.readFileSync(path.join(DIST_PATH, 'index.html'), 'utf-8');
 const BASE_URL    = 'https://dota2picker.com';
+const ESPORTS_ROUTES = [
+    {
+        path: '/esports/',
+        title: 'Dota 2 Esports Hub | Live Streams, Matches and Teams - Dota2Picker',
+        desc: 'Live Dota 2 streams, match previews, tournament context, and team pages from Dota2Picker.',
+        priority: '0.9',
+    },
+    {
+        path: '/esports/matches/',
+        title: 'Dota 2 Matches | Today, Upcoming and Recent - Dota2Picker',
+        desc: 'Dota 2 match previews with local start times, tournament context, formats, and watch links.',
+        priority: '0.8',
+    },
+    {
+        path: '/esports/tournaments/',
+        title: 'Dota 2 Tournaments | Active and Upcoming Events - Dota2Picker',
+        desc: 'Active and upcoming Dota 2 tournament context, prize pools, formats, regions, and participating teams.',
+        priority: '0.8',
+    },
+    {
+        path: '/esports/teams/',
+        title: 'Dota 2 Teams | Rosters, Regions and Upcoming Matches - Dota2Picker',
+        desc: 'Dota 2 team context for regions, recent form, active tournaments, common aliases, and upcoming matches.',
+        priority: '0.8',
+    },
+];
 
 const toSlug = (name) =>
     name.toLowerCase().replace(/'/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -225,6 +251,20 @@ function buildPage({ title, desc, url, enUrl, ruUrl, lang }) {
         .replace(/(<link rel="canonical"[^>]*>)/, `$1${hreflang}`);
 }
 
+function buildStaticPage({ title, desc, url }) {
+    return TEMPLATE
+        .replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`)
+        .replace(/(<html\s+lang=")[^"]*(")/, '$1en$2')
+        .replace(/(<meta name="description"\s+content=")[^"]*(")/, `$1${desc}$2`)
+        .replace(/(<link rel="canonical"\s+href=")[^"]*(")/, `$1${url}$2`)
+        .replace(/(<meta property="og:url"\s+content=")[^"]*(")/, `$1${url}$2`)
+        .replace(/(<meta property="og:title"\s+content=")[^"]*(")/, `$1${title}$2`)
+        .replace(/(<meta property="og:description"\s+content=")[^"]*(")/, `$1${desc}$2`)
+        .replace(/(<meta name="twitter:url"\s+content=")[^"]*(")/, `$1${url}$2`)
+        .replace(/(<meta name="twitter:title"\s+content=")[^"]*(")/, `$1${title}$2`)
+        .replace(/(<meta name="twitter:description"\s+content=")[^"]*(")/, `$1${desc}$2`);
+}
+
 // 404.html — catches any path GitHub Pages can't serve directly
 fs.writeFileSync(path.join(DIST_PATH, '404.html'), TEMPLATE);
 fs.writeFileSync(path.join(DIST_PATH, 'index.html'), withCounterDirectoryFooter(TEMPLATE, 'en'));
@@ -237,6 +277,16 @@ const ruHomeHtml = TEMPLATE
     .replace(/(<link rel="canonical"\s+href=")[^"]*(")/,  `$1${BASE_URL}/ru/$2`);
 fs.mkdirSync(path.join(DIST_PATH, 'ru'), { recursive: true });
 fs.writeFileSync(path.join(DIST_PATH, 'ru', 'index.html'), withCounterDirectoryFooter(ruHomeHtml, 'ru'));
+
+for (const route of ESPORTS_ROUTES) {
+    const routeDir = path.join(DIST_PATH, ...route.path.replace(/^\/|\/$/g, '').split('/'));
+    fs.mkdirSync(routeDir, { recursive: true });
+    fs.writeFileSync(path.join(routeDir, 'index.html'), buildStaticPage({
+        title: route.title,
+        desc: route.desc,
+        url: `${BASE_URL}${route.path}`,
+    }));
+}
 
 let generated = 0;
 
@@ -298,6 +348,13 @@ const urlEntries = heroes.map(h => {
   </url>`;
 }).join('');
 
+const esportsEntries = ESPORTS_ROUTES.map(route => `
+  <url>
+    <loc>${BASE_URL}${route.path}</loc>
+    <changefreq>hourly</changefreq>
+    <priority>${route.priority}</priority>
+  </url>`).join('');
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -324,7 +381,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <xhtml:link rel="alternate" hreflang="ru" href="${BASE_URL}/ru/counters/"/>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>${urlEntries}
+  </url>${esportsEntries}${urlEntries}
 </urlset>`;
 
 fs.writeFileSync(path.join(DIST_PATH, 'sitemap.xml'), sitemap);

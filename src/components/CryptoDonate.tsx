@@ -22,40 +22,40 @@ export const CryptoDonate = () => {
         <>
             <button
                 onClick={() => setOpen(true)}
-                className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold rounded-full transition-colors border border-slate-600"
+                className="toolbar-button"
             >
-                ₿ Donate Crypto
+                Donate Crypto
             </button>
 
             {open && (
-                <div className="fixed inset-0 z-[10000] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-                    <div className="bg-slate-800 border border-slate-700 rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden">
-                        <div className="flex items-center justify-between p-5 border-b border-slate-700">
+                <div className="fixed inset-0 z-[10000] flex items-center justify-center bg-obsidian-900/85 p-4 backdrop-blur-md">
+                    <div className="surface gold-frame w-full max-w-sm overflow-hidden rounded-lg">
+                        <div className="flex items-center justify-between border-b border-white/10 p-5">
                             <div>
-                                <h3 className="font-bold text-white">Donate Crypto</h3>
-                                <p className="text-xs text-slate-400 mt-0.5">Support dota2picker.com</p>
+                                <h3 className="font-display font-bold tracking-wide text-white">Donate Crypto</h3>
+                                <p className="mt-0.5 text-xs text-white/45">Support dota2picker.com</p>
                             </div>
-                            <button onClick={() => setOpen(false)} className="p-1 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-colors">
+                            <button onClick={() => setOpen(false)} className="rounded-md p-1 text-white/45 transition-colors hover:bg-white/5 hover:text-white">
                                 <X className="h-5 w-5" />
                             </button>
                         </div>
 
                         <div className="p-5 space-y-3">
                             {WALLETS.map(w => (
-                                <div key={w.symbol} className={`rounded-xl p-3 border ${w.border} ${w.bg}`}>
+                                <div key={w.symbol} className={`rounded-md p-3 border ${w.border} ${w.bg}`}>
                                     <div className="flex items-center justify-between mb-1.5">
                                         <span className={`text-xs font-bold ${w.color}`}>{w.symbol}</span>
-                                        <span className="text-[10px] text-slate-500">{w.name}</span>
+                                        <span className="text-[10px] text-white/35">{w.name}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <span className="text-[11px] text-slate-300 font-mono truncate flex-1">{w.address}</span>
+                                        <span className="flex-1 truncate font-mono text-[11px] text-white/65">{w.address}</span>
                                         <button
                                             onClick={() => copy(w.address)}
-                                            className="shrink-0 p-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 transition-colors"
+                                            className="shrink-0 rounded-md border border-white/10 bg-obsidian-900/70 p-1.5 transition-colors hover:border-gold-500/30 hover:bg-white/5"
                                         >
                                             {copied === w.address
                                                 ? <Check className="h-3.5 w-3.5 text-green-400" />
-                                                : <Copy className="h-3.5 w-3.5 text-slate-400" />
+                                                : <Copy className="h-3.5 w-3.5 text-white/45" />
                                             }
                                         </button>
                                     </div>
@@ -63,8 +63,8 @@ export const CryptoDonate = () => {
                             ))}
                         </div>
 
-                        <div className="px-5 pb-5 text-center text-xs text-slate-500">
-                            Every contribution keeps the tool free & updated 🙏
+                        <div className="px-5 pb-5 text-center text-xs text-white/40">
+                            Every contribution keeps the tool free and updated.
                         </div>
                     </div>
                 </div>

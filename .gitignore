@@ -3,3 +3,7 @@ android.keystore
 *.jks
 *.p12
 .claude/
+.env
+.env.*
+!.env.example
+vite-preview*.log

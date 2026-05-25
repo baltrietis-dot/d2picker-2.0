@@ -12,1766 +12,1800 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/anti-mage</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/anti-mage"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/anti-mage"/>
+    <loc>https://dota2picker.com/counters/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counters/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counters/"/>
     <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dota2picker.com/ru/counters/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counters/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counters/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dota2picker.com/esports/</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dota2picker.com/esports/matches/</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dota2picker.com/esports/tournaments/</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dota2picker.com/esports/teams/</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dota2picker.com/counter/anti-mage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/anti-mage/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/anti-mage/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/anti-mage</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/anti-mage"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/anti-mage"/>
+    <loc>https://dota2picker.com/ru/counter/anti-mage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/anti-mage/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/anti-mage/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/axe</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/axe"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/axe"/>
+    <loc>https://dota2picker.com/counter/axe/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/axe/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/axe/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/axe</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/axe"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/axe"/>
+    <loc>https://dota2picker.com/ru/counter/axe/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/axe/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/axe/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/bane</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bane"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bane"/>
+    <loc>https://dota2picker.com/counter/bane/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bane/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bane/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/bane</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bane"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bane"/>
+    <loc>https://dota2picker.com/ru/counter/bane/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bane/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bane/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/bloodseeker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bloodseeker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bloodseeker"/>
+    <loc>https://dota2picker.com/counter/bloodseeker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bloodseeker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bloodseeker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/bloodseeker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bloodseeker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bloodseeker"/>
+    <loc>https://dota2picker.com/ru/counter/bloodseeker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bloodseeker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bloodseeker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/crystal-maiden</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/crystal-maiden"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/crystal-maiden"/>
+    <loc>https://dota2picker.com/counter/crystal-maiden/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/crystal-maiden/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/crystal-maiden/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/crystal-maiden</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/crystal-maiden"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/crystal-maiden"/>
+    <loc>https://dota2picker.com/ru/counter/crystal-maiden/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/crystal-maiden/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/crystal-maiden/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/drow-ranger</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/drow-ranger"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/drow-ranger"/>
+    <loc>https://dota2picker.com/counter/drow-ranger/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/drow-ranger/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/drow-ranger/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/drow-ranger</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/drow-ranger"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/drow-ranger"/>
+    <loc>https://dota2picker.com/ru/counter/drow-ranger/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/drow-ranger/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/drow-ranger/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/earthshaker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/earthshaker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/earthshaker"/>
+    <loc>https://dota2picker.com/counter/earthshaker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/earthshaker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/earthshaker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/earthshaker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/earthshaker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/earthshaker"/>
+    <loc>https://dota2picker.com/ru/counter/earthshaker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/earthshaker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/earthshaker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/juggernaut</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/juggernaut"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/juggernaut"/>
+    <loc>https://dota2picker.com/counter/juggernaut/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/juggernaut/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/juggernaut/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/juggernaut</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/juggernaut"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/juggernaut"/>
+    <loc>https://dota2picker.com/ru/counter/juggernaut/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/juggernaut/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/juggernaut/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/mirana</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/mirana"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/mirana"/>
+    <loc>https://dota2picker.com/counter/mirana/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/mirana/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/mirana/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/mirana</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/mirana"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/mirana"/>
+    <loc>https://dota2picker.com/ru/counter/mirana/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/mirana/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/mirana/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/morphling</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/morphling"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/morphling"/>
+    <loc>https://dota2picker.com/counter/morphling/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/morphling/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/morphling/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/morphling</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/morphling"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/morphling"/>
+    <loc>https://dota2picker.com/ru/counter/morphling/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/morphling/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/morphling/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/shadow-fiend</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-fiend"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-fiend"/>
+    <loc>https://dota2picker.com/counter/shadow-fiend/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-fiend/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-fiend/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/shadow-fiend</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-fiend"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-fiend"/>
+    <loc>https://dota2picker.com/ru/counter/shadow-fiend/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-fiend/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-fiend/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/phantom-lancer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phantom-lancer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phantom-lancer"/>
+    <loc>https://dota2picker.com/counter/phantom-lancer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phantom-lancer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phantom-lancer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/phantom-lancer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phantom-lancer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phantom-lancer"/>
+    <loc>https://dota2picker.com/ru/counter/phantom-lancer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phantom-lancer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phantom-lancer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/puck</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/puck"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/puck"/>
+    <loc>https://dota2picker.com/counter/puck/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/puck/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/puck/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/puck</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/puck"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/puck"/>
+    <loc>https://dota2picker.com/ru/counter/puck/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/puck/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/puck/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/pudge</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pudge"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pudge"/>
+    <loc>https://dota2picker.com/counter/pudge/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pudge/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pudge/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/pudge</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pudge"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pudge"/>
+    <loc>https://dota2picker.com/ru/counter/pudge/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pudge/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pudge/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/razor</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/razor"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/razor"/>
+    <loc>https://dota2picker.com/counter/razor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/razor/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/razor/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/razor</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/razor"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/razor"/>
+    <loc>https://dota2picker.com/ru/counter/razor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/razor/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/razor/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/sand-king</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sand-king"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sand-king"/>
+    <loc>https://dota2picker.com/counter/sand-king/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sand-king/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sand-king/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/sand-king</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sand-king"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sand-king"/>
+    <loc>https://dota2picker.com/ru/counter/sand-king/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sand-king/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sand-king/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/storm-spirit</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/storm-spirit"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/storm-spirit"/>
+    <loc>https://dota2picker.com/counter/storm-spirit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/storm-spirit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/storm-spirit/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/storm-spirit</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/storm-spirit"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/storm-spirit"/>
+    <loc>https://dota2picker.com/ru/counter/storm-spirit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/storm-spirit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/storm-spirit/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/sven</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sven"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sven"/>
+    <loc>https://dota2picker.com/counter/sven/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sven/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sven/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/sven</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sven"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sven"/>
+    <loc>https://dota2picker.com/ru/counter/sven/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sven/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sven/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/tiny</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tiny"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tiny"/>
+    <loc>https://dota2picker.com/counter/tiny/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tiny/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tiny/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/tiny</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tiny"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tiny"/>
+    <loc>https://dota2picker.com/ru/counter/tiny/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tiny/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tiny/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/vengeful-spirit</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/vengeful-spirit"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/vengeful-spirit"/>
+    <loc>https://dota2picker.com/counter/vengeful-spirit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/vengeful-spirit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/vengeful-spirit/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/vengeful-spirit</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/vengeful-spirit"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/vengeful-spirit"/>
+    <loc>https://dota2picker.com/ru/counter/vengeful-spirit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/vengeful-spirit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/vengeful-spirit/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/windranger</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/windranger"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/windranger"/>
+    <loc>https://dota2picker.com/counter/windranger/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/windranger/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/windranger/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/windranger</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/windranger"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/windranger"/>
+    <loc>https://dota2picker.com/ru/counter/windranger/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/windranger/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/windranger/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/zeus</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/zeus"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/zeus"/>
+    <loc>https://dota2picker.com/counter/zeus/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/zeus/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/zeus/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/zeus</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/zeus"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/zeus"/>
+    <loc>https://dota2picker.com/ru/counter/zeus/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/zeus/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/zeus/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/kunkka</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/kunkka"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/kunkka"/>
+    <loc>https://dota2picker.com/counter/kunkka/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/kunkka/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/kunkka/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/kunkka</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/kunkka"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/kunkka"/>
+    <loc>https://dota2picker.com/ru/counter/kunkka/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/kunkka/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/kunkka/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/lina</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lina"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lina"/>
+    <loc>https://dota2picker.com/counter/lina/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lina/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lina/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/lina</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lina"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lina"/>
+    <loc>https://dota2picker.com/ru/counter/lina/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lina/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lina/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/lion</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lion"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lion"/>
+    <loc>https://dota2picker.com/counter/lion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lion/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lion/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/lion</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lion"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lion"/>
+    <loc>https://dota2picker.com/ru/counter/lion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lion/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lion/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/shadow-shaman</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-shaman"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-shaman"/>
+    <loc>https://dota2picker.com/counter/shadow-shaman/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-shaman/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-shaman/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/shadow-shaman</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-shaman"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-shaman"/>
+    <loc>https://dota2picker.com/ru/counter/shadow-shaman/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-shaman/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-shaman/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/slardar</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/slardar"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/slardar"/>
+    <loc>https://dota2picker.com/counter/slardar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/slardar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/slardar/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/slardar</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/slardar"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/slardar"/>
+    <loc>https://dota2picker.com/ru/counter/slardar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/slardar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/slardar/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/tidehunter</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tidehunter"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tidehunter"/>
+    <loc>https://dota2picker.com/counter/tidehunter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tidehunter/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tidehunter/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/tidehunter</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tidehunter"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tidehunter"/>
+    <loc>https://dota2picker.com/ru/counter/tidehunter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tidehunter/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tidehunter/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/witch-doctor</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/witch-doctor"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/witch-doctor"/>
+    <loc>https://dota2picker.com/counter/witch-doctor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/witch-doctor/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/witch-doctor/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/witch-doctor</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/witch-doctor"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/witch-doctor"/>
+    <loc>https://dota2picker.com/ru/counter/witch-doctor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/witch-doctor/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/witch-doctor/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/lich</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lich"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lich"/>
+    <loc>https://dota2picker.com/counter/lich/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lich/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lich/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/lich</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lich"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lich"/>
+    <loc>https://dota2picker.com/ru/counter/lich/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lich/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lich/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/riki</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/riki"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/riki"/>
+    <loc>https://dota2picker.com/counter/riki/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/riki/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/riki/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/riki</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/riki"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/riki"/>
+    <loc>https://dota2picker.com/ru/counter/riki/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/riki/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/riki/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/enigma</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/enigma"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/enigma"/>
+    <loc>https://dota2picker.com/counter/enigma/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/enigma/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/enigma/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/enigma</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/enigma"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/enigma"/>
+    <loc>https://dota2picker.com/ru/counter/enigma/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/enigma/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/enigma/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/tinker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tinker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tinker"/>
+    <loc>https://dota2picker.com/counter/tinker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tinker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tinker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/tinker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tinker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tinker"/>
+    <loc>https://dota2picker.com/ru/counter/tinker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tinker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tinker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/sniper</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sniper"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sniper"/>
+    <loc>https://dota2picker.com/counter/sniper/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sniper/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sniper/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/sniper</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sniper"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sniper"/>
+    <loc>https://dota2picker.com/ru/counter/sniper/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/sniper/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/sniper/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/necrophos</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/necrophos"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/necrophos"/>
+    <loc>https://dota2picker.com/counter/necrophos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/necrophos/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/necrophos/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/necrophos</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/necrophos"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/necrophos"/>
+    <loc>https://dota2picker.com/ru/counter/necrophos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/necrophos/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/necrophos/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/warlock</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/warlock"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/warlock"/>
+    <loc>https://dota2picker.com/counter/warlock/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/warlock/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/warlock/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/warlock</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/warlock"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/warlock"/>
+    <loc>https://dota2picker.com/ru/counter/warlock/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/warlock/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/warlock/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/beastmaster</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/beastmaster"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/beastmaster"/>
+    <loc>https://dota2picker.com/counter/beastmaster/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/beastmaster/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/beastmaster/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/beastmaster</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/beastmaster"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/beastmaster"/>
+    <loc>https://dota2picker.com/ru/counter/beastmaster/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/beastmaster/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/beastmaster/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/queen-of-pain</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/queen-of-pain"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/queen-of-pain"/>
+    <loc>https://dota2picker.com/counter/queen-of-pain/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/queen-of-pain/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/queen-of-pain/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/queen-of-pain</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/queen-of-pain"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/queen-of-pain"/>
+    <loc>https://dota2picker.com/ru/counter/queen-of-pain/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/queen-of-pain/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/queen-of-pain/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/venomancer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/venomancer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/venomancer"/>
+    <loc>https://dota2picker.com/counter/venomancer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/venomancer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/venomancer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/venomancer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/venomancer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/venomancer"/>
+    <loc>https://dota2picker.com/ru/counter/venomancer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/venomancer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/venomancer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/faceless-void</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/faceless-void"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/faceless-void"/>
+    <loc>https://dota2picker.com/counter/faceless-void/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/faceless-void/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/faceless-void/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/faceless-void</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/faceless-void"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/faceless-void"/>
+    <loc>https://dota2picker.com/ru/counter/faceless-void/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/faceless-void/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/faceless-void/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/wraith-king</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/wraith-king"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/wraith-king"/>
+    <loc>https://dota2picker.com/counter/wraith-king/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/wraith-king/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/wraith-king/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/wraith-king</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/wraith-king"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/wraith-king"/>
+    <loc>https://dota2picker.com/ru/counter/wraith-king/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/wraith-king/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/wraith-king/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/death-prophet</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/death-prophet"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/death-prophet"/>
+    <loc>https://dota2picker.com/counter/death-prophet/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/death-prophet/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/death-prophet/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/death-prophet</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/death-prophet"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/death-prophet"/>
+    <loc>https://dota2picker.com/ru/counter/death-prophet/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/death-prophet/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/death-prophet/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/phantom-assassin</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phantom-assassin"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phantom-assassin"/>
+    <loc>https://dota2picker.com/counter/phantom-assassin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phantom-assassin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phantom-assassin/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/phantom-assassin</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phantom-assassin"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phantom-assassin"/>
+    <loc>https://dota2picker.com/ru/counter/phantom-assassin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phantom-assassin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phantom-assassin/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/pugna</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pugna"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pugna"/>
+    <loc>https://dota2picker.com/counter/pugna/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pugna/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pugna/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/pugna</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pugna"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pugna"/>
+    <loc>https://dota2picker.com/ru/counter/pugna/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pugna/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pugna/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/templar-assassin</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/templar-assassin"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/templar-assassin"/>
+    <loc>https://dota2picker.com/counter/templar-assassin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/templar-assassin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/templar-assassin/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/templar-assassin</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/templar-assassin"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/templar-assassin"/>
+    <loc>https://dota2picker.com/ru/counter/templar-assassin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/templar-assassin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/templar-assassin/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/viper</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/viper"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/viper"/>
+    <loc>https://dota2picker.com/counter/viper/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/viper/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/viper/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/viper</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/viper"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/viper"/>
+    <loc>https://dota2picker.com/ru/counter/viper/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/viper/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/viper/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/luna</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/luna"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/luna"/>
+    <loc>https://dota2picker.com/counter/luna/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/luna/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/luna/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/luna</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/luna"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/luna"/>
+    <loc>https://dota2picker.com/ru/counter/luna/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/luna/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/luna/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/dragon-knight</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dragon-knight"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dragon-knight"/>
+    <loc>https://dota2picker.com/counter/dragon-knight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dragon-knight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dragon-knight/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/dragon-knight</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dragon-knight"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dragon-knight"/>
+    <loc>https://dota2picker.com/ru/counter/dragon-knight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dragon-knight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dragon-knight/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/dazzle</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dazzle"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dazzle"/>
+    <loc>https://dota2picker.com/counter/dazzle/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dazzle/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dazzle/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/dazzle</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dazzle"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dazzle"/>
+    <loc>https://dota2picker.com/ru/counter/dazzle/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dazzle/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dazzle/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/clockwerk</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/clockwerk"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/clockwerk"/>
+    <loc>https://dota2picker.com/counter/clockwerk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/clockwerk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/clockwerk/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/clockwerk</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/clockwerk"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/clockwerk"/>
+    <loc>https://dota2picker.com/ru/counter/clockwerk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/clockwerk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/clockwerk/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/leshrac</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/leshrac"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/leshrac"/>
+    <loc>https://dota2picker.com/counter/leshrac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/leshrac/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/leshrac/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/leshrac</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/leshrac"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/leshrac"/>
+    <loc>https://dota2picker.com/ru/counter/leshrac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/leshrac/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/leshrac/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/natures-prophet</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/natures-prophet"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/natures-prophet"/>
+    <loc>https://dota2picker.com/counter/natures-prophet/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/natures-prophet/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/natures-prophet/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/natures-prophet</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/natures-prophet"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/natures-prophet"/>
+    <loc>https://dota2picker.com/ru/counter/natures-prophet/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/natures-prophet/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/natures-prophet/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/lifestealer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lifestealer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lifestealer"/>
+    <loc>https://dota2picker.com/counter/lifestealer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lifestealer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lifestealer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/lifestealer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lifestealer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lifestealer"/>
+    <loc>https://dota2picker.com/ru/counter/lifestealer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lifestealer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lifestealer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/dark-seer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dark-seer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dark-seer"/>
+    <loc>https://dota2picker.com/counter/dark-seer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dark-seer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dark-seer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/dark-seer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dark-seer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dark-seer"/>
+    <loc>https://dota2picker.com/ru/counter/dark-seer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dark-seer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dark-seer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/clinkz</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/clinkz"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/clinkz"/>
+    <loc>https://dota2picker.com/counter/clinkz/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/clinkz/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/clinkz/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/clinkz</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/clinkz"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/clinkz"/>
+    <loc>https://dota2picker.com/ru/counter/clinkz/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/clinkz/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/clinkz/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/omniknight</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/omniknight"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/omniknight"/>
+    <loc>https://dota2picker.com/counter/omniknight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/omniknight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/omniknight/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/omniknight</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/omniknight"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/omniknight"/>
+    <loc>https://dota2picker.com/ru/counter/omniknight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/omniknight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/omniknight/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/enchantress</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/enchantress"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/enchantress"/>
+    <loc>https://dota2picker.com/counter/enchantress/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/enchantress/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/enchantress/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/enchantress</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/enchantress"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/enchantress"/>
+    <loc>https://dota2picker.com/ru/counter/enchantress/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/enchantress/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/enchantress/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/huskar</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/huskar"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/huskar"/>
+    <loc>https://dota2picker.com/counter/huskar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/huskar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/huskar/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/huskar</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/huskar"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/huskar"/>
+    <loc>https://dota2picker.com/ru/counter/huskar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/huskar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/huskar/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/night-stalker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/night-stalker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/night-stalker"/>
+    <loc>https://dota2picker.com/counter/night-stalker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/night-stalker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/night-stalker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/night-stalker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/night-stalker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/night-stalker"/>
+    <loc>https://dota2picker.com/ru/counter/night-stalker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/night-stalker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/night-stalker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/broodmother</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/broodmother"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/broodmother"/>
+    <loc>https://dota2picker.com/counter/broodmother/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/broodmother/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/broodmother/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/broodmother</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/broodmother"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/broodmother"/>
+    <loc>https://dota2picker.com/ru/counter/broodmother/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/broodmother/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/broodmother/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/bounty-hunter</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bounty-hunter"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bounty-hunter"/>
+    <loc>https://dota2picker.com/counter/bounty-hunter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bounty-hunter/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bounty-hunter/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/bounty-hunter</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bounty-hunter"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bounty-hunter"/>
+    <loc>https://dota2picker.com/ru/counter/bounty-hunter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bounty-hunter/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bounty-hunter/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/weaver</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/weaver"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/weaver"/>
+    <loc>https://dota2picker.com/counter/weaver/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/weaver/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/weaver/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/weaver</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/weaver"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/weaver"/>
+    <loc>https://dota2picker.com/ru/counter/weaver/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/weaver/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/weaver/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/jakiro</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/jakiro"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/jakiro"/>
+    <loc>https://dota2picker.com/counter/jakiro/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/jakiro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/jakiro/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/jakiro</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/jakiro"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/jakiro"/>
+    <loc>https://dota2picker.com/ru/counter/jakiro/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/jakiro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/jakiro/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/batrider</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/batrider"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/batrider"/>
+    <loc>https://dota2picker.com/counter/batrider/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/batrider/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/batrider/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/batrider</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/batrider"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/batrider"/>
+    <loc>https://dota2picker.com/ru/counter/batrider/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/batrider/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/batrider/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/chen</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/chen"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/chen"/>
+    <loc>https://dota2picker.com/counter/chen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/chen/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/chen/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/chen</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/chen"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/chen"/>
+    <loc>https://dota2picker.com/ru/counter/chen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/chen/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/chen/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/spectre</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/spectre"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/spectre"/>
+    <loc>https://dota2picker.com/counter/spectre/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/spectre/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/spectre/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/spectre</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/spectre"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/spectre"/>
+    <loc>https://dota2picker.com/ru/counter/spectre/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/spectre/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/spectre/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/ancient-apparition</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ancient-apparition"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ancient-apparition"/>
+    <loc>https://dota2picker.com/counter/ancient-apparition/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ancient-apparition/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ancient-apparition/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/ancient-apparition</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ancient-apparition"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ancient-apparition"/>
+    <loc>https://dota2picker.com/ru/counter/ancient-apparition/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ancient-apparition/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ancient-apparition/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/doom</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/doom"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/doom"/>
+    <loc>https://dota2picker.com/counter/doom/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/doom/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/doom/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/doom</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/doom"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/doom"/>
+    <loc>https://dota2picker.com/ru/counter/doom/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/doom/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/doom/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/ursa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ursa"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ursa"/>
+    <loc>https://dota2picker.com/counter/ursa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ursa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ursa/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/ursa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ursa"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ursa"/>
+    <loc>https://dota2picker.com/ru/counter/ursa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ursa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ursa/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/spirit-breaker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/spirit-breaker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/spirit-breaker"/>
+    <loc>https://dota2picker.com/counter/spirit-breaker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/spirit-breaker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/spirit-breaker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/spirit-breaker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/spirit-breaker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/spirit-breaker"/>
+    <loc>https://dota2picker.com/ru/counter/spirit-breaker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/spirit-breaker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/spirit-breaker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/gyrocopter</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/gyrocopter"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/gyrocopter"/>
+    <loc>https://dota2picker.com/counter/gyrocopter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/gyrocopter/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/gyrocopter/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/gyrocopter</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/gyrocopter"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/gyrocopter"/>
+    <loc>https://dota2picker.com/ru/counter/gyrocopter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/gyrocopter/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/gyrocopter/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/alchemist</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/alchemist"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/alchemist"/>
+    <loc>https://dota2picker.com/counter/alchemist/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/alchemist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/alchemist/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/alchemist</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/alchemist"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/alchemist"/>
+    <loc>https://dota2picker.com/ru/counter/alchemist/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/alchemist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/alchemist/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/invoker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/invoker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/invoker"/>
+    <loc>https://dota2picker.com/counter/invoker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/invoker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/invoker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/invoker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/invoker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/invoker"/>
+    <loc>https://dota2picker.com/ru/counter/invoker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/invoker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/invoker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/silencer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/silencer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/silencer"/>
+    <loc>https://dota2picker.com/counter/silencer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/silencer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/silencer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/silencer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/silencer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/silencer"/>
+    <loc>https://dota2picker.com/ru/counter/silencer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/silencer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/silencer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/outworld-devourer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/outworld-devourer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/outworld-devourer"/>
+    <loc>https://dota2picker.com/counter/outworld-devourer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/outworld-devourer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/outworld-devourer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/outworld-devourer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/outworld-devourer"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/outworld-devourer"/>
+    <loc>https://dota2picker.com/ru/counter/outworld-devourer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/outworld-devourer/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/outworld-devourer/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/lycan</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lycan"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lycan"/>
+    <loc>https://dota2picker.com/counter/lycan/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lycan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lycan/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/lycan</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lycan"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lycan"/>
+    <loc>https://dota2picker.com/ru/counter/lycan/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lycan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lycan/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/brewmaster</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/brewmaster"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/brewmaster"/>
+    <loc>https://dota2picker.com/counter/brewmaster/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/brewmaster/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/brewmaster/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/brewmaster</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/brewmaster"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/brewmaster"/>
+    <loc>https://dota2picker.com/ru/counter/brewmaster/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/brewmaster/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/brewmaster/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/shadow-demon</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-demon"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-demon"/>
+    <loc>https://dota2picker.com/counter/shadow-demon/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-demon/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-demon/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/shadow-demon</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-demon"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-demon"/>
+    <loc>https://dota2picker.com/ru/counter/shadow-demon/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/shadow-demon/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/shadow-demon/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/lone-druid</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lone-druid"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lone-druid"/>
+    <loc>https://dota2picker.com/counter/lone-druid/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lone-druid/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lone-druid/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/lone-druid</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lone-druid"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lone-druid"/>
+    <loc>https://dota2picker.com/ru/counter/lone-druid/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/lone-druid/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/lone-druid/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/chaos-knight</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/chaos-knight"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/chaos-knight"/>
+    <loc>https://dota2picker.com/counter/chaos-knight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/chaos-knight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/chaos-knight/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/chaos-knight</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/chaos-knight"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/chaos-knight"/>
+    <loc>https://dota2picker.com/ru/counter/chaos-knight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/chaos-knight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/chaos-knight/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/meepo</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/meepo"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/meepo"/>
+    <loc>https://dota2picker.com/counter/meepo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/meepo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/meepo/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/meepo</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/meepo"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/meepo"/>
+    <loc>https://dota2picker.com/ru/counter/meepo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/meepo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/meepo/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/treant-protector</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/treant-protector"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/treant-protector"/>
+    <loc>https://dota2picker.com/counter/treant-protector/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/treant-protector/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/treant-protector/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/treant-protector</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/treant-protector"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/treant-protector"/>
+    <loc>https://dota2picker.com/ru/counter/treant-protector/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/treant-protector/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/treant-protector/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/ogre-magi</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ogre-magi"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ogre-magi"/>
+    <loc>https://dota2picker.com/counter/ogre-magi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ogre-magi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ogre-magi/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/ogre-magi</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ogre-magi"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ogre-magi"/>
+    <loc>https://dota2picker.com/ru/counter/ogre-magi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ogre-magi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ogre-magi/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/undying</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/undying"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/undying"/>
+    <loc>https://dota2picker.com/counter/undying/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/undying/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/undying/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/undying</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/undying"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/undying"/>
+    <loc>https://dota2picker.com/ru/counter/undying/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/undying/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/undying/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/rubick</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/rubick"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/rubick"/>
+    <loc>https://dota2picker.com/counter/rubick/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/rubick/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/rubick/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/rubick</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/rubick"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/rubick"/>
+    <loc>https://dota2picker.com/ru/counter/rubick/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/rubick/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/rubick/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/disruptor</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/disruptor"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/disruptor"/>
+    <loc>https://dota2picker.com/counter/disruptor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/disruptor/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/disruptor/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/disruptor</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/disruptor"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/disruptor"/>
+    <loc>https://dota2picker.com/ru/counter/disruptor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/disruptor/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/disruptor/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/nyx-assassin</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/nyx-assassin"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/nyx-assassin"/>
+    <loc>https://dota2picker.com/counter/nyx-assassin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/nyx-assassin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/nyx-assassin/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/nyx-assassin</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/nyx-assassin"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/nyx-assassin"/>
+    <loc>https://dota2picker.com/ru/counter/nyx-assassin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/nyx-assassin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/nyx-assassin/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/naga-siren</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/naga-siren"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/naga-siren"/>
+    <loc>https://dota2picker.com/counter/naga-siren/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/naga-siren/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/naga-siren/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/naga-siren</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/naga-siren"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/naga-siren"/>
+    <loc>https://dota2picker.com/ru/counter/naga-siren/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/naga-siren/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/naga-siren/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/keeper-of-the-light</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/keeper-of-the-light"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/keeper-of-the-light"/>
+    <loc>https://dota2picker.com/counter/keeper-of-the-light/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/keeper-of-the-light/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/keeper-of-the-light/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/keeper-of-the-light</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/keeper-of-the-light"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/keeper-of-the-light"/>
+    <loc>https://dota2picker.com/ru/counter/keeper-of-the-light/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/keeper-of-the-light/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/keeper-of-the-light/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/io</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/io"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/io"/>
+    <loc>https://dota2picker.com/counter/io/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/io/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/io/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/io</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/io"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/io"/>
+    <loc>https://dota2picker.com/ru/counter/io/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/io/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/io/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/visage</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/visage"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/visage"/>
+    <loc>https://dota2picker.com/counter/visage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/visage/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/visage/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/visage</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/visage"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/visage"/>
+    <loc>https://dota2picker.com/ru/counter/visage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/visage/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/visage/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/slark</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/slark"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/slark"/>
+    <loc>https://dota2picker.com/counter/slark/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/slark/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/slark/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/slark</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/slark"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/slark"/>
+    <loc>https://dota2picker.com/ru/counter/slark/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/slark/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/slark/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/medusa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/medusa"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/medusa"/>
+    <loc>https://dota2picker.com/counter/medusa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/medusa/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/medusa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/medusa"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/medusa"/>
+    <loc>https://dota2picker.com/ru/counter/medusa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/medusa/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/troll-warlord</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/troll-warlord"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/troll-warlord"/>
+    <loc>https://dota2picker.com/counter/troll-warlord/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/troll-warlord/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/troll-warlord/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/troll-warlord</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/troll-warlord"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/troll-warlord"/>
+    <loc>https://dota2picker.com/ru/counter/troll-warlord/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/troll-warlord/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/troll-warlord/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/centaur-warrunner</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/centaur-warrunner"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/centaur-warrunner"/>
+    <loc>https://dota2picker.com/counter/centaur-warrunner/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/centaur-warrunner/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/centaur-warrunner/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/centaur-warrunner</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/centaur-warrunner"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/centaur-warrunner"/>
+    <loc>https://dota2picker.com/ru/counter/centaur-warrunner/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/centaur-warrunner/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/centaur-warrunner/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/magnus</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/magnus"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/magnus"/>
+    <loc>https://dota2picker.com/counter/magnus/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/magnus/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/magnus/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/magnus</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/magnus"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/magnus"/>
+    <loc>https://dota2picker.com/ru/counter/magnus/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/magnus/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/magnus/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/timbersaw</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/timbersaw"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/timbersaw"/>
+    <loc>https://dota2picker.com/counter/timbersaw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/timbersaw/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/timbersaw/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/timbersaw</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/timbersaw"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/timbersaw"/>
+    <loc>https://dota2picker.com/ru/counter/timbersaw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/timbersaw/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/timbersaw/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/bristleback</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bristleback"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bristleback"/>
+    <loc>https://dota2picker.com/counter/bristleback/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bristleback/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bristleback/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/bristleback</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bristleback"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bristleback"/>
+    <loc>https://dota2picker.com/ru/counter/bristleback/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/bristleback/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/bristleback/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/tusk</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tusk"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tusk"/>
+    <loc>https://dota2picker.com/counter/tusk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tusk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tusk/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/tusk</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tusk"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tusk"/>
+    <loc>https://dota2picker.com/ru/counter/tusk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/tusk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/tusk/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/skywrath-mage</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/skywrath-mage"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/skywrath-mage"/>
+    <loc>https://dota2picker.com/counter/skywrath-mage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/skywrath-mage/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/skywrath-mage/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/skywrath-mage</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/skywrath-mage"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/skywrath-mage"/>
+    <loc>https://dota2picker.com/ru/counter/skywrath-mage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/skywrath-mage/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/skywrath-mage/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/abaddon</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/abaddon"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/abaddon"/>
+    <loc>https://dota2picker.com/counter/abaddon/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/abaddon/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/abaddon/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/abaddon</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/abaddon"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/abaddon"/>
+    <loc>https://dota2picker.com/ru/counter/abaddon/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/abaddon/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/abaddon/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/elder-titan</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/elder-titan"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/elder-titan"/>
+    <loc>https://dota2picker.com/counter/elder-titan/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/elder-titan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/elder-titan/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/elder-titan</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/elder-titan"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/elder-titan"/>
+    <loc>https://dota2picker.com/ru/counter/elder-titan/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/elder-titan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/elder-titan/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/legion-commander</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/legion-commander"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/legion-commander"/>
+    <loc>https://dota2picker.com/counter/legion-commander/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/legion-commander/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/legion-commander/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/legion-commander</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/legion-commander"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/legion-commander"/>
+    <loc>https://dota2picker.com/ru/counter/legion-commander/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/legion-commander/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/legion-commander/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/techies</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/techies"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/techies"/>
+    <loc>https://dota2picker.com/counter/techies/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/techies/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/techies/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/techies</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/techies"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/techies"/>
+    <loc>https://dota2picker.com/ru/counter/techies/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/techies/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/techies/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/ember-spirit</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ember-spirit"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ember-spirit"/>
+    <loc>https://dota2picker.com/counter/ember-spirit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ember-spirit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ember-spirit/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/ember-spirit</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ember-spirit"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ember-spirit"/>
+    <loc>https://dota2picker.com/ru/counter/ember-spirit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ember-spirit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ember-spirit/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/earth-spirit</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/earth-spirit"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/earth-spirit"/>
+    <loc>https://dota2picker.com/counter/earth-spirit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/earth-spirit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/earth-spirit/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/earth-spirit</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/earth-spirit"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/earth-spirit"/>
+    <loc>https://dota2picker.com/ru/counter/earth-spirit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/earth-spirit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/earth-spirit/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/underlord</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/underlord"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/underlord"/>
+    <loc>https://dota2picker.com/counter/underlord/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/underlord/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/underlord/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/underlord</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/underlord"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/underlord"/>
+    <loc>https://dota2picker.com/ru/counter/underlord/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/underlord/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/underlord/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/terrorblade</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/terrorblade"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/terrorblade"/>
+    <loc>https://dota2picker.com/counter/terrorblade/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/terrorblade/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/terrorblade/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/terrorblade</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/terrorblade"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/terrorblade"/>
+    <loc>https://dota2picker.com/ru/counter/terrorblade/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/terrorblade/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/terrorblade/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/phoenix</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phoenix"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phoenix"/>
+    <loc>https://dota2picker.com/counter/phoenix/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phoenix/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phoenix/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/phoenix</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phoenix"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phoenix"/>
+    <loc>https://dota2picker.com/ru/counter/phoenix/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/phoenix/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/phoenix/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/oracle</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/oracle"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/oracle"/>
+    <loc>https://dota2picker.com/counter/oracle/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/oracle/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/oracle/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/oracle</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/oracle"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/oracle"/>
+    <loc>https://dota2picker.com/ru/counter/oracle/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/oracle/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/oracle/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/winter-wyvern</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/winter-wyvern"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/winter-wyvern"/>
+    <loc>https://dota2picker.com/counter/winter-wyvern/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/winter-wyvern/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/winter-wyvern/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/winter-wyvern</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/winter-wyvern"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/winter-wyvern"/>
+    <loc>https://dota2picker.com/ru/counter/winter-wyvern/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/winter-wyvern/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/winter-wyvern/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/arc-warden</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/arc-warden"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/arc-warden"/>
+    <loc>https://dota2picker.com/counter/arc-warden/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/arc-warden/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/arc-warden/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/arc-warden</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/arc-warden"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/arc-warden"/>
+    <loc>https://dota2picker.com/ru/counter/arc-warden/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/arc-warden/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/arc-warden/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/monkey-king</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/monkey-king"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/monkey-king"/>
+    <loc>https://dota2picker.com/counter/monkey-king/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/monkey-king/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/monkey-king/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/monkey-king</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/monkey-king"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/monkey-king"/>
+    <loc>https://dota2picker.com/ru/counter/monkey-king/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/monkey-king/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/monkey-king/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/dark-willow</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dark-willow"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dark-willow"/>
+    <loc>https://dota2picker.com/counter/dark-willow/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dark-willow/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dark-willow/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/dark-willow</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dark-willow"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dark-willow"/>
+    <loc>https://dota2picker.com/ru/counter/dark-willow/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dark-willow/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dark-willow/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/pangolier</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pangolier"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pangolier"/>
+    <loc>https://dota2picker.com/counter/pangolier/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pangolier/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pangolier/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/pangolier</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pangolier"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pangolier"/>
+    <loc>https://dota2picker.com/ru/counter/pangolier/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/pangolier/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/pangolier/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/grimstroke</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/grimstroke"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/grimstroke"/>
+    <loc>https://dota2picker.com/counter/grimstroke/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/grimstroke/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/grimstroke/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/grimstroke</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/grimstroke"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/grimstroke"/>
+    <loc>https://dota2picker.com/ru/counter/grimstroke/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/grimstroke/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/grimstroke/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/hoodwink</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/hoodwink"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/hoodwink"/>
+    <loc>https://dota2picker.com/counter/hoodwink/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/hoodwink/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/hoodwink/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/hoodwink</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/hoodwink"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/hoodwink"/>
+    <loc>https://dota2picker.com/ru/counter/hoodwink/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/hoodwink/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/hoodwink/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/void-spirit</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/void-spirit"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/void-spirit"/>
+    <loc>https://dota2picker.com/counter/void-spirit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/void-spirit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/void-spirit/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/void-spirit</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/void-spirit"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/void-spirit"/>
+    <loc>https://dota2picker.com/ru/counter/void-spirit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/void-spirit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/void-spirit/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/snapfire</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/snapfire"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/snapfire"/>
+    <loc>https://dota2picker.com/counter/snapfire/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/snapfire/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/snapfire/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/snapfire</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/snapfire"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/snapfire"/>
+    <loc>https://dota2picker.com/ru/counter/snapfire/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/snapfire/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/snapfire/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/mars</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/mars"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/mars"/>
+    <loc>https://dota2picker.com/counter/mars/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/mars/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/mars/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/mars</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/mars"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/mars"/>
+    <loc>https://dota2picker.com/ru/counter/mars/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/mars/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/mars/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/ring-master</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ring-master"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ring-master"/>
+    <loc>https://dota2picker.com/counter/ring-master/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ring-master/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ring-master/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/ring-master</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ring-master"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ring-master"/>
+    <loc>https://dota2picker.com/ru/counter/ring-master/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/ring-master/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/ring-master/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/dawnbreaker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dawnbreaker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dawnbreaker"/>
+    <loc>https://dota2picker.com/counter/dawnbreaker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dawnbreaker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dawnbreaker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/dawnbreaker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dawnbreaker"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dawnbreaker"/>
+    <loc>https://dota2picker.com/ru/counter/dawnbreaker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/dawnbreaker/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/dawnbreaker/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/marci</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/marci"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/marci"/>
+    <loc>https://dota2picker.com/counter/marci/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/marci/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/marci/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/marci</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/marci"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/marci"/>
+    <loc>https://dota2picker.com/ru/counter/marci/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/marci/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/marci/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/primal-beast</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/primal-beast"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/primal-beast"/>
+    <loc>https://dota2picker.com/counter/primal-beast/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/primal-beast/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/primal-beast/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/primal-beast</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/primal-beast"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/primal-beast"/>
+    <loc>https://dota2picker.com/ru/counter/primal-beast/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/primal-beast/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/primal-beast/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/muerta</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/muerta"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/muerta"/>
+    <loc>https://dota2picker.com/counter/muerta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/muerta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/muerta/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/muerta</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/muerta"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/muerta"/>
+    <loc>https://dota2picker.com/ru/counter/muerta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/muerta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/muerta/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/counter/kez</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/kez"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/kez"/>
+    <loc>https://dota2picker.com/counter/kez/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/kez/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/kez/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dota2picker.com/ru/counter/kez</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/kez"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/kez"/>
+    <loc>https://dota2picker.com/ru/counter/kez/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dota2picker.com/counter/kez/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dota2picker.com/ru/counter/kez/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

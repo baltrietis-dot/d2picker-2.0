@@ -1,5 +1,5 @@
 import { TrendingUp, Shield, Zap, BookOpen, BarChart3, Target } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 
 export function LandingContent() {
     const { t } = useLanguage();

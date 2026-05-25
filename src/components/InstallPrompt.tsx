@@ -82,26 +82,26 @@ export function InstallPrompt() {
 
     return (
         <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-sm animate-fadeIn">
-            <div className="bg-slate-800 border border-indigo-500/40 rounded-2xl shadow-2xl shadow-indigo-500/20 p-4 flex items-start gap-3">
-                <div className="shrink-0 w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                    <Smartphone className="h-5 w-5 text-white" />
+            <div className="surface gold-frame flex items-start gap-3 rounded-lg p-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-gradient-to-br from-gold-300 via-gold-500 to-gold-700 shadow-[0_10px_24px_-16px_rgba(251,191,36,0.95)]">
+                    <Smartphone className="h-5 w-5 text-obsidian-900" />
                 </div>
 
                 <div className="flex-1 min-w-0">
                     {showIosHint ? (
                         <>
                             <p className="text-sm font-bold text-white">Add to Home Screen</p>
-                            <p className="text-xs text-slate-400 mt-0.5">
-                                Tap <span className="text-indigo-300">Share</span> → <span className="text-indigo-300">Add to Home Screen</span> for instant draft access
+                            <p className="mt-0.5 text-xs text-white/45">
+                                Tap <span className="text-gold-300">Share</span> → <span className="text-gold-300">Add to Home Screen</span> for instant draft access
                             </p>
                         </>
                     ) : (
                         <>
                             <p className="text-sm font-bold text-white">Install D2Picker</p>
-                            <p className="text-xs text-slate-400 mt-0.5">Instant access during your draft — works offline too</p>
+                            <p className="mt-0.5 text-xs text-white/45">Instant access during your draft — works offline too</p>
                             <button
                                 onClick={handleInstall}
-                                className="mt-2 px-4 py-1.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white text-xs font-bold rounded-lg transition-all shadow-md"
+                                className="btn-gold mt-2 rounded-md px-4 py-1.5 text-xs font-black uppercase tracking-[0.14em]"
                             >
                                 Install
                             </button>
@@ -111,7 +111,7 @@ export function InstallPrompt() {
 
                 <button
                     onClick={handleDismiss}
-                    className="shrink-0 p-1 text-slate-500 hover:text-white transition-colors"
+                    className="shrink-0 rounded-md p-1 text-white/35 transition-colors hover:bg-white/5 hover:text-white"
                     aria-label="Dismiss"
                 >
                     <X className="h-4 w-4" />

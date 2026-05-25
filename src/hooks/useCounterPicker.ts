@@ -1,14 +1,14 @@
-import { useState, useCallback, useMemo, useEffect } from 'react';
+import { useState, useCallback, useMemo, useRef } from 'react';
 import { api, type Hero, type Matchup } from '../services/api';
 import { HERO_TAGS, COUNTER_TAGS } from '../data/heroTags';
-import { getHeroRoles, type Position, type PositionNumber, NUMBER_TO_POSITION } from '../data/heroPositions';
+import { getHeroRoles, isSupportPosition, type Position, type PositionNumber, NUMBER_TO_POSITION } from '../data/heroPositions';
 import { HEURISTIC_WEIGHTS, SYNERGY_WEIGHTS } from '../config/heuristics';
 
 export interface CounterPick {
     hero: Hero;
     winRate: number; // Raw win rate vs enemy team
     matchCount: number;
-    score: number; // Advantage score
+    score: number; // Composite draft score used for ranking, not a win-rate percentage.
     reasons?: string[];
 }
 
@@ -16,23 +16,35 @@ export interface CounterPick {
 export type MyTeamSlots = (Hero | null)[];
 
 const emptySlots = (): MyTeamSlots => [null, null, null, null, null];
+const traitPressure = (count: number) => Math.min(2, Math.max(1, 1 + (count - 1) * 0.25));
 
 export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
     const [heroes, setHeroes] = useState<Hero[]>([]);
     const [selectedEnemies, setSelectedEnemies] = useState<Hero[]>([]);
     const [myTeamSlots, setMyTeamSlots] = useState<MyTeamSlots>(emptySlots());
+    const [analysisEnemies, setAnalysisEnemies] = useState<Hero[]>([]);
+    const [analysisMyTeamSlots, setAnalysisMyTeamSlots] = useState<MyTeamSlots>(emptySlots());
+    const [analysisTargetRole, setAnalysisTargetRole] = useState<Position | 'Any'>('Any');
+    const [analysisSignature, setAnalysisSignature] = useState('');
 
     const [matchupsMap, setMatchupsMap] = useState<Record<number, Matchup[]>>({});
     const [loading, setLoading] = useState(false);
-
-    // Picks are gated behind an explicit Reveal action — nothing shows up
-    // until the user is ready, which avoids burning API calls on partial
-    // selections and removes the loading-race jitter.
-    const [isDrafted, setIsDrafted] = useState(false);
-    const [drafting, setDrafting] = useState(false);
+    const emptyMatchupRefetches = useRef<Set<number>>(new Set());
 
     // Derived: flat picked-only list for consumers that don't care about slots
     const myTeam = useMemo(() => myTeamSlots.filter((h): h is Hero => h !== null), [myTeamSlots]);
+    const analysisMyTeam = useMemo(() => analysisMyTeamSlots.filter((h): h is Hero => h !== null), [analysisMyTeamSlots]);
+
+    const draftSignature = useMemo(() => {
+        const enemyIds = selectedEnemies.map(hero => hero.id).join(',');
+        const allySlots = myTeamSlots.map(hero => hero?.id ?? 0).join(',');
+        return `${enemyIds}|${allySlots}|${targetRole}`;
+    }, [selectedEnemies, myTeamSlots, targetRole]);
+
+    const hasAnalysis = analysisSignature.length > 0;
+    const isAnalysisCurrent = hasAnalysis && analysisSignature === draftSignature;
+    const isAnalysisStale = hasAnalysis && !isAnalysisCurrent;
+    const canRevealDraft = selectedEnemies.length + myTeam.length > 0;
 
     const loadHeroes = useCallback(async () => {
         setLoading(true);
@@ -41,9 +53,23 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         setLoading(false);
     }, []);
 
-    // Enemy side: unchanged flat pool. Matchup data is now fetched lazily
-    // by revealDraft() rather than on every add — saves bandwidth while
-    // the user is still picking.
+    const fetchMatchupsForHero = useCallback(async (heroId: number) => {
+        const cached = matchupsMap[heroId];
+        const shouldRetryEmpty = cached?.length === 0 && !emptyMatchupRefetches.current.has(heroId);
+
+        if (!cached || shouldRetryEmpty) {
+            if (shouldRetryEmpty) emptyMatchupRefetches.current.add(heroId);
+
+            try {
+                const matchups = await api.fetchMatchups(heroId);
+                setMatchupsMap(prev => ({ ...prev, [heroId]: matchups }));
+            } catch (e) {
+                console.error('Error loading matchups', e);
+            }
+        }
+    }, [matchupsMap]);
+
+    // Enemy side: unchanged flat pool
     const addEnemy = useCallback((hero: Hero) => {
         if (selectedEnemies.find(e => e.id === hero.id)) return;
         if (myTeam.find(e => e.id === hero.id)) return;
@@ -91,43 +117,37 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
     const clearAll = useCallback(() => {
         setSelectedEnemies([]);
         setMyTeamSlots(emptySlots());
+        setAnalysisEnemies([]);
+        setAnalysisMyTeamSlots(emptySlots());
+        setAnalysisSignature('');
     }, []);
 
-    // Reveal the draft: fetch matchups for any selected enemies that
-    // haven't been loaded yet, then unhide the picks.
     const revealDraft = useCallback(async () => {
-        const needed = selectedEnemies.filter(e => !matchupsMap[e.id]);
-        if (needed.length > 0) {
-            setDrafting(true);
-            try {
-                const fetched = await Promise.all(
-                    needed.map(async e => [e.id, await api.fetchMatchups(e.id)] as const)
-                );
-                setMatchupsMap(prev => {
-                    const next = { ...prev };
-                    for (const [id, matchups] of fetched) next[id] = matchups;
-                    return next;
-                });
-            } catch (e) {
-                console.error('Error revealing draft', e);
-            } finally {
-                setDrafting(false);
-            }
+        if (!canRevealDraft) return;
+
+        const enemiesSnapshot = [...selectedEnemies];
+        const teamSnapshot = [...myTeamSlots];
+        const targetRoleSnapshot = targetRole;
+        const signatureSnapshot = draftSignature;
+
+        setAnalysisEnemies(enemiesSnapshot);
+        setAnalysisMyTeamSlots(teamSnapshot);
+        setAnalysisTargetRole(targetRoleSnapshot);
+        setAnalysisSignature(signatureSnapshot);
+
+        if (enemiesSnapshot.length === 0) return;
+
+        setLoading(true);
+        try {
+            await Promise.all(enemiesSnapshot.map(enemy => fetchMatchupsForHero(enemy.id)));
+        } finally {
+            setLoading(false);
         }
-        setIsDrafted(true);
-    }, [selectedEnemies, matchupsMap]);
+    }, [canRevealDraft, selectedEnemies, myTeamSlots, targetRole, draftSignature, fetchMatchupsForHero]);
 
-    // Any change to the selection invalidates the revealed draft so the
-    // user must re-reveal — picks vanish to avoid showing stale advice.
-    useEffect(() => {
-        setIsDrafted(false);
-    }, [selectedEnemies, myTeamSlots]);
-
-    // Calculate counters — gated behind isDrafted so nothing renders until
-    // the user explicitly clicks Reveal.
+    // Calculate counters
     const topCounters = useMemo(() => {
-        if (!isDrafted) return [];
-        if (selectedEnemies.length === 0 && myTeam.length === 0) return [];
+        if (!hasAnalysis || (analysisEnemies.length === 0 && analysisMyTeam.length === 0)) return [];
 
         const scores: Record<number, {
             totalAdvantage: number;
@@ -140,16 +160,37 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
 
         // --- 1. Enemy composition traits ---
         const enemyTraits: Set<string> = new Set();
-        selectedEnemies.forEach(e => {
+        const enemyTraitCounts: Record<string, number> = {};
+        analysisEnemies.forEach(e => {
             Object.keys(HERO_TAGS).forEach(tag => {
-                if (HERO_TAGS[tag].includes(e.id)) enemyTraits.add(tag);
+                if (HERO_TAGS[tag].includes(e.id)) {
+                    enemyTraits.add(tag);
+                    enemyTraitCounts[tag] = (enemyTraitCounts[tag] ?? 0) + 1;
+                }
             });
         });
 
-        if (selectedEnemies.length > 0) {
-            selectedEnemies.forEach(enemy => {
+        const applyHeuristicBonus = (
+            heroId: number,
+            enemyTag: string,
+            counterTag: keyof typeof COUNTER_TAGS,
+            weight: number,
+            reason: string,
+        ) => {
+            const enemyCount = enemyTraitCounts[enemyTag] ?? 0;
+            if (enemyCount === 0 || !COUNTER_TAGS[counterTag].includes(heroId)) return;
+
+            scores[heroId].heuristicBonus += weight * traitPressure(enemyCount);
+            if (!scores[heroId].reasons.includes(reason)) scores[heroId].reasons.push(reason);
+        };
+
+        let enemiesWithMatchupData = 0;
+
+        if (analysisEnemies.length > 0) {
+            analysisEnemies.forEach(enemy => {
                 const matchups = matchupsMap[enemy.id];
                 if (!matchups) return;
+                if (matchups.some(m => m.games_played >= 10)) enemiesWithMatchupData += 1;
 
                 matchups.forEach(m => {
                     if (m.games_played < 10) return;
@@ -160,18 +201,14 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
                     if (!scores[m.hero_id]) {
                         scores[m.hero_id] = { totalAdvantage: 0, totalWinRate: 0, matchCount: 0, heuristicBonus: 0, synergyBonus: 0, reasons: [] };
 
-                        if (enemyTraits.has('ILLUSIONIST') && COUNTER_TAGS['ANTI_ILLUSION'].includes(m.hero_id)) {
-                            scores[m.hero_id].heuristicBonus += HEURISTIC_WEIGHTS.ANTI_ILLUSION;
-                            if (!scores[m.hero_id].reasons.includes('AoE vs Multiple Units')) scores[m.hero_id].reasons.push('AoE vs Multiple Units');
-                        }
-                        if (enemyTraits.has('HEALER') && COUNTER_TAGS['ANTI_HEALER'].includes(m.hero_id)) {
-                            scores[m.hero_id].heuristicBonus += HEURISTIC_WEIGHTS.ANTI_HEALER;
-                            if (!scores[m.hero_id].reasons.includes('Cuts Healing')) scores[m.hero_id].reasons.push('Cuts Healing');
-                        }
-                        if (enemyTraits.has('TANKY_CORE') && COUNTER_TAGS['ANTI_TANK'].includes(m.hero_id)) {
-                            scores[m.hero_id].heuristicBonus += HEURISTIC_WEIGHTS.ANTI_TANK;
-                            if (!scores[m.hero_id].reasons.includes('Counters Tanks')) scores[m.hero_id].reasons.push('Counters Tanks');
-                        }
+                        applyHeuristicBonus(m.hero_id, 'ILLUSIONIST', 'ANTI_ILLUSION', HEURISTIC_WEIGHTS.ANTI_ILLUSION, 'AoE vs Multiple Units');
+                        applyHeuristicBonus(m.hero_id, 'SUMMONER', 'ANTI_ILLUSION', HEURISTIC_WEIGHTS.ANTI_ILLUSION, 'AoE vs Multiple Units');
+                        applyHeuristicBonus(m.hero_id, 'HEALER', 'ANTI_HEALER', HEURISTIC_WEIGHTS.ANTI_HEALER, 'Cuts Healing');
+                        applyHeuristicBonus(m.hero_id, 'TANKY_CORE', 'ANTI_TANK', HEURISTIC_WEIGHTS.ANTI_TANK, 'Counters Tanks');
+                        applyHeuristicBonus(m.hero_id, 'INVISIBILITY', 'ANTI_INVIS', HEURISTIC_WEIGHTS.ANTI_INVIS, 'Reveals invis heroes');
+                        applyHeuristicBonus(m.hero_id, 'ESCAPE', 'ANTI_ESCAPE', HEURISTIC_WEIGHTS.ANTI_ESCAPE, 'Catches mobile heroes');
+                        applyHeuristicBonus(m.hero_id, 'ESCAPE', 'LOCKDOWN', HEURISTIC_WEIGHTS.LOCKDOWN, 'Reliable lockdown');
+                        applyHeuristicBonus(m.hero_id, 'PICKOFF', 'ANTI_PICKOFF', HEURISTIC_WEIGHTS.ANTI_PICKOFF, 'Stops pickoffs');
                     }
 
                     const candidateHero = heroes.find(h => h.id === m.hero_id);
@@ -184,6 +221,10 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
                     scores[m.hero_id].totalAdvantage += advantage;
                     scores[m.hero_id].totalWinRate += myWinRate;
                     scores[m.hero_id].matchCount += 1;
+
+                    if ((advantage >= 0.03 || myWinRate >= 0.52) && scores[m.hero_id].reasons.length < 4) {
+                        scores[m.hero_id].reasons.push(`Strong vs ${enemy.localized_name}`);
+                    }
                 });
             });
         } else {
@@ -196,7 +237,7 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         // --- 2. My team synergy — now role-aware ---
         // Count filled positions by slot index (0=carry … 4=hard sup)
         const filledPositions = new Set<PositionNumber>();
-        myTeamSlots.forEach((h, idx) => {
+        analysisMyTeamSlots.forEach((h, idx) => {
             if (h) filledPositions.add((idx + 1) as PositionNumber);
         });
         const myCoreCount = [1, 2, 3].filter(p => filledPositions.has(p as PositionNumber)).length;
@@ -219,7 +260,7 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
                 reasons.push('Needs Core');
             }
 
-            const myMeleeCount = myTeam.filter(h => h.attack_type === 'Melee').length;
+            const myMeleeCount = analysisMyTeam.filter(h => h.attack_type === 'Melee').length;
             if (myMeleeCount >= 3 && hero.attack_type === 'Ranged') {
                 synergyScore += SYNERGY_WEIGHTS.RANGED_BALANCE;
             }
@@ -229,11 +270,9 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         });
 
         const results: CounterPick[] = [];
-        // Base threshold on enemies whose matchups have actually loaded — otherwise
-        // picks vanish while async fetches are in flight (threshold demands evidence
-        // from data that hasn't arrived yet).
-        const loadedEnemyCount = selectedEnemies.filter(e => matchupsMap[e.id]).length;
-        const threshold = loadedEnemyCount > 0 ? Math.max(1, Math.ceil(loadedEnemyCount * 0.5)) : 0;
+        const threshold = analysisEnemies.length > 0
+            ? Math.max(1, Math.ceil(Math.max(1, enemiesWithMatchupData) * 0.5))
+            : 0;
 
         // --- 3. Filter by target role ---
         Object.keys(scores).forEach(heroIdStr => {
@@ -244,9 +283,11 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
             if (!hero) return;
 
             let matchesRole = true;
-            if (targetRole !== 'Any') {
+            if (analysisTargetRole !== 'Any') {
                 const heroRoles = getHeroRoles(hero.id, hero.roles, hero.primary_attr);
-                matchesRole = heroRoles.includes(targetRole);
+                const hasRequestedRole = heroRoles.includes(analysisTargetRole);
+                const hasSupportProfile = !isSupportPosition(analysisTargetRole) || heroRoles.some(isSupportPosition);
+                matchesRole = hasRequestedRole && hasSupportProfile;
             }
 
             if (score.matchCount >= threshold && matchesRole) {
@@ -254,13 +295,13 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
                 const avgWinRate = score.matchCount > 0 ? score.totalWinRate / score.matchCount : 0.5;
 
                 let finalBaseScore = avgAdvantage;
-                if (selectedEnemies.length === 0 && score.matchCount === 0) {
+                if (analysisEnemies.length === 0 && score.matchCount === 0) {
                     finalBaseScore = (score.totalWinRate - 0.5);
                 }
 
                 const finalScore = (finalBaseScore + score.heuristicBonus + score.synergyBonus) * 100;
 
-                if (!selectedEnemies.find(e => e.id === heroId) && !myTeam.find(m => m.id === heroId)) {
+                if (!analysisEnemies.find(e => e.id === heroId) && !analysisMyTeam.find(m => m.id === heroId)) {
                     results.push({
                         hero,
                         winRate: avgWinRate,
@@ -273,13 +314,21 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         });
 
         return results.sort((a, b) => b.score - a.score).slice(0, 20);
-    }, [isDrafted, selectedEnemies, myTeam, myTeamSlots, matchupsMap, heroes, targetRole]);
+    }, [hasAnalysis, analysisEnemies, analysisMyTeam, analysisMyTeamSlots, matchupsMap, heroes, analysisTargetRole]);
 
     return {
         heroes,
         selectedEnemies,
         myTeam,              // flat picked-only list (back-compat)
         myTeamSlots,         // length-5 sparse array indexed by pos-1
+        analysisEnemies,
+        analysisMyTeam,
+        analysisMyTeamSlots,
+        analysisTargetRole,
+        hasAnalysis,
+        isAnalysisCurrent,
+        isAnalysisStale,
+        canRevealDraft,
         topCounters,
         matchupsMap,
         loading,
@@ -289,11 +338,8 @@ export const useCounterPicker = (targetRole: Position | 'Any' = 'Any') => {
         setMyTeamAt,         // (pos, hero|null) — place/evict at specific position
         removeMyTeamAt,      // (pos) — clear a specific slot
         removeMyTeam,        // (heroId) — back-compat: remove by id
-        clearAll,
-        // Reveal-Draft flow
-        isDrafted,
-        drafting,
         revealDraft,
+        clearAll,
         // Helpers
         NUMBER_TO_POSITION,
     };

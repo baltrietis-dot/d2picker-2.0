@@ -5,6 +5,10 @@ export const HEURISTIC_WEIGHTS = {
     ANTI_ILLUSION: 0.50,  // Boost heroes that counter illusion-based enemies (PL, Naga, etc.)
     ANTI_HEALER:   0.40,  // Boost heroes that counter sustain/healing (Omni, IO, Abaddon, etc.)
     ANTI_TANK:     0.30,  // Boost heroes that counter tanky cores (armor reduction, break, etc.)
+    ANTI_INVIS:    0.45,  // Boost reveal heroes into invisibility-heavy drafts
+    ANTI_ESCAPE:   0.28,  // Boost catch heroes into mobile drafts
+    LOCKDOWN:      0.22,  // Boost reliable disables when enemies can reset fights
+    ANTI_PICKOFF:  0.18,  // Boost heroes that blunt fog/invis pickoff patterns
 };
 
 // Synergy bonus weights applied based on your team composition.

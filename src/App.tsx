@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useCounterPicker } from './hooks/useCounterPicker';
 import { HeroGrid } from './components/HeroGrid';
 import { CounterList } from './components/CounterList';
@@ -12,12 +12,59 @@ import { AboutUs } from './components/AboutUs';
 import { Contact } from './components/Contact';
 import { CryptoDonate } from './components/CryptoDonate';
 import { InstallPrompt } from './components/InstallPrompt';
-import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, MessageCircle, Filter } from 'lucide-react';
-import { type Position, type PositionNumber, NUMBER_TO_POSITION, getHeroRoles } from './data/heroPositions';
+import { MetricHint } from './components/MetricHint';
+import { METRIC_HINTS } from './components/metricHints';
+import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, MessageCircle, Filter, Sparkles, BarChart3, Copy, Check, Trophy } from 'lucide-react';
+import { type Position, type PositionNumber, NUMBER_TO_POSITION, POSITION_TO_NUMBER, getHeroRoles } from './data/heroPositions';
 import { getSlugFromPath, heroFromSlug } from './utils/heroSlug';
-import { useLanguage } from './context/LanguageContext';
+import { useLanguage } from './context/useLanguage';
+import type { TranslationKey } from './i18n/translations';
+import { EsportsHub } from './esports/EsportsHub';
+
+const POSITION_FULL_KEYS = {
+  Carry: 'posFullCarry',
+  Mid: 'posFullMid',
+  Offlane: 'posFullOfflane',
+  SoftSupport: 'posFullSoftSupport',
+  HardSupport: 'posFullHardSupport',
+} as const satisfies Record<Position, TranslationKey>;
+
+const POSITION_SHORT_KEYS = {
+  Carry: 'posShortCarry',
+  Mid: 'posShortMid',
+  Offlane: 'posShortOfflane',
+  SoftSupport: 'posShortSoftSupport',
+  HardSupport: 'posShortHardSupport',
+} as const satisfies Record<Position, TranslationKey>;
+
+const ROLE_KEYS = {
+  Any: 'roleAny',
+  Carry: 'roleCarry',
+  Mid: 'roleMid',
+  Offlane: 'roleOfflane',
+  SoftSupport: 'roleSoftSupport',
+  HardSupport: 'roleHardSupport',
+} as const satisfies Record<Position | 'Any', TranslationKey>;
+
+const formatDraftScore = (value: number) => `${Math.round(value)}`;
+
+const getDraftConfidence = (matchCount: number, enemyCount: number): { labelKey: TranslationKey; className: string } => {
+  if (enemyCount === 0) return { labelKey: 'metaRead', className: 'text-gold-300' };
+  if (matchCount >= enemyCount) return { labelKey: 'highConfidence', className: 'text-radiant-300' };
+  if (matchCount >= Math.ceil(enemyCount * 0.5)) return { labelKey: 'goodSignal', className: 'text-gold-300' };
+  return { labelKey: 'lightSignal', className: 'text-white/65' };
+};
+
+const isEsportsPath = (pathname: string) => {
+  const normalized = pathname.replace(/\/+$/, '').toLowerCase() || '/';
+  return normalized === '/esports' || normalized.startsWith('/esports/');
+};
 
 function App() {
+  return isEsportsPath(window.location.pathname) ? <EsportsHub /> : <DotaPickerApp />;
+}
+
+function DotaPickerApp() {
   // Version Log
   useEffect(() => {
     console.log('App Version: 2.1 (Share Fix)');
@@ -25,12 +72,19 @@ function App() {
 
   const { t, language, setLanguage } = useLanguage();
   const [targetRole, setTargetRole] = useState<Position | 'Any'>('Any');
+  const [summaryCopied, setSummaryCopied] = useState(false);
 
   const {
     heroes,
     selectedEnemies,
     myTeam,
     myTeamSlots,
+    analysisEnemies,
+    analysisTargetRole,
+    hasAnalysis,
+    isAnalysisCurrent,
+    isAnalysisStale,
+    canRevealDraft,
     topCounters,
     matchupsMap,
     loading,
@@ -39,35 +93,29 @@ function App() {
     removeEnemy,
     setMyTeamAt,
     removeMyTeamAt,
-    clearAll,
-    drafting,
-    revealDraft
+    revealDraft,
+    clearAll
   } = useCounterPicker(targetRole);
 
   useEffect(() => {
     loadHeroes();
   }, [loadHeroes]);
 
-  // State to track if we've processed the initial URL params
-  const [isUrlLoaded, setIsUrlLoaded] = useState(false);
-
-  // Tracks whether we should auto-reveal once the URL-loaded selection
-  // settles. Only true for genuinely shared drafts (URL had selection),
-  // not for someone who navigated to a /counter/<hero> page and is about
-  // to keep picking.
-  const [autoRevealPending, setAutoRevealPending] = useState(false);
+  const isUrlLoadedRef = useRef(false);
+  const autoRevealPendingRef = useRef(false);
 
   // Load hero from /counter/:slug path OR shared draft from URL parameters
   useEffect(() => {
     if (heroes.length === 0) return;
+    if (isUrlLoadedRef.current) return;
 
     // Handle /counter/anti-mage and /ru/counter/anti-mage pages
     const pathInfo = getSlugFromPath();
-    if (pathInfo && !isUrlLoaded) {
+    if (pathInfo) {
       const hero = heroFromSlug(pathInfo.slug, heroes);
       if (hero) addEnemy(hero);
       if (pathInfo.lang === 'ru') setLanguage('ru');
-      setIsUrlLoaded(true);
+      isUrlLoadedRef.current = true;
       return;
     }
 
@@ -84,10 +132,10 @@ function App() {
       })
       .filter(e => !isNaN(e.id));
 
-    if (!isUrlLoaded && (enemyIds.length > 0 || teamEntries.length > 0) && selectedEnemies.length === 0 && myTeam.length === 0) {
-      // Shared draft: auto-reveal once selection settles so the visitor
-      // doesn't have to click after opening someone else's link.
-      setAutoRevealPending(true);
+    if ((enemyIds.length > 0 || teamEntries.length > 0) && selectedEnemies.length === 0 && myTeam.length === 0) {
+      // Shared draft links should show recommendations after the URL state
+      // finishes populating, without requiring a second click.
+      autoRevealPendingRef.current = true;
       enemyIds.forEach(id => {
         const hero = heroes.find(h => h.id === id);
         if (hero) addEnemy(hero);
@@ -112,16 +160,16 @@ function App() {
       });
     }
 
-    setIsUrlLoaded(true);
-  }, [heroes, isUrlLoaded, selectedEnemies.length, myTeam.length, addEnemy, setMyTeamAt]);
+    isUrlLoadedRef.current = true;
+  }, [heroes, selectedEnemies.length, myTeam.length, addEnemy, setMyTeamAt, setLanguage]);
 
-  // Fire auto-reveal once a shared-draft URL has populated selection.
   useEffect(() => {
-    if (!autoRevealPending) return;
+    if (!autoRevealPendingRef.current) return;
     if (selectedEnemies.length === 0 && myTeam.length === 0) return;
-    setAutoRevealPending(false);
-    revealDraft();
-  }, [autoRevealPending, selectedEnemies.length, myTeam.length, revealDraft]);
+
+    autoRevealPendingRef.current = false;
+    void revealDraft();
+  }, [selectedEnemies.length, myTeam.length, revealDraft]);
 
   // Update document title dynamically
   useEffect(() => {
@@ -136,7 +184,7 @@ function App() {
 
   // Sync state to URL
   useEffect(() => {
-    if (!isUrlLoaded) return; // Don't overwrite URL until we've loaded initial state
+    if (!isUrlLoadedRef.current) return; // Don't overwrite URL until we've loaded initial state
 
     const params = new URLSearchParams();
     if (selectedEnemies.length > 0) {
@@ -153,52 +201,279 @@ function App() {
     const newUrl = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
     window.history.replaceState({}, '', newUrl);
 
-  }, [selectedEnemies, myTeamSlots, isUrlLoaded]);
+  }, [selectedEnemies, myTeamSlots]);
 
   // Selection mode:
-  //   'enemy'                  → clicking hero adds to enemy pool
-  //   { pos: N }               → clicking hero assigns to my-team slot N
+  //   'enemy'    - clicking hero adds to enemy pool
+  //   { pos: N } - clicking hero assigns to my-team slot N
   type SelectionMode = 'enemy' | { pos: PositionNumber };
   const [selectionMode, setSelectionMode] = useState<SelectionMode>('enemy');
-  const [hideOffRole, setHideOffRole] = useState(true);
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
   const [showTerms, setShowTerms] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const draftActivity = selectedEnemies.length + myTeam.length;
+  const currentCounters = isAnalysisCurrent ? topCounters : [];
+  const currentAnalysisEnemies = isAnalysisCurrent ? analysisEnemies : selectedEnemies;
+  const currentAnalysisRole = isAnalysisCurrent ? analysisTargetRole : targetRole;
+  const bestPick = currentCounters[0];
+  const bestPickConfidence = bestPick
+    ? getDraftConfidence(bestPick.matchCount, currentAnalysisEnemies.length)
+    : null;
+  const bestPickConfidenceLabel = bestPickConfidence ? t(bestPickConfidence.labelKey) : null;
+  const bestPickCoverage = bestPick && currentAnalysisEnemies.length > 0
+    ? `${bestPick.matchCount}/${currentAnalysisEnemies.length}`
+    : t('meta');
+  const activeModeLabel = selectionMode === 'enemy'
+    ? t('enemyTeam')
+    : t(POSITION_FULL_KEYS[NUMBER_TO_POSITION[selectionMode.pos]]);
+
+  const selectEnemyMode = () => {
+    setSelectionMode('enemy');
+    setTargetRole('Any');
+  };
+
+  const selectPickSlot = (pos: PositionNumber) => {
+    setSelectionMode({ pos });
+    setTargetRole(NUMBER_TO_POSITION[pos]);
+  };
+
+  const selectRecommendationRole = (role: Position | 'Any') => {
+    setTargetRole(role);
+    if (role === 'Any') {
+      setSelectionMode('enemy');
+      return;
+    }
+    setSelectionMode({ pos: POSITION_TO_NUMBER[role] });
+  };
+
+  const copyDraftSummary = async () => {
+    if (draftActivity === 0) return;
+
+    const enemyText = selectedEnemies.length > 0
+      ? selectedEnemies.map(hero => hero.localized_name).join(', ')
+      : t('noneSelected');
+    const allyText = myTeamSlots
+      .map((hero, idx) => hero ? `${idx + 1}. ${hero.localized_name}` : null)
+      .filter(Boolean)
+      .join(', ') || t('noneSelected');
+    const bestPickText = bestPick
+      ? `${bestPick.hero.localized_name} (${t('draftScore')} ${formatDraftScore(bestPick.score)}, ${bestPickCoverage} ${t('coverage')}, ${bestPickConfidenceLabel ?? t('signalPending')})`
+      : loading ? t('calculating') : isAnalysisStale ? t('draftChanged') : t('noPickYet');
+    const backupText = currentCounters.slice(1, 4)
+      .map((counter, idx) => `${idx + 2}. ${counter.hero.localized_name} (${t('draftScore')} ${formatDraftScore(counter.score)})`)
+      .join(', ') || t('none');
+
+    const summary = [
+      `Dota 2 ${t('draftSummary').toString().toLowerCase()}`,
+      `${t('enemy')}: ${enemyText}`,
+      `${t('allies')}: ${allyText}`,
+      `${t('targetRole')} ${t(ROLE_KEYS[currentAnalysisRole])}`,
+      `${t('bestPick')}: ${bestPickText}`,
+      `${t('backups')}: ${backupText}`,
+      window.location.href,
+    ].join('\n');
+
+    try {
+      await navigator.clipboard.writeText(summary);
+      setSummaryCopied(true);
+      window.setTimeout(() => setSummaryCopied(false), 1800);
+    } catch {
+      setSummaryCopied(false);
+    }
+  };
+
+  const renderSuggestionsPanel = (className: string) => (
+    <div className={`flex-none flex flex-col ${className}`}>
+      <div className="mb-2 flex items-center justify-between px-1">
+        <span className="label-sm">{t('targetRole')}</span>
+      </div>
+
+      <div className="surface mb-3 grid grid-cols-3 gap-1 rounded-lg p-1 sm:grid-cols-6 lg:grid-cols-3 xl:grid-cols-6">
+        {(['Any', 'Carry', 'Mid', 'Offlane', 'SoftSupport', 'HardSupport'] as const).map(role => (
+          <button
+            key={role}
+            onClick={() => selectRecommendationRole(role)}
+            className={`flex h-7 min-w-0 items-center justify-center rounded-md px-1.5 text-[10px] font-black uppercase leading-none tracking-[0.08em] transition-all duration-200 ease-expo-out whitespace-nowrap ${
+              targetRole === role
+                ? 'bg-gold-400 text-obsidian-900 shadow-[0_10px_24px_-18px_rgba(251,191,36,0.9),inset_0_1px_0_rgba(255,255,255,0.35)]'
+                : 'text-white/45 hover:bg-white/5 hover:text-white'
+            }`}
+          >
+            {t(ROLE_KEYS[role])}
+          </button>
+        ))}
+      </div>
+
+      <div className="surface mb-3 rounded-lg p-2">
+        {!isAnalysisCurrent && (
+          <button
+            type="button"
+            onClick={revealDraft}
+            disabled={!canRevealDraft || loading}
+            className={`flex min-h-[38px] w-full items-center justify-center gap-2 rounded-md px-3 text-[11px] font-black uppercase tracking-[0.14em] transition-all ${
+              !canRevealDraft || loading
+                ? 'border border-white/10 bg-white/[0.03] text-white/35'
+                : 'btn-gold'
+            }`}
+          >
+            <Sparkles className="h-3.5 w-3.5" />
+            {loading ? t('calculating') : hasAnalysis ? t('updateDraft') : t('revealDraft')}
+          </button>
+        )}
+        <div className={`${isAnalysisCurrent ? '' : 'mt-2'} text-center text-[10px] font-bold uppercase tracking-[0.14em] text-white/35`}>
+          {isAnalysisCurrent ? t('analysisCurrent') : isAnalysisStale ? t('draftChanged') : t('draftNotAnalysed')}
+        </div>
+      </div>
+
+      <div className="mb-2 flex items-center justify-between px-1">
+        <span className="label-sm">{t('proDataHeuristics')}</span>
+      </div>
+      <CounterList
+        counters={currentCounters}
+        loading={loading && isAnalysisCurrent}
+        selectedEnemies={currentAnalysisEnemies}
+        matchupsMap={matchupsMap}
+        targetRole={currentAnalysisRole}
+      />
+
+      <div className="mt-4 hidden rounded-lg overflow-hidden lg:block">
+        <SidebarAd />
+      </div>
+    </div>
+  );
+
+  const renderDraftSummary = () => {
+    if (draftActivity === 0) return null;
+
+    return (
+      <section className="surface rounded-lg p-3">
+        <div className="mb-2 flex items-center justify-between gap-3">
+          <div className="label-sm">{t('draftSummary')}</div>
+          <button
+            type="button"
+            onClick={copyDraftSummary}
+            className="control-chip min-h-[30px] gap-1.5 border-gold-500/25 bg-gold-500/10 px-2.5 text-gold-200 hover:border-gold-400/45 hover:bg-gold-500/15"
+            title={t('copySummary')}
+          >
+            {summaryCopied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
+            <span>{summaryCopied ? t('copied') : t('copySummary')}</span>
+          </button>
+        </div>
+        <div className="grid gap-2 lg:grid-cols-[1.25fr_0.72fr_0.72fr_0.75fr]">
+          <div className="min-w-0 rounded-md border border-gold-700/25 bg-gold-700/10 p-2">
+            <div className="mb-1 flex items-center gap-1.5 label-sm">
+              <Sparkles className="h-3.5 w-3.5 text-gold-400" />
+              {t('bestPick')}
+            </div>
+            {bestPick ? (
+              <div className="flex min-w-0 items-center gap-2">
+                <img
+                  src={bestPick.hero.img}
+                  alt={bestPick.hero.localized_name}
+                  className="h-8 w-14 shrink-0 rounded-md object-cover gold-frame"
+                />
+                <div className="min-w-0 flex-1">
+                  <div className="truncate font-display text-sm font-bold text-white">{bestPick.hero.localized_name}</div>
+                  <div className="mt-0.5 flex items-center gap-1.5 text-[11px] text-white/45">
+                    <span className="font-mono font-black text-radiant-300">{formatDraftScore(bestPick.score)}</span>
+                    <MetricHint
+                      label={t('draftScore')}
+                      hint={METRIC_HINTS.draftScore}
+                      icon={<TrendingUp className="h-3 w-3" />}
+                      className="text-[10px] font-black uppercase tracking-[0.12em] text-white/40"
+                    />
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="text-sm font-bold text-white/50">{loading ? t('calculating') : isAnalysisStale ? t('draftChanged') : t('noPickYet')}</div>
+            )}
+          </div>
+
+          <div className="grid grid-cols-2 gap-2 lg:grid-cols-1">
+            <div className="rounded-md border border-white/10 bg-obsidian-900/55 p-2">
+              <MetricHint
+                label={t('coverage')}
+                hint={METRIC_HINTS.coverage}
+                icon={<Target className="h-3.5 w-3.5" />}
+                className="mb-1 text-[10px] font-black uppercase tracking-[0.16em] text-white/40"
+              />
+              <div className="font-mono text-sm font-black text-white">{bestPick ? bestPickCoverage : '-'}</div>
+            </div>
+            <div className="rounded-md border border-white/10 bg-obsidian-900/55 p-2">
+              <MetricHint
+                label={t('signal')}
+                hint={METRIC_HINTS.signal}
+                icon={<BarChart3 className="h-3.5 w-3.5" />}
+                className="mb-1 text-[10px] font-black uppercase tracking-[0.16em] text-white/40"
+              />
+              <div className={`truncate text-sm font-black ${bestPickConfidence?.className ?? 'text-white/45'}`}>
+                {bestPickConfidenceLabel ?? '-'}
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-md border border-white/10 bg-obsidian-900/55 p-2">
+            <div className="mb-1 flex items-center gap-1.5 text-[10px] font-black uppercase tracking-[0.16em] text-white/40">
+              <Filter className="h-3.5 w-3.5" />
+              {t('targetRole')}
+            </div>
+            <div className="truncate font-display text-sm font-bold text-gold-300">{t(ROLE_KEYS[currentAnalysisRole])}</div>
+          </div>
+        </div>
+      </section>
+    );
+  };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
+    <div className="min-h-screen bg-obsidian-900 text-white flex flex-col font-sans selection:bg-gold-500 selection:text-white">
       {/* Header Ad Banner */}
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 pt-2">
         <HeaderAd />
       </div>
 
-      {/* Header */}
-      <header className="bg-slate-900 border-b border-slate-800 p-4 shadow-md z-20">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <div className="p-2 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg shadow-lg shadow-indigo-500/20">
-              <Swords className="h-6 w-6 text-white" />
+      {/* Header - sticky frosted glass */}
+      <header className="sticky top-0 z-20 border-b border-white/10 bg-obsidian-900/80 backdrop-blur-xl shadow-[0_1px_0_rgba(255,255,255,0.04)_inset,0_14px_38px_-28px_rgba(0,0,0,0.9)]">
+        <div className="max-w-7xl mx-auto flex flex-col gap-3 px-4 py-3 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex min-w-0 items-center gap-3">
+            <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-gradient-to-br from-gold-300 via-gold-500 to-gold-700 shadow-[0_0_0_1px_rgba(180,83,9,0.7),0_12px_28px_-18px_rgba(251,191,36,0.9),inset_0_1px_0_rgba(253,230,138,0.45)]">
+              <Swords className="h-5 w-5 text-obsidian-900 drop-shadow-sm" />
             </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h1 className="text-xl font-bold tracking-tight">Dota 2 Counter Picker</h1>
+            <div className="min-w-0">
+              <div className="flex min-w-0 items-center gap-2">
+                <h1 className="truncate font-display text-[19px] font-bold tracking-wide text-white">
+                  Dota 2 <span className="text-gold-400">Counter</span> Picker
+                </h1>
               </div>
-              <p className="text-xs text-slate-400">{t('tagline')}</p>
+              <div className="mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-white/45">
+                <span className="inline-flex items-center gap-1.5"><span className="status-dot" />{activeModeLabel}</span>
+                <span>{selectedEnemies.length}/5 {t('enemyTeam')}</span>
+                <span>{myTeam.length}/5 {t('myTeam')}</span>
+              </div>
             </div>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2 lg:justify-end">
+            {/* Esports Hub */}
+            <a
+              href="/esports"
+              className="toolbar-button-feature"
+            >
+              <Trophy className="h-3.5 w-3.5" />
+              <span>Live Esports</span>
+              <span className="h-1.5 w-1.5 rounded-full bg-radiant-400 shadow-[0_0_10px_rgba(52,211,153,0.85)]" />
+            </a>
             {/* Language Toggle */}
-            <div className="flex items-center gap-1 bg-slate-800 border border-slate-700 rounded-full p-0.5">
-              <button onClick={() => setLanguage('en')} className={`px-2.5 py-1 text-xs font-bold rounded-full transition-colors ${language === 'en' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white'}`}>EN</button>
-              <button onClick={() => setLanguage('ru')} className={`px-2.5 py-1 text-xs font-bold rounded-full transition-colors ${language === 'ru' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white'}`}>RU</button>
+            <div className="flex items-center gap-0.5 rounded-md border border-white/10 bg-obsidian-800/80 p-1">
+              <button onClick={() => setLanguage('en')} className={`rounded px-2.5 py-1.5 text-[11px] font-black transition-all duration-200 ease-expo-out ${language === 'en' ? 'bg-gold-400 text-obsidian-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]' : 'text-white/50 hover:text-white'}`}>EN</button>
+              <button onClick={() => setLanguage('ru')} className={`rounded px-2.5 py-1.5 text-[11px] font-black transition-all duration-200 ease-expo-out ${language === 'ru' ? 'bg-gold-400 text-obsidian-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]' : 'text-white/50 hover:text-white'}`}>RU</button>
             </div>
             {/* Ko-fi */}
             <a
               href="https://ko-fi.com/dota2picker"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-3 py-1.5 bg-[#FF5E5B] hover:bg-[#ff4744] text-white text-xs font-bold rounded-full transition-colors shadow-sm"
+              className="toolbar-button"
             >
               {t('support')}
             </a>
@@ -208,13 +483,13 @@ function App() {
             <ShareButton
               selectedEnemies={selectedEnemies}
               myTeam={myTeam}
-              topCounters={topCounters}
+              topCounters={currentCounters}
             />
             {/* Clear All */}
             {(selectedEnemies.length > 0 || myTeam.length > 0) && (
               <button
                 onClick={clearAll}
-                className="flex items-center gap-1 text-xs text-slate-400 hover:text-white transition-colors bg-slate-800 border border-slate-700 hover:bg-slate-700 px-3 py-1.5 rounded-full"
+                className="toolbar-button"
               >
                 <RotateCcw className="h-3 w-3" />
                 {t('reset')}
@@ -225,33 +500,35 @@ function App() {
       </header>
 
       {/* Hero CTA Section - Only show when no heroes selected */}
-      {selectedEnemies.length === 0 && myTeam.length === 0 && (
-        <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-700 py-6 px-4">
-          <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-2">
-              <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                {t('dominateDrafts')}
-              </span>
+      {draftActivity === 0 && (
+        <div className="mx-auto w-full max-w-7xl px-4 pt-4">
+          {/* Atmospheric glows */}
+          <div className="hidden" />
+          <div className="surface rounded-lg p-4">
+            <h2 className="font-display text-2xl font-bold tracking-wide text-white">
+              {t('dominateDrafts')}
             </h2>
-            <p className="text-slate-400 mb-4 max-w-xl mx-auto">
+            <p className="mt-1 max-w-2xl text-sm leading-relaxed text-white/55">
               {t('ctaDesc')}
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-sm mb-4">
-              <div className="flex items-center gap-2 text-slate-400">
-                <Zap className="h-4 w-4 text-yellow-400" />
+            <div className="mt-4 grid gap-2 text-[12px] sm:grid-cols-3">
+              <div className="surface-quiet flex items-center gap-2 rounded-md p-3 text-white/60">
+                <Zap className="h-3.5 w-3.5 text-gold-400" />
                 <span>{t('instantResults')}</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-400">
-                <TrendingUp className="h-4 w-4 text-green-400" />
+              <span className="hidden text-gold-700/40">-</span>
+              <div className="surface-quiet flex items-center gap-2 rounded-md p-3 text-white/60">
+                <TrendingUp className="h-3.5 w-3.5 text-radiant-500" />
                 <span>{t('proWinRates')}</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-400">
-                <Target className="h-4 w-4 text-red-400" />
+              <span className="hidden text-gold-700/40">-</span>
+              <div className="surface-quiet flex items-center gap-2 rounded-md p-3 text-white/60">
+                <Target className="h-3.5 w-3.5 text-dire-600" />
                 <span>{t('roleBasedPicks')}</span>
               </div>
             </div>
 
-            <a href="#guide" className="inline-flex items-center gap-2 text-xs font-bold text-indigo-400 hover:text-indigo-300 hover:underline transition-colors">
+            <a href="#guide" className="toolbar-button mt-4">
               <BookOpen className="h-3 w-3" />
               {t('readGuide')}
             </a>
@@ -259,81 +536,95 @@ function App() {
         </div>
       )}
 
-      <main className="flex-1 max-w-7xl w-full mx-auto p-4 overflow-hidden flex flex-col gap-6">
+      <main className={`flex-1 max-w-7xl w-full mx-auto flex flex-col ${draftActivity > 0 ? 'gap-3 p-3 lg:p-4' : 'gap-4 p-4'}`}>
 
         {/* Teams Bar - Visual Only Now */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
           {/* Enemy Team Display */}
-          <section className={`rounded-xl p-4 border transition-colors ${selectionMode === 'enemy' ? 'bg-slate-800 border-red-500/50 shadow-[0_0_15px_-3px_rgba(239,68,68,0.3)]' : 'bg-slate-800/50 border-slate-700'}`}>
-            <div className="flex justify-between items-center mb-4">
-              <h2 className={`flex items-center gap-2 font-bold uppercase tracking-wider text-sm ${selectionMode === 'enemy' ? 'text-red-400' : 'text-slate-500'}`}>
+          <section className={`surface rounded-lg p-2.5 transition-all duration-300 ease-expo-out ${selectionMode === 'enemy'
+            ? 'border-dire-500/45 shadow-[0_18px_46px_-30px_rgba(220,38,38,0.9)]'
+            : 'opacity-90'}`}>
+            <div className="flex justify-between items-center mb-2">
+              <h2 className={`flex items-center gap-2 font-display text-sm font-bold uppercase tracking-[0.18em] ${selectionMode === 'enemy' ? 'text-dire-400' : 'text-white/40'}`}>
                 <Shield className="h-4 w-4" />
                 {t('enemyTeam')}
               </h2>
+              <span className="label-sm">{selectedEnemies.length}/5</span>
             </div>
-            <div className="flex gap-2 overflow-x-auto pb-1">
+            <div className="grid grid-cols-5 gap-1.5">
               {Array.from({ length: 5 }).map((_, idx) => {
                 const hero = selectedEnemies[idx];
                 return (
                   <div
                     key={idx}
                     onClick={() => hero && removeEnemy(hero.id)}
-                    className={`relative flex-1 min-w-[60px] aspect-[16/9] rounded border-2 border-dashed flex items-center justify-center transition-all bg-slate-900/50 overflow-hidden group ${hero ? 'border-red-500/50 cursor-pointer hover:border-red-500' : 'border-slate-700'}`}
+                    className={`slot-shell relative aspect-[16/9] rounded-md flex items-center justify-center transition-all duration-200 ease-expo-out overflow-hidden group ${
+                      hero
+                        ? 'cursor-pointer border-dire-500/50 hover:border-dire-400 hover:shadow-[0_0_20px_-8px_rgba(248,113,113,0.9)]'
+                        : selectionMode === 'enemy'
+                          ? 'border-dashed border-dire-500/30'
+                          : 'border-dashed border-white/10'
+                    }`}
                   >
                     {hero ? (
                       <>
                         <img src={hero.img} alt={hero.localized_name} className="w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                          <span className="text-xs text-red-500 font-bold">X</span>
+                        <div className="absolute inset-0 bg-gradient-to-t from-dire-900/70 via-transparent to-transparent opacity-60" />
+                        <div className="absolute inset-0 bg-obsidian-900/70 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                          <span className="text-sm text-dire-400 font-black">x</span>
                         </div>
                       </>
-                    ) : <span className="text-slate-700 text-lg font-bold">{idx + 1}</span>}
+                    ) : <span className="font-display text-lg font-bold text-white/15">{idx + 1}</span>}
                   </div>
                 );
               })}
             </div>
           </section>
 
-          {/* My Team Display — positioned slots 1–5 */}
-          <section className={`rounded-xl p-4 border transition-colors ${selectionMode !== 'enemy' ? 'bg-slate-800 border-green-500/50 shadow-[0_0_15px_-3px_rgba(34,197,94,0.3)]' : 'bg-slate-800/50 border-slate-700'}`}>
-            <div className="flex justify-between items-center mb-4">
-              <h2 className={`flex items-center gap-2 font-bold uppercase tracking-wider text-sm ${selectionMode !== 'enemy' ? 'text-green-400' : 'text-slate-500'}`}>
+          {/* My Team Display - positioned slots 1-5 */}
+          <section className={`surface rounded-lg p-2.5 transition-all duration-300 ease-expo-out ${selectionMode !== 'enemy'
+            ? 'border-radiant-500/45 shadow-[0_18px_46px_-30px_rgba(16,185,129,0.86)]'
+            : 'opacity-90'}`}>
+            <div className="flex justify-between items-center mb-2">
+              <h2 className={`flex items-center gap-2 font-display text-sm font-bold uppercase tracking-[0.18em] ${selectionMode !== 'enemy' ? 'text-radiant-400' : 'text-white/40'}`}>
                 <Users className="h-4 w-4" />
                 {t('myTeam')}
               </h2>
+              <span className="label-sm">{myTeam.length}/5</span>
             </div>
-            <div className="flex gap-2 overflow-x-auto pb-1">
+            <div className="grid grid-cols-5 gap-1.5">
               {([1, 2, 3, 4, 5] as PositionNumber[]).map((pos) => {
                 const hero = myTeamSlots[pos - 1];
                 const isActive = selectionMode !== 'enemy' && selectionMode.pos === pos;
                 const posKey = NUMBER_TO_POSITION[pos];
                 return (
-                  <div key={pos} className="flex-1 min-w-[60px] flex flex-col gap-1">
-                    <div className={`text-[9px] uppercase font-black tracking-wider text-center leading-none ${isActive ? 'text-green-400' : 'text-slate-500'}`}>
-                      <span className="inline-block px-1 py-0.5 rounded bg-slate-900/60">{pos}</span>{' '}
-                      {t(`posShort${posKey}` as any)}
+                  <div key={pos} className="min-w-0 flex flex-col gap-1">
+                    <div className={`text-[9px] uppercase font-black tracking-[0.15em] text-center leading-none transition-colors ${isActive ? 'text-gold-400' : hero ? 'text-radiant-400/80' : 'text-white/35'}`}>
+                      <span className={`inline-block px-1 py-0.5 rounded font-display ${isActive ? 'bg-gold-500/15 ring-1 ring-gold-500/40' : 'bg-obsidian-900/60'}`}>{pos}</span>{' '}
+                      {t(POSITION_SHORT_KEYS[posKey])}
                     </div>
                     <div
                       onClick={() => {
                         if (hero) removeMyTeamAt(pos);
-                        else setSelectionMode({ pos });
+                        else selectPickSlot(pos);
                       }}
-                      className={`relative aspect-[16/9] rounded border-2 flex items-center justify-center transition-all bg-slate-900/50 overflow-hidden group cursor-pointer
+                      className={`slot-shell relative aspect-[16/9] rounded-md flex items-center justify-center transition-all duration-200 ease-expo-out overflow-hidden group cursor-pointer
                         ${hero
-                          ? 'border-green-500/50 hover:border-green-500 border-solid'
+                          ? 'border-radiant-500/60 hover:border-radiant-400 hover:shadow-[0_0_20px_-8px_rgba(52,211,153,0.9)]'
                           : isActive
-                            ? 'border-green-400 border-dashed animate-pulse'
-                            : 'border-slate-700 border-dashed hover:border-green-500/50'}`}
+                            ? 'border-dashed border-gold-400/70 shadow-[0_0_18px_-8px_rgba(251,191,36,0.75)]'
+                            : 'border-dashed border-white/10 hover:border-radiant-500/40'}`}
                       title={hero ? hero.localized_name : t('emptySlotHint')}
                     >
                       {hero ? (
                         <>
                           <img src={hero.img} alt={hero.localized_name} className="w-full h-full object-cover" />
-                          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                            <span className="text-xs text-green-500 font-bold">X</span>
+                          <div className="absolute inset-0 bg-gradient-to-t from-radiant-800/60 via-transparent to-transparent opacity-60" />
+                          <div className="absolute inset-0 bg-obsidian-900/70 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                            <span className="text-sm text-radiant-400 font-black">x</span>
                           </div>
                         </>
-                      ) : <span className="text-slate-700 text-lg font-bold">+</span>}
+                      ) : <span className={`text-lg font-bold ${isActive ? 'text-gold-400/70' : 'text-white/15'}`}>+</span>}
                     </div>
                   </div>
                 );
@@ -342,15 +633,23 @@ function App() {
           </section>
         </div>
 
+        {renderDraftSummary()}
+
         {/* Selection Tabs & Grid */}
-        <div className="flex-1 flex flex-col lg:flex-row gap-6 min-h-0 overflow-hidden">
-          <div className="flex-1 min-h-0 flex flex-col">
-            <div className="flex flex-col gap-2 mb-4 bg-slate-800 p-2 rounded-lg border border-slate-700">
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-slate-400 pl-1 shrink-0">{t('pickingFor')}</span>
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
+          {draftActivity > 0 && renderSuggestionsPanel('lg:hidden')}
+
+          <div className="flex min-h-0 flex-1 flex-col">
+            <div className="surface rounded-lg p-2 mb-3 flex flex-col gap-2">
+              <div className="grid grid-cols-3 gap-1.5 sm:grid-cols-6">
+                <span className="label-sm col-span-full pl-1">{t('pickingFor')}</span>
                 <button
-                  onClick={() => setSelectionMode('enemy')}
-                  className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-md font-bold text-xs transition-all ${selectionMode === 'enemy' ? 'bg-red-500/20 text-red-400 border border-red-500/50 shadow-lg shadow-red-500/10' : 'text-slate-500 hover:bg-slate-700 border border-transparent'}`}
+                  onClick={selectEnemyMode}
+                  className={`control-chip min-h-[42px] ${
+                    selectionMode === 'enemy'
+                      ? 'border-dire-500/60 bg-dire-900/30 text-dire-300 shadow-[0_8px_22px_-18px_rgba(248,113,113,0.9)]'
+                      : ''
+                  }`}
                 >
                   <Shield className="h-3.5 w-3.5" />
                   {t('enemyTeam')}
@@ -361,33 +660,20 @@ function App() {
                   return (
                     <button
                       key={pos}
-                      onClick={() => setSelectionMode({ pos })}
-                      className={`flex-1 flex flex-col items-center justify-center py-1 rounded-md font-bold transition-all ${isActive ? 'bg-green-500/20 text-green-400 border border-green-500/50 shadow-lg shadow-green-500/10' : 'text-slate-500 hover:bg-slate-700 border border-transparent'}`}
-                      title={t(`posFull${posKey}` as any)}
+                      onClick={() => selectPickSlot(pos)}
+                      className={`control-chip min-h-[42px] flex-col gap-0.5 ${
+                        isActive
+                          ? 'border-radiant-500/60 bg-radiant-800/25 text-radiant-300 shadow-[0_8px_22px_-18px_rgba(52,211,153,0.86)]'
+                          : ''
+                      }`}
+                      title={t(POSITION_FULL_KEYS[posKey])}
                     >
-                      <span className="text-[10px] leading-none opacity-70">{pos}</span>
-                      <span className="text-[10px] leading-tight">{t(`posShort${posKey}` as any)}</span>
+                      <span className="text-[9px] leading-none font-display opacity-80">{pos}</span>
+                      <span className="text-[9px] leading-tight uppercase tracking-wider">{t(POSITION_SHORT_KEYS[posKey])}</span>
                     </button>
                   );
                 })}
               </div>
-              {selectionMode !== 'enemy' && (
-                <div className="flex items-center gap-2 pl-1 text-[11px]">
-                  <Filter className="h-3 w-3 text-slate-500" />
-                  <button
-                    onClick={() => setHideOffRole(true)}
-                    className={`px-2 py-0.5 rounded-full font-bold transition-colors ${hideOffRole ? 'bg-green-500/20 text-green-400 border border-green-500/40' : 'text-slate-500 hover:text-slate-300 border border-transparent'}`}
-                  >
-                    {t('onlyThisRole')}
-                  </button>
-                  <button
-                    onClick={() => setHideOffRole(false)}
-                    className={`px-2 py-0.5 rounded-full font-bold transition-colors ${!hideOffRole ? 'bg-green-500/20 text-green-400 border border-green-500/40' : 'text-slate-500 hover:text-slate-300 border border-transparent'}`}
-                  >
-                    {t('showAllHeroes')}
-                  </button>
-                </div>
-              )}
             </div>
 
             <HeroGrid
@@ -401,45 +687,11 @@ function App() {
               }}
               selectedIds={[...selectedEnemies, ...myTeam].map(e => e.id)}
               filterRole={selectionMode === 'enemy' ? null : NUMBER_TO_POSITION[selectionMode.pos]}
-              hideOffRole={hideOffRole}
+              hideOffRole={false}
             />
           </div>
 
-          <div className="flex-none lg:w-96 min-h-[300px] lg:min-h-0 flex flex-col">
-            <div className="mb-2 flex items-center justify-between text-xs text-slate-500 px-1">
-              <span>{t('targetRole')}</span>
-            </div>
-
-            <div className="flex gap-1 mb-2 bg-slate-800 p-1 rounded-lg border border-slate-700 overflow-x-auto">
-              {(['Any', 'Carry', 'Mid', 'Offlane', 'SoftSupport', 'HardSupport'] as const).map(role => (
-                <button
-                  key={role}
-                  onClick={() => setTargetRole(role)}
-                  className={`flex-1 px-2 py-1 text-[10px] uppercase font-bold rounded transition-colors ${targetRole === role ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-500/20' : 'text-slate-500 hover:bg-slate-700 hover:text-slate-300'}`}
-                >
-                  {t(`role${role}` as any)}
-                </button>
-              ))}
-            </div>
-
-            <div className="mb-2 flex items-center justify-between text-xs text-slate-500 px-1">
-              <span>{t('proDataHeuristics')}</span>
-            </div>
-            <CounterList
-              counters={topCounters}
-              loading={loading}
-              selectedEnemies={selectedEnemies}
-              matchupsMap={matchupsMap}
-              drafting={drafting}
-              hasSelection={selectedEnemies.length > 0 || myTeam.length > 0}
-              onReveal={revealDraft}
-            />
-
-            {/* Sidebar Ad */}
-            <div className="mt-4 rounded-lg overflow-hidden">
-              <SidebarAd />
-            </div>
-          </div>
+          {renderSuggestionsPanel(`${draftActivity > 0 ? 'hidden lg:flex' : ''} lg:sticky lg:top-[96px] lg:w-[25rem] lg:self-start`)}
         </div>
 
       </main>
@@ -450,15 +702,15 @@ function App() {
       )}
 
       {/* Footer Ad Banner */}
-      <div className="bg-slate-950 border-t border-slate-800 py-2 px-4 mt-auto">
+      <div className="mt-auto border-t border-white/10 bg-obsidian-900 px-4 py-2">
         <div className="max-w-7xl mx-auto">
           <FooterAd />
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="bg-slate-950 border-t border-slate-800 py-4 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-slate-500">
+      <footer className="border-t border-white/10 bg-obsidian-900 px-4 py-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-white/40">
           <p>{t('copyright')}</p>
           <div className="flex items-center gap-4">
             <a

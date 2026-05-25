@@ -58,6 +58,16 @@ export const HERO_TAGS: Record<string, number[]> = {
         123, // Hoodwink
         1,  // Anti-Mage (Blink/Counterspell)
     ],
+    // Heroes that force reveal/detection discipline
+    INVISIBILITY: [
+        32, // Riki
+        62, // Bounty Hunter
+        56, // Clinkz
+        63, // Weaver
+        9,  // Mirana (Moonlight Shadow)
+        46, // Templar Assassin (Meld)
+        88, // Nyx Assassin (Vendetta)
+    ],
     // Hard Carries / Physical Damage Threats
     CARRY: [
         70, // Ursa
@@ -78,16 +88,37 @@ export const HERO_TAGS: Record<string, number[]> = {
     // Slippery / Escape Artists
     ESCAPE: [
         1,  // Anti-Mage
+        32, // Riki
+        62, // Bounty Hunter
+        56, // Clinkz
         13, // Puck
         39, // Queen of Pain
         63, // Weaver
         106, // Ember Spirit
         120, // Pangolier
         9,  // Mirana
-        116, // Primal Beast
+        137, // Primal Beast
         17, // Storm Spirit
         92, // Visage
         107, // Earth Spirit
+    ],
+    // Heroes that prefer to start fights from fog/invis and kill isolated targets
+    PICKOFF: [
+        32, // Riki
+        62, // Bounty Hunter
+        56, // Clinkz
+        63, // Weaver
+        9,  // Mirana
+        13, // Puck
+        17, // Storm Spirit
+        51, // Clockwerk
+        65, // Batrider
+        71, // Spirit Breaker
+        88, // Nyx Assassin
+        100, // Tusk
+        106, // Ember Spirit
+        114, // Monkey King
+        126, // Void Spirit
     ],
     // High Stun / Lockdown
     STUNNER: [
@@ -141,5 +172,65 @@ export const COUNTER_TAGS: Record<string, number[]> = {
         60, // Night Stalker (Silence/Break with aghs)
         27, // Shadow Shaman (Control)
         47, // Viper (Break)
+    ],
+    // True-sight or reveal-based answers to invisibility drafts
+    ANTI_INVIS: [
+        28, // Slardar (Corrosive Haze)
+        22, // Zeus (Lightning Bolt / Nimbus reveal)
+        62, // Bounty Hunter (Track)
+    ],
+    // Heroes that punish jumps, blinks, haste, and reset attempts
+    ANTI_ESCAPE: [
+        4,  // Bloodseeker (Rupture)
+        28, // Slardar (Blink + Bash + Haze)
+        51, // Clockwerk (Hookshot / Cogs)
+        60, // Night Stalker (Crippling Fear)
+        65, // Batrider (Lasso)
+        71, // Spirit Breaker (Charge)
+        87, // Disruptor (Glimpse / Static Storm)
+        88, // Nyx Assassin (Carapace / Impale)
+        100, // Tusk (Snowball / Shards)
+        3,  // Bane (Grip / Nightmare)
+        20, // Vengeful Spirit (Swap / stun)
+        26, // Lion (Hex / stun)
+        27, // Shadow Shaman (Hex / Shackles)
+        74, // Invoker (Tornado / Cold Snap / Hex itemization)
+    ],
+    // Reliable control that keeps mobile heroes visible long enough to die
+    LOCKDOWN: [
+        3,  // Bane
+        20, // Vengeful Spirit
+        26, // Lion
+        27, // Shadow Shaman
+        28, // Slardar
+        29, // Tidehunter
+        51, // Clockwerk
+        60, // Night Stalker
+        65, // Batrider
+        69, // Doom
+        71, // Spirit Breaker
+        87, // Disruptor
+        88, // Nyx Assassin
+        97, // Magnus
+        100, // Tusk
+        129, // Mars
+        137, // Primal Beast
+    ],
+    // Defensive or vision heroes that make pickoff drafts commit poorly
+    ANTI_PICKOFF: [
+        3,  // Bane
+        5,  // Crystal Maiden
+        20, // Vengeful Spirit
+        26, // Lion
+        28, // Slardar
+        51, // Clockwerk
+        60, // Night Stalker
+        79, // Shadow Demon
+        87, // Disruptor
+        88, // Nyx Assassin
+        100, // Tusk
+        102, // Abaddon
+        111, // Oracle
+        112, // Winter Wyvern
     ]
 };
