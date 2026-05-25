@@ -56,9 +56,7 @@ export function StreamCard({
               height={248}
               onError={onThumbnailUnavailable}
             />
-            <span className={`stream-card__live${isStale ? ' stream-card__live--stale' : ''}`}>
-              {isStale ? 'LAST KNOWN' : 'LIVE'}
-            </span>
+            {isStale ? null : <span className="stream-card__live">LIVE</span>}
             <span className="stream-card__viewers">
               {formatViewers(stream.viewerCount)} viewers
             </span>

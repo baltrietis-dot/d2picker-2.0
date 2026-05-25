@@ -95,7 +95,7 @@ export function StreamsGrid() {
   const isStale = minutesSince(state.data.lastUpdated) > STALE_FEED_MINUTES;
   const isExpired = isExpiredFeed(state.data);
   const filteredCount = sorted.length - visibleStreams.length;
-  const streamCountLabel = isStale ? 'last known' : 'live';
+  const streamCountLabel = isStale ? 'streams' : 'live';
 
   if (sorted.length === 0 || visibleStreams.length === 0) {
     return (

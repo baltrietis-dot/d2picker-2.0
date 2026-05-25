@@ -576,11 +576,6 @@
   padding: 2px 6px;
 }
 
-.esports-hub .stream-card__live--stale {
-  background: rgba(251, 191, 36, 0.92);
-  color: #1a1408;
-}
-
 .esports-hub .stream-card__viewers,
 .esports-hub .stream-card__duration {
   bottom: 8px;
