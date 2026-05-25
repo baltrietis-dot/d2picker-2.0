@@ -5,8 +5,9 @@ name: Refresh Twitch streams
 # Schedule note: GitHub's cron minimum is technically every minute,
 # but scheduled workflows are queued and often run 5-15 minutes late.
 # We schedule every 5 minutes and document on the page that data may
-# be up to ~10 min stale. The frontend cache-busts the fetch so users
-# always see the latest committed JSON.
+# be up to ~10 min stale. The frontend cache-busts the fetch and falls
+# back to the latest committed GitHub JSON if the deployed Pages copy
+# is older, so refresh commits do not need a full Pages rebuild.
 
 on:
   schedule:
@@ -35,6 +36,7 @@ jobs:
         env:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+          STREAM_FEED_TTL_MINUTES: 60
         run: node scripts/fetch-streams.mjs
 
       - name: Commit if changed

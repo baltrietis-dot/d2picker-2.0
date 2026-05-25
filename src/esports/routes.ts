@@ -5,9 +5,9 @@ export const APP_ROUTES = [
     id: 'live',
     label: 'Live',
     path: ESPORTS_BASE_PATH,
-    title: 'Dota 2 streams, live now',
+    title: 'Dota 2 live streams',
     description:
-      "Who's casting, who's playing pubs, who's calling tournaments - all in one place. Click any thumbnail to watch without leaving the page.",
+      "Verified Twitch Dota 2 streams, from pub grinders to tournament casters. Click any thumbnail to watch without leaving the page.",
   },
   {
     id: 'matches',

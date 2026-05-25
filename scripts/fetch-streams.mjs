@@ -58,7 +58,7 @@ async function loadLocalEnv() {
 
 await loadLocalEnv();
 
-const FEED_TTL_MINUTES = Number(process.env.STREAM_FEED_TTL_MINUTES ?? 20);
+const FEED_TTL_MINUTES = Number(process.env.STREAM_FEED_TTL_MINUTES ?? 60);
 
 const clientId = process.env.TWITCH_CLIENT_ID?.trim();
 const clientSecret = process.env.TWITCH_CLIENT_SECRET?.trim();
