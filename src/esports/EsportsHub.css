@@ -39,7 +39,9 @@
 .esports-hub .stream-card__play:focus-visible,
 .esports-hub .stream-card__close:focus-visible,
 .esports-hub .match-card__footer a:focus-visible,
-.esports-hub .team-search:focus-visible {
+.esports-hub .team-search:focus-visible,
+.esports-hub .breadcrumbs a:focus-visible,
+.esports-hub .seo-links a:focus-visible {
   outline: 2px solid rgba(251, 191, 36, 0.55);
   outline-offset: 2px;
 }
@@ -81,6 +83,27 @@
   color: var(--eh-text-soft);
   line-height: 1.55;
   overflow-wrap: break-word;
+}
+
+.esports-hub .breadcrumbs {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.75rem;
+  color: var(--eh-text-dim);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.esports-hub .breadcrumbs a {
+  color: var(--eh-text-soft);
+  text-decoration: none;
+}
+
+.esports-hub .breadcrumbs a:hover {
+  color: var(--eh-gold);
 }
 
 .esports-hub .grid-summary,
@@ -655,6 +678,76 @@
   letter-spacing: 0.08em;
 }
 
+.esports-hub .seo-content {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  padding-top: 1.5rem;
+}
+
+.esports-hub .seo-content__intro {
+  max-width: 760px;
+}
+
+.esports-hub .seo-content__intro h2,
+.esports-hub .seo-content__block h3 {
+  margin: 0;
+  color: var(--eh-text);
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+.esports-hub .seo-content__intro h2 {
+  font-size: 1.3rem;
+}
+
+.esports-hub .seo-content__intro p:last-child,
+.esports-hub .seo-content__block p {
+  margin: 0.45rem 0 0;
+  color: var(--eh-text-soft);
+  line-height: 1.6;
+}
+
+.esports-hub .seo-content__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.esports-hub .seo-content__block {
+  min-width: 0;
+  border-left: 2px solid rgba(251, 191, 36, 0.28);
+  padding-left: 0.875rem;
+}
+
+.esports-hub .seo-content__block h3 {
+  font-size: 1rem;
+}
+
+.esports-hub .seo-links {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.esports-hub .seo-links a {
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 6px;
+  padding: 0.45rem 0.62rem;
+  background: rgba(13, 16, 23, 0.58);
+  color: var(--eh-text-soft);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.esports-hub .seo-links a:hover {
+  border-color: rgba(251, 191, 36, 0.32);
+  color: var(--eh-gold);
+}
+
 .esports-hub .site-footer {
   display: flex;
   width: 100%;
@@ -712,7 +805,8 @@
   }
 
   .esports-hub .tournament-grid,
-  .esports-hub .team-grid {
+  .esports-hub .team-grid,
+  .esports-hub .seo-content__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -739,6 +833,7 @@
   .esports-hub .match-board,
   .esports-hub .tournament-grid,
   .esports-hub .team-grid,
+  .esports-hub .seo-content__grid,
   .esports-hub .detail-list--compact {
     grid-template-columns: 1fr;
   }

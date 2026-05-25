@@ -31,6 +31,97 @@ const tournamentStatusLabels: Record<TournamentStatus, string> = {
   upcoming: 'Upcoming',
 };
 
+const SITE_URL = 'https://dota2picker.com';
+
+type SeoContentBlock = {
+  heading: string;
+  body: string;
+};
+
+const esportsSeoContent: Record<AppRouteId, SeoContentBlock[]> = {
+  live: [
+    {
+      heading: 'Where to watch Dota 2 live',
+      body:
+        'Dota2Picker tracks verified Dota 2 Twitch streams so fans can find tournament broadcasts, analyst desks, pro player pubs, and community casts from one esports hub.',
+    },
+    {
+      heading: 'Live stream freshness',
+      body:
+        'The stream list is refreshed against Twitch and only keeps verified Dota 2 broadcasts. If a refresh is delayed, old cards are hidden instead of presenting stale streams as live.',
+    },
+    {
+      heading: 'Follow esports and draft better',
+      body:
+        'Watching live matches helps you spot hero priority, lane swaps, item timings, and counter pick patterns before taking those ideas into your own Dota 2 drafts.',
+    },
+  ],
+  matches: [
+    {
+      heading: 'Dota 2 matches today',
+      body:
+        'The matches page groups live, same-day, upcoming, and recent series with team names, tournament context, formats, start times, and direct watch links.',
+    },
+    {
+      heading: 'Match context for draft prep',
+      body:
+        'Series format, bracket stage, and current tournament pressure all change how teams draft. Best-of-one games reward comfort picks, while playoffs often expose deeper counter strategies.',
+    },
+    {
+      heading: 'Use match trends with counters',
+      body:
+        'When a hero becomes popular in pro matches, the counter picker can help evaluate which responses still have matchup data behind them.',
+    },
+  ],
+  tournaments: [
+    {
+      heading: 'Dota 2 tournament tracker',
+      body:
+        'The tournament page highlights active and upcoming Dota 2 events with region, prize, format, and participating team context for quick event scanning.',
+    },
+    {
+      heading: 'Why tournaments matter for hero priority',
+      body:
+        'Major events tend to define the public meta. Teams reveal first-phase priorities, pocket counters, and role flexes that can influence pub drafts for weeks.',
+    },
+    {
+      heading: 'From tournament drafts to hero counters',
+      body:
+        'Use tournament trends as scouting signals, then compare the actual hero matchups in the Dota2Picker counter library before locking a response.',
+    },
+  ],
+  teams: [
+    {
+      heading: 'Dota 2 team directory',
+      body:
+        'The teams page gives quick context for notable Dota 2 teams, including region, aliases, active tournaments, recent form, and upcoming match notes.',
+    },
+    {
+      heading: 'Track teams by region and event',
+      body:
+        'Regional identity often shapes hero pools and tempo. Following teams across events makes it easier to understand why certain drafts appear repeatedly.',
+    },
+    {
+      heading: 'Connect team trends to drafting',
+      body:
+        'Team pages are a starting point for watching form, then moving into matches, streams, and counter pages when a specific hero trend needs a closer look.',
+    },
+  ],
+};
+
+const internalLinks = [
+  { href: '/', label: 'Dota 2 counter picker' },
+  { href: '/counters/', label: 'Hero counter directory' },
+  { href: '/esports/', label: 'Live streams' },
+  { href: '/esports/matches/', label: 'Matches' },
+  { href: '/esports/tournaments/', label: 'Tournaments' },
+  { href: '/esports/teams/', label: 'Teams' },
+];
+
+function canonicalUrl(route: AppRoute): string {
+  return `${SITE_URL}${route.path}/`;
+}
+
 export function EsportsHub() {
   const [activeRoute, setActiveRoute] = useState(() =>
     getRouteFromPathname(window.location.pathname),
@@ -46,16 +137,27 @@ export function EsportsHub() {
   }, []);
 
   useEffect(() => {
+    const canonical = canonicalUrl(activeRoute);
+
     document.title = `${activeRoute.title} | Dota2Picker Esports Hub`;
     document
       .querySelector('meta[name="description"]')
       ?.setAttribute('content', activeRoute.description);
+    document
+      .querySelector('link[rel="canonical"]')
+      ?.setAttribute('href', canonical);
+    document
+      .querySelector('meta[property="og:url"]')
+      ?.setAttribute('content', canonical);
     document
       .querySelector('meta[property="og:title"]')
       ?.setAttribute('content', `${activeRoute.title} | Dota2Picker Esports Hub`);
     document
       .querySelector('meta[property="og:description"]')
       ?.setAttribute('content', activeRoute.description);
+    document
+      .querySelector('meta[name="twitter:url"]')
+      ?.setAttribute('content', canonical);
     document
       .querySelector('meta[name="twitter:title"]')
       ?.setAttribute('content', `${activeRoute.title} | Dota2Picker Esports Hub`);
@@ -83,6 +185,9 @@ export function EsportsHub() {
         <span>
           Part of <a href="/">dota2picker.com</a>
         </span>
+        <a href="/counters/">Hero counters</a>
+        <a href="/esports/matches/">Matches</a>
+        <a href="/esports/tournaments/">Tournaments</a>
       </footer>
     </div>
   );
@@ -287,13 +392,57 @@ function PageShell({ routeId, children }: { routeId: AppRouteId; children: React
 
   return (
     <main className="page">
+      <nav className="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Dota2Picker</a>
+        <span aria-hidden="true">/</span>
+        {routeId === 'live' ? (
+          <span aria-current="page">Esports</span>
+        ) : (
+          <>
+            <a href="/esports/">Esports</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">{route.label}</span>
+          </>
+        )}
+      </nav>
       <section className="page__hero surface">
         <p className="page__eyebrow label-sm">{route.label}</p>
         <h1 className="font-display">{route.title}</h1>
         <p>{route.description}</p>
       </section>
       {children}
+      <SeoContent routeId={routeId} />
     </main>
+  );
+}
+
+function SeoContent({ routeId }: { routeId: AppRouteId }) {
+  const route = getRouteById(routeId);
+  const links = internalLinks.filter((link) => link.href !== `${route.path}/`);
+
+  return (
+    <section className="seo-content" aria-labelledby={`${routeId}-seo-heading`}>
+      <div className="seo-content__intro">
+        <p className="page__eyebrow label-sm">Dota 2 esports guide</p>
+        <h2 id={`${routeId}-seo-heading`}>{route.title}</h2>
+        <p>{route.description}</p>
+      </div>
+      <div className="seo-content__grid">
+        {esportsSeoContent[routeId].map((block) => (
+          <article key={block.heading} className="seo-content__block">
+            <h3>{block.heading}</h3>
+            <p>{block.body}</p>
+          </article>
+        ))}
+      </div>
+      <nav className="seo-links" aria-label="Related Dota 2 resources">
+        {links.map((link) => (
+          <a key={link.href} href={link.href}>
+            {link.label}
+          </a>
+        ))}
+      </nav>
+    </section>
   );
 }
 

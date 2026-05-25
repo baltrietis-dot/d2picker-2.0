@@ -68,24 +68,114 @@
 
   <!-- Structured Data -->
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Dota 2 Counter Picker",
-      "url": "https://dota2picker.com",
-      "description": "Free Dota 2 counter picker tool with hero recommendations based on enemy picks and pro data.",
-      "applicationCategory": "GameApplication",
-      "operatingSystem": "Any",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
+      "@type": "WebSite",
+      "@id": "https://dota2picker.com/#website",
+      "name": "Dota2Picker",
+      "url": "https://dota2picker.com/"
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://dota2picker.com/#dota2",
+      "name": "Dota 2",
+      "genre": [
+        "MOBA",
+        "Esports"
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Valve Corporation"
       }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dota2picker.com/esports/teams/#webpage",
+      "url": "https://dota2picker.com/esports/teams/",
+      "name": "Dota 2 Teams | Rosters, Regions and Upcoming Matches - Dota2Picker",
+      "description": "Dota 2 team context for regions, recent form, active tournaments, common aliases, and upcoming matches.",
+      "isPartOf": {
+        "@id": "https://dota2picker.com/#website"
+      },
+      "about": {
+        "@id": "https://dota2picker.com/#dota2"
+      },
+      "breadcrumb": {
+        "@id": "https://dota2picker.com/esports/teams/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://dota2picker.com/esports/teams/#related-resources"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dota2picker.com/esports/teams/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Dota2Picker",
+          "item": "https://dota2picker.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dota 2 esports",
+          "item": "https://dota2picker.com/esports/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Teams",
+          "item": "https://dota2picker.com/esports/teams/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://dota2picker.com/esports/teams/#related-resources",
+      "name": "Teams resources on Dota2Picker",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Dota 2 counter picker",
+          "url": "https://dota2picker.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hero counter directory",
+          "url": "https://dota2picker.com/counters/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Live streams",
+          "url": "https://dota2picker.com/esports/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Matches",
+          "url": "https://dota2picker.com/esports/matches/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Tournaments",
+          "url": "https://dota2picker.com/esports/tournaments/"
+        }
+      ]
     }
+  ]
+}
     </script>
 
-  <script type="module" crossorigin src="/assets/index-B_DsTh5P.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CzaXSVuU.css">
+  <script type="module" crossorigin src="/assets/index-jwBADDrf.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BxaC1fI-.css">
 <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
 
 <body>

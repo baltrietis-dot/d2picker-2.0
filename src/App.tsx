@@ -712,7 +712,19 @@ function DotaPickerApp() {
       <footer className="border-t border-white/10 bg-obsidian-900 px-4 py-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-white/40">
           <p>{t('copyright')}</p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="/esports/"
+              className="hover:text-white transition-colors"
+            >
+              Live Esports
+            </a>
+            <a
+              href="/counters/"
+              className="hover:text-white transition-colors"
+            >
+              Hero Counters
+            </a>
             <a
               href="https://discord.com/invite/xrPY4de57"
               target="_blank"

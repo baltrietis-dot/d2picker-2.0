@@ -17,29 +17,42 @@ const TEMPLATE    = fs.readFileSync(path.join(DIST_PATH, 'index.html'), 'utf-8')
 const BASE_URL    = 'https://dota2picker.com';
 const ESPORTS_ROUTES = [
     {
+        id: 'live',
+        label: 'Live streams',
         path: '/esports/',
         title: 'Dota 2 Esports Hub | Live Streams, Matches and Teams - Dota2Picker',
         desc: 'Live Dota 2 streams, match previews, tournament context, and team pages from Dota2Picker.',
         priority: '0.9',
     },
     {
+        id: 'matches',
+        label: 'Matches',
         path: '/esports/matches/',
         title: 'Dota 2 Matches | Today, Upcoming and Recent - Dota2Picker',
         desc: 'Dota 2 match previews with local start times, tournament context, formats, and watch links.',
         priority: '0.8',
     },
     {
+        id: 'tournaments',
+        label: 'Tournaments',
         path: '/esports/tournaments/',
         title: 'Dota 2 Tournaments | Active and Upcoming Events - Dota2Picker',
         desc: 'Active and upcoming Dota 2 tournament context, prize pools, formats, regions, and participating teams.',
         priority: '0.8',
     },
     {
+        id: 'teams',
+        label: 'Teams',
         path: '/esports/teams/',
         title: 'Dota 2 Teams | Rosters, Regions and Upcoming Matches - Dota2Picker',
         desc: 'Dota 2 team context for regions, recent form, active tournaments, common aliases, and upcoming matches.',
         priority: '0.8',
     },
+];
+const ESPORTS_RELATED_LINKS = [
+    { path: '/', label: 'Dota 2 counter picker' },
+    { path: '/counters/', label: 'Hero counter directory' },
+    ...ESPORTS_ROUTES.map(route => ({ path: route.path, label: route.label })),
 ];
 
 const toSlug = (name) =>
@@ -251,7 +264,100 @@ function buildPage({ title, desc, url, enUrl, ruUrl, lang }) {
         .replace(/(<link rel="canonical"[^>]*>)/, `$1${hreflang}`);
 }
 
-function buildStaticPage({ title, desc, url }) {
+function jsonLdScript(data) {
+    return `<script type="application/ld+json">
+${JSON.stringify(data, null, 2).replace(/</g, '\\u003c')}
+    </script>`;
+}
+
+function buildEsportsBreadcrumb(route) {
+    const items = [
+        {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Dota2Picker',
+            item: `${BASE_URL}/`,
+        },
+        {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Dota 2 esports',
+            item: `${BASE_URL}/esports/`,
+        },
+    ];
+
+    if (route.id !== 'live') {
+        items.push({
+            '@type': 'ListItem',
+            position: 3,
+            name: route.label,
+            item: `${BASE_URL}${route.path}`,
+        });
+    }
+
+    return items;
+}
+
+function buildRelatedItemList(route) {
+    return ESPORTS_RELATED_LINKS
+        .filter(link => link.path !== route.path)
+        .map((link, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: link.label,
+            url: `${BASE_URL}${link.path}`,
+        }));
+}
+
+function buildEsportsSchema(route) {
+    const url = `${BASE_URL}${route.path}`;
+
+    return {
+        '@context': 'https://schema.org',
+        '@graph': [
+            {
+                '@type': 'WebSite',
+                '@id': `${BASE_URL}/#website`,
+                name: 'Dota2Picker',
+                url: `${BASE_URL}/`,
+            },
+            {
+                '@type': 'VideoGame',
+                '@id': `${BASE_URL}/#dota2`,
+                name: 'Dota 2',
+                genre: ['MOBA', 'Esports'],
+                publisher: {
+                    '@type': 'Organization',
+                    name: 'Valve Corporation',
+                },
+            },
+            {
+                '@type': 'WebPage',
+                '@id': `${url}#webpage`,
+                url,
+                name: route.title,
+                description: route.desc,
+                isPartOf: { '@id': `${BASE_URL}/#website` },
+                about: { '@id': `${BASE_URL}/#dota2` },
+                breadcrumb: { '@id': `${url}#breadcrumb` },
+                mainEntity: { '@id': `${url}#related-resources` },
+            },
+            {
+                '@type': 'BreadcrumbList',
+                '@id': `${url}#breadcrumb`,
+                itemListElement: buildEsportsBreadcrumb(route),
+            },
+            {
+                '@type': 'ItemList',
+                '@id': `${url}#related-resources`,
+                name: `${route.label} resources on Dota2Picker`,
+                itemListElement: buildRelatedItemList(route),
+            },
+        ],
+    };
+}
+
+function buildStaticPage({ title, desc, url, schema }) {
     return TEMPLATE
         .replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`)
         .replace(/(<html\s+lang=")[^"]*(")/, '$1en$2')
@@ -262,7 +368,8 @@ function buildStaticPage({ title, desc, url }) {
         .replace(/(<meta property="og:description"\s+content=")[^"]*(")/, `$1${desc}$2`)
         .replace(/(<meta name="twitter:url"\s+content=")[^"]*(")/, `$1${url}$2`)
         .replace(/(<meta name="twitter:title"\s+content=")[^"]*(")/, `$1${title}$2`)
-        .replace(/(<meta name="twitter:description"\s+content=")[^"]*(")/, `$1${desc}$2`);
+        .replace(/(<meta name="twitter:description"\s+content=")[^"]*(")/, `$1${desc}$2`)
+        .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, jsonLdScript(schema));
 }
 
 // 404.html — catches any path GitHub Pages can't serve directly
@@ -285,6 +392,7 @@ for (const route of ESPORTS_ROUTES) {
         title: route.title,
         desc: route.desc,
         url: `${BASE_URL}${route.path}`,
+        schema: buildEsportsSchema(route),
     }));
 }
 
