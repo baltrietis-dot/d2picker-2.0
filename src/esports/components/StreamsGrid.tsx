@@ -12,7 +12,6 @@ type UnavailableThumbnailState = {
 
 const STALE_FEED_MINUTES = 30;
 const LEGACY_FEED_EXPIRY_MINUTES = 30;
-const LOCAL_PREVIEW_HOSTS = new Set(['localhost', '127.0.0.1', '::1']);
 
 function streamGridColumns(itemCount: number): StreamGridColumnCount {
   const maxColumns = 4;
@@ -32,10 +31,6 @@ function isExpiredFeed(feed: StreamsFeed): boolean {
     : new Date(feed.lastUpdated).getTime() + LEGACY_FEED_EXPIRY_MINUTES * 60_000;
 
   return Number.isFinite(expiresAt) && Date.now() > expiresAt;
-}
-
-function isLocalPreviewHost(): boolean {
-  return typeof window !== 'undefined' && LOCAL_PREVIEW_HOSTS.has(window.location.hostname);
 }
 
 export function StreamsGrid() {
@@ -99,21 +94,8 @@ export function StreamsGrid() {
 
   const isStale = minutesSince(state.data.lastUpdated) > STALE_FEED_MINUTES;
   const isExpired = isExpiredFeed(state.data);
-  const isLocalPreview = isLocalPreviewHost();
   const filteredCount = sorted.length - visibleStreams.length;
   const streamCountLabel = isStale ? 'last known' : 'live';
-
-  if (isExpired && !isLocalPreview) {
-    return (
-      <div className="grid-status grid-status--stale" role="status">
-        <strong>Live stream refresh is stale.</strong>
-        <span>
-          Last Twitch check was {relativeTime(state.data.lastUpdated)}. Old stream cards are hidden
-          until the next verified refresh.
-        </span>
-      </div>
-    );
-  }
 
   if (sorted.length === 0 || visibleStreams.length === 0) {
     return (
@@ -138,10 +120,10 @@ export function StreamsGrid() {
           updated {relativeTime(state.data.lastUpdated)}
         </span>
       </div>
-      {isStale || filteredCount > 0 ? (
-      <div className="grid-warning" role="status">
-          {isExpired && isLocalPreview
-            ? `Local preview is showing the last committed stream snapshot from ${relativeTime(state.data.lastUpdated)}. Production refreshes this automatically with the scheduled Twitch workflow after publishing.`
+      {isExpired || isStale || filteredCount > 0 ? (
+        <div className="grid-warning" role="status">
+          {isExpired
+            ? `Live stream refresh is delayed. Showing the last verified Twitch snapshot from ${relativeTime(state.data.lastUpdated)}.`
             : isStale
             ? `Stream snapshot may be stale. Last refresh was ${relativeTime(state.data.lastUpdated)}.`
             : 'Some streams in this snapshot no longer look live.'}

@@ -48,7 +48,7 @@ const esportsSeoContent: Record<AppRouteId, SeoContentBlock[]> = {
     {
       heading: 'Live stream freshness',
       body:
-        'The stream list is refreshed against Twitch and only keeps verified Dota 2 broadcasts. If a refresh is delayed, old cards are hidden instead of presenting stale streams as live.',
+        'The stream list is refreshed against Twitch and only keeps verified Dota 2 broadcasts. If a refresh is delayed, old cards are marked as last known while unavailable streams are filtered from the grid.',
     },
     {
       heading: 'Follow esports and draft better',

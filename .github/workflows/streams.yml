@@ -3,15 +3,15 @@ name: Refresh Twitch streams
 # Polls Twitch Helix for live Dota 2 streams and commits the result.
 #
 # Schedule note: GitHub's cron minimum is technically every minute,
-# but scheduled workflows are queued and often run 5-15 minutes late.
-# We schedule every 5 minutes and document on the page that data may
-# be up to ~10 min stale. The frontend cache-busts the fetch and falls
-# back to the latest committed GitHub JSON if the deployed Pages copy
-# is older, so refresh commits do not need a full Pages rebuild.
+# but scheduled workflows are queued and can be dropped during busy
+# periods. We schedule every 5 minutes on odd offsets instead of the
+# common */5 marks. The frontend cache-busts the fetch, falls back to
+# the latest committed GitHub JSON if the deployed Pages copy is older,
+# and shows last-known cards if GitHub is late.
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '2,7,12,17,22,27,32,37,42,47,52,57 * * * *'
   workflow_dispatch: # allow manual runs from the Actions tab
 
 # Lets the workflow push the updated JSON back to the repo.
