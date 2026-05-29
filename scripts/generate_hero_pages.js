@@ -97,7 +97,8 @@ const RU_HERO_NAMES = {
     'Pangolier': 'Панголир', 'Grimstroke': 'Гримстрок', 'Hoodwink': 'Простофиля',
     'Void Spirit': 'Дух Пустоты', 'Snapfire': 'Снэпфайр', 'Mars': 'Марс',
     'Dawnbreaker': 'Рассветница', 'Marci': 'Марси', 'Primal Beast': 'Первобытный Зверь',
-    'Muerta': 'Муэрта', 'Ringmaster': 'Шпрехшталмейстер', 'Kez': 'Кез',
+    'Muerta': 'Муэрта', 'Ringmaster': 'Шпрехшталмейстер', 'Ring Master': 'Шпрехшталмейстер', 'Kez': 'Кез',
+    'Shadow Shaman': 'Шэдоу Шаман', 'Slardar': 'Слардар', 'Tidehunter': 'Тайдхантер',
 };
 
 const heroes = JSON.parse(fs.readFileSync(HEROES_PATH, 'utf-8'));

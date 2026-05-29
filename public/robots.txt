@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Yandex-only: treat the draft-state query params as noise so that
+# ?e=... / ?t=... variants collapse to the canonical page instead of
+# being indexed as duplicate URLs.
+Clean-param: e&t
+
 Sitemap: https://dota2picker.com/sitemap.xml

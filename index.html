@@ -12,6 +12,25 @@
     gtag('config', 'G-C1V809B7K4');
   </script>
 
+  <!-- Yandex.Metrica counter — replace 00000000 (both places) with your counter ID -->
+  <script>
+    var ymCounterId = 00000000; // replace with your Yandex Metrica counter ID to activate (also update <noscript> below)
+    if (ymCounterId && !['localhost', '127.0.0.1', '::1'].includes(window.location.hostname)) {
+      (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+      ym(ymCounterId, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
+    }
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute;left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrica counter -->
+
   <!-- Google AdSense -->
   <script>
     if (!['localhost', '127.0.0.1', '::1'].includes(window.location.hostname)) {
@@ -35,6 +54,7 @@
   <meta name="author" content="Dota2Picker" />
   <meta name="robots" content="index, follow" />
   <meta name="google-site-verification" content="dszUYcX7w6BIM-5Uuo7tupDyg8CZrUzWTFXhU67vwvI" />
+  <meta name="yandex-verification" content="6181ab3c07f6735b" />
   <link rel="canonical" href="https://dota2picker.com/" />
 
   <!-- Open Graph / Facebook -->
