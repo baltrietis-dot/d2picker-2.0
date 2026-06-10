@@ -24,7 +24,7 @@ export function PrivacyPolicy({ isOpen, onClose }: PrivacyPolicyProps) {
 
                 {/* Content */}
                 <div className="p-6 overflow-y-auto max-h-[calc(80vh-80px)] text-slate-300 space-y-4">
-                    <p className="text-sm text-slate-400">Last updated: January 18, 2026</p>
+                    <p className="text-sm text-slate-400">Last updated: June 10, 2026</p>
 
                     <section>
                         <h3 className="text-lg font-semibold text-white mb-2">Introduction</h3>
@@ -61,7 +61,17 @@ export function PrivacyPolicy({ isOpen, onClose }: PrivacyPolicyProps) {
                         <ul className="list-disc list-inside space-y-1 ml-2">
                             <li><strong>Google Analytics:</strong> To analyze website traffic and usage patterns. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">Google Privacy Policy</a></li>
                             <li><strong>Google AdSense:</strong> To display advertisements. Google may use cookies to serve ads based on your prior visits. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">Learn more</a></li>
+                            <li><strong>Yandex Metrica:</strong> To analyze website traffic and usage patterns, including session replay (Webvisor), which records page interactions such as mouse movement, scrolling, and clicks. Form fields are not intentionally collected. <a href="https://yandex.com/legal/confidential/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">Yandex Privacy Policy</a></li>
                         </ul>
+                    </section>
+
+                    <section>
+                        <h3 className="text-lg font-semibold text-white mb-2">Affiliate Links</h3>
+                        <p>
+                            Some links on our website may be affiliate links. If you follow them, the destination website may set
+                            cookies or receive tracking parameters that identify us as the referrer, and we may earn a commission.
+                            Data collected by those websites is governed by their own privacy policies, not ours.
+                        </p>
                     </section>
 
                     <section>
@@ -78,6 +88,7 @@ export function PrivacyPolicy({ isOpen, onClose }: PrivacyPolicyProps) {
                         <p className="mb-2">You have the right to:</p>
                         <ul className="list-disc list-inside space-y-1 ml-2">
                             <li>Opt out of personalized advertising via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">Google Ads Settings</a></li>
+                            <li>Opt out of Yandex Metrica tracking via the <a href="https://yandex.com/support/metrica/general/opt-out.html" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">Metrica blocking add-on</a></li>
                             <li>Clear cookies from your browser at any time</li>
                             <li>Request information about data we hold about you</li>
                         </ul>

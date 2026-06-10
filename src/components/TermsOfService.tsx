@@ -24,7 +24,7 @@ export function TermsOfService({ isOpen, onClose }: TermsOfServiceProps) {
 
                 {/* Content */}
                 <div className="p-6 overflow-y-auto max-h-[calc(80vh-80px)] text-slate-300 space-y-4">
-                    <p className="text-sm text-slate-400">Last updated: January 18, 2026</p>
+                    <p className="text-sm text-slate-400">Last updated: June 10, 2026</p>
 
                     <section>
                         <h3 className="text-lg font-semibold text-white mb-2">1. Acceptance of Terms</h3>
@@ -63,7 +63,32 @@ export function TermsOfService({ isOpen, onClose }: TermsOfServiceProps) {
                     </section>
 
                     <section>
-                        <h3 className="text-lg font-semibold text-white mb-2">6. Changes to Terms</h3>
+                        <h3 className="text-lg font-semibold text-white mb-2">6. Third-Party Links &amp; Affiliate Disclosure</h3>
+                        <p>
+                            The Service may contain links to third-party websites, including affiliate links for which we may earn
+                            a commission if you visit or sign up through them. We do not own, operate, or control those websites,
+                            do not endorse their content or services, and are not responsible for their availability, accuracy,
+                            terms, or privacy practices. Any dealings you have with third parties linked from the Service are
+                            solely between you and that third party.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3 className="text-lg font-semibold text-white mb-2">7. Betting &amp; Gambling Content</h3>
+                        <p className="mb-2">
+                            Parts of the Service may reference or link to third-party betting or gambling operators. Such content
+                            is intended only for users aged 18 or older (or the higher minimum age in your jurisdiction).
+                        </p>
+                        <ul className="list-disc list-inside space-y-1 ml-2">
+                            <li>We are not a gambling operator and do not accept, place, or process bets of any kind.</li>
+                            <li>Nothing on the Service constitutes betting, financial, or legal advice. Draft statistics and match information are provided for informational purposes only.</li>
+                            <li>Online betting is illegal in some jurisdictions. You are solely responsible for verifying that your use of any linked betting service is lawful where you live.</li>
+                            <li>We are not liable for any losses incurred through third-party betting services. Gambling can be addictive — if it stops being fun, seek help (for example via <a href="https://www.gamblingtherapy.org/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">Gambling Therapy</a>).</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3 className="text-lg font-semibold text-white mb-2">8. Changes to Terms</h3>
                         <p>
                             We reserve the right to modify these terms at any time. We will do so by posting and drawing attention to the updated terms on the Site. Your decision to continue to visit and make use of the Site after such changes have been made constitutes your formal acceptance of the new Terms of Service.
                         </p>
