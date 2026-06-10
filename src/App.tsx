@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import { useCounterPicker } from './hooks/useCounterPicker';
 import { HeroGrid } from './components/HeroGrid';
 import { CounterList } from './components/CounterList';
-import { HeaderAd, SidebarAd, FooterAd } from './components/AdBanner';
 import { LandingContent } from './components/LandingContent';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { TermsOfService } from './components/TermsOfService';
@@ -337,9 +336,6 @@ function DotaPickerApp() {
         targetRole={currentAnalysisRole}
       />
 
-      <div className="mt-4 hidden rounded-lg overflow-hidden lg:block">
-        <SidebarAd />
-      </div>
     </div>
   );
 
@@ -428,11 +424,6 @@ function DotaPickerApp() {
 
   return (
     <div className="min-h-screen bg-obsidian-900 text-white flex flex-col font-sans selection:bg-gold-500 selection:text-white">
-      {/* Header Ad Banner */}
-      <div className="max-w-7xl mx-auto px-4 pt-2">
-        <HeaderAd />
-      </div>
-
       {/* Header - sticky frosted glass */}
       <header className="sticky top-0 z-20 border-b border-white/10 bg-obsidian-900/80 backdrop-blur-xl shadow-[0_1px_0_rgba(255,255,255,0.04)_inset,0_14px_38px_-28px_rgba(0,0,0,0.9)]">
         <div className="max-w-7xl mx-auto flex flex-col gap-3 px-4 py-3 lg:flex-row lg:items-center lg:justify-between">
@@ -701,15 +692,8 @@ function DotaPickerApp() {
         <LandingContent />
       )}
 
-      {/* Footer Ad Banner */}
-      <div className="mt-auto border-t border-white/10 bg-obsidian-900 px-4 py-2">
-        <div className="max-w-7xl mx-auto">
-          <FooterAd />
-        </div>
-      </div>
-
       {/* Footer */}
-      <footer className="border-t border-white/10 bg-obsidian-900 px-4 py-4">
+      <footer className="mt-auto border-t border-white/10 bg-obsidian-900 px-4 py-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-white/40">
           <p>{t('copyright')}</p>
           <div className="flex flex-wrap items-center justify-center gap-4">
