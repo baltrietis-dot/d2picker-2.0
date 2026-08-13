@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-08-13T03:15:19.601Z",
-  "expiresAt": "2026-08-13T04:15:19.601Z",
+  "lastUpdated": "2026-08-13T05:05:59.078Z",
+  "expiresAt": "2026-08-13T06:05:59.078Z",
   "gameId": "29595",
   "gameName": "Dota 2",
   "source": "twitch-helix",
   "streams": [
     {
-      "userLogin": "iltw1",
-      "userName": "iltw1",
-      "title": "1w vs nigma",
-      "viewerCount": 96478,
+      "userLogin": "nix",
+      "userName": "Nix",
+      "title": "Team Falcons vs LGD Gaming 0:1 bo3 The International 2026: Group Stage",
+      "viewerCount": 91390,
       "language": "ru",
-      "startedAt": "2026-08-13T02:13:38Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_iltw1-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T03:03:43Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nix-{width}x{height}.jpg"
     },
     {
       "userLogin": "dota2ti",
       "userName": "dota2ti",
       "title": "[EN-A] Team Falcons vs. LGD Gaming - The International 2026 - Group Stage - Round 1",
-      "viewerCount": 59580,
+      "viewerCount": 71307,
       "language": "en",
       "startedAt": "2026-08-13T01:06:54Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti-{width}x{height}.jpg"
@@ -27,70 +27,34 @@
       "userLogin": "dota2ti_ru",
       "userName": "dota2ti_ru",
       "title": "[RU-A] Team Falcons vs. LGD Gaming - The International 2026 - Групповой Этап - Раунд 1",
-      "viewerCount": 39520,
+      "viewerCount": 40787,
       "language": "ru",
       "startedAt": "2026-08-13T01:39:32Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_ru-{width}x{height}.jpg"
     },
     {
-      "userLogin": "nix",
-      "userName": "Nix",
-      "title": "Team Falcons vs LGD Gaming bo3 The International 2026: Group Stage",
-      "viewerCount": 33166,
-      "language": "ru",
-      "startedAt": "2026-08-13T03:03:43Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nix-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "dota2ti_es",
       "userName": "dota2ti_es",
       "title": "[ES-A] Team Falcons vs. LGD Gaming - The International 2026 - Fase de Grupos - Ronda 1",
-      "viewerCount": 14015,
+      "viewerCount": 13423,
       "language": "es",
       "startedAt": "2026-08-13T02:18:39Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es-{width}x{height}.jpg"
     },
     {
-      "userLogin": "daxak",
-      "userName": "Daxak",
-      "title": "Falcons vs LGD | TI 2026 | !фонбет !ггсел !бусти !мерч !вод !розыгрыш",
-      "viewerCount": 8101,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:49:57Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_daxak-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "seucreysonreborn",
-      "userName": "seucreysonreborn",
-      "title": "9,5k ATUAL CAMPEÃO BRASILEIRO - VAMU RI - 322 Q.I. 1300 TESTOTERONE !site !social !bmbr !flow !pix !scorpion",
-      "viewerCount": 7872,
-      "language": "pt",
-      "startedAt": "2026-08-12T17:09:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_seucreysonreborn-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "solo",
       "userName": "Solo",
-      "title": "🔴[БЕЗ ЗАДЕРЖКИ] Team Falcons [0:0] LGD Gaming | The International 2026 | Group Stage | !BETBOOM !tg !розыгрыш",
-      "viewerCount": 6745,
+      "title": "🔴[БЕЗ ЗАДЕРЖКИ] Falcons [0:1] LDG | The International 2026 | Group Stage | !BETBOOM !tg !розыгрыш",
+      "viewerCount": 10114,
       "language": "ru",
       "startedAt": "2026-08-13T01:46:46Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_solo-{width}x{height}.jpg"
     },
     {
-      "userLogin": "koma",
-      "userName": "Koma",
-      "title": "Team Falcons [0:0] LGD Gaming w/ @blindzonexgod @rostikfacekid | The International 2026 | Group Stage | !tg !betboom !vtb",
-      "viewerCount": 6616,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:52:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_koma-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "just_ns",
       "userName": "just_ns",
-      "title": "Falcons vs LGD Gaming | The International 2026 - Group Stage | !winline !sirus !tg !мерч",
-      "viewerCount": 6520,
+      "title": "Falcons [0-1] LGD Gaming | The International 2026 - Group Stage | !winline !sirus !tg !мерч",
+      "viewerCount": 8844,
       "language": "ru",
       "startedAt": "2026-08-13T01:41:45Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_just_ns-{width}x{height}.jpg"
@@ -99,595 +63,757 @@
       "userLogin": "ns_art",
       "userName": "NS_ART",
       "title": "The International 2026 - Fase de Grupos dia 1 | Transmissão oficial  🏆 -  LGD Gaming VS Team Falcons DOTA 2 [PT-BR] NS_ART",
-      "viewerCount": 5856,
+      "viewerCount": 7123,
       "language": "pt",
       "startedAt": "2026-08-13T01:33:22Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ns_art-{width}x{height}.jpg"
     },
     {
-      "userLogin": "dyrachyo",
-      "userName": "dyrachyo",
-      "title": "Team Falcons vs LGD Gaming bo3 The International 2026: Group Stage | !tg !bb !playlist",
-      "viewerCount": 5794,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:50:06Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dyrachyo-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ramzes",
-      "userName": "ramzes",
-      "title": "Team Falcons [0:0] LGD Gaming | The International 2026 | Group Stage | BO3 |  /w @afoninje !tg !win !playerok",
-      "viewerCount": 5646,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:01:22Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ramzes-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "bigdaddy",
-      "userName": "BigDaddy",
-      "title": "unOFFICIAL stream - TI2026 OG v BB - medium biased cast  Real PMA - IO is imba - Topson fanboy",
-      "viewerCount": 3805,
-      "language": "en",
-      "startedAt": "2026-08-12T23:42:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bigdaddy-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "dota2ti_2",
       "userName": "dota2ti_2",
       "title": "[EN-B] Nigma Galaxy vs. Iron Wing - The International 2026 - Group Stage - Round 1",
-      "viewerCount": 3553,
+      "viewerCount": 6403,
       "language": "en",
       "startedAt": "2026-08-13T01:20:17Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_2-{width}x{height}.jpg"
     },
     {
+      "userLogin": "gorgc",
+      "userName": "Gorgc",
+      "title": "Falcons vs LGD - TOPSON? - The International 2026 - Group Stage",
+      "viewerCount": 6397,
+      "language": "en",
+      "startedAt": "2026-08-13T04:15:25Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gorgc-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "koma",
+      "userName": "Koma",
+      "title": "Team Falcons [0:1] LGD Gaming w/ @blindzonexgod @rostikfacekid | The International 2026 | Group Stage | !tg !bb !vtb",
+      "viewerCount": 5571,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:52:30Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_koma-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "dota2ti_3",
       "userName": "dota2ti_3",
       "title": "[EN-C] BoomBoys vs. OG - The International 2026 - Group Stage - Round 1",
-      "viewerCount": 3021,
+      "viewerCount": 5261,
       "language": "en",
       "startedAt": "2026-08-13T01:38:34Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_3-{width}x{height}.jpg"
     },
     {
-      "userLogin": "etoseregga",
-      "userName": "etosereGGa",
-      "title": "The International 2026 | Falcons vs LGD | Group Stage !int !тг",
-      "viewerCount": 2860,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:01:26Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_etoseregga-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "tpabomah",
       "userName": "TpaBoMaH",
-      "title": "СМОТРИМ THE INTERNATIONAL - FALCONS 0:0 LGD 🔥 !прогноз !розыгрыш !тг !бонус",
-      "viewerCount": 2603,
+      "title": "СМОТРИМ THE INTERNATIONAL - FALCONS 0:1 LGD 🔥 !прогноз !розыгрыш !тг !бабло",
+      "viewerCount": 5010,
       "language": "ru",
       "startedAt": "2026-08-13T01:53:42Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tpabomah-{width}x{height}.jpg"
     },
     {
+      "userLogin": "dyrachyo",
+      "userName": "dyrachyo",
+      "title": "Team Falcons [0:1] LGD Gaming The International 2026: Group Stage | !tg !bb",
+      "viewerCount": 3720,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:50:06Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dyrachyo-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "rostikfacekid",
       "userName": "rostikfacekid",
-      "title": "Team Falcons [0:0] LGD Gaming /w @blindzonexgod @koma The International 2026 !tg !fonbet !upgrader",
-      "viewerCount": 2025,
+      "title": "Team Falcons [0:1] LGD Gaming /w @blindzonexgod @koma The International 2026 !tg !fonbet !upgrader",
+      "viewerCount": 3545,
       "language": "ru",
       "startedAt": "2026-08-13T02:53:20Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rostikfacekid-{width}x{height}.jpg"
     },
     {
-      "userLogin": "wxcdota",
-      "userName": "WXCDota",
-      "title": "[FIL] OG vs Boomboys (BO3) | The International 2026 Swiss Stage - Stream A",
-      "viewerCount": 1971,
-      "language": "tl",
-      "startedAt": "2026-08-13T01:43:02Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wxcdota-{width}x{height}.jpg"
+      "userLogin": "etoseregga",
+      "userName": "etosereGGa",
+      "title": "The International 2026 | Falcons vs LGD | Group Stage !int !тг",
+      "viewerCount": 3457,
+      "language": "ru",
+      "startedAt": "2026-08-13T02:01:26Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_etoseregga-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "bigdaddy",
+      "userName": "BigDaddy",
+      "title": "unOFFICIAL stream - TI2026 OG v BB - medium biased cast  Real PMA - IO is imba - Topson fanboy",
+      "viewerCount": 3244,
+      "language": "en",
+      "startedAt": "2026-08-12T23:42:01Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bigdaddy-{width}x{height}.jpg"
     },
     {
       "userLogin": "dota2ti_4",
       "userName": "dota2ti_4",
       "title": "[EN-D] TEAM VISION vs. Team Resilience - The International 2026 - Group Stage - Round 1",
-      "viewerCount": 1915,
+      "viewerCount": 3225,
       "language": "en",
       "startedAt": "2026-08-13T01:38:38Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_4-{width}x{height}.jpg"
     },
     {
+      "userLogin": "daxak",
+      "userName": "Daxak",
+      "title": "Falcons vs LGD | TI 2026 | !фонбет !ггсел !бусти !мерч !вод !розыгрыш",
+      "viewerCount": 2957,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:49:57Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_daxak-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "dota2ti_ru_4",
       "userName": "dota2ti_ru_4",
       "title": "[RU-D] TEAM VISION vs. Team Resilience - The International 2026 - Групповой Этап - Раунд 1",
-      "viewerCount": 1915,
+      "viewerCount": 2819,
       "language": "ru",
       "startedAt": "2026-08-13T01:39:32Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_ru_4-{width}x{height}.jpg"
     },
     {
-      "userLogin": "masondota2",
-      "userName": "masondota2",
-      "title": "TI 2026 GAMES WATCHING. IRON WING VS NIGMA",
-      "viewerCount": 1594,
-      "language": "en",
-      "startedAt": "2026-08-12T21:08:45Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_masondota2-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "absolut3",
-      "userName": "absolut3",
-      "title": "Team Falcons vs. LGD Gaming - The International 2026  !tg !pinnacle",
-      "viewerCount": 1298,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:27:39Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_absolut3-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "misolo3",
-      "userName": "misolo3",
-      "title": "TI2026 /w @Daxak | Team Falcons [0:0] Team LGD | Group Stage | !тг !winline !ggsell !пабстомп !билеты",
-      "viewerCount": 1234,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:02:46Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_misolo3-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dota2ti_ru_2",
-      "userName": "dota2ti_ru_2",
-      "title": "[RU-B] Nigma Galaxy vs. Iron Wing - The International 2026 - Групповой Этап - Раунд 1",
-      "viewerCount": 1172,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:39:33Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_ru_2-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "sh4dowehhh",
-      "userName": "Sh4dowehhh",
-      "title": "⭐TI2026 🎯JEKICH🏆 ГАЗ🎮",
-      "viewerCount": 1135,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:39:47Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sh4dowehhh-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ghostik",
-      "userName": "Ghostik",
-      "title": "Дивимось Team Falcons vs LGD Gaming (0-0) bo3 на The International 2026 🔥УКРАЇНСЬКИЙ КАСТ",
-      "viewerCount": 1116,
-      "language": "uk",
-      "startedAt": "2026-08-13T01:44:42Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ghostik-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "sqreenbets",
-      "userName": "sQreenbets",
-      "title": "THE INTERNATIONAL мультистрим все игры, 1w - Nigma, BB - OG, PARI - Resilence, FALCONS - LGD, аналитика и ставки !fon !650 !private",
-      "viewerCount": 1113,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:41:16Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sqreenbets-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "valbina",
-      "userName": "VALbINA",
-      "title": "Смотрим PARIVISION - Team Resilience | The International 2026 | !тг",
-      "viewerCount": 1069,
-      "language": "ru",
-      "startedAt": "2026-08-12T22:39:17Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_valbina-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "dota2ti_ru_3",
       "userName": "dota2ti_ru_3",
       "title": "[RU-C] BoomBoys vs. OG - The International 2026 - Групповой Этап - Раунд 1",
-      "viewerCount": 1031,
+      "viewerCount": 1822,
       "language": "ru",
       "startedAt": "2026-08-13T01:39:32Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_ru_3-{width}x{height}.jpg"
     },
     {
+      "userLogin": "dota2ti_ru_2",
+      "userName": "dota2ti_ru_2",
+      "title": "[RU-B] Nigma Galaxy vs. Iron Wing - The International 2026 - Групповой Этап - Раунд 1",
+      "viewerCount": 1806,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:39:33Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_ru_2-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "ghostik",
+      "userName": "Ghostik",
+      "title": "Дивимось Team Falcons vs LGD Gaming (0-1) bo3 на The International 2026 🔥Дебют Топсона за LGD + УКРАЇНСЬКИЙ КАСТ",
+      "viewerCount": 1736,
+      "language": "uk",
+      "startedAt": "2026-08-13T01:44:42Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ghostik-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "wxcdota",
+      "userName": "WXCDota",
+      "title": "[FIL] OG vs Boomboys (BO3) | The International 2026 Swiss Stage - Stream A",
+      "viewerCount": 1442,
+      "language": "tl",
+      "startedAt": "2026-08-13T01:43:02Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wxcdota-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "dota2_maincast",
       "userName": "dota2_maincast",
-      "title": "[UA] Team Falcons vs LGD Gaming (0-0) BO3 | The International 2026",
-      "viewerCount": 937,
+      "title": "[UA] Team Falcons vs LGD Gaming (0-1) BO3 | The International 2026 | by @doubleespresso & @totustop",
+      "viewerCount": 1417,
       "language": "uk",
       "startedAt": "2026-08-13T01:44:50Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2_maincast-{width}x{height}.jpg"
     },
     {
-      "userLogin": "lens_doto",
-      "userName": "LenS_Doto",
-      "title": "Team Falcons [0:0] LGD Gaming | The International: Group Stage | BO3 !tg w/ @earthq__",
-      "viewerCount": 936,
+      "userLogin": "mixazver",
+      "userName": "MixaZver",
+      "title": "Доброе утро",
+      "viewerCount": 1340,
       "language": "ru",
-      "startedAt": "2026-08-13T01:54:33Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lens_doto-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T04:09:55Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mixazver-{width}x{height}.jpg"
     },
     {
-      "userLogin": "limitlessqt",
-      "userName": "limitlessqt",
-      "title": "Team Falcons vs. LGD Gaming | The International | Pos 3 | Время в никуда | !winline | !tg | !freebet | СБОРКИ -> https://t.me/limitlessqt",
-      "viewerCount": 915,
+      "userLogin": "absolut3",
+      "userName": "absolut3",
+      "title": "Team Falcons 0:1 LGD Gaming - The International 2026  !tg !pinnacle",
+      "viewerCount": 1318,
       "language": "ru",
-      "startedAt": "2026-08-13T00:16:25Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_limitlessqt-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T01:27:39Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_absolut3-{width}x{height}.jpg"
     },
     {
-      "userLogin": "olagheparande",
-      "userName": "olagheparande",
-      "title": "Team Falcons vs LGD Gaming | The International 2026 Group Stage",
-      "viewerCount": 694,
-      "language": "other",
-      "startedAt": "2026-08-13T01:33:14Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_olagheparande-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "9pasha",
-      "userName": "9pasha",
-      "title": "BB [0:0] OG | The International 2026 | Group Stage | BO3 !winline !youtube !discord",
-      "viewerCount": 668,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:11:05Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_9pasha-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "onlyloss_999",
-      "userName": "onlyloss_999",
-      "title": "The International 15 Кастим. Falcons VS LGD Gaming",
-      "viewerCount": 566,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:07:31Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_onlyloss_999-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "goodwin_dota",
-      "userName": "GoodWin_Dota",
-      "title": "The International 2026 | Falcons vs LGD | Group Stage !прогнозы",
-      "viewerCount": 560,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:30:18Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_goodwin_dota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dnmdota",
-      "userName": "dnmdota",
-      "title": "DAY [5] SCUBATHON: 1k MMR IN 10 DAYS 🎯RANK 1K DONE🎯!goals !subathon !lan 🎯 NEVER BEEN DONE BEFORE 🎯!factor",
-      "viewerCount": 535,
-      "language": "en",
-      "startedAt": "2026-08-11T21:31:58Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dnmdota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ponyaaaa",
-      "userName": "ponyaaaa",
-      "title": "😁ЛЕГЕНДА СМОТРИТ ИНТ😎Nigma Galaxy vs IW 0:0😜!bc",
-      "viewerCount": 497,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:49:46Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ponyaaaa-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "bzzisperfect",
-      "userName": "BzzIsPerfect",
-      "title": "Анализируем The International 2026 | ЗАШЁЛ КФ 1248 !TG | РАЗЫГРЫВАЮ ФРИБЕТЫ | !BB ФРИБЕТ до 10000 |",
-      "viewerCount": 474,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:12:03Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bzzisperfect-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "straminskiy",
-      "userName": "straminskiy",
-      "title": "The International 2026 | Falcons vs. LGD | Nigma Galaxy vs. Iron Wing | BB vs. OG| Ставки  | Bets | !tg !ТГ",
-      "viewerCount": 449,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:03:11Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_straminskiy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "radika1fa",
-      "userName": "RadiKa1fa",
-      "title": "ДАРОВА🔥| !тг !бусти !ggsel",
-      "viewerCount": 428,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:00:10Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_radika1fa-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "lemchanskiy",
-      "userName": "lemchanskiy",
-      "title": "ЕЩЁ ПОСИДИМ Pvision VS Resilience (0:0) | The International 2026 @bbyby_ @ssscarfaccce",
-      "viewerCount": 421,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:48:23Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lemchanskiy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "griefcast",
-      "userName": "griefcast",
-      "title": "BOOMBOYS 0-0 OG (BO3) | The International 2026 | BetBoom versus OG ti 15",
-      "viewerCount": 414,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:39:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_griefcast-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "yurapivo",
-      "userName": "yurapivo",
-      "title": "Team Falcons [0:0] LGD Gaming | The International 2026 | Group Stage | !winline !тг",
-      "viewerCount": 406,
-      "language": "ru",
-      "startedAt": "2026-08-12T20:25:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yurapivo-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "gelatita",
-      "userName": "gelatita",
-      "title": "EMPIEZA EL TI! VEMOS A LGD VS FALCONS ♡ ✮ !video !redes",
-      "viewerCount": 391,
-      "language": "es",
-      "startedAt": "2026-08-13T02:12:06Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gelatita-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "cispapa",
-      "userName": "CISpapa",
-      "title": "Team Falcons - LGD Gaming | The International 2026 | !tg | NO DELAY",
-      "viewerCount": 380,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:13:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cispapa-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "mariachi",
-      "userName": "MARIACHI",
-      "title": "Falcons vs LGD 0:0 [Без задержки+2K качество] || BO3 || The International 2026: Групповая Стадия || 🚨!pari !мышь tg — t.me/mariach3",
-      "viewerCount": 376,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:07:41Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mariachi-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "storm_q",
-      "userName": "STORM_Q",
-      "title": "Falcons vs LGD Gaming (0-0) | The International 2026 Group Stage | !tg !розыгрыш !аркана",
-      "viewerCount": 370,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:14:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_storm_q-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "davay_po_novoy",
-      "userName": "Davay_po_Novoy",
-      "title": "Team Falcons [0:0] LGD Gaming | The International 2026 | Group Stage !  !Majestic PROMO: DED !Winline",
-      "viewerCount": 348,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:55:44Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_davay_po_novoy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "beastqt",
-      "userName": "BEASTQT",
-      "title": "КОМЕНЧУ ИНТ FALCONS VS LGD 👉!DROPS ХАРДКОР СЕЗОН БЕЗ БАРАХОЛКИ И СЛОМАННЫЙ ПОДСУМОК! ОПЯТЬ ГОЛОВА ГЛАЗА, КТО ВИНОВАТ?",
-      "viewerCount": 344,
-      "language": "ru",
-      "startedAt": "2026-08-12T21:05:56Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_beastqt-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "rezziser",
-      "userName": "rezziser",
-      "title": "[RU-A] Team Falcons vs. LGD Gaming - The International 2026 - Групповой Этап - Раунд 1 l Internetional Интернешнл",
-      "viewerCount": 301,
-      "language": "ru",
-      "startedAt": "2026-08-12T15:52:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rezziser-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "chynao_o",
-      "userName": "chynaO_o",
-      "title": "5ка ммр соло гейм !tg !пати !онлик",
-      "viewerCount": 285,
-      "language": "ru",
-      "startedAt": "2026-08-12T16:04:57Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chynao_o-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "gratis150ml",
-      "userName": "gratis150ml",
-      "title": "campeonato mundial !!!! HJ 23 h",
-      "viewerCount": 269,
+      "userLogin": "seucreysonreborn",
+      "userName": "seucreysonreborn",
+      "title": "9,5k ATUAL CAMPEÃO BRASILEIRO - VAMU RI - 322 Q.I. 1300 TESTOTERONE !site !social !bmbr !flow !pix !scorpion",
+      "viewerCount": 1298,
       "language": "pt",
-      "startedAt": "2026-08-12T22:31:04Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gratis150ml-{width}x{height}.jpg"
+      "startedAt": "2026-08-12T17:09:15Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_seucreysonreborn-{width}x{height}.jpg"
     },
     {
-      "userLogin": "poka",
-      "userName": "poka",
-      "title": "🏆 road 20k",
-      "viewerCount": 252,
+      "userLogin": "misolo3",
+      "userName": "misolo3",
+      "title": "TI2026 /w @Daxak | Team Falcons [0:1] Team LGD | Group Stage | BO3 | !тг !winline !ggsell !пабстомп !билеты",
+      "viewerCount": 1187,
       "language": "ru",
-      "startedAt": "2026-08-12T19:39:12Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_poka-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "neret17",
-      "userName": "neret17",
-      "title": "Nigma Galaxy - Iron Wing | The International 2026: Group Stage | by @neret17 @mariomax11",
-      "viewerCount": 250,
-      "language": "ru",
-      "startedAt": "2026-08-12T20:21:19Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neret17-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dota2ti_cn",
-      "userName": "dota2ti_cn",
-      "title": "[CN-A] The International 2026 - 小组赛",
-      "viewerCount": 198,
-      "language": "zh",
-      "startedAt": "2026-08-13T01:47:13Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_cn-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "inboss1k",
-      "userName": "INBoss1k",
-      "title": "𖤐  ЗАЛИЛ ВСЕ ДЕНЬГИ НА ПЕРВУЮ ИГРУ INTERNATIONAL 2026 𖤐 !bc",
-      "viewerCount": 197,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:16:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_inboss1k-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "godhunt",
-      "userName": "GodHunt",
-      "title": "Dota 2 Кастомний Вiктор ( AGE OF WEAPONS) Reffral: 01RIK9CO",
-      "viewerCount": 196,
-      "language": "uk",
-      "startedAt": "2026-08-12T17:24:59Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godhunt-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "newsham",
-      "userName": "Newsham",
-      "title": "more dota 2 yeah!!!",
-      "viewerCount": 189,
-      "language": "en",
-      "startedAt": "2026-08-12T20:31:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_newsham-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "abida666",
-      "userName": "abida666",
-      "title": "🔴🔴🔴 ЛёША  РАССКОШНЫЙ 🔴🔴🔴",
-      "viewerCount": 176,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:04:09Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_abida666-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "5misha",
-      "userName": "5Misha",
-      "title": "Falcons [0:0] LGD - The International 15 - Пасека Каст  w/ @chuvash33",
-      "viewerCount": 173,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:41:06Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_5misha-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T02:02:46Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_misolo3-{width}x{height}.jpg"
     },
     {
       "userLogin": "godota2bets",
       "userName": "godota2bets",
       "title": "Falcons vs LGD Gaming. TI 2026.  Ставки.   Старт 500к.  Новый винстрик делаем  !стата   !TG @godota2bets",
-      "viewerCount": 173,
+      "viewerCount": 1169,
       "language": "ru",
       "startedAt": "2026-08-13T03:01:11Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godota2bets-{width}x{height}.jpg"
     },
     {
-      "userLogin": "bolt_ru",
-      "userName": "bolt_ru",
-      "title": "BoomBoys - OG | The International 2026 |  без задержки",
-      "viewerCount": 172,
-      "language": "ru",
-      "startedAt": "2026-08-13T03:05:47Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bolt_ru-{width}x{height}.jpg"
+      "userLogin": "masondota2",
+      "userName": "masondota2",
+      "title": "TI HUB. BETTER HUB THAN GORGC",
+      "viewerCount": 1148,
+      "language": "en",
+      "startedAt": "2026-08-12T21:08:45Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_masondota2-{width}x{height}.jpg"
     },
     {
-      "userLogin": "icebergdoto",
-      "userName": "icebergdoto",
-      "title": "The International 2026  Team BB  0-0 Team OG   !tg",
-      "viewerCount": 163,
+      "userLogin": "sh4dowehhh",
+      "userName": "Sh4dowehhh",
+      "title": "⭐TI2026 🎯JEKICH🏆 ГАЗ🎮",
+      "viewerCount": 1126,
       "language": "ru",
-      "startedAt": "2026-08-13T01:53:31Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icebergdoto-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T01:39:47Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sh4dowehhh-{width}x{height}.jpg"
     },
     {
-      "userLogin": "lakelzth",
-      "userName": "lakelzth",
-      "title": "🔴LIVE 🏹Falcons vs LGD (Bo3) | The International 2026: Group Stage Day1 : Donate ขึ้นจอได้ที่ !easy !kick",
-      "viewerCount": 163,
-      "language": "th",
-      "startedAt": "2026-08-13T01:24:22Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lakelzth-{width}x{height}.jpg"
+      "userLogin": "afoninje",
+      "userName": "afoninje",
+      "title": "Общаемся на TI",
+      "viewerCount": 1095,
+      "language": "ru",
+      "startedAt": "2026-08-13T04:04:23Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_afoninje-{width}x{height}.jpg"
     },
     {
-      "userLogin": "shiishak",
-      "userName": "ShiiShak",
-      "title": "8K MMR Pos 4 Gameplay. !tg !winline",
-      "viewerCount": 159,
+      "userLogin": "9pasha",
+      "userName": "9pasha",
+      "title": "LGD [1:0] Falcons | The International 2026 | Group Stage | BO3 !winline !youtube !discord",
+      "viewerCount": 1050,
       "language": "ru",
-      "startedAt": "2026-08-13T01:59:58Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shiishak-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T02:11:05Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_9pasha-{width}x{height}.jpg"
     },
     {
-      "userLogin": "kiaraoksi",
-      "userName": "KIARAOKSI",
-      "title": "уютный хаос💜 !donate !tg !inst",
-      "viewerCount": 154,
+      "userLogin": "olagheparande",
+      "userName": "olagheparande",
+      "title": "Team Falcons (0) vs (1) LGD Gaming | The International 2026 Group Stage",
+      "viewerCount": 983,
+      "language": "other",
+      "startedAt": "2026-08-13T01:33:14Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_olagheparande-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lens_doto",
+      "userName": "LenS_Doto",
+      "title": "Team Falcons [0:1] LGD Gaming | The International: Group Stage | BO3 !tg w/ @earthq__ @uniquee",
+      "viewerCount": 937,
       "language": "ru",
-      "startedAt": "2026-08-12T23:34:44Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kiaraoksi-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T01:54:33Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lens_doto-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "valbina",
+      "userName": "VALbINA",
+      "title": "Смотрим BETBOOM Team - Team OG | The International 2026 | !тг",
+      "viewerCount": 855,
+      "language": "ru",
+      "startedAt": "2026-08-12T22:39:17Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_valbina-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "limitlessqt",
+      "userName": "limitlessqt",
+      "title": "Team Falcons vs. LGD Gaming | The International | Pos 3 | Время в никуда | !winline | !tg | !freebet | СБОРКИ -> https://t.me/limitlessqt",
+      "viewerCount": 785,
+      "language": "ru",
+      "startedAt": "2026-08-13T00:16:25Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_limitlessqt-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "ponyaaaa",
+      "userName": "ponyaaaa",
+      "title": "😁ЛЕГЕНДА СМОТРИТ ИНТ😎Team Falcons vs LGD 0:1😜!bc",
+      "viewerCount": 752,
+      "language": "ru",
+      "startedAt": "2026-08-13T02:49:46Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ponyaaaa-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "radika1fa",
+      "userName": "RadiKa1fa",
+      "title": "ДАРОВА! Смотрим Team Falcons vs. LGD Gaming - TI2026🔥| !тг !бусти !ggsel",
+      "viewerCount": 724,
+      "language": "ru",
+      "startedAt": "2026-08-13T02:00:10Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_radika1fa-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "goodwin_dota",
+      "userName": "GoodWin_Dota",
+      "title": "The International 2026 | Falcons vs LGD | Group Stage !прогнозы",
+      "viewerCount": 597,
+      "language": "ru",
+      "startedAt": "2026-08-13T02:30:18Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_goodwin_dota-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "cispapa",
+      "userName": "CISpapa",
+      "title": "Team Falcons - LGD Gaming | The International 2026 | !tg | NO DELAY",
+      "viewerCount": 573,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:13:30Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cispapa-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "vtv2js2",
+      "userName": "vtv2js2",
+      "title": "каст the international 2026  falcons 0 1 LGD gaming",
+      "viewerCount": 481,
+      "language": "ru",
+      "startedAt": "2026-08-13T03:38:47Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vtv2js2-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "straminskiy",
+      "userName": "straminskiy",
+      "title": "The International 2026 | Falcons vs. LGD | Nigma Galaxy vs. Iron Wing | BB vs. OG| Ставки  | Bets | !tg !ТГ",
+      "viewerCount": 476,
+      "language": "ru",
+      "startedAt": "2026-08-13T02:03:11Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_straminskiy-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dnmdota",
+      "userName": "dnmdota",
+      "title": "DAY [5] SCUBATHON: 1k MMR IN 10 DAYS 🎯RANK 1K DONE🎯!goals !subathon !lan 🎯 NEVER BEEN DONE BEFORE 🎯!factor",
+      "viewerCount": 454,
+      "language": "en",
+      "startedAt": "2026-08-11T21:31:58Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dnmdota-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "storm_q",
+      "userName": "STORM_Q",
+      "title": "Falcons vs LGD Gaming (0-1) | The International 2026 Group Stage | !tg !розыгрыш !аркана",
+      "viewerCount": 440,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:14:15Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_storm_q-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "griefcast",
+      "userName": "griefcast",
+      "title": "BOOMBOYS 1-0 OG (BO3) | The International 2026 | BetBoom versus OG ti 15",
+      "viewerCount": 428,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:39:07Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_griefcast-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "neret17",
+      "userName": "neret17",
+      "title": "Nigma Galaxy - Iron Wing | The International 2026: Group Stage | by @neret17 @mariomax11",
+      "viewerCount": 426,
+      "language": "ru",
+      "startedAt": "2026-08-12T20:21:19Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neret17-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "bzzisperfect",
+      "userName": "BzzIsPerfect",
+      "title": "Анализируем The International 2026 | ЗАШЁЛ КФ 1248 !TG | РАЗЫГРЫВАЮ ФРИБЕТЫ | !BB ФРИБЕТ до 10000 |",
+      "viewerCount": 408,
+      "language": "ru",
+      "startedAt": "2026-08-13T02:12:03Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bzzisperfect-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "davay_po_novoy",
+      "userName": "Davay_po_Novoy",
+      "title": "Team Falcons [0:1] LGD Gaming | The International 2026 | Group Stage !  !Majestic PROMO: DED !Winline",
+      "viewerCount": 395,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:55:44Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_davay_po_novoy-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lemchanskiy",
+      "userName": "lemchanskiy",
+      "title": "Falcons VS LGD (0:1) | The International 2026 @bbyby_ @ssscarfaccce",
+      "viewerCount": 393,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:48:23Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lemchanskiy-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "chubzarik_dota",
+      "userName": "chubzarik_dota",
+      "title": "Team Falcons vs LGD Gaming bo3 The International 2026: Group Stage",
+      "viewerCount": 385,
+      "language": "ru",
+      "startedAt": "2026-08-13T04:15:50Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chubzarik_dota-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "iltw1",
+      "userName": "iltw1",
+      "title": "1w vs nigma",
+      "viewerCount": 367,
+      "language": "ru",
+      "startedAt": "2026-08-13T02:13:38Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_iltw1-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "yurapivo",
+      "userName": "yurapivo",
+      "title": "Team Falcons [0:1] LGD Gaming | The International 2026 | Group Stage | !winline !тг",
+      "viewerCount": 334,
+      "language": "ru",
+      "startedAt": "2026-08-12T20:25:15Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yurapivo-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "mariachi",
+      "userName": "MARIACHI",
+      "title": "Falcons vs LGD 0:1 [Без задержки+2K качество] || BO3 || The International 2026: Групповая Стадия || 🚨!pari !мышь tg — t.me/mariach3",
+      "viewerCount": 325,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:07:41Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mariachi-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "gratis150ml",
+      "userName": "gratis150ml",
+      "title": "campeonato mundial !!!! HJ 23 h",
+      "viewerCount": 322,
+      "language": "pt",
+      "startedAt": "2026-08-12T22:31:04Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gratis150ml-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "alowxc",
+      "userName": "aLoWXC",
+      "title": "[FIL] FLCNS vs LGD (BO3) | The International 2026 Swiss Stage - Stream B",
+      "viewerCount": 319,
+      "language": "en",
+      "startedAt": "2026-08-13T01:48:42Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alowxc-{width}x{height}.jpg"
     },
     {
       "userLogin": "analytika_owibok",
       "userName": "Analytika_Owibok",
       "title": "Team Falcons [0:0] LGD Gaming | The International 2026 | Group Stage | BO3",
-      "viewerCount": 151,
+      "viewerCount": 316,
       "language": "ru",
       "startedAt": "2026-08-13T02:09:28Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_analytika_owibok-{width}x{height}.jpg"
     },
     {
-      "userLogin": "dota2ti_es_4",
-      "userName": "dota2ti_es_4",
-      "title": "[ES-D] TEAM VISION vs. Team Resilience - The International 2026 - Fase de Grupos - Ronda 1",
-      "viewerCount": 135,
+      "userLogin": "sqreenbets",
+      "userName": "sQreenbets",
+      "title": "THE INTERNATIONAL мультистрим все игры, 1w - Nigma, BB - OG, PARI - Resilence, FALCONS - LGD, аналитика и ставки !fon !650 !private",
+      "viewerCount": 305,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:41:16Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sqreenbets-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "gelatita",
+      "userName": "gelatita",
+      "title": "EMPIEZA EL TI! VEMOS A LGD VS FALCONS ♡ ✮ !video !redes",
+      "viewerCount": 299,
       "language": "es",
-      "startedAt": "2026-08-13T02:35:13Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es_4-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T02:12:06Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gelatita-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "akumaqqe",
+      "userName": "akumaqqe",
+      "title": "Team Falcons 0 vs 1 LGD Gaming bo3 The International 2026",
+      "viewerCount": 289,
+      "language": "ru",
+      "startedAt": "2026-08-13T04:12:42Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_akumaqqe-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "rezziser",
+      "userName": "rezziser",
+      "title": "[RU-A] Team Falcons vs. LGD Gaming - The International 2026 - Групповой Этап - Раунд 1 l Internetional Интернешнл",
+      "viewerCount": 283,
+      "language": "ru",
+      "startedAt": "2026-08-12T15:52:37Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rezziser-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "bolt_ru",
+      "userName": "bolt_ru",
+      "title": "BoomBoys - OG | The International 2026 |  без задержки",
+      "viewerCount": 275,
+      "language": "ru",
+      "startedAt": "2026-08-13T03:05:47Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bolt_ru-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lakelzth",
+      "userName": "lakelzth",
+      "title": "🔴LIVE 🏹Falcons vs LGD (Bo3) | The International 2026: Group Stage Day1 : Donate ขึ้นจอได้ที่ !easy !kick",
+      "viewerCount": 251,
+      "language": "th",
+      "startedAt": "2026-08-13T01:24:22Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lakelzth-{width}x{height}.jpg"
     },
     {
       "userLogin": "ferviandota",
       "userName": "Ferviandota",
       "title": "The International 2026 - Group Stage -  Cтавки в тг",
-      "viewerCount": 133,
+      "viewerCount": 231,
       "language": "ru",
       "startedAt": "2026-08-13T01:51:16Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ferviandota-{width}x{height}.jpg"
     },
     {
-      "userLogin": "kevin_kuraga",
-      "userName": "Kevin_Kuraga",
-      "title": "СМОТРИМ LGD VS FALCONS !роспись !sakeenkok",
-      "viewerCount": 131,
+      "userLogin": "beastqt",
+      "userName": "BEASTQT",
+      "title": "КОМЕНЧУ ИНТ FALCONS VS LGD 👉!DROPS ХАРДКОР СЕЗОН БЕЗ БАРАХОЛКИ И СЛОМАННЫЙ ПОДСУМОК! ОПЯТЬ ГОЛОВА ГЛАЗА, КТО ВИНОВАТ?",
+      "viewerCount": 230,
       "language": "ru",
-      "startedAt": "2026-08-12T20:53:17Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kevin_kuraga-{width}x{height}.jpg"
+      "startedAt": "2026-08-12T21:05:56Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_beastqt-{width}x{height}.jpg"
     },
     {
-      "userLogin": "sna1pli",
-      "userName": "sna1pli",
-      "title": "каст от BroodTeam  International2026 Falcons/LGD 0:0",
-      "viewerCount": 129,
+      "userLogin": "poka",
+      "userName": "poka",
+      "title": "🏆 road 20k",
+      "viewerCount": 228,
       "language": "ru",
-      "startedAt": "2026-08-13T01:28:45Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sna1pli-{width}x{height}.jpg"
+      "startedAt": "2026-08-12T19:39:12Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_poka-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "detskaya_travma",
+      "userName": "Detskaya_Travma",
+      "title": "Iron Wing vs Nigma Galaxy | The International 2026 | !tg",
+      "viewerCount": 225,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:09:39Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detskaya_travma-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "mangekyou_14",
+      "userName": "mangekyou_14",
+      "title": "0:1Team Falcons vs LGD Gaming bo3 The International 2026: Group Stage",
+      "viewerCount": 216,
+      "language": "ru",
+      "startedAt": "2026-08-13T04:19:45Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mangekyou_14-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "baxadoto",
+      "userName": "baxadoto",
+      "title": "Team Falcons vs. LGD Gaming - The International 2026 - Group Stage - Round 1 | with @santadoto | !ставка !tg !f",
+      "viewerCount": 203,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:36:59Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_baxadoto-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "maxon_live_3291425",
+      "userName": "MAXON_LIVE_3291425",
+      "title": "MAXON! теги для поиска: ЗУБАРЕВ ЛОРД БУСТЕР ЛУДОЖОП ЕГОРКРИД ЕГОРКРИД vitus vitus_tv медисон евелон zubarefff zubarev зубареффф хованский",
+      "viewerCount": 202,
+      "language": "ru",
+      "startedAt": "2026-08-13T05:02:21Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maxon_live_3291425-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "shiishak",
+      "userName": "ShiiShak",
+      "title": "8K MMR Pos 4 Gameplay. !tg !winline",
+      "viewerCount": 197,
+      "language": "ru",
+      "startedAt": "2026-08-13T03:39:43Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shiishak-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dota2ti_cn",
+      "userName": "dota2ti_cn",
+      "title": "[CN-A] The International 2026 - 小组赛",
+      "viewerCount": 188,
+      "language": "zh",
+      "startedAt": "2026-08-13T01:47:13Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_cn-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "icebergdoto",
+      "userName": "icebergdoto",
+      "title": "LGD  vs. Falcons 1-0 The International 2026 - Group Stage - Round 1 W AFONINJE  !tg",
+      "viewerCount": 187,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:53:31Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icebergdoto-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "inboss1k",
+      "userName": "INBoss1k",
+      "title": "𖤐  ЗАЛИЛ ВСЕ ДЕНЬГИ НА ПЕРВУЮ ИГРУ INTERNATIONAL 2026 𖤐 !bc",
+      "viewerCount": 180,
+      "language": "ru",
+      "startedAt": "2026-08-13T02:16:30Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_inboss1k-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "1cen1ce116",
+      "userName": "1cen1ce116",
+      "title": "Iron Wing vs Nigma Galaxy, bo3 | The International 2026 Group Stage !tg !fb !tgbet",
+      "viewerCount": 173,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:40:39Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_1cen1ce116-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dota2ti_es_4",
+      "userName": "dota2ti_es_4",
+      "title": "[ES-D] TEAM VISION vs. Team Resilience - The International 2026 - Fase de Grupos - Ronda 1",
+      "viewerCount": 173,
+      "language": "es",
+      "startedAt": "2026-08-13T02:35:13Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es_4-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "abida666",
+      "userName": "abida666",
+      "title": "🔴🔴🔴 ЛёША  РАССКОШНЫЙ 🔴🔴🔴",
+      "viewerCount": 173,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:04:09Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_abida666-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "fuzer",
+      "userName": "Fuzer",
+      "title": "TI KISAKATSOMO!!!",
+      "viewerCount": 169,
+      "language": "fi",
+      "startedAt": "2026-08-13T01:59:43Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fuzer-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dota2_maincast2",
+      "userName": "dota2_maincast2",
+      "title": "[UA] Iron Wing vs Nigma Galaxy (1-0) BO3 | The International 2026 | by @f3nrirtv",
+      "viewerCount": 162,
+      "language": "uk",
+      "startedAt": "2026-08-13T01:56:58Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2_maincast2-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dota2ti_es_2",
+      "userName": "dota2ti_es_2",
+      "title": "[ES-B] Nigma Galaxy vs. Iron Wing - The International 2026 - Fase de Grupos - Ronda 1",
+      "viewerCount": 158,
+      "language": "es",
+      "startedAt": "2026-08-13T02:30:33Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es_2-{width}x{height}.jpg"
     },
     {
       "userLogin": "cyberclasher",
       "userName": "Cyberclasher",
       "title": "[LIVE] ⚔️NGX vs IW ⚔️TSpirit vs XG 🏆The International 2026 - Group Stage - Day 1",
-      "viewerCount": 124,
+      "viewerCount": 156,
       "language": "th",
       "startedAt": "2026-08-13T01:25:44Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cyberclasher-{width}x{height}.jpg"
     },
     {
+      "userLogin": "neuro",
+      "userName": "Neuro",
+      "title": "💪🏻PMA KING💪🏻",
+      "viewerCount": 152,
+      "language": "en",
+      "startedAt": "2026-08-12T22:00:20Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neuro-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "sysman_",
       "userName": "sysman_",
       "title": "TEAM VISION - Team Resilience | The International 2026: Group Stage | !tg | !тг |",
-      "viewerCount": 119,
+      "viewerCount": 145,
       "language": "ru",
       "startedAt": "2026-08-13T00:58:21Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sysman_-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "5misha",
+      "userName": "5Misha",
+      "title": "Falcons [0:1] LGD - The International 15 - Пасека Каст  w/ @chuvash33",
+      "viewerCount": 141,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:41:06Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_5misha-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "yandex",
+      "userName": "yandex",
+      "title": "Community cast Yandex | The International | group stage | Team Yandex vs HOOLIGANI |  cast by  @voodoosh и @yandex",
+      "viewerCount": 137,
+      "language": "ru",
+      "startedAt": "2026-08-13T04:58:57Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yandex-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "kevin_kuraga",
+      "userName": "Kevin_Kuraga",
+      "title": "СМОТРИМ LGD VS FALCONS !роспись !sakeenkok",
+      "viewerCount": 134,
+      "language": "ru",
+      "startedAt": "2026-08-12T20:53:17Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kevin_kuraga-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "youyou",
+      "userName": "YouYou",
+      "title": "The International 2026: Group Stage | Team Falcons vs LGD Gaming (TOPSON)",
+      "viewerCount": 132,
+      "language": "fr",
+      "startedAt": "2026-08-13T01:11:22Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_youyou-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "icemo21",
+      "userName": "icemo21",
+      "title": "[RU] Nigma Galaxy 0:0 Iron Wing | The International 2026 w/ @Manager_Mintaika !tg !vapoint !p",
+      "viewerCount": 117,
+      "language": "ru",
+      "startedAt": "2026-08-13T01:57:40Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icemo21-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dota2ti_es_3",
+      "userName": "dota2ti_es_3",
+      "title": "[ES-C] BoomBoys vs. OG - The International 2026 - Fase de Grupos - Ronda 1",
+      "viewerCount": 117,
+      "language": "es",
+      "startedAt": "2026-08-13T02:30:32Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es_3-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "kiaraoksi",
+      "userName": "KIARAOKSI",
+      "title": "уютный хаос💜 !donate !tg !inst",
+      "viewerCount": 116,
+      "language": "ru",
+      "startedAt": "2026-08-12T23:34:44Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kiaraoksi-{width}x{height}.jpg"
     },
     {
       "userLogin": "seventyfly_com",
@@ -699,202 +825,85 @@
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_seventyfly_com-{width}x{height}.jpg"
     },
     {
-      "userLogin": "magnus_tobi",
-      "userName": "Magnus_Tobi",
-      "title": "Звук ого LAGOFAST Live gaming: Project Ascension",
-      "viewerCount": 110,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:11:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magnus_tobi-{width}x{height}.jpg"
+      "userLogin": "c1rceezy",
+      "userName": "c1RcEEZY",
+      "title": "📺Team Falcons vs. LGD Gaming 📺 The International 2026 - Group Stage - Round 1📺 !merch !cast",
+      "viewerCount": 115,
+      "language": "cs",
+      "startedAt": "2026-08-13T01:58:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_c1rceezy-{width}x{height}.jpg"
     },
     {
       "userLogin": "23dotatv",
       "userName": "23DOTATV",
       "title": "23 DOTA TV | THE INTERNATIONAL 2026 | GROUP STAGE | DAY 1 | STREAM A | NIGMA, IW, LIQUID, VG,...",
-      "viewerCount": 110,
+      "viewerCount": 113,
       "language": "vi",
       "startedAt": "2026-08-13T01:32:50Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_23dotatv-{width}x{height}.jpg"
     },
     {
-      "userLogin": "baxadoto",
-      "userName": "baxadoto",
-      "title": "Team Falcons vs. LGD Gaming - The International 2026 - Group Stage - Round 1 | with @santadoto | !ставка !tg !f",
-      "viewerCount": 108,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:36:59Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_baxadoto-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "yaneher",
-      "userName": "Yaneher",
-      "title": "АНАЛИТИКА ИНТА ОТ ТОП 10 ЕВРОПЫ",
-      "viewerCount": 105,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:22:45Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaneher-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "corxeagg",
-      "userName": "corxeaGG",
-      "title": "a charlar",
-      "viewerCount": 99,
-      "language": "es",
-      "startedAt": "2026-08-13T01:12:12Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_corxeagg-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "l7kni",
-      "userName": "l7kni",
-      "title": "CHinA N1 !!! !FunPay",
-      "viewerCount": 97,
-      "language": "ru",
-      "startedAt": "2026-08-12T23:35:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_l7kni-{width}x{height}.jpg"
+      "userLogin": "newsham",
+      "userName": "Newsham",
+      "title": "more dota 2 yeah!!!",
+      "viewerCount": 113,
+      "language": "en",
+      "startedAt": "2026-08-12T20:31:01Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_newsham-{width}x{height}.jpg"
     },
     {
       "userLogin": "its_funny7",
       "userName": "its_funny7",
       "title": "The International Ніякої цинзури  Team Falcons vs LGD Ніякої цинзури unofficial",
-      "viewerCount": 96,
+      "viewerCount": 110,
       "language": "uk",
       "startedAt": "2026-08-13T01:52:46Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_its_funny7-{width}x{height}.jpg"
     },
     {
-      "userLogin": "krauch_v",
-      "userName": "Krauch_V",
-      "title": "Team Falcons vs LGD Gaming (0-0) BO3 🏆 «ШЛЯХ ДО КУБКА: INT 2026 ДИВИМОСЬ РАЗОМ» ✅ !donate",
-      "viewerCount": 96,
-      "language": "uk",
-      "startedAt": "2026-08-12T18:29:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_krauch_v-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "youyou",
-      "userName": "YouYou",
-      "title": "The International 2026: Group Stage",
-      "viewerCount": 86,
-      "language": "fr",
-      "startedAt": "2026-08-13T01:11:22Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_youyou-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "mrahillesko",
-      "userName": "mrAhillesko",
-      "title": "Нишевый стрим для нищих. Анализ турниров. Сделал 1 млн рублей за 3 месяца с фрибета. Пруф в !tg !ctg БАНК СЕГОДНЯ 1,4 млн. Тайлунг 322 офишл",
-      "viewerCount": 84,
+      "userLogin": "kolyakaban68",
+      "userName": "kolyakaban68",
+      "title": "Team Falcons vs LGD Gaming bo3 The International 2026: Group Stage",
+      "viewerCount": 107,
       "language": "ru",
-      "startedAt": "2026-08-13T01:57:16Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mrahillesko-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T04:07:54Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kolyakaban68-{width}x{height}.jpg"
     },
     {
-      "userLogin": "esl_dota2",
-      "userName": "ESL_DOTA2",
-      "title": "HIGHLIGHTS: PARIVISION vs. Team Spirit - DreamLeague S29",
-      "viewerCount": 83,
-      "language": "en",
-      "startedAt": "2026-08-12T20:15:27Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_esl_dota2-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "furionbe",
-      "userName": "furionbe",
-      "title": "PARIVISION vs Resilience | Falcons vs LGD | TI 2026 !tg !ставка",
-      "viewerCount": 82,
+      "userLogin": "snoopyrocket",
+      "userName": "SnoopyRocket",
+      "title": "Falcons vs LGD [0:1] BO3 | The International 2026",
+      "viewerCount": 102,
       "language": "ru",
-      "startedAt": "2026-08-13T01:41:56Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_furionbe-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dota2ti_es_3",
-      "userName": "dota2ti_es_3",
-      "title": "[ES-C] BoomBoys vs. OG - The International 2026 - Fase de Grupos - Ronda 1",
-      "viewerCount": 81,
-      "language": "es",
-      "startedAt": "2026-08-13T02:30:32Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es_3-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "rinat_lin",
-      "userName": "rinat_lin",
-      "title": "Team Falcons [0:0] LGD Gaming - The International 2026 / профессиональная аналитика",
-      "viewerCount": 79,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:48:25Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinat_lin-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T01:52:18Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_snoopyrocket-{width}x{height}.jpg"
     },
     {
       "userLogin": "qsnake",
       "userName": "qSnake",
       "title": "Team Falcons [0:0] LGD Gaming | The International 2026 | Group Stage",
-      "viewerCount": 76,
+      "viewerCount": 100,
       "language": "ru",
       "startedAt": "2026-08-13T01:54:53Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_qsnake-{width}x{height}.jpg"
     },
     {
-      "userLogin": "hvnnn_tv",
-      "userName": "HvNNN_tv",
-      "title": "[RU] The International 2026 | Day 1 | Falcons vs LGD",
-      "viewerCount": 75,
+      "userLogin": "l7kni",
+      "userName": "l7kni",
+      "title": "инт !FunPay",
+      "viewerCount": 92,
       "language": "ru",
-      "startedAt": "2026-08-13T02:09:00Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hvnnn_tv-{width}x{height}.jpg"
+      "startedAt": "2026-08-12T23:35:54Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_l7kni-{width}x{height}.jpg"
     },
     {
-      "userLogin": "kezhol_",
-      "userName": "kezhol_",
-      "title": "🔥КАСТ ИНТА🔥ПОМОГАЮ ЗАБРАТЬ АЕГИС🔥БОТ ДЛЯ ФЭНТЕЗИ В ЗАКРЕПЕ ТГ🔥ТРЕКИ ЗА 100 БАЛЛОВ🔥",
-      "viewerCount": 73,
+      "userLogin": "awfdota",
+      "userName": "awfdota",
+      "title": "Falcons vs LGD Gaming (0-1) | The International 2026 Group Stag | 😎 СТРИМ БЕЗ ЗАТУПОВ! 🔞 AURA PRIME 🏆 АНДЕГРАУНД ВЕЛИКАН 👑 | !bc !tg !ds",
+      "viewerCount": 90,
       "language": "ru",
-      "startedAt": "2026-08-13T02:06:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kezhol_-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "inkognito_gg",
-      "userName": "inkognito_gg",
-      "title": "ПЕРВЫЙ ДЕНЬ ИНТА ГРУППЫ |  Falcons vs LGD Bo3",
-      "viewerCount": 73,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:44:49Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_inkognito_gg-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "balonesbr",
-      "userName": "baLonesBR",
-      "title": "TI2026 - LGD vs Falcons - !pix !youtube",
-      "viewerCount": 72,
-      "language": "pt",
-      "startedAt": "2026-08-13T01:50:11Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_balonesbr-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dota2ti_es_2",
-      "userName": "dota2ti_es_2",
-      "title": "[ES-B] Nigma Galaxy vs. Iron Wing - The International 2026 - Fase de Grupos - Ronda 1",
-      "viewerCount": 70,
-      "language": "es",
-      "startedAt": "2026-08-13T02:30:33Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es_2-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "icemo21",
-      "userName": "icemo21",
-      "title": "[RU] Nigma Galaxy 0:0 Iron Wing | The International 2026 w/ @Manager_Mintaika !tg !vapoint !p",
-      "viewerCount": 66,
-      "language": "ru",
-      "startedAt": "2026-08-13T01:57:40Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icemo21-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "moesha_gg",
-      "userName": "moesha_gg",
-      "title": "FALCONS vs LGD LIVE",
-      "viewerCount": 24,
-      "language": "ru",
-      "startedAt": "2026-08-13T02:06:11Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_moesha_gg-{width}x{height}.jpg"
+      "startedAt": "2026-08-13T04:58:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_awfdota-{width}x{height}.jpg"
     }
   ]
 }
