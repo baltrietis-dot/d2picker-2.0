@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-21T07:00:00.041Z",
-  "expiresAt": "2026-08-21T08:00:00.041Z",
+  "lastUpdated": "2026-08-21T07:43:34.195Z",
+  "expiresAt": "2026-08-21T08:43:34.195Z",
   "gameId": "29595",
   "gameName": "Dota 2",
   "source": "twitch-helix",
@@ -8,8 +8,8 @@
     {
       "userLogin": "nix",
       "userName": "Nix",
-      "title": "Falcons vs Liquid 0:0 bo3 The International 2026: Playoffs day 2 w/ Alagon",
-      "viewerCount": 114956,
+      "title": "Falcons vs Liquid 1:0 bo3 The International 2026: Playoffs day 2 w/ Alagon",
+      "viewerCount": 108114,
       "language": "ru",
       "startedAt": "2026-08-21T02:07:09Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nix-{width}x{height}.jpg"
@@ -18,7 +18,7 @@
       "userLogin": "dota2ti",
       "userName": "dota2ti",
       "title": "[EN] Team Liquid vs. Team Falcons - The International 2026 - Lower Bracket Round 1",
-      "viewerCount": 99985,
+      "viewerCount": 87728,
       "language": "en",
       "startedAt": "2026-08-21T01:10:48Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti-{width}x{height}.jpg"
@@ -27,7 +27,7 @@
       "userLogin": "dota2ti_ru",
       "userName": "dota2ti_ru",
       "title": "[RU] Team Liquid vs. Team Falcons - The International 2026 - Нижняя сетка Раунд 1",
-      "viewerCount": 66478,
+      "viewerCount": 60898,
       "language": "ru",
       "startedAt": "2026-08-21T01:41:45Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_ru-{width}x{height}.jpg"
@@ -35,20 +35,11 @@
     {
       "userLogin": "ramzes",
       "userName": "ramzes",
-      "title": "Team Liquid [0:0] Team Falcons | The International 2026 | Lower Bracket Round 1 | BO3 | /w @afoninje !tg !win !playerok !втб !up",
-      "viewerCount": 21719,
+      "title": "Team Liquid [0:1] Team Falcons | The International 2026 | Lower Bracket Round 1 | BO3 | /w @afoninje !tg !win !playerok !втб !up",
+      "viewerCount": 16729,
       "language": "ru",
       "startedAt": "2026-08-21T02:12:19Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ramzes-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "solo",
-      "userName": "Solo",
-      "title": "🔴 Team Liquid [0:0] Team Falcons | The International 2026: Playoffs w/ @gthemall !BETBOOM !tg !розыгрыш",
-      "viewerCount": 13279,
-      "language": "ru",
-      "startedAt": "2026-08-21T01:47:20Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_solo-{width}x{height}.jpg"
     },
     {
       "userLogin": "heartdota23",
@@ -60,28 +51,37 @@
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_heartdota23-{width}x{height}.jpg"
     },
     {
-      "userLogin": "dota2ti_es",
-      "userName": "dota2ti_es",
-      "title": "[ES] Team Liquid vs. Team Falcons - The International 2026 - Bracket Inferior Ronda 1",
-      "viewerCount": 7454,
-      "language": "es",
-      "startedAt": "2026-08-21T01:31:17Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es-{width}x{height}.jpg"
+      "userLogin": "solo",
+      "userName": "Solo",
+      "title": "🔴 Team Liquid [0:1] Team Falcons | The International 2026: Playoffs w/ @gthemall !BETBOOM !tg !розыгрыш",
+      "viewerCount": 8884,
+      "language": "ru",
+      "startedAt": "2026-08-21T01:47:20Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_solo-{width}x{height}.jpg"
     },
     {
       "userLogin": "gorgc",
       "userName": "Gorgc",
       "title": "(EN) Liquid vs Falcons | The International 2026 | Playoffs | Lower Bracket",
-      "viewerCount": 6598,
+      "viewerCount": 6847,
       "language": "en",
       "startedAt": "2026-08-21T04:51:38Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gorgc-{width}x{height}.jpg"
     },
     {
+      "userLogin": "dota2ti_es",
+      "userName": "dota2ti_es",
+      "title": "[ES] Team Liquid vs. Team Falcons - The International 2026 - Bracket Inferior Ronda 1",
+      "viewerCount": 5676,
+      "language": "es",
+      "startedAt": "2026-08-21T01:31:17Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "avice",
       "userName": "avice",
-      "title": "Team Liquid [0:0] Team Falcons | The International 2026 | Lower Bracket Round 1 | BO3 | w/ @koma @mary_day",
-      "viewerCount": 4767,
+      "title": "Team Liquid [0:1] Team Falcons | The International 2026 | Lower Bracket Round 1 | BO3 | w/ @koma @mary_day",
+      "viewerCount": 5374,
       "language": "ru",
       "startedAt": "2026-08-21T02:20:40Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_avice-{width}x{height}.jpg"
@@ -89,161 +89,197 @@
     {
       "userLogin": "dota2_maincast",
       "userName": "dota2_maincast",
-      "title": "[UA] Team Liquid vs Falcons (0-0) BO3 | The International 2026: Playoffs | by @casperrrtv & @doubleespresso",
-      "viewerCount": 3987,
+      "title": "[UA] Team Liquid vs Falcons (0-1) BO3 | The International 2026: Playoffs | by @casperrrtv & @doubleespresso",
+      "viewerCount": 3606,
       "language": "uk",
       "startedAt": "2026-08-21T05:45:21Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2_maincast-{width}x{height}.jpg"
     },
     {
-      "userLogin": "dyrachyo",
-      "userName": "dyrachyo",
-      "title": "Liquid [0:0] Falcons bo3 | The International 2026 | Lower Bracket Round 1 | !tg !bb w/ @dkfogas1",
-      "viewerCount": 2536,
-      "language": "ru",
-      "startedAt": "2026-08-21T02:09:53Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dyrachyo-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "koma",
       "userName": "Koma",
-      "title": "Team Liquid [0:0] Team Falcons w/ @mary_day @avice | The International 2026: Lower Bracket Round 1 | !tg !vtb !betboom",
-      "viewerCount": 2418,
+      "title": "Team Liquid [0:1] Team Falcons w/ @mary_day @avice | The International 2026: Lower Bracket Round 1 | !tg !vtb !betboom",
+      "viewerCount": 2485,
       "language": "ru",
       "startedAt": "2026-08-21T01:41:20Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_koma-{width}x{height}.jpg"
     },
     {
-      "userLogin": "daxak",
-      "userName": "Daxak",
-      "title": "Liquid 0-0 Falcons | TI 2026 | !фонбет !ггсел !бусти !мерч !вод",
-      "viewerCount": 2323,
-      "language": "ru",
-      "startedAt": "2026-08-21T05:51:00Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_daxak-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "etoseregga",
-      "userName": "etosereGGa",
-      "title": "The International 2026 | Team Liquid vs Falcons | bo3 | Play-Off",
-      "viewerCount": 2311,
-      "language": "ru",
-      "startedAt": "2026-08-21T05:08:05Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_etoseregga-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "ghostik",
       "userName": "Ghostik",
-      "title": "🔥Team Liquid vs Team Falcons (0-0) bo3 в плей-оф The International 2026 🔥УКРАЇНСЬКИЙ КАСТ",
-      "viewerCount": 2249,
+      "title": "🔥Team Liquid vs Team Falcons (0-1) bo3 в плей-оф The International 2026 🔥УКРАЇНСЬКИЙ КАСТ",
+      "viewerCount": 2478,
       "language": "uk",
       "startedAt": "2026-08-21T05:49:14Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ghostik-{width}x{height}.jpg"
     },
     {
-      "userLogin": "ns_art",
-      "userName": "NS_ART",
-      "title": "Team Liquid vs. Team Falcons | Evento principal dia 2 | The International 2026 🏆- !PIX !EXITLAG !CHAMPZ !MASTER !SORTEIO",
-      "viewerCount": 1979,
-      "language": "pt",
-      "startedAt": "2026-08-20T22:59:28Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ns_art-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "9pasha",
-      "userName": "9pasha",
-      "title": "[БЕЗ ЗАДЕРЖКИ] Liquid [0:0] Falcons | The International 2026 | Playoffs | BO3 | !winline !youtube !discord",
-      "viewerCount": 1894,
+      "userLogin": "etoseregga",
+      "userName": "etosereGGa",
+      "title": "The International 2026 | Team Liquid vs Falcons | bo3 | Play-Off",
+      "viewerCount": 2414,
       "language": "ru",
-      "startedAt": "2026-08-21T01:59:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_9pasha-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T05:08:05Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_etoseregga-{width}x{height}.jpg"
     },
     {
-      "userLogin": "singsing",
-      "userName": "singsing",
-      "title": "dota ti play offs n stuff - mortal shell when dotatv lag gets too bad",
-      "viewerCount": 1860,
-      "language": "en",
-      "startedAt": "2026-08-21T05:08:29Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_singsing-{width}x{height}.jpg"
+      "userLogin": "daxak",
+      "userName": "Daxak",
+      "title": "Liquid 0-0 Falcons | TI 2026 | !фонбет !ггсел !бусти !мерч !вод",
+      "viewerCount": 2386,
+      "language": "ru",
+      "startedAt": "2026-08-21T05:51:00Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_daxak-{width}x{height}.jpg"
     },
     {
       "userLogin": "judah_xx",
       "userName": "judah_xx",
       "title": "falcons vs liquid | !tg",
-      "viewerCount": 1765,
+      "viewerCount": 2153,
       "language": "ru",
       "startedAt": "2026-08-20T18:59:50Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_judah_xx-{width}x{height}.jpg"
     },
     {
-      "userLogin": "godota2bets",
-      "userName": "godota2bets",
-      "title": "Liquid  vs Falcons . TI 2026.  Ставки.   34 победы подряд сделали!   Новый винстрик делаем  !стата   !TG @godota2bets",
-      "viewerCount": 1192,
-      "language": "ru",
-      "startedAt": "2026-08-21T05:46:50Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godota2bets-{width}x{height}.jpg"
+      "userLogin": "singsing",
+      "userName": "singsing",
+      "title": "dota ti play offs n stuff - mortal shell when dotatv lag gets too bad",
+      "viewerCount": 2082,
+      "language": "en",
+      "startedAt": "2026-08-21T05:08:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_singsing-{width}x{height}.jpg"
     },
     {
-      "userLogin": "valbina",
-      "userName": "VALbINA",
-      "title": "Смотрим Team Liquid -  Team Falcons | The International 2026 | !тг #VCTWatchParty",
-      "viewerCount": 1185,
+      "userLogin": "good_mma",
+      "userName": "good_mma",
+      "title": "Team Liquid vs. Team Falcons 0 - 0 The International 2026 !tg !shop !mmr !pc !followage",
+      "viewerCount": 1883,
       "language": "ru",
-      "startedAt": "2026-08-20T22:43:29Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_valbina-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T07:00:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_good_mma-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "9pasha",
+      "userName": "9pasha",
+      "title": "[БЕЗ ЗАДЕРЖКИ] Liquid [0:1] Falcons | The International 2026 | Playoffs | BO3 | !winline !youtube !discord",
+      "viewerCount": 1868,
+      "language": "ru",
+      "startedAt": "2026-08-21T01:59:07Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_9pasha-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dyrachyo",
+      "userName": "dyrachyo",
+      "title": "Liquid [0:1] Falcons bo3 | The International 2026 | Lower Bracket Round 1 | !tg !bb w/ @dkfogas1",
+      "viewerCount": 1584,
+      "language": "ru",
+      "startedAt": "2026-08-21T02:09:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dyrachyo-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "ns_art",
+      "userName": "NS_ART",
+      "title": "Team Liquid vs. Team Falcons | Evento principal dia 2 | The International 2026 🏆- !PIX !EXITLAG !CHAMPZ !MASTER !SORTEIO",
+      "viewerCount": 1566,
+      "language": "pt",
+      "startedAt": "2026-08-20T22:59:28Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ns_art-{width}x{height}.jpg"
     },
     {
       "userLogin": "absolut3",
       "userName": "absolut3",
-      "title": "Team Liquid vs Team Falcons - The International 2026 !tg !pinnacle !команд",
-      "viewerCount": 1161,
+      "title": "Team Liquid 0:1 Team Falcons - The International 2026 !tg !pinnacle !команд",
+      "viewerCount": 1175,
       "language": "ru",
       "startedAt": "2026-08-20T20:38:55Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_absolut3-{width}x{height}.jpg"
     },
     {
-      "userLogin": "olagheparande",
-      "userName": "olagheparande",
-      "title": "Team Falcons vs Team Liquid | The International 2026 Lower Bracket !ti for main stream",
-      "viewerCount": 1044,
-      "language": "other",
-      "startedAt": "2026-08-21T02:04:25Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_olagheparande-{width}x{height}.jpg"
+      "userLogin": "valbina",
+      "userName": "VALbINA",
+      "title": "Смотрим Team Liquid -  Team Falcons | The International 2026 | !тг #VCTWatchParty",
+      "viewerCount": 1171,
+      "language": "ru",
+      "startedAt": "2026-08-20T22:43:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_valbina-{width}x{height}.jpg"
     },
     {
       "userLogin": "awfdota",
       "userName": "awfdota",
       "title": "!АРКАНА В ЧАТ 💎 Liquid [0-0] Falcons 💎 THE INTERNATIONAL 2026 PLAYOFFs    🏆 АНДЕГРАУНД ВЕЛИКАН 👑 | !bc !tg !ds",
-      "viewerCount": 951,
+      "viewerCount": 1085,
       "language": "ru",
       "startedAt": "2026-08-21T04:38:38Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_awfdota-{width}x{height}.jpg"
     },
     {
+      "userLogin": "godota2bets",
+      "userName": "godota2bets",
+      "title": "Liquid  vs Falcons . TI 2026.  Ставки.   34 победы подряд сделали!   Новый винстрик делаем  !стата   !TG @godota2bets",
+      "viewerCount": 990,
+      "language": "ru",
+      "startedAt": "2026-08-21T05:46:50Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godota2bets-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "misolo3",
+      "userName": "misolo3",
+      "title": "The International 2026  | Liquid [0:1] Falcons  | BO3  | w/ @daxak  !тг !winline !ggsell !пабстомп !билеты !конкурс",
+      "viewerCount": 944,
+      "language": "ru",
+      "startedAt": "2026-08-21T05:54:54Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_misolo3-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "olagheparande",
+      "userName": "olagheparande",
+      "title": "Team Falcons (1) vs (0) Team Liquid | The International 2026 Lower Bracket !ti for main stream",
+      "viewerCount": 804,
+      "language": "other",
+      "startedAt": "2026-08-21T02:04:25Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_olagheparande-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "sneakylol",
       "userName": "sneakylol",
       "title": "ti watchparty",
-      "viewerCount": 829,
+      "viewerCount": 763,
       "language": "en",
       "startedAt": "2026-08-20T23:15:27Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sneakylol-{width}x{height}.jpg"
     },
     {
-      "userLogin": "wxcdota",
-      "userName": "WXCDota",
-      "title": "[FIL] Team Liquid vs Team Falcons (BO3) | The International 15 2026 Playoffs Day 2",
-      "viewerCount": 823,
-      "language": "tl",
-      "startedAt": "2026-08-21T03:32:56Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wxcdota-{width}x{height}.jpg"
+      "userLogin": "radika1fa",
+      "userName": "RadiKa1fa",
+      "title": "ДАРОВА! |  Team Liquid vs Team Falcons - The International 2026 | !тг !бусти !ggsel",
+      "viewerCount": 743,
+      "language": "ru",
+      "startedAt": "2026-08-21T06:13:00Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_radika1fa-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "ponyaaaa",
+      "userName": "ponyaaaa",
+      "title": "😁ЛЕГЕНДА СМОТРИТ ИНТ😎Falcons vs Liquid 1:0😜!bc",
+      "viewerCount": 728,
+      "language": "ru",
+      "startedAt": "2026-08-21T06:21:56Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ponyaaaa-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "browjey",
+      "userName": "BrowJey",
+      "title": "Смотрим The International 2026 | Team Liquid [0:1] Team Falcons | !тг",
+      "viewerCount": 722,
+      "language": "ru",
+      "startedAt": "2026-08-21T01:53:19Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_browjey-{width}x{height}.jpg"
     },
     {
       "userLogin": "davay_po_novoy",
       "userName": "Davay_po_Novoy",
       "title": "Falcons vs Liquid 0:0 bo3| The International 2026: |!Majestic PROMO: DED !Winline",
-      "viewerCount": 754,
+      "viewerCount": 666,
       "language": "ru",
       "startedAt": "2026-08-21T02:00:42Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_davay_po_novoy-{width}x{height}.jpg"
@@ -252,70 +288,43 @@
       "userLogin": "mary_day",
       "userName": "mary_day",
       "title": "Falcons vs Liquid 0:0 bo3 | The International 2026: Playoffs day 2 w/ @koma @avice",
-      "viewerCount": 747,
+      "viewerCount": 617,
       "language": "ru",
       "startedAt": "2026-08-21T02:23:02Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mary_day-{width}x{height}.jpg"
     },
     {
-      "userLogin": "radika1fa",
-      "userName": "RadiKa1fa",
-      "title": "ДАРОВА! |  Team Liquid vs Team Falcons - The International 2026 | !тг !бусти !ggsel",
-      "viewerCount": 705,
-      "language": "ru",
-      "startedAt": "2026-08-21T06:13:00Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_radika1fa-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "misolo3",
-      "userName": "misolo3",
-      "title": "The International 2026  | Liquid [0:0] Falcons  | BO3  | w/ @daxak  !тг !winline !ggsell !пабстомп !билеты !конкурс",
-      "viewerCount": 691,
-      "language": "ru",
-      "startedAt": "2026-08-21T05:54:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_misolo3-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "browjey",
-      "userName": "BrowJey",
-      "title": "Смотрим The International 2026 | Team Liquid [0:0] Team Falcons | !тг",
-      "viewerCount": 680,
-      "language": "ru",
-      "startedAt": "2026-08-21T01:53:19Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_browjey-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "icebergdoto",
-      "userName": "icebergdoto",
-      "title": "Liquid  [0:0] Falcons | The International 2026 | Lower Bracket Round 1 | BO3 | Itg !give",
-      "viewerCount": 504,
-      "language": "ru",
-      "startedAt": "2026-08-21T01:53:10Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icebergdoto-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "alohadancetv",
       "userName": "ALOHADANCETV",
-      "title": "+20k$ Liquid 0:0 Falcons | The International 2026: Playoffs !tg !прогнозы",
-      "viewerCount": 467,
+      "title": "+20k$ Liquid 0:1 Falcons | The International 2026: Playoffs !tg !прогнозы",
+      "viewerCount": 560,
       "language": "ru",
       "startedAt": "2026-08-21T06:10:48Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alohadancetv-{width}x{height}.jpg"
     },
     {
-      "userLogin": "ponyaaaa",
-      "userName": "ponyaaaa",
-      "title": "😁ЛЕГЕНДА СМОТРИТ ИНТ😎Falcons vs Liquid 0:0😜!bc",
-      "viewerCount": 462,
+      "userLogin": "wxcdota",
+      "userName": "WXCDota",
+      "title": "[FIL] Team Liquid vs Team Falcons (BO3) | The International 15 2026 Playoffs Day 2",
+      "viewerCount": 474,
+      "language": "tl",
+      "startedAt": "2026-08-21T03:32:56Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wxcdota-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "icebergdoto",
+      "userName": "icebergdoto",
+      "title": "Liquid  [0:1] Falcons | The International 2026 | Lower Bracket Round 1 | BO3 | Itg !give",
+      "viewerCount": 465,
       "language": "ru",
-      "startedAt": "2026-08-21T06:21:56Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ponyaaaa-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T01:53:10Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icebergdoto-{width}x{height}.jpg"
     },
     {
       "userLogin": "straminskiy",
       "userName": "straminskiy",
-      "title": "Team Liquid 0-0 Team Falcons - The International 2026 -  Четвертьфиналы | Ставки  | Bets | !tg !ТГ",
-      "viewerCount": 448,
+      "title": "Team Liquid 0-1 Team Falcons - The International 2026 -  Четвертьфиналы | Ставки  | Bets | !tg !ТГ",
+      "viewerCount": 464,
       "language": "ru",
       "startedAt": "2026-08-21T01:55:34Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_straminskiy-{width}x{height}.jpg"
@@ -324,232 +333,250 @@
       "userLogin": "youyou",
       "userName": "YouYou",
       "title": "The International 2026 | Playoffs - Team Liquid vs Team Falcons",
-      "viewerCount": 425,
+      "viewerCount": 417,
       "language": "fr",
       "startedAt": "2026-08-21T05:46:50Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_youyou-{width}x{height}.jpg"
     },
     {
+      "userLogin": "ros1ro",
+      "userName": "ros1ro",
+      "title": "Team Liquid [0:1] Team Falcons / The International 2026 / ПУТЬ К 1000 фолловеров💎!тг💎 !1080 !камера 💎",
+      "viewerCount": 383,
+      "language": "ru",
+      "startedAt": "2026-08-21T02:42:17Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ros1ro-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "lens_doto",
       "userName": "LenS_Doto",
-      "title": "Team Liquid [0:0] Team Falcons | The International: Upper Bracket Quarterfinals | BO3 !tg w/ @uniquee @earthq__",
-      "viewerCount": 378,
+      "title": "Team Liquid [0:1] Team Falcons | The International: Upper Bracket Quarterfinals | BO3 !tg w/ @uniquee @earthq__",
+      "viewerCount": 362,
       "language": "ru",
       "startedAt": "2026-08-21T04:31:21Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lens_doto-{width}x{height}.jpg"
     },
     {
-      "userLogin": "storm_q",
-      "userName": "STORM_Q",
-      "title": "Team Liquid vs Team Falcons (0-0) | The International 2026: Main Event | !tg !розыгрыш !аркана",
-      "viewerCount": 372,
-      "language": "ru",
-      "startedAt": "2026-08-21T01:46:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_storm_q-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "bzzisperfect",
-      "userName": "BzzIsPerfect",
-      "title": "LIQUID -- FALCONS (bo3) Смотрим+Анализируем | ЗАШЁЛ КФ 1248 !TG",
-      "viewerCount": 360,
-      "language": "ru",
-      "startedAt": "2026-08-21T06:22:58Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bzzisperfect-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "elisaviihdesport",
-      "userName": "ElisaViihdeSport",
-      "title": "The International 2026 | Pudotuspelit",
-      "viewerCount": 336,
-      "language": "fi",
-      "startedAt": "2026-08-21T01:40:00Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elisaviihdesport-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "mantaq",
       "userName": "MantaQ",
       "title": "Team Falcons  x Team Liquids  | The International |  !tg !bb",
-      "viewerCount": 332,
+      "viewerCount": 357,
       "language": "ru",
       "startedAt": "2026-08-21T02:08:52Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mantaq-{width}x{height}.jpg"
     },
     {
-      "userLogin": "c1rceezy",
-      "userName": "c1RcEEZY",
-      "title": "📺Team Falcons vs Team Liquid 📺The International 2026📺Main Event - Day 2📺BO3📺Official CZSK CAST📺",
-      "viewerCount": 327,
-      "language": "cs",
-      "startedAt": "2026-08-21T01:48:43Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_c1rceezy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "chubzarik_dota",
-      "userName": "chubzarik_dota",
-      "title": "Team Falcons vs. Team Liquid - The International 2026 lower bracket (0-0) | !t w/accept_dota",
-      "viewerCount": 297,
+      "userLogin": "bzzisperfect",
+      "userName": "BzzIsPerfect",
+      "title": "LIQUID -- FALCONS (bo3) Смотрим+Анализируем | ЗАШЁЛ КФ 1248 !TG",
+      "viewerCount": 341,
       "language": "ru",
-      "startedAt": "2026-08-21T02:42:39Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chubzarik_dota-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T06:22:58Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bzzisperfect-{width}x{height}.jpg"
     },
     {
-      "userLogin": "dota2ti_cn",
-      "userName": "dota2ti_cn",
-      "title": "[CN] 第2日 - 2026国际邀请赛",
-      "viewerCount": 292,
-      "language": "zh",
-      "startedAt": "2026-08-21T01:45:23Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_cn-{width}x{height}.jpg"
+      "userLogin": "younextxx",
+      "userName": "younextxx",
+      "title": "dota 2 мастер по лузам",
+      "viewerCount": 326,
+      "language": "uk",
+      "startedAt": "2026-08-21T05:27:44Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_younextxx-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "elisaviihdesport",
+      "userName": "ElisaViihdeSport",
+      "title": "The International 2026 | Pudotuspelit",
+      "viewerCount": 316,
+      "language": "fi",
+      "startedAt": "2026-08-21T01:40:00Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elisaviihdesport-{width}x{height}.jpg"
     },
     {
       "userLogin": "gratis150ml",
       "userName": "gratis150ml",
       "title": "jogo novo ?",
-      "viewerCount": 276,
+      "viewerCount": 311,
       "language": "pt",
       "startedAt": "2026-08-21T00:11:15Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gratis150ml-{width}x{height}.jpg"
     },
     {
-      "userLogin": "limitlessqt",
-      "userName": "limitlessqt",
-      "title": "Iron Wing vs. BoomBoys Pos 3 | Время в никуда | !winline | !tg | !freebet | СБОРКИ -> https://t.me/limitlessqt",
-      "viewerCount": 275,
+      "userLogin": "chubzarik_dota",
+      "userName": "chubzarik_dota",
+      "title": "Team Falcons vs. Team Liquid - The International 2026 lower bracket (1-0) | !t w/accept_dota",
+      "viewerCount": 307,
       "language": "ru",
-      "startedAt": "2026-08-21T02:02:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_limitlessqt-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T02:42:39Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chubzarik_dota-{width}x{height}.jpg"
     },
     {
-      "userLogin": "cyberclasher",
-      "userName": "Cyberclasher",
-      "title": "[LIVE] ⚔️Iron Wing vs Boomboys ⚔️Liquid vs Falcons 🏆The International 2026 - Main Event - Day 6",
-      "viewerCount": 241,
-      "language": "th",
-      "startedAt": "2026-08-21T01:26:18Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cyberclasher-{width}x{height}.jpg"
+      "userLogin": "storm_q",
+      "userName": "STORM_Q",
+      "title": "Team Liquid vs Team Falcons (0-1) | The International 2026: Main Event | !tg !розыгрыш !аркана",
+      "viewerCount": 302,
+      "language": "ru",
+      "startedAt": "2026-08-21T01:46:30Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_storm_q-{width}x{height}.jpg"
     },
     {
-      "userLogin": "5misha",
-      "userName": "5Misha",
-      "title": "Liquid [0:0] Falcons - The International 2026 - НА ВЫЛЕТ-  PLAY OFF - Пасека-Каст w/ @chuvash33",
-      "viewerCount": 219,
-      "language": "ru",
-      "startedAt": "2026-08-21T01:55:28Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_5misha-{width}x{height}.jpg"
+      "userLogin": "c1rceezy",
+      "userName": "c1RcEEZY",
+      "title": "📺Team Falcons vs Team Liquid 📺The International 2026📺Main Event - Day 2📺BO3📺Official CZSK CAST📺",
+      "viewerCount": 301,
+      "language": "cs",
+      "startedAt": "2026-08-21T01:48:43Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_c1rceezy-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dota2ti_cn",
+      "userName": "dota2ti_cn",
+      "title": "[CN] 第2日 - 2026国际邀请赛",
+      "viewerCount": 263,
+      "language": "zh",
+      "startedAt": "2026-08-21T01:45:23Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_cn-{width}x{height}.jpg"
     },
     {
       "userLogin": "mangekyou_14",
       "userName": "mangekyou_14",
-      "title": "BoomBoys vs. 1WIN - The International 2026 - Lower Bracket Round 1",
-      "viewerCount": 217,
+      "title": "Team Falcons vs. Team Liquid - The International 2026 - Lower Bracket Round 1",
+      "viewerCount": 252,
       "language": "ru",
       "startedAt": "2026-08-21T03:15:36Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mangekyou_14-{width}x{height}.jpg"
     },
     {
-      "userLogin": "ferviandota",
-      "userName": "Ferviandota",
-      "title": "Iron Wing vs. BoomBoys - The International 2026 - Lower Bracket Round 1   Cтавки в тг",
-      "viewerCount": 215,
+      "userLogin": "limitlessqt",
+      "userName": "limitlessqt",
+      "title": "[БЕЗ ЗАДЕРЖКИ] Liquid [0:0] Falcons Pos 3 | Время в никуда | !winline | !tg | !freebet | СБОРКИ -> https://t.me/limitlessqt",
+      "viewerCount": 249,
       "language": "ru",
-      "startedAt": "2026-08-21T05:53:27Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ferviandota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "maxon_live_7449140",
-      "userName": "MAXON_LIVE_7449140",
-      "title": "MAXON! теги для поиска: ЗУБАРЕВ ЛОРД БУСТЕР ЛУДОЖОП ЕГОРКРИД ЕГОРКРИД vitus vitus_tv медисон евелон zubarefff zubarev зубареффф хованский",
-      "viewerCount": 199,
-      "language": "ru",
-      "startedAt": "2026-08-21T06:14:56Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maxon_live_7449140-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T02:02:15Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_limitlessqt-{width}x{height}.jpg"
     },
     {
       "userLogin": "akumaqqe",
       "userName": "akumaqqe",
-      "title": "Team Liquid 0 vs 0 Team Falcons bo3 The International 2026: Playoffs day 2",
-      "viewerCount": 190,
+      "title": "Team Liquid 0 vs 1 Team Falcons bo3 The International 2026: Playoffs day 2",
+      "viewerCount": 216,
       "language": "ru",
       "startedAt": "2026-08-21T02:25:09Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_akumaqqe-{width}x{height}.jpg"
     },
     {
-      "userLogin": "ya_tommy",
-      "userName": "ya_tommy",
-      "title": "BB (1:1) IW - The International 2026 (секретный стрим)",
-      "viewerCount": 167,
+      "userLogin": "5misha",
+      "userName": "5Misha",
+      "title": "Liquid [0:1] Falcons - The International 2026 - НА ВЫЛЕТ-  PLAY OFF - Пасека-Каст w/ @chuvash33",
+      "viewerCount": 203,
       "language": "ru",
-      "startedAt": "2026-08-21T03:12:21Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ya_tommy-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T01:55:28Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_5misha-{width}x{height}.jpg"
     },
     {
-      "userLogin": "lightfurylf",
-      "userName": "LightFuryLF",
-      "title": "🔴[jaysoo] Boom boy ⚔️ Iron Wing / Team Falcon ⚔️ Team Liquid (Bo3) 🏆 Ti 2026 : Main event Day2",
-      "viewerCount": 159,
+      "userLogin": "cyberclasher",
+      "userName": "Cyberclasher",
+      "title": "[LIVE] ⚔️Iron Wing vs Boomboys ⚔️Liquid vs Falcons 🏆The International 2026 - Main Event - Day 6",
+      "viewerCount": 198,
       "language": "th",
-      "startedAt": "2026-08-21T01:32:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lightfurylf-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T01:26:18Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cyberclasher-{width}x{height}.jpg"
     },
     {
-      "userLogin": "madeinabysz",
-      "userName": "MadeInAbysz",
-      "title": "[RU] Смотрим <3",
-      "viewerCount": 150,
+      "userLogin": "maxon_live_7449140",
+      "userName": "MAXON_LIVE_7449140",
+      "title": "MAXON! теги для поиска: ЗУБАРЕВ ЛОРД БУСТЕР ЛУДОЖОП ЕГОРКРИД ЕГОРКРИД vitus vitus_tv медисон евелон zubarefff zubarev зубареффф хованский",
+      "viewerCount": 181,
       "language": "ru",
-      "startedAt": "2026-08-21T04:25:45Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_madeinabysz-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "rinat_lin",
-      "userName": "rinat_lin",
-      "title": "Team Liquid [0:0] Team Falcons (bo3) / The International 2026: Плей-офф",
-      "viewerCount": 149,
-      "language": "ru",
-      "startedAt": "2026-08-21T04:12:29Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinat_lin-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "seventyfly_com",
-      "userName": "SEVENTYFLY_com",
-      "title": "Live AI Predictions • +53.54 Flats • 24/7",
-      "viewerCount": 131,
-      "language": "ru",
-      "startedAt": "2026-08-21T02:14:40Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_seventyfly_com-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T06:14:56Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maxon_live_7449140-{width}x{height}.jpg"
     },
     {
       "userLogin": "kevin_kuraga",
       "userName": "Kevin_Kuraga",
       "title": "!Topit  Team Liquid vs. Team Falcons - The International 2026  !роспись !sakeenkok",
-      "viewerCount": 128,
+      "viewerCount": 158,
       "language": "ru",
       "startedAt": "2026-08-20T23:53:28Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kevin_kuraga-{width}x{height}.jpg"
     },
     {
-      "userLogin": "gelatita",
-      "userName": "gelatita",
-      "title": "VEMOS EL TIIIIIIIIIIII 5/5 PREDICTS ♡ ✮ !video !redes",
-      "viewerCount": 125,
-      "language": "es",
-      "startedAt": "2026-08-21T04:26:35Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gelatita-{width}x{height}.jpg"
+      "userLogin": "ya_tommy",
+      "userName": "ya_tommy",
+      "title": "Liquid (0:0) Falcons - The International 2026 (секретный стрим)",
+      "viewerCount": 153,
+      "language": "ru",
+      "startedAt": "2026-08-21T03:12:21Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ya_tommy-{width}x{height}.jpg"
     },
     {
-      "userLogin": "inkognito_gg",
-      "userName": "inkognito_gg",
-      "title": "СМОТРИМ ИНТ | Liquid [0] vs [0] Falcons ft. @coldofff",
-      "viewerCount": 119,
+      "userLogin": "beastqt",
+      "userName": "BEASTQT",
+      "title": "👉МИЖУ ФИД ВСЕМ КУ",
+      "viewerCount": 152,
       "language": "ru",
-      "startedAt": "2026-08-21T02:07:53Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_inkognito_gg-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T06:57:42Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_beastqt-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "seventyfly_com",
+      "userName": "SEVENTYFLY_com",
+      "title": "Live AI Predictions • +53.54 Flats • 24/7",
+      "viewerCount": 136,
+      "language": "ru",
+      "startedAt": "2026-08-21T02:14:40Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_seventyfly_com-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "maddogsleague",
+      "userName": "maddogsleague",
+      "title": "🔴 Dota2: Mad Dogs League | Hellspawn vs Immortal Squad (0:0)",
+      "viewerCount": 133,
+      "language": "en",
+      "startedAt": "2026-08-21T05:16:50Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maddogsleague-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "rinat_lin",
+      "userName": "rinat_lin",
+      "title": "Team Liquid [0:0] Team Falcons (bo3) / The International 2026: Плей-офф",
+      "viewerCount": 125,
+      "language": "ru",
+      "startedAt": "2026-08-21T04:12:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinat_lin-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lightfurylf",
+      "userName": "LightFuryLF",
+      "title": "🔴[jaysoo] Boom boy ⚔️ Iron Wing / Team Falcon ⚔️ Team Liquid (Bo3) 🏆 Ti 2026 : Main event Day2",
+      "viewerCount": 120,
+      "language": "th",
+      "startedAt": "2026-08-21T01:32:01Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lightfurylf-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dkfogas1",
+      "userName": "dkfogas1",
+      "title": "Falcons vs Liquid 0:0 bo3 The International 2026: Playoffs day 2 w| BO3 w/ @dyrachyo  | !мем (закинуть мемасик) !tg !донат",
+      "viewerCount": 115,
+      "language": "ru",
+      "startedAt": "2026-08-21T04:30:34Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dkfogas1-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "sysman_",
+      "userName": "sysman_",
+      "title": "Team Liquid - Team Falcons | The International 2026: Main Event | !tg | !тг |",
+      "viewerCount": 108,
+      "language": "ru",
+      "startedAt": "2026-08-21T01:19:54Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sysman_-{width}x{height}.jpg"
     },
     {
       "userLogin": "newb1kk",
       "userName": "newb1kk",
       "title": "The International 2026 Iron Wing 1 - 1 BoomBoys",
-      "viewerCount": 117,
+      "viewerCount": 106,
       "language": "ru",
       "startedAt": "2026-08-21T02:07:35Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_newb1kk-{width}x{height}.jpg"
@@ -558,352 +585,325 @@
       "userLogin": "konura777",
       "userName": "konura777",
       "title": "🚨 LIQUID vs FALCONS — ПРОИГРАВШИЙ ЕДЕТ ДОМОЙ | TI 2026",
-      "viewerCount": 108,
+      "viewerCount": 106,
       "language": "ru",
       "startedAt": "2026-08-21T02:25:10Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konura777-{width}x{height}.jpg"
     },
     {
-      "userLogin": "neuro",
-      "userName": "Neuro",
-      "title": "🦇TERRORBLADER🦇",
-      "viewerCount": 105,
-      "language": "en",
-      "startedAt": "2026-08-20T21:09:14Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neuro-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "rubara",
-      "userName": "rubara",
-      "title": "TI2026 Playoffs LB -Liquid vs Falcons",
-      "viewerCount": 105,
-      "language": "bg",
-      "startedAt": "2026-08-21T01:57:23Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rubara-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "simplymatthias",
-      "userName": "SimplyMatthias",
-      "title": "INVOKER MAIN !mouse !creator !madrinas !keyboard !lgg",
-      "viewerCount": 101,
-      "language": "en",
-      "startedAt": "2026-08-21T02:07:24Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_simplymatthias-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "iltw1",
-      "userName": "iltw1",
-      "title": "ALL IN, BB 1W, ДА, ДА, НЕТ, НЕТ",
-      "viewerCount": 101,
-      "language": "ru",
-      "startedAt": "2026-08-21T04:45:16Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_iltw1-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dkfogas1",
-      "userName": "dkfogas1",
-      "title": "Falcons vs Liquid 0:0 bo3 The International 2026: Playoffs day 2 w| BO3 w/ @dyrachyo  | !мем (закинуть мемасик) !tg !донат",
-      "viewerCount": 97,
-      "language": "ru",
-      "startedAt": "2026-08-21T04:30:34Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dkfogas1-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "23dotatv",
-      "userName": "23DOTATV",
-      "title": "23 DOTA TV | THE INTERNATIONAL 2026 | MAINSTAGE - IronWings, Liquid, Spirit, Nigma Galaxy",
-      "viewerCount": 96,
-      "language": "vi",
-      "startedAt": "2026-08-21T06:08:16Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_23dotatv-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "sqreenbets",
-      "userName": "sQreenbets",
-      "title": "THE INTERNATIONAL Falcons - Liquid  аналитика и ставки !fon !private",
-      "viewerCount": 95,
-      "language": "ru",
-      "startedAt": "2026-08-21T01:41:14Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sqreenbets-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "icemo21",
-      "userName": "icemo21",
-      "title": "[RU] Team Liquid vs Team Falcons | The International 2026: Main Event !vapoint !p !tg",
-      "viewerCount": 94,
-      "language": "ru",
-      "startedAt": "2026-08-21T02:00:19Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icemo21-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "beingesports",
       "userName": "beingesports",
       "title": "THE INTERNATIONAL 2026 | Main Stage | Tag 2 | Liquid vs. Falcons | Offizieller deutscher Broadcast | Dota 2",
-      "viewerCount": 87,
+      "viewerCount": 91,
       "language": "de",
       "startedAt": "2026-08-21T01:59:39Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_beingesports-{width}x{height}.jpg"
     },
     {
-      "userLogin": "snoopyrocket",
-      "userName": "SnoopyRocket",
-      "title": "Liquid vs Falcons [0:0] BO3 | The International 2026",
-      "viewerCount": 87,
+      "userLogin": "inkognito_gg",
+      "userName": "inkognito_gg",
+      "title": "СМОТРИМ ИНТ | Liquid [0] vs [1] Falcons ft. @coldofff",
+      "viewerCount": 91,
       "language": "ru",
-      "startedAt": "2026-08-21T01:59:41Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_snoopyrocket-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T02:07:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_inkognito_gg-{width}x{height}.jpg"
     },
     {
-      "userLogin": "sysman_",
-      "userName": "sysman_",
-      "title": "Team Liquid - Team Falcons | The International 2026: Main Event | !tg | !тг |",
-      "viewerCount": 73,
+      "userLogin": "sqreenbets",
+      "userName": "sQreenbets",
+      "title": "THE INTERNATIONAL Falcons - Liquid  аналитика и ставки !fon !private",
+      "viewerCount": 91,
       "language": "ru",
-      "startedAt": "2026-08-21T01:19:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sysman_-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T01:41:14Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sqreenbets-{width}x{height}.jpg"
     },
     {
-      "userLogin": "maddogsleague",
-      "userName": "maddogsleague",
-      "title": "🔴 Dota2: Mad Dogs League | Freedom Fighters Team vs Moonlight Wispers (2:0)",
-      "viewerCount": 71,
+      "userLogin": "resolut1ontv",
+      "userName": "Resolut1ontv",
+      "title": "МЫ В ШАНХАЕ!! ONLYDOTABOYS турнир DAY 3 with @baxadoto",
+      "viewerCount": 86,
       "language": "en",
-      "startedAt": "2026-08-21T05:16:50Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maddogsleague-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T07:25:11Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_resolut1ontv-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "speedmanq",
+      "userName": "SpeedManq",
+      "title": "пох на инт   !tg",
+      "viewerCount": 85,
+      "language": "ru",
+      "startedAt": "2026-08-21T07:11:07Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_speedmanq-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "rubara",
+      "userName": "rubara",
+      "title": "TI2026 Playoffs LB -Liquid vs Falcons",
+      "viewerCount": 83,
+      "language": "bg",
+      "startedAt": "2026-08-21T01:57:23Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rubara-{width}x{height}.jpg"
     },
     {
       "userLogin": "magerdev1",
       "userName": "magerdev1",
       "title": "Комментим инт",
-      "viewerCount": 67,
+      "viewerCount": 79,
       "language": "ru",
       "startedAt": "2026-08-21T02:00:19Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magerdev1-{width}x{height}.jpg"
     },
     {
-      "userLogin": "cocan_dota",
-      "userName": "cocan_dota",
-      "title": "Team Liquid vs Team Falcons,  Bo3, Lower Bracket Round 1,THE INTERNATIONAL 2026",
-      "viewerCount": 63,
-      "language": "other",
-      "startedAt": "2026-08-21T06:20:29Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cocan_dota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "17uu",
-      "userName": "17uu",
-      "title": "【The International 2026】敗者側 Falcons 対 Liquid【日本語実況LIVE】",
-      "viewerCount": 56,
-      "language": "ja",
-      "startedAt": "2026-08-21T02:00:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_17uu-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "revizzzor0",
-      "userName": "Revizzzor0",
-      "title": "✅Приїхав на Інтернешінал ¯\\_(ツ)_/¯ !tg !донат",
-      "viewerCount": 55,
-      "language": "uk",
-      "startedAt": "2026-08-21T05:52:52Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_revizzzor0-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "eskeptik",
-      "userName": "eskeptik",
-      "title": "СМОТРИМ ИНТ 🔥  ФЕНТЕЗИ ТОП 100 🔥 ПРОГНОЗЫ 16\\16 🔥 РУБИМ КАПУСТУ 🔥  команды: !непродажный !аук !тг",
-      "viewerCount": 54,
-      "language": "ru",
-      "startedAt": "2026-08-21T05:05:26Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eskeptik-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "uniquee",
-      "userName": "Uniquee",
-      "title": "Team Liquid [0:0] Team Falcons | The International: Lower Bracket Round 1 | BO3 !tg w/ @lens_doto @earthq__",
-      "viewerCount": 50,
-      "language": "ru",
-      "startedAt": "2026-08-21T02:29:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_uniquee-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "karina_tv",
-      "userName": "karina_tv",
-      "title": "Team Liquid vs. Team Falcons - The International 2026 !tg !boosty",
-      "viewerCount": 50,
-      "language": "ru",
-      "startedAt": "2026-08-21T04:59:29Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_karina_tv-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "lizzarddota2",
-      "userName": "lizZardDota2",
-      "title": "ZHABA OP",
-      "viewerCount": 44,
-      "language": "en",
-      "startedAt": "2026-08-21T03:59:23Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lizzarddota2-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "akon_tv",
-      "userName": "Akon_tv",
-      "title": "TI2026 | Team Liquid vs Team Falcons [BO3] DOTA 2 The International 2026",
-      "viewerCount": 44,
-      "language": "ru",
-      "startedAt": "2026-08-21T02:08:34Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_akon_tv-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "latosdota",
-      "userName": "LatosDota",
-      "title": "THE INTERNATIONAL 2026 PLAYOFFS",
-      "viewerCount": 43,
-      "language": "en",
-      "startedAt": "2026-08-21T01:42:25Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_latosdota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "mach1nk3",
-      "userName": "Mach1nk3",
-      "title": "UNDERDOG | TI 2026",
-      "viewerCount": 42,
-      "language": "ru",
-      "startedAt": "2026-08-21T04:44:24Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mach1nk3-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ehot1k",
-      "userName": "EHOT1K",
-      "title": "Team Liquid [0:0] /Team Falcons | The International 2026: Playoff | !win! tg",
-      "viewerCount": 41,
-      "language": "ru",
-      "startedAt": "2026-08-21T03:22:27Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ehot1k-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "henry",
-      "userName": "Henry",
-      "title": "maybe watch TI, maybe play pub",
-      "viewerCount": 40,
-      "language": "en",
-      "startedAt": "2026-08-21T05:53:31Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_henry-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "baxadoto",
-      "userName": "baxadoto",
-      "title": "Team Liquid [0-0] Team Falcons | The International 2026 | В Шанхае из виллы с @resolut1ontv | !tg !f",
-      "viewerCount": 39,
-      "language": "ru",
-      "startedAt": "2026-08-21T02:42:33Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_baxadoto-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "nonstopbops",
-      "userName": "NonStopBops",
-      "title": "[AUS] Liquid v Falcons | Basher !giveaway | New Players Welcome! !pimax !merch !discord !ref",
-      "viewerCount": 38,
-      "language": "en",
-      "startedAt": "2026-08-21T06:21:36Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nonstopbops-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "trollimmunity",
-      "userName": "trollimmunity",
-      "title": "САМАЯ КРАСИВАЯ ДОТЕРША ... | !tg !donate !discord",
-      "viewerCount": 38,
-      "language": "ru",
-      "startedAt": "2026-08-21T05:33:42Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_trollimmunity-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "otakerdota",
-      "userName": "otakerdota",
-      "title": "BoomBoys vs IronWing 1:1 . Ранг 70 керри аналитика xd",
-      "viewerCount": 35,
-      "language": "ru",
-      "startedAt": "2026-08-21T01:05:05Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_otakerdota-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "apoptosis808",
       "userName": "Apoptosis808",
       "title": "[ENG] OFFLANE TO IMMORTAL - PANGO POWER | !discord !<heroname>",
-      "viewerCount": 34,
+      "viewerCount": 75,
       "language": "en",
       "startedAt": "2026-08-21T04:03:07Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_apoptosis808-{width}x{height}.jpg"
     },
     {
-      "userLogin": "straikoid",
-      "userName": "StraikoiD",
-      "title": "Тест. Чат вижу после катки.",
-      "viewerCount": 34,
+      "userLogin": "icemo21",
+      "userName": "icemo21",
+      "title": "[RU] Team Liquid vs Team Falcons | The International 2026: Main Event !vapoint !p !tg",
+      "viewerCount": 74,
       "language": "ru",
-      "startedAt": "2026-08-21T01:52:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_straikoid-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T02:00:19Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icemo21-{width}x{height}.jpg"
     },
     {
-      "userLogin": "roccomy",
-      "userName": "Roccomy",
-      "title": "Team Liquid vs. Team Falcons -  TI 2026 Playoffs",
-      "viewerCount": 33,
-      "language": "tr",
-      "startedAt": "2026-08-21T04:50:46Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_roccomy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "katerishka_",
-      "userName": "katerishka_",
-      "title": "играю рейтинг 3 раз (у меня 99 процентиль) | !tg !см !donat !ds | дилей 5 сек💜",
-      "viewerCount": 31,
-      "language": "ru",
-      "startedAt": "2026-08-20T22:30:31Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_katerishka_-{width}x{height}.jpg"
+      "userLogin": "revizzzor0",
+      "userName": "Revizzzor0",
+      "title": "✅Приїхав на Інтернешінал ¯\\_(ツ)_/¯ !tg !донат",
+      "viewerCount": 68,
+      "language": "uk",
+      "startedAt": "2026-08-21T05:52:52Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_revizzzor0-{width}x{height}.jpg"
     },
     {
       "userLogin": "samtalive",
       "userName": "SamtaLIVE",
       "title": "O INTERNACIONAL | considere apoiar a live 🫡 !pix 🔞",
-      "viewerCount": 30,
+      "viewerCount": 68,
       "language": "pt",
       "startedAt": "2026-08-20T23:30:37Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_samtalive-{width}x{height}.jpg"
     },
     {
-      "userLogin": "xstorm_t1me",
-      "userName": "xStorm_T1me",
-      "title": "Путь К Титану Не Легкий",
-      "viewerCount": 29,
+      "userLogin": "snoopyrocket",
+      "userName": "SnoopyRocket",
+      "title": "Liquid vs Falcons [0:1] BO3 | The International 2026",
+      "viewerCount": 67,
       "language": "ru",
-      "startedAt": "2026-08-21T05:48:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xstorm_t1me-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T01:59:41Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_snoopyrocket-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lizzarddota2",
+      "userName": "lizZardDota2",
+      "title": "ZHABA OP",
+      "viewerCount": 67,
+      "language": "en",
+      "startedAt": "2026-08-21T03:59:23Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lizzarddota2-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "karina_tv",
+      "userName": "karina_tv",
+      "title": "Team Liquid vs. Team Falcons - The International 2026 !tg !boosty",
+      "viewerCount": 61,
+      "language": "ru",
+      "startedAt": "2026-08-21T04:59:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_karina_tv-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "eskeptik",
+      "userName": "eskeptik",
+      "title": "СМОТРИМ ИНТ 🔥  ФЕНТЕЗИ ТОП 100 🔥 ПРОГНОЗЫ 16\\16 🔥 РУБИМ КАПУСТУ 🔥  команды: !непродажный !аук !тг",
+      "viewerCount": 58,
+      "language": "ru",
+      "startedAt": "2026-08-21T05:05:26Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eskeptik-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "henry",
+      "userName": "Henry",
+      "title": "maybe watch TI, maybe play pub",
+      "viewerCount": 53,
+      "language": "en",
+      "startedAt": "2026-08-21T05:53:31Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_henry-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "23dotatv",
+      "userName": "23DOTATV",
+      "title": "23 DOTA TV | THE INTERNATIONAL 2026 | MAINSTAGE - IronWings, Liquid, Spirit, Nigma Galaxy",
+      "viewerCount": 52,
+      "language": "vi",
+      "startedAt": "2026-08-21T06:08:16Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_23dotatv-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "uniquee",
+      "userName": "Uniquee",
+      "title": "Team Liquid [0:1] Team Falcons  | The International: Lower Bracket Round 1 | BO3 !tg w/ @lens_doto @earthq__",
+      "viewerCount": 49,
+      "language": "ru",
+      "startedAt": "2026-08-21T02:29:30Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_uniquee-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "kita_nanachi",
+      "userName": "Kita_Nanachi",
+      "title": "【EN/JP】August 21 / Watching TI 2026 | @kita_nanachi !discord !links",
+      "viewerCount": 49,
+      "language": "en",
+      "startedAt": "2026-08-21T04:53:20Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kita_nanachi-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "roccomy",
+      "userName": "Roccomy",
+      "title": "Team Liquid vs. Team Falcons -  TI 2026 Playoffs",
+      "viewerCount": 49,
+      "language": "tr",
+      "startedAt": "2026-08-21T04:50:46Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_roccomy-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "17uu",
+      "userName": "17uu",
+      "title": "【The International 2026】敗者側 Falcons 対 Liquid【日本語実況LIVE】",
+      "viewerCount": 49,
+      "language": "ja",
+      "startedAt": "2026-08-21T02:00:07Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_17uu-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "baxadoto",
+      "userName": "baxadoto",
+      "title": "ИГРАЕМ ТУРНИР в ШАНХАЕ вместе с @resolut1ontv | !tg !f",
+      "viewerCount": 47,
+      "language": "ru",
+      "startedAt": "2026-08-21T02:42:33Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_baxadoto-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "mach1nk3",
+      "userName": "Mach1nk3",
+      "title": "UNDERDOG | TI 2026",
+      "viewerCount": 45,
+      "language": "ru",
+      "startedAt": "2026-08-21T04:44:24Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mach1nk3-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lych5kt",
+      "userName": "lych5kt",
+      "title": "The International DIA 2: PVSION vs Spirit",
+      "viewerCount": 44,
+      "language": "es",
+      "startedAt": "2026-08-21T02:12:11Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lych5kt-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "destinyleague_d2_ru1",
+      "userName": "destinyleague_d2_ru1",
+      "title": "[RU] Destiny Dota 2 League | BO3 | (2 min delay)",
+      "viewerCount": 42,
+      "language": "ru",
+      "startedAt": "2026-08-21T03:55:55Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_destinyleague_d2_ru1-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "nonstopbops",
+      "userName": "NonStopBops",
+      "title": "[AUS] Liquid v Falcons | Basher !giveaway | New Players Welcome! !pimax !merch !discord !ref",
+      "viewerCount": 41,
+      "language": "en",
+      "startedAt": "2026-08-21T06:21:36Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nonstopbops-{width}x{height}.jpg"
     },
     {
       "userLogin": "yablo_chkoo",
       "userName": "yablo_chkoo",
       "title": "6500 пивушко❤️смотрим интик❤️",
-      "viewerCount": 27,
+      "viewerCount": 39,
       "language": "ru",
       "startedAt": "2026-08-21T05:51:17Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yablo_chkoo-{width}x{height}.jpg"
     },
     {
-      "userLogin": "antillliant",
-      "userName": "Antillliant",
-      "title": "Рубим онли Рубика в Dota 2! - учимся играть",
-      "viewerCount": 26,
+      "userLogin": "trollimmunity",
+      "userName": "trollimmunity",
+      "title": "САМАЯ КРАСИВАЯ ДОТЕРША ... | !tg !donate !discord",
+      "viewerCount": 39,
       "language": "ru",
-      "startedAt": "2026-08-21T06:05:19Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_antillliant-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T05:33:42Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_trollimmunity-{width}x{height}.jpg"
     },
     {
-      "userLogin": "destinyleague_d2_ru",
-      "userName": "destinyleague_d2_ru",
-      "title": "[RU] Destiny Dota 2 League | BO3 | (2 min delay)",
-      "viewerCount": 4,
+      "userLogin": "ehot1k",
+      "userName": "EHOT1K",
+      "title": "Team Liquid [0:1] Team Falcons | The International 2026: Playoff | !win !tg",
+      "viewerCount": 36,
       "language": "ru",
-      "startedAt": "2026-08-21T04:01:13Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_destinyleague_d2_ru-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T03:22:27Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ehot1k-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "amigojk",
+      "userName": "amigojk",
+      "title": "🔴9k lox 🔴 !tg  !donat",
+      "viewerCount": 36,
+      "language": "ru",
+      "startedAt": "2026-08-21T07:21:28Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amigojk-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "satokenzo",
+      "userName": "satokenzo",
+      "title": "!lootbar ПРАЗДНИК ДОТЫ",
+      "viewerCount": 34,
+      "language": "ru",
+      "startedAt": "2026-08-21T06:47:12Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_satokenzo-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "marekdesigner",
+      "userName": "MarekDesigner",
+      "title": "☀️ TI 2026 Dzień 2 🌸 Cuda wszędzie i wtem Gaben rzekł \"niech rośnie MMR\" 🍀",
+      "viewerCount": 31,
+      "language": "pl",
+      "startedAt": "2026-08-21T05:14:36Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_marekdesigner-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "otakerdota",
+      "userName": "otakerdota",
+      "title": "BoomBoys vs IronWing 1:1 . Ранг 70 керри аналитика xd",
+      "viewerCount": 29,
+      "language": "ru",
+      "startedAt": "2026-08-21T01:05:05Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_otakerdota-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "gusar",
+      "userName": "Gusar",
+      "title": "",
+      "viewerCount": 28,
+      "language": "ru",
+      "startedAt": "2026-08-21T06:48:24Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gusar-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "cocan_dota",
+      "userName": "cocan_dota",
+      "title": "Team Liquid vs Team Falcons,  Bo3, Lower Bracket Round 1,THE INTERNATIONAL 2026",
+      "viewerCount": 27,
+      "language": "other",
+      "startedAt": "2026-08-21T06:20:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cocan_dota-{width}x{height}.jpg"
     }
   ]
 }
