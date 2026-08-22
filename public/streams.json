@@ -1,69 +1,42 @@
 {
-  "lastUpdated": "2026-08-22T14:56:52.280Z",
-  "expiresAt": "2026-08-22T15:56:52.280Z",
+  "lastUpdated": "2026-08-22T15:13:29.356Z",
+  "expiresAt": "2026-08-22T16:13:29.356Z",
   "gameId": "29595",
   "gameName": "Dota 2",
   "source": "twitch-helix",
   "streams": [
     {
-      "userLogin": "nix",
-      "userName": "Nix",
-      "title": "BoomBoys vs Spirit 0:1 bo3 The International 2026: Playoffs day 3 w/ Alagon",
-      "viewerCount": 141554,
-      "language": "ru",
-      "startedAt": "2026-08-22T02:03:44Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nix-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dota2ti",
-      "userName": "dota2ti",
-      "title": "[EN] BoomBoys vs. Team Spirit - The International 2026 - Lower Bracket Semifinal",
-      "viewerCount": 125502,
-      "language": "en",
-      "startedAt": "2026-08-22T01:06:17Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "dota2ti_ru",
       "userName": "dota2ti_ru",
-      "title": "[RU] BoomBoys vs. Team Spirit - The International 2026 - Нижняя сетка Полуфинал",
-      "viewerCount": 116202,
+      "title": "[RU] The International 2026 - День 3",
+      "viewerCount": 100535,
       "language": "ru",
       "startedAt": "2026-08-22T01:42:22Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_ru-{width}x{height}.jpg"
     },
     {
-      "userLogin": "solo",
-      "userName": "Solo",
-      "title": "🔴 Spirit [1:0] BOOMBOYS | The International 2026: Playoffs w/ @gthemall @by_owl !BETBOOM !tg !розыгрыш",
-      "viewerCount": 15829,
-      "language": "ru",
-      "startedAt": "2026-08-22T01:58:44Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_solo-{width}x{height}.jpg"
+      "userLogin": "dota2ti",
+      "userName": "dota2ti",
+      "title": "[EN] BoomBoys vs. Team Spirit - The International 2026 - Lower Bracket Semifinal",
+      "viewerCount": 98675,
+      "language": "en",
+      "startedAt": "2026-08-22T01:06:17Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti-{width}x{height}.jpg"
     },
     {
       "userLogin": "just_ns",
       "userName": "just_ns",
-      "title": "[СТАРПЕРХАБ] BoomBoys [0-1] Team Spirit | The International 2026 | BO3 | !мерч @sunlight @followjotm @followkudes",
-      "viewerCount": 11827,
+      "title": "[СТАРПЕРХАБ] BoomBoys [0-2] Team Spirit | The International 2026 | BO3 | !мерч @sunlight @followjotm @followkudes",
+      "viewerCount": 9494,
       "language": "ru",
       "startedAt": "2026-08-22T13:23:38Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_just_ns-{width}x{height}.jpg"
     },
     {
-      "userLogin": "gorgc",
-      "userName": "Gorgc",
-      "title": "(EN) Boomboys vs TSpirit | The International 2026 | Playoffs | w/ Pieliedie",
-      "viewerCount": 10010,
-      "language": "en",
-      "startedAt": "2026-08-22T04:50:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gorgc-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "avice",
       "userName": "avice",
-      "title": "BETBOOM TEAM [0:1] Team Spirit | The International 2026 | Play-off | BO3 | w/ @mary_day @blindzonexgod @mangekyou_14",
-      "viewerCount": 10002,
+      "title": "BETBOOM TEAM [0:2] Team Spirit | The International 2026 | Play-off | BO3 | w/ @mary_day @blindzonexgod @mangekyou_14",
+      "viewerCount": 8321,
       "language": "ru",
       "startedAt": "2026-08-22T10:06:25Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_avice-{width}x{height}.jpg"
@@ -72,7 +45,7 @@
       "userLogin": "dota2ti_es",
       "userName": "dota2ti_es",
       "title": "[ES] BoomBoys vs. Team Spirit - The International 2026 - Bracket Inferior Semifinal",
-      "viewerCount": 7475,
+      "viewerCount": 6224,
       "language": "es",
       "startedAt": "2026-08-22T01:18:56Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es-{width}x{height}.jpg"
@@ -80,26 +53,17 @@
     {
       "userLogin": "dota2_maincast",
       "userName": "dota2_maincast",
-      "title": "[UA] boomboys vs team spirit (0-1) BO3 | The International 2026:  Playoffs | by @bafik & @goblak333",
-      "viewerCount": 6433,
+      "title": "[UA] boomboys vs team spirit (0-2) BO3 | The International 2026:  Playoffs | by @bafik & @goblak333",
+      "viewerCount": 4148,
       "language": "uk",
       "startedAt": "2026-08-22T01:36:36Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2_maincast-{width}x{height}.jpg"
     },
     {
-      "userLogin": "heartdota23",
-      "userName": "heartdota23",
-      "title": "INTERNATIONAL2026 DAY 7 какой турнир такой и стрим",
-      "viewerCount": 5779,
-      "language": "ru",
-      "startedAt": "2026-08-22T02:31:57Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_heartdota23-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "tyokado",
       "userName": "tyokado",
       "title": "🔥Team Spirit vs BB [1:0]  The International 2026 Dota 2🔥",
-      "viewerCount": 3346,
+      "viewerCount": 2957,
       "language": "ru",
       "startedAt": "2026-08-22T01:55:39Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tyokado-{width}x{height}.jpg"
@@ -108,25 +72,34 @@
       "userLogin": "ns_art",
       "userName": "NS_ART",
       "title": "BoomBoys vs. Team Spirit | Evento principal dia 3 | The International 2026 🏆- !PIX !EXITLAG !CHAMPZ !MASTER !SORTEIO",
-      "viewerCount": 3039,
+      "viewerCount": 2763,
       "language": "pt",
       "startedAt": "2026-08-21T23:28:38Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ns_art-{width}x{height}.jpg"
     },
     {
-      "userLogin": "alohadancetv",
-      "userName": "ALOHADANCETV",
-      "title": "+40k$ Boomboys 0:1 Spirit | The International 2026: Playoffs !tg !прогноз",
-      "viewerCount": 2468,
+      "userLogin": "versuta",
+      "userName": "VeRsuta",
+      "title": "ПРЕДВАДИТЕЛЬ СЫНОВ",
+      "viewerCount": 1027,
       "language": "ru",
-      "startedAt": "2026-08-22T05:04:59Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alohadancetv-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T14:57:37Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_versuta-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "mary_day",
+      "userName": "mary_day",
+      "title": "TEAM Spirit vs BoomBoys 1:0  | The International 2026: Playoffs day 3 w/  @mangekyou_14 @avice",
+      "viewerCount": 1001,
+      "language": "ru",
+      "startedAt": "2026-08-22T03:08:38Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mary_day-{width}x{height}.jpg"
     },
     {
       "userLogin": "narimancupid",
       "userName": "NarimanCupid",
       "title": "Team Spirit (1) vs BoomBoys (0) | The International 2026 Lower Bracket Semi Finals | !Sponsor !Bracket !Social !Sub",
-      "viewerCount": 1252,
+      "viewerCount": 956,
       "language": "other",
       "startedAt": "2026-08-22T08:48:14Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_narimancupid-{width}x{height}.jpg"
@@ -135,487 +108,361 @@
       "userLogin": "godota2bets",
       "userName": "godota2bets",
       "title": "Spirit vs BB. TI 2026. 34 победы подряд сделали!   Новый винстрик делаем  !стата   !TG @godota2bets",
-      "viewerCount": 1182,
+      "viewerCount": 898,
       "language": "ru",
       "startedAt": "2026-08-22T05:03:54Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godota2bets-{width}x{height}.jpg"
     },
     {
-      "userLogin": "mary_day",
-      "userName": "mary_day",
-      "title": "TEAM Spirit vs BoomBoys 1:0  | The International 2026: Playoffs day 3 w/  @mangekyou_14 @avice",
-      "viewerCount": 1026,
-      "language": "ru",
-      "startedAt": "2026-08-22T03:08:38Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mary_day-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "youyou",
-      "userName": "YouYou",
-      "title": "The International 2026 | Lower Bracket Semifinals - Team Spirit vs BoomBoys",
-      "viewerCount": 772,
-      "language": "fr",
-      "startedAt": "2026-08-22T01:54:55Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_youyou-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "valbina",
-      "userName": "VALbINA",
-      "title": "Смотрим BETBOOM Team - Team Spirit | The International 2026 | !тг",
-      "viewerCount": 739,
-      "language": "ru",
-      "startedAt": "2026-08-22T11:39:49Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_valbina-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "straminskiy",
-      "userName": "straminskiy",
-      "title": "Team Spirit 1-0 BoomBoys - The International 2026 -   | Ставки  | Bets | !tg !ТГ !5051x !Pizza",
-      "viewerCount": 618,
-      "language": "ru",
-      "startedAt": "2026-08-22T01:44:04Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_straminskiy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ueyo",
-      "userName": "ueyo",
-      "title": "смотрим инт / спирит vs бумбойс !тирлист",
-      "viewerCount": 601,
-      "language": "ru",
-      "startedAt": "2026-08-22T11:06:58Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ueyo-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "5misha",
-      "userName": "5Misha",
-      "title": "Team Spirit [1:0] BB - The International 2026 -  PLAY OFF - Пасека-Каст w/ @chuvash33 @19teeen",
-      "viewerCount": 522,
-      "language": "ru",
-      "startedAt": "2026-08-22T01:55:24Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_5misha-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "wxcdota",
-      "userName": "WXCDota",
-      "title": "[FIL] Team Spirit vs Boomboys (BO3) | The International 15 2026 Playoffs Day 3",
-      "viewerCount": 505,
-      "language": "tl",
-      "startedAt": "2026-08-22T12:23:12Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wxcdota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "c1rceezy",
-      "userName": "c1RcEEZY",
-      "title": "📺BoomBoys vs Team Spirit📺The International 2026 - Main Event- Day 3📺Official CZSK CAST",
-      "viewerCount": 457,
-      "language": "cs",
-      "startedAt": "2026-08-22T02:01:18Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_c1rceezy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dasha228play",
-      "userName": "dasha228play",
-      "title": "BoomBoys vs Spirit 0:1 bo3 The International 2026: Playoffs day 3  !тг",
-      "viewerCount": 435,
-      "language": "ru",
-      "startedAt": "2026-08-22T08:56:09Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dasha228play-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "dendi",
       "userName": "Dendi",
       "title": "some TI + dota climb",
-      "viewerCount": 414,
+      "viewerCount": 760,
       "language": "en",
       "startedAt": "2026-08-22T11:32:46Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dendi-{width}x{height}.jpg"
     },
     {
-      "userLogin": "storm_q",
-      "userName": "STORM_Q",
-      "title": "Spirit vs Boom Boys (1-0) | The International 2026: Main Event | !tg !розыгрыш !аркана",
-      "viewerCount": 414,
-      "language": "ru",
-      "startedAt": "2026-08-22T01:57:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_storm_q-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dota2ti_cn",
-      "userName": "dota2ti_cn",
-      "title": "[CN] 第3日 - 2026国际邀请赛",
-      "viewerCount": 377,
-      "language": "zh",
-      "startedAt": "2026-08-22T04:23:19Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_cn-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "mantaq",
-      "userName": "MantaQ",
-      "title": "BOOMBOYS x Team Spirits | The International |  !tg !bb",
-      "viewerCount": 370,
-      "language": "ru",
-      "startedAt": "2026-08-22T02:00:34Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mantaq-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "cemka",
-      "userName": "CeMka",
-      "title": "Стримлю тихо, не спеша, без суеты №124",
-      "viewerCount": 363,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:04:49Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cemka-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "elisaviihdesport",
-      "userName": "ElisaViihdeSport",
-      "title": "The International 2026 | Pudotuspelit",
-      "viewerCount": 351,
-      "language": "fi",
-      "startedAt": "2026-08-22T01:42:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elisaviihdesport-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "sysman_",
-      "userName": "sysman_",
-      "title": "BoomBoys - Team Spirit | The International 2026: Main Event | !tg | !тг |",
-      "viewerCount": 322,
-      "language": "ru",
-      "startedAt": "2026-08-22T01:27:53Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sysman_-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "wagamamatv",
-      "userName": "WagamamaTV",
-      "title": "Who is the biggest standout player this TI?",
-      "viewerCount": 299,
-      "language": "en",
-      "startedAt": "2026-08-22T09:40:55Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wagamamatv-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "radika1fa",
-      "userName": "RadiKa1fa",
-      "title": "ДАРОВА! |  | !тг !бусти !ggsel",
-      "viewerCount": 295,
-      "language": "ru",
-      "startedAt": "2026-08-22T14:09:23Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_radika1fa-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "cyberclasher",
-      "userName": "Cyberclasher",
-      "title": "[LIVE] ⚔️VISION vs Yandex ⚔️TSpirit vs Boomboys 🏆The International 2026 - Main Event - Day 7",
-      "viewerCount": 271,
-      "language": "th",
-      "startedAt": "2026-08-22T01:30:27Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cyberclasher-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ya_tommy",
-      "userName": "ya_tommy",
-      "title": "Team Spirit [0:0] BB | bo3 | The International 2026",
-      "viewerCount": 259,
-      "language": "ru",
-      "startedAt": "2026-08-22T03:02:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ya_tommy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "mandelochka",
-      "userName": "mandelochka",
-      "title": "апаю титина с нуля за 30 дней (4500птс) НАЧИНАЛ С РЕКРУТА",
-      "viewerCount": 259,
-      "language": "ru",
-      "startedAt": "2026-08-22T08:37:38Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandelochka-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "lightfurylf",
-      "userName": "LightFuryLF",
-      "title": "🔴[LF] Pari⚔️Yandex / BB⚔️Spirit (Bo3)🏆TI15 (TI2026) Main Event Day3",
-      "viewerCount": 243,
-      "language": "th",
-      "startedAt": "2026-08-22T08:29:55Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lightfurylf-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "mangekyou_14",
-      "userName": "mangekyou_14",
-      "title": "Team Spirit vs. BetBoom - The International 2026 - Lower Bracket Semifinals",
-      "viewerCount": 238,
-      "language": "ru",
-      "startedAt": "2026-08-22T02:30:25Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mangekyou_14-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "akumaqqe",
-      "userName": "akumaqqe",
-      "title": "Team BoomBoys 0 vs 1 Team Spirit bo3 The International 2026: Playoffs day 3",
-      "viewerCount": 234,
-      "language": "ru",
-      "startedAt": "2026-08-22T08:44:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_akumaqqe-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "metrix4303",
-      "userName": "metrix4303",
-      "title": "дота 2",
-      "viewerCount": 222,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:15:49Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_metrix4303-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "zip4k22",
-      "userName": "Zip4k22",
-      "title": "играю доту",
-      "viewerCount": 213,
-      "language": "ru",
-      "startedAt": "2026-08-22T14:26:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zip4k22-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "seventyfly_com",
-      "userName": "SEVENTYFLY_com",
-      "title": "Live AI Predictions • +57.97 Flats • 24/7",
-      "viewerCount": 170,
-      "language": "ru",
-      "startedAt": "2026-08-21T02:14:40Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_seventyfly_com-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "rinat_lin",
-      "userName": "rinat_lin",
-      "title": "SPIRIT [1:0] BB (bo3) / The International 2026: Четверть финал",
-      "viewerCount": 164,
-      "language": "ru",
-      "startedAt": "2026-08-22T02:08:09Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinat_lin-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "rubara",
-      "userName": "rubara",
-      "title": "TI2026 Playoffs LB - BB vs Spirit",
-      "viewerCount": 162,
-      "language": "bg",
-      "startedAt": "2026-08-22T01:46:25Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rubara-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "vano",
-      "userName": "vano",
-      "title": "help me ⛏︎ !донат !тг !winline ⛏︎",
-      "viewerCount": 138,
-      "language": "en",
-      "startedAt": "2026-08-22T14:13:31Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vano-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "shisp_dota",
-      "userName": "shisp_dota",
-      "title": "🔥Team Spirit🔥 1 vs 0 🔥Boomboys🔥 TI 2026:  !bb !vpn !tg",
-      "viewerCount": 132,
-      "language": "ru",
-      "startedAt": "2026-08-22T03:20:08Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shisp_dota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "maxon_live_3215355",
-      "userName": "MAXON_LIVE_3215355",
-      "title": "MAXON! теги для поиска: ЗУБАРЕВ ЛОРД БУСТЕР ЛУДОЖОП ЕГОРКРИД ЕГОРКРИД vitus vitus_tv медисон евелон zubarefff zubarev зубареффф хованский",
-      "viewerCount": 131,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:56:04Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maxon_live_3215355-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "yarostnayakoshka",
-      "userName": "yarostnayaKoshka",
-      "title": "хочу интик посмотреть !тг !донат !чат",
-      "viewerCount": 127,
-      "language": "ru",
-      "startedAt": "2026-08-22T10:00:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yarostnayakoshka-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "snoopyrocket",
-      "userName": "SnoopyRocket",
-      "title": "Spirit vs BB [1:0] BO3 | The International 2026",
-      "viewerCount": 125,
-      "language": "ru",
-      "startedAt": "2026-08-22T01:57:49Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_snoopyrocket-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "beingesports",
-      "userName": "beingesports",
-      "title": "THE INTERNATIONAL 2026 | Main Stage | Tag 3 | BoomBoys vs. Team Spirit | Offizieller deutscher Broadcast | Dota 2",
-      "viewerCount": 121,
-      "language": "de",
-      "startedAt": "2026-08-22T08:31:03Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_beingesports-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "welskiy",
-      "userName": "welskiy",
-      "title": "ВЕЛИКОЕ ОБНУЛЕНИЕ ТОП 10 к КОНЦУ ЛЕТА !тг !розыгрыш !руководство !дать (имя любое) !воздух !settings !стрик !7тв",
-      "viewerCount": 103,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:11:16Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_welskiy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "marvelz",
-      "userName": "Marvelz",
-      "title": "2К ЭКСПЕРТ КОММЕНТИТ ИНТЕРНЕШНЛ! МАТЧ : СПИРИТ : ББ.",
-      "viewerCount": 101,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:12:25Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_marvelz-{width}x{height}.jpg"
+      "userLogin": "youyou",
+      "userName": "YouYou",
+      "title": "The International 2026 | Lower Bracket Semifinals - Team Spirit vs BoomBoys",
+      "viewerCount": 670,
+      "language": "fr",
+      "startedAt": "2026-08-22T01:54:55Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_youyou-{width}x{height}.jpg"
     },
     {
       "userLogin": "plovv4",
       "userName": "plovv4",
       "title": "#grind ☻",
-      "viewerCount": 101,
+      "viewerCount": 470,
       "language": "ru",
       "startedAt": "2026-08-22T14:08:11Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_plovv4-{width}x{height}.jpg"
     },
     {
-      "userLogin": "sator_nerrok",
-      "userName": "sator_nerrok",
-      "title": "ИНТ | ЛИКВИДЪ | Магнус Предавал | В Ожидании Второго Аспекта шторма",
-      "viewerCount": 95,
+      "userLogin": "storm_q",
+      "userName": "STORM_Q",
+      "title": "Spirit vs Boom Boys (1-0) | The International 2026: Main Event | !tg !розыгрыш !аркана",
+      "viewerCount": 464,
       "language": "ru",
-      "startedAt": "2026-08-22T05:09:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sator_nerrok-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T01:57:30Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_storm_q-{width}x{height}.jpg"
     },
     {
-      "userLogin": "maddogsleague",
-      "userName": "maddogsleague",
-      "title": "🔴 Dota2: Mad Dogs League | Dark Tamplars vs Azure Dragons (0:0)",
-      "viewerCount": 85,
+      "userLogin": "wagamamatv",
+      "userName": "WagamamaTV",
+      "title": "Who is the biggest standout player this TI?",
+      "viewerCount": 451,
       "language": "en",
-      "startedAt": "2026-08-22T05:18:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maddogsleague-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T09:40:55Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wagamamatv-{width}x{height}.jpg"
     },
     {
-      "userLogin": "akon_tv",
-      "userName": "Akon_tv",
-      "title": "TI2026 | Team Spirit vs BetBoom Team [BO3] DOTA 2 The International 2026",
-      "viewerCount": 85,
+      "userLogin": "witchblvde",
+      "userName": "WitchBlvde",
+      "title": "🏆рофлотурик плей-офф 🏆 🐍 !bc 🐍",
+      "viewerCount": 448,
       "language": "ru",
-      "startedAt": "2026-08-22T10:43:13Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_akon_tv-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T14:54:36Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_witchblvde-{width}x{height}.jpg"
     },
     {
-      "userLogin": "godxgirl",
-      "userName": "GodxGirl",
-      "title": "💞 Покажи мне любовь, что горит, как огонь, Покажи свой страх, дай почувствовать боль.💞",
-      "viewerCount": 85,
+      "userLogin": "radika1fa",
+      "userName": "RadiKa1fa",
+      "title": "ДАРОВА! |  | !тг !бусти !ggsel",
+      "viewerCount": 426,
       "language": "ru",
-      "startedAt": "2026-08-22T11:56:38Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godxgirl-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T14:09:23Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_radika1fa-{width}x{height}.jpg"
     },
     {
-      "userLogin": "happy55y",
-      "userName": "happy55y",
-      "title": "custom hero chaos. !tg",
-      "viewerCount": 79,
+      "userLogin": "5misha",
+      "userName": "5Misha",
+      "title": "Team Spirit [1:0] BB - The International 2026 -  PLAY OFF - Пасека-Каст w/ @chuvash33 @19teeen",
+      "viewerCount": 397,
       "language": "ru",
-      "startedAt": "2026-08-22T06:24:56Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_happy55y-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T01:55:24Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_5misha-{width}x{height}.jpg"
     },
     {
-      "userLogin": "hvnnn_tv",
-      "userName": "HvNNN_tv",
-      "title": "[RU] The International 2026 | BB Team vs Team Spirit | !donate !fonbet !розыгрыш",
-      "viewerCount": 78,
+      "userLogin": "c1rceezy",
+      "userName": "c1RcEEZY",
+      "title": "📺BoomBoys vs Team Spirit📺The International 2026 - Main Event- Day 3📺Official CZSK CAST",
+      "viewerCount": 362,
+      "language": "cs",
+      "startedAt": "2026-08-22T02:01:18Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_c1rceezy-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "wxcdota",
+      "userName": "WXCDota",
+      "title": "[FIL] Team Spirit vs Boomboys (BO3) | The International 15 2026 Playoffs Day 3",
+      "viewerCount": 332,
+      "language": "tl",
+      "startedAt": "2026-08-22T12:23:12Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wxcdota-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "elisaviihdesport",
+      "userName": "ElisaViihdeSport",
+      "title": "The International 2026 | Pudotuspelit",
+      "viewerCount": 283,
+      "language": "fi",
+      "startedAt": "2026-08-22T01:42:15Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elisaviihdesport-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dota2ti_cn",
+      "userName": "dota2ti_cn",
+      "title": "[CN] 第3日 - 2026国际邀请赛",
+      "viewerCount": 282,
+      "language": "zh",
+      "startedAt": "2026-08-22T04:23:19Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_cn-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "cyberclasher",
+      "userName": "Cyberclasher",
+      "title": "[LIVE] ⚔️VISION vs Yandex ⚔️TSpirit vs Boomboys 🏆The International 2026 - Main Event - Day 7",
+      "viewerCount": 228,
+      "language": "th",
+      "startedAt": "2026-08-22T01:30:27Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cyberclasher-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "sysman_",
+      "userName": "sysman_",
+      "title": "BoomBoys - Team Spirit | The International 2026: Main Event | !tg | !тг |",
+      "viewerCount": 224,
       "language": "ru",
-      "startedAt": "2026-08-22T06:05:58Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hvnnn_tv-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T01:27:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sysman_-{width}x{height}.jpg"
     },
     {
-      "userLogin": "kita_nanachi",
-      "userName": "Kita_Nanachi",
-      "title": "【EN/JP】August 22 / Watching TI 2026 | @kita_nanachi !discord !links",
-      "viewerCount": 78,
-      "language": "en",
-      "startedAt": "2026-08-22T06:13:28Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kita_nanachi-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "accept_dota",
-      "userName": "Accept_dota",
-      "title": "ЛАЙВ ИГРЫ С ИНТА TG: t.me/kudesvityushkasolodread",
-      "viewerCount": 76,
+      "userLogin": "1possessed",
+      "userName": "1possessed",
+      "title": "7 тыщ авг лузстрик нет войса жизнь боль !tg",
+      "viewerCount": 214,
       "language": "ru",
-      "startedAt": "2026-08-22T05:41:34Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_accept_dota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "bububu",
-      "userName": "Bububu",
-      "title": "ÆÆÆÆÆÆ",
-      "viewerCount": 68,
-      "language": "en",
-      "startedAt": "2026-08-22T13:14:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bububu-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T15:00:49Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_1possessed-{width}x{height}.jpg"
     },
     {
       "userLogin": "tuborosho",
       "userName": "tuborosho",
       "title": "не вставай на пути гринда 4632",
-      "viewerCount": 67,
+      "viewerCount": 210,
       "language": "ru",
       "startedAt": "2026-08-22T13:30:04Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tuborosho-{width}x{height}.jpg"
     },
     {
-      "userLogin": "nastyanuts",
-      "userName": "NastyaNuts",
-      "title": ":3",
-      "viewerCount": 64,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:01:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nastyanuts-{width}x{height}.jpg"
+      "userLogin": "vano",
+      "userName": "vano",
+      "title": "help me ⛏︎ !донат !тг !winline ⛏︎",
+      "viewerCount": 193,
+      "language": "en",
+      "startedAt": "2026-08-22T14:13:31Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vano-{width}x{height}.jpg"
     },
     {
-      "userLogin": "23dotatv",
-      "userName": "23DOTATV",
-      "title": "THE INTERNATIONAL 2026 | MAINSTAGE | DAY 3 | 23 DOTA TV",
-      "viewerCount": 62,
-      "language": "vi",
-      "startedAt": "2026-08-22T05:23:06Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_23dotatv-{width}x{height}.jpg"
+      "userLogin": "lightfurylf",
+      "userName": "LightFuryLF",
+      "title": "🔴[LF] Pari⚔️Yandex / BB⚔️Spirit (Bo3)🏆TI15 (TI2026) Main Event Day3",
+      "viewerCount": 176,
+      "language": "th",
+      "startedAt": "2026-08-22T08:29:55Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lightfurylf-{width}x{height}.jpg"
     },
     {
-      "userLogin": "uniquee",
-      "userName": "Uniquee",
-      "title": "BETBOOM TEAM [0:1] Team Spirit | The International: Upper Bracket Round 1 | BO3 !tg",
-      "viewerCount": 56,
+      "userLogin": "welskiy",
+      "userName": "welskiy",
+      "title": "ВЕЛИКОЕ ОБНУЛЕНИЕ ТОП 10 к КОНЦУ ЛЕТА !тг !розыгрыш !руководство !дать (имя любое) !воздух !settings !стрик !7тв",
+      "viewerCount": 167,
       "language": "ru",
-      "startedAt": "2026-08-22T03:34:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_uniquee-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T13:11:16Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_welskiy-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "zip4k22",
+      "userName": "Zip4k22",
+      "title": "играю доту",
+      "viewerCount": 166,
+      "language": "ru",
+      "startedAt": "2026-08-22T14:26:54Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zip4k22-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "maxon_live_7319582",
+      "userName": "MAXON_LIVE_7319582",
+      "title": "MAXON! теги для поиска: ЗУБАРЕВ ЛОРД БУСТЕР ЛУДОЖОП ЕГОРКРИД ЕГОРКРИД vitus vitus_tv медисон евелон zubarefff zubarev зубареффф хованский",
+      "viewerCount": 163,
+      "language": "ru",
+      "startedAt": "2026-08-22T15:00:36Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maxon_live_7319582-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "seventyfly_com",
+      "userName": "SEVENTYFLY_com",
+      "title": "Live AI Predictions • +57.97 Flats • 24/7",
+      "viewerCount": 163,
+      "language": "ru",
+      "startedAt": "2026-08-21T02:14:40Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_seventyfly_com-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "resolut1ontv",
+      "userName": "Resolut1ontv",
+      "title": "МЫ В ШАНХАЕ!! ONLYDOTABOYS турнир 1x1 DAY 4",
+      "viewerCount": 127,
+      "language": "en",
+      "startedAt": "2026-08-22T09:51:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_resolut1ontv-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "godgeargaming",
+      "userName": "godgeargaming",
+      "title": "Dota 2 : The International 2026 - Fase de Grupos - Ronda 5",
+      "viewerCount": 120,
+      "language": "en",
+      "startedAt": "2026-08-22T14:23:58Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godgeargaming-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "beingesports",
+      "userName": "beingesports",
+      "title": "THE INTERNATIONAL 2026 | Main Stage | Tag 3 | BoomBoys vs. Team Spirit | Offizieller deutscher Broadcast | Dota 2",
+      "viewerCount": 118,
+      "language": "de",
+      "startedAt": "2026-08-22T08:31:03Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_beingesports-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "happy55y",
+      "userName": "happy55y",
+      "title": "custom hero chaos. !tg",
+      "viewerCount": 103,
+      "language": "ru",
+      "startedAt": "2026-08-22T06:24:56Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_happy55y-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "antohahahhaa",
+      "userName": "antohahahhaa",
+      "title": "нишевый стрим с ноута 50 fps 300 ранг сапик",
+      "viewerCount": 101,
+      "language": "ru",
+      "startedAt": "2026-08-22T14:47:23Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_antohahahhaa-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "marvelz",
+      "userName": "Marvelz",
+      "title": "2К ЭКСПЕРТ КОММЕНТИТ ИНТЕРНЕШНЛ! МАТЧ : СПИРИТ : ББ.",
+      "viewerCount": 95,
+      "language": "ru",
+      "startedAt": "2026-08-22T13:12:25Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_marvelz-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "godxgirl",
+      "userName": "GodxGirl",
+      "title": "💞 Покажи мне любовь, что горит, как огонь, Покажи свой страх, дай почувствовать боль.💞",
+      "viewerCount": 93,
+      "language": "ru",
+      "startedAt": "2026-08-22T11:56:38Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godxgirl-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "yaneher",
+      "userName": "Yaneher",
+      "title": "СЕГОДНЯ МОЙ ДЕНЬ - ПРАЙМ?",
+      "viewerCount": 84,
+      "language": "ru",
+      "startedAt": "2026-08-22T14:44:09Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaneher-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "bububu",
+      "userName": "Bububu",
+      "title": "ÆÆÆÆÆÆ",
+      "viewerCount": 72,
+      "language": "en",
+      "startedAt": "2026-08-22T13:14:01Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bububu-{width}x{height}.jpg"
     },
     {
       "userLogin": "magerdev1",
       "userName": "magerdev1",
       "title": "Комментим инт (Асмр мукбанг дота интернешенал)",
-      "viewerCount": 54,
+      "viewerCount": 65,
       "language": "ru",
       "startedAt": "2026-08-22T13:56:07Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magerdev1-{width}x{height}.jpg"
     },
     {
-      "userLogin": "pashkabitsepc",
-      "userName": "PashkaBitsepc",
-      "title": "🎮 BoomBoys [0-0] Team Spirit | The International 2026 🎮 | BO3 | 🎲 !tg !famq 🎰",
+      "userLogin": "pepa_top",
+      "userName": "pepa_top",
+      "title": "smotrim vnimatelno",
+      "viewerCount": 65,
+      "language": "ru",
+      "startedAt": "2026-08-22T12:33:11Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pepa_top-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "polkirr",
+      "userName": "Polkirr",
+      "title": "Стрим с мамой! | |!тг !клип |",
+      "viewerCount": 56,
+      "language": "ru",
+      "startedAt": "2026-08-22T11:47:24Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_polkirr-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "backf1stt",
+      "userName": "backf1stt",
+      "title": "ТОП 1 ЛАДЕРА РУИНЕР",
+      "viewerCount": 54,
+      "language": "ru",
+      "startedAt": "2026-08-22T12:25:47Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_backf1stt-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "misakisempaii",
+      "userName": "misakisempaii",
+      "title": "Пати-день Мур-Мур💕 Смотрим !аниме в 20 Мск⭐️ !тг !вк !ютуб !тт",
+      "viewerCount": 54,
+      "language": "ru",
+      "startedAt": "2026-08-22T13:05:02Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_misakisempaii-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "snoopyrocket",
+      "userName": "SnoopyRocket",
+      "title": "Spirit vs BB [1:0] BO3 | The International 2026",
+      "viewerCount": 54,
+      "language": "ru",
+      "startedAt": "2026-08-22T01:57:49Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_snoopyrocket-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "volo_lya",
+      "userName": "volo_lya",
+      "title": "Ин потенциал | !донат !тг",
       "viewerCount": 52,
       "language": "ru",
-      "startedAt": "2026-08-22T14:21:09Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pashkabitsepc-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T11:43:02Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_volo_lya-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lowskill_game",
+      "userName": "lowskill_game",
+      "title": "🔥ЖЕСКИЙ ГРИНД ММРОВ ✅30 ДНЕЙ СТРИМОВ ЧЕЛЛЕНДЖ (22/30)",
+      "viewerCount": 52,
+      "language": "ru",
+      "startedAt": "2026-08-22T12:41:34Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lowskill_game-{width}x{height}.jpg"
     },
     {
       "userLogin": "roccomy",
@@ -627,67 +474,76 @@
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_roccomy-{width}x{height}.jpg"
     },
     {
-      "userLogin": "backf1stt",
-      "userName": "backf1stt",
-      "title": "ТОП 1 ЛАДЕРА РУИНЕР",
-      "viewerCount": 50,
+      "userLogin": "pashkabitsepc",
+      "userName": "PashkaBitsepc",
+      "title": "🎮 BoomBoys [0-0] Team Spirit | The International 2026 🎮 | BO3 | 🎲 !tg !famq 🎰",
+      "viewerCount": 51,
       "language": "ru",
-      "startedAt": "2026-08-22T12:25:47Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_backf1stt-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T14:21:09Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pashkabitsepc-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "mexa_streams",
+      "userName": "mexa_streams",
+      "title": "мопс пожаловался <-- я в лп 😱ШАПКА PRIME !тг !клип💪ЛИЧНЫЙ ТРЕНЕР/БУСТЕР @LenaGol0vach💪💪😱ДАУБИ ДАУБИ😱",
+      "viewerCount": 51,
+      "language": "ru",
+      "startedAt": "2026-08-22T13:30:09Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mexa_streams-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "sportikd",
+      "userName": "sportikD",
+      "title": "КАЛИБРОВКА🏆🏆🏆ВСЁ ИЛИ НИЧЕГО☠️☠️☠️9132ММР",
+      "viewerCount": 51,
+      "language": "ru",
+      "startedAt": "2026-08-22T15:00:36Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sportikd-{width}x{height}.jpg"
     },
     {
       "userLogin": "karina_tv",
       "userName": "karina_tv",
       "title": "Team Spirit vs BoomBoys - The International 2026 !tg !boosty",
-      "viewerCount": 50,
+      "viewerCount": 51,
       "language": "ru",
       "startedAt": "2026-08-22T08:32:59Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_karina_tv-{width}x{height}.jpg"
     },
     {
-      "userLogin": "lowskill_game",
-      "userName": "lowskill_game",
-      "title": "🔥ЖЕСКИЙ ГРИНД ММРОВ ✅30 ДНЕЙ СТРИМОВ ЧЕЛЛЕНДЖ (22/30)",
-      "viewerCount": 49,
-      "language": "ru",
-      "startedAt": "2026-08-22T12:41:34Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lowskill_game-{width}x{height}.jpg"
+      "userLogin": "vstrimi",
+      "userName": "vStrimi",
+      "title": "TI LUDOPATIA",
+      "viewerCount": 47,
+      "language": "it",
+      "startedAt": "2026-08-22T08:30:16Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vstrimi-{width}x{height}.jpg"
     },
     {
-      "userLogin": "misakisempaii",
-      "userName": "misakisempaii",
-      "title": "Пати-день Мур-Мур💕 Смотрим !аниме в 20 Мск⭐️ !тг !вк !ютуб !тт",
-      "viewerCount": 48,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:05:02Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_misakisempaii-{width}x{height}.jpg"
+      "userLogin": "berserk_dota2_league",
+      "userName": "Berserk_Dota2_League",
+      "title": "Berserk League 22/08/2026 - Afternoon Session",
+      "viewerCount": 44,
+      "language": "en",
+      "startedAt": "2026-08-22T13:53:56Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_berserk_dota2_league-{width}x{height}.jpg"
     },
     {
-      "userLogin": "mach1nk3",
-      "userName": "Mach1nk3",
-      "title": "UNDERDOG | TI 2026 | TV vs TY | 1:1",
+      "userLogin": "heatisb4ck",
+      "userName": "HEATISB4CK",
+      "title": "ПО*УЙ ОБНУЛЯТ 6600 СМУРФ|15000+ ИГР НА ТИНКЕРЕ",
       "viewerCount": 43,
       "language": "ru",
-      "startedAt": "2026-08-22T11:37:52Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mach1nk3-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T13:36:42Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_heatisb4ck-{width}x{height}.jpg"
     },
     {
-      "userLogin": "yaneher",
-      "userName": "Yaneher",
-      "title": "СЕГОДНЯ МОЙ ДЕНЬ - ПРАЙМ?",
+      "userLogin": "noizen",
+      "userName": "Noizen",
+      "title": "Team Spirit vs. BoomBoys 🏆 Добрый вечер с Дотой ✅ Уютный просмотр ИНТа ❤️ ✔️ !WoW // t.me/Noizen",
       "viewerCount": 42,
       "language": "ru",
-      "startedAt": "2026-08-22T14:44:09Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaneher-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "araaaaaaaaab",
-      "userName": "araaaaaaaaab",
-      "title": "居酒屋じ・いんたーなしょなる",
-      "viewerCount": 41,
-      "language": "ja",
-      "startedAt": "2026-08-22T04:44:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_araaaaaaaaab-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T12:22:07Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_noizen-{width}x{height}.jpg"
     },
     {
       "userLogin": "0dragovich7",
@@ -699,193 +555,247 @@
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_0dragovich7-{width}x{height}.jpg"
     },
     {
-      "userLogin": "vstrimi",
-      "userName": "vStrimi",
-      "title": "TI LUDOPATIA",
+      "userLogin": "mach1nk3",
+      "userName": "Mach1nk3",
+      "title": "UNDERDOG | TI 2026 | TV vs TY | 1:1",
       "viewerCount": 39,
-      "language": "it",
-      "startedAt": "2026-08-22T08:30:16Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vstrimi-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "noizen",
-      "userName": "Noizen",
-      "title": "Team Spirit vs. BoomBoys 🏆 Добрый вечер с Дотой ✅ Уютный просмотр ИНТа ❤️ ✔️ !WoW // t.me/Noizen",
-      "viewerCount": 38,
       "language": "ru",
-      "startedAt": "2026-08-22T12:22:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_noizen-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "satokenzo",
-      "userName": "satokenzo",
-      "title": "!lootbar ПРАЗДНИК ДОТЫ",
-      "viewerCount": 38,
-      "language": "ru",
-      "startedAt": "2026-08-22T05:58:05Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_satokenzo-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T11:37:52Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mach1nk3-{width}x{height}.jpg"
     },
     {
       "userLogin": "xolodokkkk",
       "userName": "xolodokkkk",
       "title": "🏆ТУРНІР 1х1 ДОТА 2🏆|!тг !дс",
-      "viewerCount": 37,
+      "viewerCount": 38,
       "language": "uk",
       "startedAt": "2026-08-22T13:39:02Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xolodokkkk-{width}x{height}.jpg"
     },
     {
-      "userLogin": "blessed_xq",
-      "userName": "blessed_xq",
-      "title": "fake smile ||!очередь//",
-      "viewerCount": 35,
-      "language": "ru",
-      "startedAt": "2026-08-22T14:01:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_blessed_xq-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "aakatana322_",
-      "userName": "aakatana322_",
-      "title": "быть сильным | !tg",
-      "viewerCount": 35,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:57:03Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aakatana322_-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "pepa_top",
-      "userName": "pepa_top",
-      "title": "smotrim vnimatelno",
-      "viewerCount": 34,
-      "language": "ru",
-      "startedAt": "2026-08-22T12:33:11Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pepa_top-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "heatisb4ck",
-      "userName": "HEATISB4CK",
-      "title": "ПО*УЙ ОБНУЛЯТ 6600 СМУРФ|15000+ ИГР НА ТИНКЕРЕ",
-      "viewerCount": 33,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:36:42Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_heatisb4ck-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "cechi1",
-      "userName": "Cechi1",
-      "title": "🎥 watchparTI s kamaráTI 🎥 🛑LIVE CIS DOTA top 4 gege /// The International 2026 - Main Event ///",
-      "viewerCount": 33,
-      "language": "cs",
-      "startedAt": "2026-08-22T10:59:04Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cechi1-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "yablo_chkoo",
-      "userName": "yablo_chkoo",
-      "title": "6500 смотрим интик❤️",
-      "viewerCount": 31,
-      "language": "ru",
-      "startedAt": "2026-08-22T00:49:27Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yablo_chkoo-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "eccobladee2k",
-      "userName": "eccobladee2k",
-      "title": "16000 mmr |daxak 👈 отец",
-      "viewerCount": 31,
-      "language": "ru",
-      "startedAt": "2026-08-22T09:24:52Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eccobladee2k-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "mrpetya23",
-      "userName": "mrpetya23",
-      "title": "**MrPetya23 | 35 лет** Обычный мужик я работаю с утра до ночи а вечером  играть  в Доту.",
-      "viewerCount": 30,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:24:31Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mrpetya23-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "miggie",
-      "userName": "Miggie",
-      "title": "Birthday? Watch along? of everything F1 & TI? - [Stream 2 of 2 in 2026]",
-      "viewerCount": 30,
-      "language": "en",
-      "startedAt": "2026-08-22T11:42:28Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_miggie-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "hardkorra",
       "userName": "hardkorra",
       "title": "bmth user",
-      "viewerCount": 28,
+      "viewerCount": 37,
       "language": "ru",
       "startedAt": "2026-08-22T08:57:27Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hardkorra-{width}x{height}.jpg"
     },
     {
-      "userLogin": "alpha4ina",
-      "userName": "Alpha4ina",
-      "title": "дротатуйти. ЧСВ ПсихолоGG. Статус: Свободен. В поиске)",
-      "viewerCount": 28,
+      "userLogin": "icq525",
+      "userName": "icq525",
+      "title": "100rank 1/3 pos",
+      "viewerCount": 37,
       "language": "ru",
-      "startedAt": "2026-08-22T14:03:45Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alpha4ina-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T14:21:06Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icq525-{width}x{height}.jpg"
     },
     {
-      "userLogin": "tamazkh",
-      "userName": "tamazkh",
-      "title": "DOTA 2 | TEAM SPIRIT VS BB (1:0) bo3",
-      "viewerCount": 27,
-      "language": "ru",
-      "startedAt": "2026-08-22T14:35:08Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tamazkh-{width}x{height}.jpg"
+      "userLogin": "araaaaaaaaab",
+      "userName": "araaaaaaaaab",
+      "title": "居酒屋じ・いんたーなしょなる",
+      "viewerCount": 37,
+      "language": "ja",
+      "startedAt": "2026-08-22T04:44:54Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_araaaaaaaaab-{width}x{height}.jpg"
     },
     {
-      "userLogin": "wmaxvell",
-      "userName": "wmaxvell",
-      "title": "vibe",
-      "viewerCount": 27,
-      "language": "en",
-      "startedAt": "2026-08-22T12:51:08Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wmaxvell-{width}x{height}.jpg"
+      "userLogin": "eccobladee2k",
+      "userName": "eccobladee2k",
+      "title": "16000 mmr |daxak 👈 отец",
+      "viewerCount": 36,
+      "language": "ru",
+      "startedAt": "2026-08-22T09:24:52Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eccobladee2k-{width}x{height}.jpg"
     },
     {
-      "userLogin": "mexa_streams",
-      "userName": "mexa_streams",
-      "title": "мопс пожаловался <-- я в лп 😱ШАПКА PRIME !тг !клип💪ЛИЧНЫЙ ТРЕНЕР/БУСТЕР @LenaGol0vach💪💪😱ДАУБИ ДАУБИ😱",
-      "viewerCount": 26,
-      "language": "ru",
-      "startedAt": "2026-08-22T13:30:09Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mexa_streams-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "vlexflex",
-      "userName": "VlexFlex",
-      "title": "INTERNATIONAL 2026 | BB [0] TS [1] | @konchaev",
-      "viewerCount": 26,
-      "language": "ru",
-      "startedAt": "2026-08-22T07:23:33Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vlexflex-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "maryzucker",
-      "userName": "maryzucker",
-      "title": "ДОТА2 🔴 РОЗЫГРЫШ ЗА БАЛЛЫ КАНАЛА!! 🔴❤ !comp !mmr !tg",
-      "viewerCount": 26,
-      "language": "ru",
-      "startedAt": "2026-08-22T11:31:50Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maryzucker-{width}x{height}.jpg"
+      "userLogin": "lakelzth",
+      "userName": "lakelzth",
+      "title": "🔴LIVE 🏹 ดูแข่งบ้านเขียว The International 2026: Main Event Day3 : Donate ขึ้นจอได้ที่ !easy !kick",
+      "viewerCount": 34,
+      "language": "th",
+      "startedAt": "2026-08-22T01:28:08Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lakelzth-{width}x{height}.jpg"
     },
     {
       "userLogin": "arabicdota",
       "userName": "arabicdota",
       "title": "[AR] BoomBoys ضد Team Spirit 4 المبارة | The International 2026 - الادوار الاقصائية",
-      "viewerCount": 25,
+      "viewerCount": 33,
       "language": "ar",
       "startedAt": "2026-08-22T01:30:23Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_arabicdota-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "gulko",
+      "userName": "GULKO",
+      "title": "[RU] BoomBoys vs. Team Spirit - The International 2026 - Нижняя сетка Полуфинал",
+      "viewerCount": 33,
+      "language": "ru",
+      "startedAt": "2026-08-22T14:58:35Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gulko-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "satokenzo",
+      "userName": "satokenzo",
+      "title": "!lootbar ПРАЗДНИК ДОТЫ",
+      "viewerCount": 33,
+      "language": "ru",
+      "startedAt": "2026-08-22T05:58:05Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_satokenzo-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "maryzucker",
+      "userName": "maryzucker",
+      "title": "ДОТА2 🔴 РОЗЫГРЫШ ЗА БАЛЛЫ КАНАЛА!! 🔴❤ !comp !mmr !tg",
+      "viewerCount": 32,
+      "language": "ru",
+      "startedAt": "2026-08-22T11:31:50Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maryzucker-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "cechi1",
+      "userName": "Cechi1",
+      "title": "🎥 watchparTI s kamaráTI 🎥 🛑LIVE CIS DOTA top 4 gege /// The International 2026 - Main Event ///",
+      "viewerCount": 30,
+      "language": "cs",
+      "startedAt": "2026-08-22T10:59:04Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cechi1-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dotaburgertwitch",
+      "userName": "dotaburgertwitch",
+      "title": "Team Spirit vs BoomBoys [МАТЧ НА ВЫЛЕТ] / The International 2026",
+      "viewerCount": 29,
+      "language": "ru",
+      "startedAt": "2026-08-22T12:50:33Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dotaburgertwitch-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "alpha4ina",
+      "userName": "Alpha4ina",
+      "title": "дротатуйти. ЧСВ ПсихолоGG. Статус: Свободен. В поиске)",
+      "viewerCount": 29,
+      "language": "ru",
+      "startedAt": "2026-08-22T14:03:45Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alpha4ina-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "wmaxvell",
+      "userName": "wmaxvell",
+      "title": "vibe",
+      "viewerCount": 28,
+      "language": "en",
+      "startedAt": "2026-08-22T12:51:08Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wmaxvell-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "murmuwer",
+      "userName": "murmuwer",
+      "title": "инт <  женский турик от 6969 (задержка 100 сек)",
+      "viewerCount": 26,
+      "language": "ru",
+      "startedAt": "2026-08-22T11:49:10Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_murmuwer-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "niktovel",
+      "userName": "niktovel",
+      "title": "унижаюсь в доте",
+      "viewerCount": 26,
+      "language": "ru",
+      "startedAt": "2026-08-22T14:06:15Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_niktovel-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "superlasca",
+      "userName": "SuperLasca",
+      "title": "🔥TI - day3🔥 DOTA 2🔥get up, lock in, and make today count",
+      "viewerCount": 25,
+      "language": "ro",
+      "startedAt": "2026-08-22T02:56:11Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_superlasca-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "xfr1ll",
+      "userName": "xfr1ll",
+      "title": "ЛУДО-ДУРКА (BoomBoys vs Spirit)",
+      "viewerCount": 25,
+      "language": "ru",
+      "startedAt": "2026-08-22T11:17:01Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xfr1ll-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "feitan_dep",
+      "userName": "Feitan_Dep",
+      "title": "100+ мирроров за лигу",
+      "viewerCount": 25,
+      "language": "ru",
+      "startedAt": "2026-08-22T07:11:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_feitan_dep-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "depashe",
+      "userName": "depashe",
+      "title": "BoomBoys vs Spirit 0:0 bo3 The International 2026: Playoffs day 3",
+      "viewerCount": 24,
+      "language": "ru",
+      "startedAt": "2026-08-22T13:05:47Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_depashe-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "esl_dota2",
+      "userName": "ESL_DOTA2",
+      "title": "HIGHLIGHTS: PARIVISION vs. REKONIX - DreamLeague S29",
+      "viewerCount": 24,
+      "language": "en",
+      "startedAt": "2026-08-20T20:15:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_esl_dota2-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "alko_trener",
+      "userName": "alko_trener",
+      "title": "ШАШКИ ТРЕШКА МКАДl !НЕПРЕДВЗЯТАЯ АНАЛИТИКА !роспись !tg",
+      "viewerCount": 23,
+      "language": "ru",
+      "startedAt": "2026-08-22T13:27:33Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alko_trener-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "foo_lishh",
+      "userName": "Foo_Lishh",
+      "title": "[ARCHON 1] Se011Ep03 out of retirement into the SEA",
+      "viewerCount": 23,
+      "language": "en",
+      "startedAt": "2026-08-22T08:05:31Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_foo_lishh-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "neznakov",
+      "userName": "Neznakov",
+      "title": "Играем пати со зрителями !donate✨Принимаю заказы на✨!boost🎊 БОТ ОЗВУЧИВАЕТ ВЫДЕЛЕННЫЕ СООБЩЕНИЯ",
+      "viewerCount": 23,
+      "language": "ru",
+      "startedAt": "2026-08-22T09:28:14Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neznakov-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "orssi_",
+      "userName": "orssi_",
+      "title": "играю доту",
+      "viewerCount": 23,
+      "language": "ru",
+      "startedAt": "2026-08-22T14:44:55Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orssi_-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "miggie",
+      "userName": "Miggie",
+      "title": "Birthday? Watch along? of everything F1 & TI? - [Stream 2 of 2 in 2026]",
+      "viewerCount": 22,
+      "language": "en",
+      "startedAt": "2026-08-22T11:42:28Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_miggie-{width}x{height}.jpg"
     }
   ]
 }
