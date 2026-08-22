@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-22T06:37:51.923Z",
-  "expiresAt": "2026-08-22T07:37:51.923Z",
+  "lastUpdated": "2026-08-22T07:16:34.556Z",
+  "expiresAt": "2026-08-22T08:16:34.556Z",
   "gameId": "29595",
   "gameName": "Dota 2",
   "source": "twitch-helix",
@@ -8,8 +8,8 @@
     {
       "userLogin": "nix",
       "userName": "Nix",
-      "title": "Nigma vs BoomBoys 0:1 bo3 The International 2026: Playoffs Lower Bracket day 3 w/ Alagon",
-      "viewerCount": 100834,
+      "title": "Nigma vs BoomBoys 1:1 bo3 The International 2026: Playoffs Lower Bracket day 3 w/ Alagon",
+      "viewerCount": 97501,
       "language": "ru",
       "startedAt": "2026-08-22T02:03:44Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nix-{width}x{height}.jpg"
@@ -18,7 +18,7 @@
       "userLogin": "dota2ti",
       "userName": "dota2ti",
       "title": "[EN] Nigma Galaxy vs. BoomBoys - The International 2026 - Lower Bracket Quarterfinals",
-      "viewerCount": 94451,
+      "viewerCount": 85308,
       "language": "en",
       "startedAt": "2026-08-22T01:06:17Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti-{width}x{height}.jpg"
@@ -27,61 +27,70 @@
       "userLogin": "dota2ti_ru",
       "userName": "dota2ti_ru",
       "title": "[RU] Nigma Galaxy vs. BoomBoys - The International 2026 - Нижняя сетка Четвертьфиналы",
-      "viewerCount": 52377,
+      "viewerCount": 48709,
       "language": "ru",
       "startedAt": "2026-08-22T01:42:22Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_ru-{width}x{height}.jpg"
     },
     {
+      "userLogin": "misolo3",
+      "userName": "misolo3",
+      "title": "The International 2026  | Nigma Galaxy [1:1] BB Team  | BO3  | w/ @daxak      !тг !winline !ggsell !пабстомп !билеты !конкурс",
+      "viewerCount": 18249,
+      "language": "ru",
+      "startedAt": "2026-08-22T06:28:32Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_misolo3-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "ramzes",
       "userName": "ramzes",
-      "title": "Nigma Galaxy [0:1] BoomBoys | The International 2026 | Lower Bracket Quarterfinals | BO3 | /w @afoninje !tg !win !playerok !втб !up",
-      "viewerCount": 16338,
+      "title": "Nigma Galaxy [1:1] BoomBoys | The International 2026 | Lower Bracket Quarterfinals | BO3 | /w @afoninje !tg !win !playerok !втб !up",
+      "viewerCount": 14410,
       "language": "ru",
       "startedAt": "2026-08-22T02:08:10Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ramzes-{width}x{height}.jpg"
     },
     {
-      "userLogin": "heartdota23",
-      "userName": "heartdota23",
-      "title": "INTERNATIONAL2026 DAY 7 какой турнир такой и стрим",
-      "viewerCount": 11962,
-      "language": "ru",
-      "startedAt": "2026-08-22T02:31:57Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_heartdota23-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "solo",
       "userName": "Solo",
       "title": "🔴 NIGMA [0:1] BOOMBOYS | The International 2026: Playoffs w/ @gthemall !BETBOOM !tg !розыгрыш",
-      "viewerCount": 10412,
+      "viewerCount": 7486,
       "language": "ru",
       "startedAt": "2026-08-22T01:58:44Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_solo-{width}x{height}.jpg"
     },
     {
-      "userLogin": "dota2ti_es",
-      "userName": "dota2ti_es",
-      "title": "[ES] Nigma Galaxy vs. BoomBoys - The International 2026 - Bracket Inferior Cuartos de final",
-      "viewerCount": 7276,
-      "language": "es",
-      "startedAt": "2026-08-22T01:18:56Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "gorgc",
       "userName": "Gorgc",
       "title": "(EN) Nigma vs BB | THEY FLEW IN MIRACLE?-  The International 2026 | Playoffs |",
-      "viewerCount": 6315,
+      "viewerCount": 6921,
       "language": "en",
       "startedAt": "2026-08-22T04:50:07Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gorgc-{width}x{height}.jpg"
     },
     {
+      "userLogin": "heartdota23",
+      "userName": "heartdota23",
+      "title": "INTERNATIONAL2026 DAY 7 какой турнир такой и стрим",
+      "viewerCount": 6086,
+      "language": "ru",
+      "startedAt": "2026-08-22T02:31:57Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_heartdota23-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dota2ti_es",
+      "userName": "dota2ti_es",
+      "title": "[ES] Nigma Galaxy vs. BoomBoys - The International 2026 - Bracket Inferior Cuartos de final",
+      "viewerCount": 5889,
+      "language": "es",
+      "startedAt": "2026-08-22T01:18:56Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_es-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "mellstroy",
       "userName": "mellstroy",
       "title": "ИГРОВАЯ ВОЗНЯ",
-      "viewerCount": 3623,
+      "viewerCount": 4363,
       "language": "ru",
       "startedAt": "2026-08-21T21:55:20Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mellstroy-{width}x{height}.jpg"
@@ -90,43 +99,61 @@
       "userLogin": "kevin_kuraga",
       "userName": "Kevin_Kuraga",
       "title": "!Topit NIGMA vs BoomBoys - The International 2026   !роспись !sakeenkok",
-      "viewerCount": 3531,
+      "viewerCount": 3716,
       "language": "ru",
       "startedAt": "2026-08-21T21:09:36Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kevin_kuraga-{width}x{height}.jpg"
     },
     {
-      "userLogin": "koma",
-      "userName": "Koma",
-      "title": "BoomBoys [1:0] Nigma Galaxy w/ @mary_day | The International 2026: Lower Bracket Quarterfinals | !tg !vtb !betboom",
-      "viewerCount": 3373,
-      "language": "ru",
-      "startedAt": "2026-08-22T01:24:24Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_koma-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "dota2_maincast",
       "userName": "dota2_maincast",
-      "title": "[UA] Nigma Galaxy vs Boom Boys (0-1) BO3 | The International 2026:  Playoffs | by @casperrrtv & @doubleespresso",
-      "viewerCount": 3004,
+      "title": "[UA] Nigma Galaxy vs Boom Boys (1-1) BO3 | The International 2026:  Playoffs | by @casperrrtv & @doubleespresso",
+      "viewerCount": 2935,
       "language": "uk",
       "startedAt": "2026-08-22T01:36:36Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2_maincast-{width}x{height}.jpg"
     },
     {
+      "userLogin": "koma",
+      "userName": "Koma",
+      "title": "BoomBoys [1:0] Nigma Galaxy w/ @mary_day | The International 2026: Lower Bracket Quarterfinals | !tg !vtb !betboom",
+      "viewerCount": 2687,
+      "language": "ru",
+      "startedAt": "2026-08-22T01:24:24Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_koma-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "daxak",
       "userName": "Daxak",
-      "title": "NIGMA BB    | TI 2026 | !фонбет !ггсел !бусти !мерч !вод w/egor misolo",
-      "viewerCount": 2229,
+      "title": "NIGMA 1:1 BB    | TI 2026 | !фонбет !ггсел !бусти !мерч !вод w/egor misolo",
+      "viewerCount": 2247,
       "language": "ru",
       "startedAt": "2026-08-22T04:49:31Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_daxak-{width}x{height}.jpg"
     },
     {
+      "userLogin": "ghostik",
+      "userName": "Ghostik",
+      "title": "🔥Nigma Galaxy (1-1) бетсруньк bo3 в плей-оф The International 2026 🔥УКРАЇНСЬКИЙ КАСТ",
+      "viewerCount": 1877,
+      "language": "uk",
+      "startedAt": "2026-08-22T01:45:54Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ghostik-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "singsing",
+      "userName": "singsing",
+      "title": "BB VS NIGMA TI PLAY OFFS",
+      "viewerCount": 1859,
+      "language": "en",
+      "startedAt": "2026-08-22T05:55:18Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_singsing-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "ns_art",
       "userName": "NS_ART",
       "title": "Nigma Galaxy vs. BoomBoys | Evento principal dia 3 | The International 2026 🏆- !PIX !EXITLAG !CHAMPZ !MASTER !SORTEIO",
-      "viewerCount": 2059,
+      "viewerCount": 1834,
       "language": "pt",
       "startedAt": "2026-08-21T23:28:38Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ns_art-{width}x{height}.jpg"
@@ -135,43 +162,25 @@
       "userLogin": "9pasha",
       "userName": "9pasha",
       "title": "[БЕЗ ЗАДЕРЖКИ] Nigma [0:1] BB | The International 2026 | Playoffs | BO3 | !winline !youtube !discord",
-      "viewerCount": 2021,
+      "viewerCount": 1797,
       "language": "ru",
       "startedAt": "2026-08-22T02:01:22Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_9pasha-{width}x{height}.jpg"
     },
     {
-      "userLogin": "ghostik",
-      "userName": "Ghostik",
-      "title": "🔥Nigma Galaxy (0-1) бетсруньк bo3 в плей-оф The International 2026 🔥УКРАЇНСЬКИЙ КАСТ",
-      "viewerCount": 1789,
-      "language": "uk",
-      "startedAt": "2026-08-22T01:45:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ghostik-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "etoseregga",
       "userName": "etosereGGa",
       "title": "The International 2026 | BoomBoys vs Nigma | bo3 | Play-Off",
-      "viewerCount": 1639,
+      "viewerCount": 1733,
       "language": "ru",
       "startedAt": "2026-08-22T05:11:07Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_etoseregga-{width}x{height}.jpg"
     },
     {
-      "userLogin": "singsing",
-      "userName": "singsing",
-      "title": "BB VS NIGMA TI PLAY OFFS",
-      "viewerCount": 1589,
-      "language": "en",
-      "startedAt": "2026-08-22T05:55:18Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_singsing-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "dyrachyo",
       "userName": "dyrachyo",
-      "title": "Nigma Galaxy [0:1] BoomBoys bo3 | The International 2026 | Playoffs Lower Bracket day 3 | !tg !bb w/ @dkfogas1",
-      "viewerCount": 1485,
+      "title": "Nigma Galaxy [1:1] BoomBoys bo3 | The International 2026 | Playoffs Lower Bracket day 3 | !tg !bb w/ @dkfogas1",
+      "viewerCount": 1331,
       "language": "ru",
       "startedAt": "2026-08-22T02:26:02Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dyrachyo-{width}x{height}.jpg"
@@ -180,25 +189,34 @@
       "userLogin": "godota2bets",
       "userName": "godota2bets",
       "title": "BB vs Nigma Galaxy . TI 2026. 34 победы подряд сделали!   Новый винстрик делаем  !стата   !TG @godota2bets",
-      "viewerCount": 1226,
+      "viewerCount": 998,
       "language": "ru",
       "startedAt": "2026-08-22T05:03:54Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godota2bets-{width}x{height}.jpg"
     },
     {
-      "userLogin": "alohadancetv",
-      "userName": "ALOHADANCETV",
-      "title": "+35k$ Nigma galaxy 0:1 Boomboys | The International 2026: Playoffs !tg !прогнозы",
-      "viewerCount": 843,
+      "userLogin": "ponyaaaa",
+      "userName": "ponyaaaa",
+      "title": "😁ЛЕГЕНДА СМОТРИТ ИНТ😎Nigma vs BB 1:1😜!bc",
+      "viewerCount": 897,
       "language": "ru",
-      "startedAt": "2026-08-22T05:04:59Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alohadancetv-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T02:27:21Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ponyaaaa-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "sneakylol",
+      "userName": "sneakylol",
+      "title": "ti watchparty",
+      "viewerCount": 817,
+      "language": "en",
+      "startedAt": "2026-08-22T04:16:26Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sneakylol-{width}x{height}.jpg"
     },
     {
       "userLogin": "olagheparande",
       "userName": "olagheparande",
-      "title": "Nigma Galaxy (0) vs (1) Boom Boys | The International 2026 Lower Bracket !ti for main stream",
-      "viewerCount": 841,
+      "title": "Nigma Galaxy (1) vs (1) Boom Boys | The International 2026 Lower Bracket !ti for main stream",
+      "viewerCount": 777,
       "language": "other",
       "startedAt": "2026-08-22T02:06:19Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_olagheparande-{width}x{height}.jpg"
@@ -207,97 +225,52 @@
       "userLogin": "mary_day",
       "userName": "mary_day",
       "title": "BoomBoys vs Nigma Galaxy 1:0  | The International 2026: Playoffs day 3 w/  @mangekyou_14 @koma",
-      "viewerCount": 699,
+      "viewerCount": 726,
       "language": "ru",
       "startedAt": "2026-08-22T03:08:38Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mary_day-{width}x{height}.jpg"
     },
     {
-      "userLogin": "valbina",
-      "userName": "VALbINA",
-      "title": "Смотрим Nigma Galaxy - BETBOOM Team | The International 2026 | !тг",
-      "viewerCount": 682,
+      "userLogin": "alohadancetv",
+      "userName": "ALOHADANCETV",
+      "title": "+35k$ Nigma galaxy 0:1 Boomboys | The International 2026: Playoffs !tg !прогнозы",
+      "viewerCount": 714,
       "language": "ru",
-      "startedAt": "2026-08-21T21:22:13Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_valbina-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "sneakylol",
-      "userName": "sneakylol",
-      "title": "ti watchparty",
-      "viewerCount": 678,
-      "language": "en",
-      "startedAt": "2026-08-22T04:16:26Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sneakylol-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ponyaaaa",
-      "userName": "ponyaaaa",
-      "title": "😁ЛЕГЕНДА СМОТРИТ ИНТ😎Nigma vs BB 0:1😜!bc",
-      "viewerCount": 638,
-      "language": "ru",
-      "startedAt": "2026-08-22T02:27:21Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ponyaaaa-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "wxcdota",
-      "userName": "WXCDota",
-      "title": "[FIL] Boomboys vs Nigma Galaxy (BO3) | The International 15 2026 Playoffs Day 3",
-      "viewerCount": 578,
-      "language": "tl",
-      "startedAt": "2026-08-22T01:25:43Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wxcdota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "awfdota",
-      "userName": "awfdota",
-      "title": "💎 BB [0:0] Nigma 💎 THE INTERNATIONAL 2026 PLAYOFFs w/ @icebergdoto @sh4dowehhh 🏆 АНДЕГРАУНД ВЕЛИКАН 👑 | !bc !tg !ds !аркана",
-      "viewerCount": 566,
-      "language": "ru",
-      "startedAt": "2026-08-22T04:01:50Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_awfdota-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T05:04:59Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alohadancetv-{width}x{height}.jpg"
     },
     {
       "userLogin": "straminskiy",
       "userName": "straminskiy",
-      "title": "BoomBoys 1-0 Nigma Galaxy - The International 2026 -   | Ставки  | Bets | !tg !ТГ !5051x !Pizza",
-      "viewerCount": 489,
+      "title": "BoomBoys 1-1 Nigma Galaxy - The International 2026 -   | Ставки  | Bets | !tg !ТГ !5051x !Pizza",
+      "viewerCount": 610,
       "language": "ru",
       "startedAt": "2026-08-22T01:44:04Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_straminskiy-{width}x{height}.jpg"
     },
     {
-      "userLogin": "misolo3",
-      "userName": "misolo3",
-      "title": "The International 2026  | Nigma Galaxy [0:1] BB Team  | BO3  | w/ @daxak      !тг !winline !ggsell !пабстомп !билеты !конкурс",
-      "viewerCount": 428,
+      "userLogin": "awfdota",
+      "userName": "awfdota",
+      "title": "💎 BB [1:1] Nigma 💎 THE INTERNATIONAL 2026 PLAYOFFs w/ @icebergdoto @sh4dowehhh 🏆 АНДЕГРАУНД ВЕЛИКАН 👑 | !bc !tg !ds !аркана",
+      "viewerCount": 603,
       "language": "ru",
-      "startedAt": "2026-08-22T06:28:32Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_misolo3-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T04:01:50Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_awfdota-{width}x{height}.jpg"
     },
     {
       "userLogin": "youyou",
       "userName": "YouYou",
       "title": "The International 2026 | Playoffs - Nigma Galaxy vs BoomBoys",
-      "viewerCount": 422,
+      "viewerCount": 453,
       "language": "fr",
       "startedAt": "2026-08-22T01:54:55Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_youyou-{width}x{height}.jpg"
     },
     {
-      "userLogin": "storm_q",
-      "userName": "STORM_Q",
-      "title": "BoomBoys vs Nigma Galaxy (1-0) | The International 2026: Main Event | !tg !розыгрыш !аркана",
-      "viewerCount": 389,
-      "language": "ru",
-      "startedAt": "2026-08-22T01:57:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_storm_q-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "bzzisperfect",
       "userName": "BzzIsPerfect",
       "title": "Nigma — BB (bo3) Смотрим+Анализируем | ЗАШЁЛ КФ 1248 !TG",
-      "viewerCount": 374,
+      "viewerCount": 410,
       "language": "ru",
       "startedAt": "2026-08-22T05:04:22Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bzzisperfect-{width}x{height}.jpg"
@@ -305,71 +278,89 @@
     {
       "userLogin": "icebergdoto",
       "userName": "icebergdoto",
-      "title": "Nigma  [0:0] BB | The International 2026 | Lower Bracket Quarterfinals | BO3 | !tg !give",
-      "viewerCount": 354,
+      "title": "Nigma  [1:1] BB | The International 2026 | Lower Bracket Quarterfinals | BO3 | !tg !give",
+      "viewerCount": 371,
       "language": "ru",
       "startedAt": "2026-08-22T01:58:34Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icebergdoto-{width}x{height}.jpg"
     },
     {
-      "userLogin": "elisaviihdesport",
-      "userName": "ElisaViihdeSport",
-      "title": "The International 2026 | Pudotuspelit",
-      "viewerCount": 347,
-      "language": "fi",
-      "startedAt": "2026-08-22T01:42:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elisaviihdesport-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "mantaq",
-      "userName": "MantaQ",
-      "title": "BOOMBOYS x NigmaGalaxy | The International |  !tg !bb",
-      "viewerCount": 327,
+      "userLogin": "storm_q",
+      "userName": "STORM_Q",
+      "title": "BoomBoys vs Nigma Galaxy (1-1) | The International 2026: Main Event | !tg !розыгрыш !аркана",
+      "viewerCount": 361,
       "language": "ru",
-      "startedAt": "2026-08-22T02:00:34Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mantaq-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T01:57:30Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_storm_q-{width}x{height}.jpg"
     },
     {
-      "userLogin": "gratis150ml",
-      "userName": "gratis150ml",
-      "title": "TI - campeonato mundial -- mais tarde jogo novo",
-      "viewerCount": 311,
-      "language": "pt",
-      "startedAt": "2026-08-22T02:04:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gratis150ml-{width}x{height}.jpg"
+      "userLogin": "wxcdota",
+      "userName": "WXCDota",
+      "title": "[FIL] Boomboys vs Nigma Galaxy (BO3) | The International 15 2026 Playoffs Day 3",
+      "viewerCount": 349,
+      "language": "tl",
+      "startedAt": "2026-08-22T01:25:43Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wxcdota-{width}x{height}.jpg"
     },
     {
       "userLogin": "dota2ti_cn",
       "userName": "dota2ti_cn",
       "title": "[CN] 第3日 - 2026国际邀请赛",
-      "viewerCount": 311,
+      "viewerCount": 340,
       "language": "zh",
       "startedAt": "2026-08-22T04:23:19Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_cn-{width}x{height}.jpg"
     },
     {
+      "userLogin": "elisaviihdesport",
+      "userName": "ElisaViihdeSport",
+      "title": "The International 2026 | Pudotuspelit",
+      "viewerCount": 331,
+      "language": "fi",
+      "startedAt": "2026-08-22T01:42:15Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elisaviihdesport-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "gratis150ml",
+      "userName": "gratis150ml",
+      "title": "TI - campeonato mundial -- mais tarde jogo novo",
+      "viewerCount": 301,
+      "language": "pt",
+      "startedAt": "2026-08-22T02:04:54Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gratis150ml-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "c1rceezy",
       "userName": "c1RcEEZY",
       "title": "📺Nigma Galaxy vs BoomBoys📺The International 2026 - Main Event- Day 3📺Official CZSK CAST",
-      "viewerCount": 270,
+      "viewerCount": 296,
       "language": "cs",
       "startedAt": "2026-08-22T02:01:18Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_c1rceezy-{width}x{height}.jpg"
     },
     {
-      "userLogin": "sysman_",
-      "userName": "sysman_",
-      "title": "Nigma Galaxy - BETBOOM Team | The International 2026: Main Event | !tg | !тг |",
-      "viewerCount": 261,
+      "userLogin": "mantaq",
+      "userName": "MantaQ",
+      "title": "BOOMBOYS x NigmaGalaxy | The International |  !tg !bb",
+      "viewerCount": 287,
       "language": "ru",
-      "startedAt": "2026-08-22T01:27:53Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sysman_-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T02:00:34Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mantaq-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "timsmert",
+      "userName": "timsmert",
+      "title": "Nigma Galaxy [0:1] BoomBoys | The International 2026 | Lower Bracket Quarterfinals | BO3 | /w @gazbro27 @strimanssss !вл !тг",
+      "viewerCount": 284,
+      "language": "ru",
+      "startedAt": "2026-08-22T06:13:43Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_timsmert-{width}x{height}.jpg"
     },
     {
       "userLogin": "cyberclasher",
       "userName": "Cyberclasher",
       "title": "[LIVE] ⚔️TSpirit vs Liquid ⚔️Nigma vs Boomboys 🏆The International 2026 - Main Event - Day 7",
-      "viewerCount": 257,
+      "viewerCount": 264,
       "language": "th",
       "startedAt": "2026-08-22T01:30:27Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cyberclasher-{width}x{height}.jpg"
@@ -377,26 +368,26 @@
     {
       "userLogin": "chubzarik_dota",
       "userName": "chubzarik_dota",
-      "title": "!title Nigma Galaxy vs. Boomboys - The International 2026 lower bracket (0-1) (delay 30 sek)| !ti w/ accept_dota",
-      "viewerCount": 254,
+      "title": "Nigma Galaxy vs. Boomboys - The International 2026 lower bracket (1-1) (delay 30 sek)| !ti w/ accept_dota",
+      "viewerCount": 255,
       "language": "ru",
       "startedAt": "2026-08-22T02:12:48Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chubzarik_dota-{width}x{height}.jpg"
     },
     {
-      "userLogin": "timsmert",
-      "userName": "timsmert",
-      "title": "Nigma Galaxy [0:1] BoomBoys | The International 2026 | Lower Bracket Quarterfinals | BO3 | /w @gazbro27 @strimanssss !вл !тг",
-      "viewerCount": 239,
+      "userLogin": "maxon_live_2614943",
+      "userName": "MAXON_LIVE_2614943",
+      "title": "MAXON! теги для поиска: ЗУБАРЕВ ЛОРД БУСТЕР ЛУДОЖОП ЕГОРКРИД ЕГОРКРИД vitus vitus_tv медисон евелон zubarefff zubarev зубареффф хованский",
+      "viewerCount": 251,
       "language": "ru",
-      "startedAt": "2026-08-22T06:13:43Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_timsmert-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T06:33:26Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maxon_live_2614943-{width}x{height}.jpg"
     },
     {
       "userLogin": "5misha",
       "userName": "5Misha",
-      "title": "BB [1:0] Nigma - The International 2026 -  PLAY OFF - Пасека-Каст",
-      "viewerCount": 213,
+      "title": "BB [1:1] Nigma - The International 2026 -  PLAY OFF - Пасека-Каст w/ @chuvash33",
+      "viewerCount": 212,
       "language": "ru",
       "startedAt": "2026-08-22T01:55:24Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_5misha-{width}x{height}.jpg"
@@ -405,7 +396,7 @@
       "userLogin": "mangekyou_14",
       "userName": "mangekyou_14",
       "title": "BetBoom vs. Nigma Galaxy - The International 2026 - Lower Bracket Quarterfinals",
-      "viewerCount": 198,
+      "viewerCount": 150,
       "language": "ru",
       "startedAt": "2026-08-22T02:30:25Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mangekyou_14-{width}x{height}.jpg"
@@ -414,34 +405,43 @@
       "userLogin": "lightfurylf",
       "userName": "LightFuryLF",
       "title": "🔴[Jaysoo] Team Spirit ⚔️ Team Liquid / Boom boy ⚔️ Nigma (Bo3) 🏆 Ti 2026 : Main event Day3",
-      "viewerCount": 151,
+      "viewerCount": 142,
       "language": "th",
       "startedAt": "2026-08-22T01:27:27Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lightfurylf-{width}x{height}.jpg"
     },
     {
-      "userLogin": "qsnake",
-      "userName": "qSnake",
-      "title": "bb vs nigma",
-      "viewerCount": 145,
-      "language": "ru",
-      "startedAt": "2026-08-22T02:05:10Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_qsnake-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "seventyfly_com",
       "userName": "SEVENTYFLY_com",
-      "title": "Live AI Predictions • +55.33 Flats • 24/7",
-      "viewerCount": 135,
+      "title": "Live AI Predictions • +56.15 Flats • 24/7",
+      "viewerCount": 129,
       "language": "ru",
       "startedAt": "2026-08-21T02:14:40Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_seventyfly_com-{width}x{height}.jpg"
     },
     {
+      "userLogin": "sysman_",
+      "userName": "sysman_",
+      "title": "Nigma Galaxy - BETBOOM Team | The International 2026: Main Event | !tg | !тг |",
+      "viewerCount": 123,
+      "language": "ru",
+      "startedAt": "2026-08-22T01:27:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sysman_-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "vscltv",
+      "userName": "vscltv",
+      "title": "[LIVE] Отборочный #8 | День 1 | Кубок Dota 2 \"Сила Единства\"",
+      "viewerCount": 111,
+      "language": "ru",
+      "startedAt": "2026-08-22T07:15:26Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vscltv-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "rubara",
       "userName": "rubara",
       "title": "TI2026 Playoffs LB - Nigma vs BB",
-      "viewerCount": 129,
+      "viewerCount": 104,
       "language": "bg",
       "startedAt": "2026-08-22T01:46:25Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rubara-{width}x{height}.jpg"
@@ -450,7 +450,7 @@
       "userLogin": "quesher322",
       "userName": "Quesher322",
       "title": "КУХОННАЯ ДОТА В ОТПУСКЕ. 9300 MMR DOTA 2",
-      "viewerCount": 114,
+      "viewerCount": 101,
       "language": "ru",
       "startedAt": "2026-08-22T03:05:29Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_quesher322-{width}x{height}.jpg"
@@ -458,245 +458,272 @@
     {
       "userLogin": "rinat_lin",
       "userName": "rinat_lin",
-      "title": "BB [1:0] Nigma (bo3) / The International 2026: Четверть финал",
-      "viewerCount": 114,
+      "title": "BB [1:1] Nigma (bo3) / The International 2026: Четверть финал",
+      "viewerCount": 101,
       "language": "ru",
       "startedAt": "2026-08-22T02:08:09Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinat_lin-{width}x{height}.jpg"
     },
     {
-      "userLogin": "cocan_dota",
-      "userName": "cocan_dota",
-      "title": "Nigma Galaxy vs BoomBoys,  Bo3, Lower Bracket Round 2,THE INTERNATIONAL 2026",
-      "viewerCount": 90,
-      "language": "other",
-      "startedAt": "2026-08-22T05:17:50Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cocan_dota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "y0lla",
-      "userName": "Y0lla",
-      "title": "Аналитика Инта",
-      "viewerCount": 89,
-      "language": "ru",
-      "startedAt": "2026-08-22T02:10:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_y0lla-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ya_tommy",
-      "userName": "ya_tommy",
-      "title": "NIGMA [0:0] BB | bo3 | The International 2026",
-      "viewerCount": 86,
-      "language": "ru",
-      "startedAt": "2026-08-22T03:02:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ya_tommy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "fishmandota2",
-      "userName": "FishmanDota2",
-      "title": "6000 MID MMR !VPN !TG !BANE",
-      "viewerCount": 85,
-      "language": "ru",
-      "startedAt": "2026-08-22T04:46:40Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fishmandota2-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dkfogas1",
-      "userName": "dkfogas1",
-      "title": "Nigma Galaxy vs. BoomBoys - bo3 | The International 2026 | Playoffs Lower Bracket | w/ @dyrachyo  | !мем (закинуть мемасик) !tg !донат",
-      "viewerCount": 83,
-      "language": "ru",
-      "startedAt": "2026-08-22T03:06:53Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dkfogas1-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "kusaka6e",
-      "userName": "kusaka6e",
-      "title": "Nigma Galaxy [0:1] BoomBoys | The International 2026: Playoffs day 3|  !tg",
-      "viewerCount": 82,
-      "language": "ru",
-      "startedAt": "2026-08-22T03:27:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kusaka6e-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "uniquee",
-      "userName": "Uniquee",
-      "title": "Nigma Galaxy [0:1] BoomBoys  | The International: Upper Bracket Round 1 | BO3 !tg",
-      "viewerCount": 80,
-      "language": "ru",
-      "startedAt": "2026-08-22T03:34:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_uniquee-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "furionbe",
-      "userName": "furionbe",
-      "title": "Nigma Galaxy vs BetBoom | TI 2026 !tg !ставка",
-      "viewerCount": 78,
-      "language": "ru",
-      "startedAt": "2026-08-22T01:45:57Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_furionbe-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "simplymatthias",
-      "userName": "SimplyMatthias",
-      "title": "INVOKER MAIN - SMESH !mouse !creator !madrinas !keyboard !lgg",
-      "viewerCount": 78,
-      "language": "en",
-      "startedAt": "2026-08-22T01:12:19Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_simplymatthias-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "beingesports",
-      "userName": "beingesports",
-      "title": "THE INTERNATIONAL 2026 | Main Stage | Tag 3 | Team Liquid vs. Team Spirit | Offizieller deutscher Broadcast | Dota 2",
-      "viewerCount": 77,
-      "language": "de",
-      "startedAt": "2026-08-22T05:07:49Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_beingesports-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "shisp_dota",
-      "userName": "shisp_dota",
-      "title": "🔥BB 1 vs 0 Nigma TI 2026:  !bb !vpn !tg",
-      "viewerCount": 74,
-      "language": "ru",
-      "startedAt": "2026-08-22T03:20:08Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shisp_dota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "icemo21",
-      "userName": "icemo21",
-      "title": "[RU] Nigma Galaxy vs BoomBoys | The International 2026: Main Event !vapoint !p !tg",
-      "viewerCount": 70,
-      "language": "ru",
-      "startedAt": "2026-08-22T05:08:49Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icemo21-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "snoopyrocket",
-      "userName": "SnoopyRocket",
-      "title": "BB vs Nigma [1:0] BO3 | The International 2026",
-      "viewerCount": 67,
-      "language": "ru",
-      "startedAt": "2026-08-22T01:57:49Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_snoopyrocket-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "vscltv",
-      "userName": "vscltv",
-      "title": "[LIVE] Отборочный #8 | День 1 | Кубок Dota 2 \"Сила Единства\"",
-      "viewerCount": 67,
-      "language": "ru",
-      "startedAt": "2026-08-22T06:05:48Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vscltv-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "17uu",
-      "userName": "17uu",
-      "title": "【The International 2026】敗者側準々決勝 Liquid 対 Spirit【日本語実況LIVE】",
-      "viewerCount": 63,
-      "language": "ja",
-      "startedAt": "2026-08-22T02:20:29Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_17uu-{width}x{height}.jpg"
-    },
-    {
       "userLogin": "vudumommy",
       "userName": "vudumommy",
       "title": "ищу мальчика  титана/ девочка",
-      "viewerCount": 62,
+      "viewerCount": 100,
       "language": "ru",
       "startedAt": "2026-08-22T01:31:59Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vudumommy-{width}x{height}.jpg"
     },
     {
-      "userLogin": "akon_tv",
-      "userName": "Akon_tv",
-      "title": "TI2026 | Nigma Galaxy vs BetBoom Team [BO3] DOTA 2 The International 2026",
-      "viewerCount": 57,
+      "userLogin": "shisp_dota",
+      "userName": "shisp_dota",
+      "title": "🔥BB 1 vs 1 Nigma TI 2026:  !bb !vpn !tg",
+      "viewerCount": 92,
       "language": "ru",
-      "startedAt": "2026-08-22T02:00:38Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_akon_tv-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T03:20:08Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shisp_dota-{width}x{height}.jpg"
     },
     {
-      "userLogin": "23dotatv",
-      "userName": "23DOTATV",
-      "title": "THE INTERNATIONAL 2026 | MAINSTAGE | DAY 3 | 23 DOTA TV",
-      "viewerCount": 56,
-      "language": "vi",
-      "startedAt": "2026-08-22T05:23:06Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_23dotatv-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "maddogsleague",
-      "userName": "maddogsleague",
-      "title": "🔴 Dota2: Mad Dogs League | Immortal Squad vs Dark Tamplars (0:0)",
-      "viewerCount": 55,
-      "language": "en",
-      "startedAt": "2026-08-22T05:18:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maddogsleague-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "magerdev1",
-      "userName": "magerdev1",
-      "title": "Комментим инт (Асмр мукбанг дота интернешенал)",
-      "viewerCount": 46,
+      "userLogin": "fishmandota2",
+      "userName": "FishmanDota2",
+      "title": "6000 MID MMR !VPN !TG !BANE",
+      "viewerCount": 90,
       "language": "ru",
-      "startedAt": "2026-08-22T02:10:11Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magerdev1-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T04:46:40Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fishmandota2-{width}x{height}.jpg"
     },
     {
-      "userLogin": "kita_nanachi",
-      "userName": "Kita_Nanachi",
-      "title": "【EN/JP】August 22 / Watching TI 2026 | @kita_nanachi !discord !links",
-      "viewerCount": 45,
-      "language": "en",
-      "startedAt": "2026-08-22T06:13:28Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kita_nanachi-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "roccomy",
-      "userName": "Roccomy",
-      "title": "Nigma Galaxy vs. BoomBoys -  TI 2026 Playoffs",
-      "viewerCount": 43,
-      "language": "tr",
-      "startedAt": "2026-08-22T02:28:40Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_roccomy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "lizzarddota2",
-      "userName": "lizZardDota2",
-      "title": "ZHABA OP",
-      "viewerCount": 40,
-      "language": "en",
-      "startedAt": "2026-08-22T04:03:28Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lizzarddota2-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "onkyes",
-      "userName": "Onkyes",
-      "title": "привет",
-      "viewerCount": 40,
+      "userLogin": "y0lla",
+      "userName": "Y0lla",
+      "title": "Аналитика Инта",
+      "viewerCount": 88,
       "language": "ru",
-      "startedAt": "2026-08-22T03:14:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_onkyes-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T02:10:30Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_y0lla-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "uniquee",
+      "userName": "Uniquee",
+      "title": "Nigma Galaxy [1:1] BoomBoys  | The International: Upper Bracket Round 1 | BO3 !tg",
+      "viewerCount": 77,
+      "language": "ru",
+      "startedAt": "2026-08-22T03:34:01Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_uniquee-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "beingesports",
+      "userName": "beingesports",
+      "title": "THE INTERNATIONAL 2026 | Main Stage | Tag 3 | Team Liquid vs. Team Spirit | Offizieller deutscher Broadcast | Dota 2",
+      "viewerCount": 76,
+      "language": "de",
+      "startedAt": "2026-08-22T05:07:49Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_beingesports-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "furionbe",
+      "userName": "furionbe",
+      "title": "Nigma Galaxy vs BetBoom | TI 2026 !tg !ставка",
+      "viewerCount": 75,
+      "language": "ru",
+      "startedAt": "2026-08-22T01:45:57Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_furionbe-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dkfogas1",
+      "userName": "dkfogas1",
+      "title": "Nigma Galaxy vs. BoomBoys - bo3 | The International 2026 | Playoffs Lower Bracket | w/ @dyrachyo  | !мем (закинуть мемасик) !tg !донат",
+      "viewerCount": 72,
+      "language": "ru",
+      "startedAt": "2026-08-22T03:06:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dkfogas1-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "ya_tommy",
+      "userName": "ya_tommy",
+      "title": "NIGMA [0:0] BB | bo3 | The International 2026",
+      "viewerCount": 71,
+      "language": "ru",
+      "startedAt": "2026-08-22T03:02:37Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ya_tommy-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "kusaka6e",
+      "userName": "kusaka6e",
+      "title": "Nigma Galaxy [1:1] BoomBoys | The International 2026: Playoffs day 3|  !tg",
+      "viewerCount": 68,
+      "language": "ru",
+      "startedAt": "2026-08-22T03:27:37Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kusaka6e-{width}x{height}.jpg"
     },
     {
       "userLogin": "destinyleague_d2_ru1",
       "userName": "destinyleague_d2_ru1",
       "title": "[RU] Destiny Dota 2 League | BO3 | (2 min delay)",
-      "viewerCount": 38,
+      "viewerCount": 67,
       "language": "ru",
       "startedAt": "2026-08-22T04:34:08Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_destinyleague_d2_ru1-{width}x{height}.jpg"
     },
     {
+      "userLogin": "17uu",
+      "userName": "17uu",
+      "title": "【The International 2026】敗者側準々決勝 Liquid 対 Spirit【日本語実況LIVE】",
+      "viewerCount": 64,
+      "language": "ja",
+      "startedAt": "2026-08-22T02:20:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_17uu-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "simplymatthias",
+      "userName": "SimplyMatthias",
+      "title": "INVOKER MAIN - SMESH !mouse !creator !madrinas !keyboard !lgg",
+      "viewerCount": 64,
+      "language": "en",
+      "startedAt": "2026-08-22T01:12:19Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_simplymatthias-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "younextxx",
+      "userName": "younextxx",
+      "title": "dota 2 мастер по лузам",
+      "viewerCount": 64,
+      "language": "uk",
+      "startedAt": "2026-08-22T04:45:19Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_younextxx-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "icemo21",
+      "userName": "icemo21",
+      "title": "[RU] Nigma Galaxy vs BoomBoys | The International 2026: Main Event !vapoint !p !tg",
+      "viewerCount": 59,
+      "language": "ru",
+      "startedAt": "2026-08-22T05:08:49Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icemo21-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "rabbittinker",
+      "userName": "rabbittinker",
+      "title": "14000 MMR (Основа)  Arc warden/Tinker 7000  Huskar 4000 games",
+      "viewerCount": 59,
+      "language": "ru",
+      "startedAt": "2026-08-22T06:25:57Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rabbittinker-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "rinlar",
+      "userName": "Rinlar",
+      "title": "7500 пати @johnnupro",
+      "viewerCount": 57,
+      "language": "ru",
+      "startedAt": "2026-08-22T06:05:58Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinlar-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "apoptosis808",
+      "userName": "Apoptosis808",
+      "title": "[ENG] OFFLANE TO IMMORTAL - WHAT IS THE HARDEST LANE TO YOU? | !discord !<heroname>",
+      "viewerCount": 54,
+      "language": "en",
+      "startedAt": "2026-08-22T03:16:05Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_apoptosis808-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "kita_nanachi",
+      "userName": "Kita_Nanachi",
+      "title": "【EN/JP】August 22 / Watching TI 2026 | @kita_nanachi !discord !links",
+      "viewerCount": 53,
+      "language": "en",
+      "startedAt": "2026-08-22T06:13:28Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kita_nanachi-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "snoopyrocket",
+      "userName": "SnoopyRocket",
+      "title": "BB vs Nigma [1:1] BO3 | The International 2026",
+      "viewerCount": 53,
+      "language": "ru",
+      "startedAt": "2026-08-22T01:57:49Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_snoopyrocket-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "23dotatv",
+      "userName": "23DOTATV",
+      "title": "THE INTERNATIONAL 2026 | MAINSTAGE | DAY 3 | 23 DOTA TV",
+      "viewerCount": 52,
+      "language": "vi",
+      "startedAt": "2026-08-22T05:23:06Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_23dotatv-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lizzarddota2",
+      "userName": "lizZardDota2",
+      "title": "ZHABA OP",
+      "viewerCount": 50,
+      "language": "en",
+      "startedAt": "2026-08-22T04:03:28Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lizzarddota2-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lakelzth",
+      "userName": "lakelzth",
+      "title": "🔴LIVE 🏹 ดูแข่งบ้านเขียว The International 2026: Main Event Day3 : Donate ขึ้นจอได้ที่ !easy !kick",
+      "viewerCount": 49,
+      "language": "th",
+      "startedAt": "2026-08-22T01:28:08Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lakelzth-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "magerdev1",
+      "userName": "magerdev1",
+      "title": "Комментим инт (Асмр мукбанг дота интернешенал)",
+      "viewerCount": 49,
+      "language": "ru",
+      "startedAt": "2026-08-22T02:10:11Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magerdev1-{width}x{height}.jpg"
+    },
+    {
       "userLogin": "tyokado",
       "userName": "tyokado",
-      "title": "🔥Nigma Galaxy vs Boom Boys [0:1]  The International 2026 Dota 2🔥",
-      "viewerCount": 37,
+      "title": "🔥Nigma Galaxy vs Boom Boys [1:1]  The International 2026 Dota 2🔥",
+      "viewerCount": 47,
       "language": "ru",
       "startedAt": "2026-08-22T01:55:39Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tyokado-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "satokenzo",
+      "userName": "satokenzo",
+      "title": "!lootbar ПРАЗДНИК ДОТЫ",
+      "viewerCount": 44,
+      "language": "ru",
+      "startedAt": "2026-08-22T05:58:05Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_satokenzo-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "yablo_chkoo",
+      "userName": "yablo_chkoo",
+      "title": "6500 смотрим интик❤️",
+      "viewerCount": 42,
+      "language": "ru",
+      "startedAt": "2026-08-22T00:49:27Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yablo_chkoo-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "onkyes",
+      "userName": "Onkyes",
+      "title": "привет",
+      "viewerCount": 39,
+      "language": "ru",
+      "startedAt": "2026-08-22T03:14:07Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_onkyes-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "cocan_dota",
+      "userName": "cocan_dota",
+      "title": "Nigma Galaxy vs BoomBoys,  Bo3, Lower Bracket Round 2,THE INTERNATIONAL 2026",
+      "viewerCount": 38,
+      "language": "other",
+      "startedAt": "2026-08-22T05:17:50Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cocan_dota-{width}x{height}.jpg"
     },
     {
       "userLogin": "erinerurie",
@@ -708,85 +735,94 @@
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_erinerurie-{width}x{height}.jpg"
     },
     {
-      "userLogin": "xfr1ll",
-      "userName": "xfr1ll",
-      "title": "ЛУДО-ДУРКА (NIGMA vs BoomBoys)",
+      "userLogin": "goremateri",
+      "userName": "goremateri",
+      "title": "🟢 САМЫЙ СПОКОЙНЫЙ ДОТЕР 🟢 БЕЗ МАТА, НЕНАВИСТИ И ТИЛЬТА АПАЕМ 6К ПТС",
       "viewerCount": 36,
       "language": "ru",
-      "startedAt": "2026-08-22T02:20:33Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xfr1ll-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T03:27:33Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_goremateri-{width}x{height}.jpg"
     },
     {
-      "userLogin": "dogziindota",
-      "userName": "dogziindota",
-      "title": "ANIVERSÁRIO E PLAYOFFS DE DOTINHA TUDO DE BAO 32 aninhos!",
+      "userLogin": "straikoid",
+      "userName": "StraikoiD",
+      "title": "Дед танкист в доте 2",
       "viewerCount": 36,
-      "language": "pt",
-      "startedAt": "2026-08-22T02:01:32Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dogziindota-{width}x{height}.jpg"
+      "language": "ru",
+      "startedAt": "2026-08-22T05:10:32Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_straikoid-{width}x{height}.jpg"
     },
     {
-      "userLogin": "yablo_chkoo",
-      "userName": "yablo_chkoo",
-      "title": "6500 смотрим интик❤️",
+      "userLogin": "roccomy",
+      "userName": "Roccomy",
+      "title": "Nigma Galaxy vs. BoomBoys -  TI 2026 Playoffs",
       "viewerCount": 35,
-      "language": "ru",
-      "startedAt": "2026-08-22T00:49:27Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yablo_chkoo-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "satokenzo",
-      "userName": "satokenzo",
-      "title": "!lootbar ПРАЗДНИК ДОТЫ",
-      "viewerCount": 35,
-      "language": "ru",
-      "startedAt": "2026-08-22T05:58:05Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_satokenzo-{width}x{height}.jpg"
+      "language": "tr",
+      "startedAt": "2026-08-22T02:28:40Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_roccomy-{width}x{height}.jpg"
     },
     {
       "userLogin": "noizen",
       "userName": "Noizen",
       "title": "Nigma Galaxy vs. BoomBoys 🏆 Доброе утро с Дотой ✅ Уютный просмотр ИНТа ❤️ ✔️ !WoW // t.me/Noizen",
-      "viewerCount": 32,
+      "viewerCount": 35,
       "language": "ru",
       "startedAt": "2026-08-22T02:19:43Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_noizen-{width}x{height}.jpg"
     },
     {
-      "userLogin": "iamcatbert",
-      "userName": "iamcatbert",
-      "title": "Ищу друзей",
-      "viewerCount": 32,
+      "userLogin": "happy55y",
+      "userName": "happy55y",
+      "title": "custom hero chaos. !tg",
+      "viewerCount": 34,
       "language": "ru",
-      "startedAt": "2026-08-22T00:28:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_iamcatbert-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T06:24:56Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_happy55y-{width}x{height}.jpg"
     },
     {
-      "userLogin": "rinlar",
-      "userName": "Rinlar",
-      "title": "7500 пати @johnnupro",
+      "userLogin": "rohigokk",
+      "userName": "rohigokk",
+      "title": "30 побед 1 луз заказать героя 1200 руб  | Top 1 Kunkka & Necr | Коуч: 1500₽/час",
       "viewerCount": 32,
       "language": "ru",
-      "startedAt": "2026-08-22T06:05:58Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinlar-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T06:30:13Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rohigokk-{width}x{height}.jpg"
     },
     {
-      "userLogin": "maklaud100",
-      "userName": "Maklaud100",
-      "title": "Папка пришёл с работы-Папка врубает Доту 2",
+      "userLogin": "ehot1k",
+      "userName": "EHOT1K",
+      "title": "NIGMA [1:1] BOOMBOYS | The International 2026: Playoff | !win !tg",
+      "viewerCount": 32,
+      "language": "ru",
+      "startedAt": "2026-08-22T05:06:13Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ehot1k-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "sator_nerrok",
+      "userName": "sator_nerrok",
+      "title": "ИНТ | ЛИКВИДЪ | Магнус Предавал | В Ожидании Второго Аспекта шторма",
       "viewerCount": 31,
       "language": "ru",
-      "startedAt": "2026-08-21T18:57:28Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maklaud100-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T05:09:07Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sator_nerrok-{width}x{height}.jpg"
     },
     {
-      "userLogin": "berserk_dota2_league",
-      "userName": "Berserk_Dota2_League",
-      "title": "Berserk League 22/08/2026 - Morning Session",
-      "viewerCount": 26,
-      "language": "en",
-      "startedAt": "2026-08-22T05:55:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_berserk_dota2_league-{width}x{height}.jpg"
+      "userLogin": "holly_brother",
+      "userName": "holly_brother",
+      "title": "Турниры RIFTBORN(задержка 7 мин)",
+      "viewerCount": 30,
+      "language": "ru",
+      "startedAt": "2026-08-22T07:06:27Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_holly_brother-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "araaaaaaaaab",
+      "userName": "araaaaaaaaab",
+      "title": "居酒屋じ・いんたーなしょなる",
+      "viewerCount": 29,
+      "language": "ja",
+      "startedAt": "2026-08-22T04:44:54Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_araaaaaaaaab-{width}x{height}.jpg"
     },
     {
       "userLogin": "nukesyz",
@@ -798,67 +834,49 @@
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nukesyz-{width}x{height}.jpg"
     },
     {
-      "userLogin": "araaaaaaaaab",
-      "userName": "araaaaaaaaab",
-      "title": "居酒屋じ・いんたーなしょなる",
+      "userLogin": "akon_tv",
+      "userName": "Akon_tv",
+      "title": "TI2026 | Nigma Galaxy vs BetBoom Team [BO3] DOTA 2 The International 2026",
       "viewerCount": 26,
-      "language": "ja",
-      "startedAt": "2026-08-22T04:44:54Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_araaaaaaaaab-{width}x{height}.jpg"
+      "language": "ru",
+      "startedAt": "2026-08-22T02:00:38Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_akon_tv-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "maddogsleague",
+      "userName": "maddogsleague",
+      "title": "🔴 Dota2: Mad Dogs League | Stormriders vs Azure Dragons (0:0)",
+      "viewerCount": 23,
+      "language": "en",
+      "startedAt": "2026-08-22T05:18:54Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maddogsleague-{width}x{height}.jpg"
     },
     {
       "userLogin": "hvnnn_tv",
       "userName": "HvNNN_tv",
       "title": "[RU] The International 2026 | Team BoomBoys vs Nigma Galaxy | !donate !fonbet !розыгрыш",
-      "viewerCount": 26,
+      "viewerCount": 23,
       "language": "ru",
       "startedAt": "2026-08-22T06:05:58Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hvnnn_tv-{width}x{height}.jpg"
     },
     {
-      "userLogin": "rabbittinker",
-      "userName": "rabbittinker",
-      "title": "14000 MMR (Основа)  Arc warden/Tinker 7000  Huskar 4000 games",
-      "viewerCount": 25,
-      "language": "ru",
-      "startedAt": "2026-08-22T06:25:57Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rabbittinker-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "lakelzth",
-      "userName": "lakelzth",
-      "title": "🔴LIVE 🏹 ดูแข่งบ้านเขียว The International 2026: Main Event Day3 : Donate ขึ้นจอได้ที่ !easy !kick",
-      "viewerCount": 24,
-      "language": "th",
-      "startedAt": "2026-08-22T01:28:08Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lakelzth-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "sator_nerrok",
-      "userName": "sator_nerrok",
-      "title": "ИНТ | ЛИКВИДЪ | Магнус Предавал | В Ожидании Второго Аспекта шторма",
+      "userLogin": "marekdesigner",
+      "userName": "MarekDesigner",
+      "title": "☀️ TI 2026 Dzień 3 🌸 Cuda wszędzie i wtem Gaben rzekł \"niech rośnie MMR\" 🍀",
       "viewerCount": 23,
-      "language": "ru",
-      "startedAt": "2026-08-22T05:09:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sator_nerrok-{width}x{height}.jpg"
+      "language": "pl",
+      "startedAt": "2026-08-22T05:22:06Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_marekdesigner-{width}x{height}.jpg"
     },
     {
-      "userLogin": "goremateri",
-      "userName": "goremateri",
-      "title": "🟢 САМЫЙ СПОКОЙНЫЙ ДОТЕР 🟢 БЕЗ МАТА, НЕНАВИСТИ И ТИЛЬТА АПАЕМ 6К ПТС",
-      "viewerCount": 23,
-      "language": "ru",
-      "startedAt": "2026-08-22T03:27:33Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_goremateri-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ehot1k",
-      "userName": "EHOT1K",
-      "title": "NIGMA [0:0] BOOMBOYS  | The International 2026: Playoff | !win !tg",
+      "userLogin": "johnnupro",
+      "userName": "Johnnupro",
+      "title": "7500 party @Rinlar  !tg",
       "viewerCount": 22,
       "language": "ru",
-      "startedAt": "2026-08-22T05:06:13Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ehot1k-{width}x{height}.jpg"
+      "startedAt": "2026-08-22T02:46:02Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_johnnupro-{width}x{height}.jpg"
     },
     {
       "userLogin": "otakerdota",
@@ -870,31 +888,22 @@
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_otakerdota-{width}x{height}.jpg"
     },
     {
-      "userLogin": "straikoid",
-      "userName": "StraikoiD",
-      "title": "Дед танкист в доте 2",
-      "viewerCount": 22,
-      "language": "ru",
-      "startedAt": "2026-08-22T05:10:32Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_straikoid-{width}x{height}.jpg"
+      "userLogin": "arabicdota",
+      "userName": "arabicdota",
+      "title": "[AR] Nigma Galaxy ضد Boom Boys المبارة 2 | The International 2026 - الادوار الاقصائية",
+      "viewerCount": 21,
+      "language": "ar",
+      "startedAt": "2026-08-22T01:30:23Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_arabicdota-{width}x{height}.jpg"
     },
     {
-      "userLogin": "marekdesigner",
-      "userName": "MarekDesigner",
-      "title": "☀️ TI 2026 Dzień 3 🌸 Cuda wszędzie i wtem Gaben rzekł \"niech rośnie MMR\" 🍀",
-      "viewerCount": 19,
-      "language": "pl",
-      "startedAt": "2026-08-22T05:22:06Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_marekdesigner-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "sportikd",
-      "userName": "sportikD",
-      "title": "rank50 немного смурф, потом на мейн!tg",
-      "viewerCount": 17,
+      "userLogin": "hominata",
+      "userName": "hominata",
+      "title": "Титанша бустит слабых",
+      "viewerCount": 20,
       "language": "ru",
-      "startedAt": "2026-08-22T03:20:28Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sportikd-{width}x{height}.jpg"
+      "startedAt": "2026-08-21T23:37:27Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hominata-{width}x{height}.jpg"
     }
   ]
 }
