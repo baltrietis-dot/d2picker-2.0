@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Share2, Copy, Check, Twitter } from 'lucide-react';
 import { useLanguage } from '../context/useLanguage';
+import { trackEvent } from '../lib/analytics';
 
 interface Hero {
     id: number;
@@ -48,9 +49,18 @@ export function ShareButton({ selectedEnemies, myTeam, topCounters }: ShareButto
         return text;
     };
 
+    const shareEventParams = (shareMethod: string) => ({
+        share_method: shareMethod,
+        enemy_count: selectedEnemies.length,
+        ally_count: myTeam.length,
+        recommendation_count: topCounters.length,
+        has_recommendations: topCounters.length > 0,
+    });
+
     const handleCopy = async () => {
         const url = generateShareUrl();
         await navigator.clipboard.writeText(url);
+        trackEvent('share_draft', shareEventParams('copy_link'));
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
@@ -59,6 +69,7 @@ export function ShareButton({ selectedEnemies, myTeam, topCounters }: ShareButto
         const url = generateShareUrl();
         const text = generateTweetText();
         const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+        trackEvent('share_draft', shareEventParams('x'));
         window.open(twitterUrl, '_blank', 'width=550,height=420');
     };
 
@@ -66,6 +77,7 @@ export function ShareButton({ selectedEnemies, myTeam, topCounters }: ShareButto
         const url = generateShareUrl();
         const text = `**Dota 2 Counter Picks**\n${selectedEnemies.length > 0 ? `Enemy: ${selectedEnemies.map(h => h.localized_name).join(', ')}\n` : ''}${topCounters.length > 0 ? `Best Counters: ${topCounters.slice(0, 3).map(c => c.hero.localized_name).join(', ')}\n` : ''}\n${url}`;
         await navigator.clipboard.writeText(text);
+        trackEvent('share_draft', shareEventParams('discord_copy'));
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
@@ -73,7 +85,13 @@ export function ShareButton({ selectedEnemies, myTeam, topCounters }: ShareButto
     return (
         <div className="relative">
             <button
-                onClick={() => setShowMenu(!showMenu)}
+                onClick={() => {
+                    const nextShowMenu = !showMenu;
+                    setShowMenu(nextShowMenu);
+                    if (nextShowMenu) {
+                        trackEvent('share_menu_opened', shareEventParams('menu'));
+                    }
+                }}
                 className="toolbar-button"
             >
                 <Share2 className="h-3 w-3" />

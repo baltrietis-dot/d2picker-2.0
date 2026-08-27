@@ -18,6 +18,7 @@ import {
   type AppRouteId,
 } from './routes';
 import './EsportsHub.css';
+import { trackEvent, trackPageView } from '../lib/analytics';
 
 const matchStatusLabels: Record<MatchStatus, string> = {
   live: 'Live',
@@ -138,8 +139,9 @@ export function EsportsHub() {
 
   useEffect(() => {
     const canonical = canonicalUrl(activeRoute);
+    const pageTitle = `${activeRoute.title} | Dota2Picker Esports Hub`;
 
-    document.title = `${activeRoute.title} | Dota2Picker Esports Hub`;
+    document.title = pageTitle;
     document
       .querySelector('meta[name="description"]')
       ?.setAttribute('content', activeRoute.description);
@@ -164,10 +166,27 @@ export function EsportsHub() {
     document
       .querySelector('meta[name="twitter:description"]')
       ?.setAttribute('content', activeRoute.description);
+
+    trackPageView({
+      pagePath: `${activeRoute.path}/`,
+      pageTitle,
+      contentGroup: 'esports',
+      params: {
+        app_section: 'esports_hub',
+        esports_route: activeRoute.id,
+      },
+    });
+    trackEvent('esports_opened', {
+      esports_route: activeRoute.id,
+    });
   }, [activeRoute]);
 
   const handleNavigate = (route: AppRoute, event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
+    trackEvent('esports_route_clicked', {
+      from_route: activeRoute.id,
+      to_route: route.id,
+    });
     if (window.location.pathname !== route.path) {
       window.history.pushState(null, '', route.path);
     }

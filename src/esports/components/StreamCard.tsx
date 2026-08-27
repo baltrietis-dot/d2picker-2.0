@@ -2,6 +2,7 @@ import { Play, X } from 'lucide-react';
 import type { Stream } from '../types';
 import { channelUrl, embedUrl, thumbnail } from '../lib/twitch';
 import { formatViewers, streamDuration } from '../lib/format';
+import { trackEvent } from '../../lib/analytics';
 
 interface Props {
   stream: Stream;
@@ -20,6 +21,23 @@ export function StreamCard({
   onThumbnailUnavailable,
   isStale,
 }: Props) {
+  const streamEventParams = {
+    stream_channel: stream.userLogin,
+    stream_language: stream.language,
+    viewer_count: stream.viewerCount,
+    is_stale: isStale,
+  };
+
+  const handlePlay = () => {
+    trackEvent('stream_watch_clicked', streamEventParams);
+    onPlay();
+  };
+
+  const handleStop = () => {
+    trackEvent('stream_watch_closed', streamEventParams);
+    onStop();
+  };
+
   return (
     <article className="stream-card">
       <div className="stream-card__media">
@@ -35,7 +53,7 @@ export function StreamCard({
             <button
               type="button"
               className="stream-card__close"
-              onClick={onStop}
+              onClick={handleStop}
               aria-label="Stop watching"
             >
               <X aria-hidden="true" size={16} strokeWidth={2.5} />
@@ -45,7 +63,7 @@ export function StreamCard({
           <button
             type="button"
             className="stream-card__play"
-            onClick={onPlay}
+            onClick={handlePlay}
             aria-label={`Watch ${stream.userName}`}
           >
             <img
@@ -79,6 +97,7 @@ export function StreamCard({
             target="_blank"
             rel="noopener noreferrer"
             className="stream-card__channel"
+            onClick={() => trackEvent('stream_channel_clicked', streamEventParams)}
           >
             {stream.userName}
           </a>

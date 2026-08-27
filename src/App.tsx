@@ -17,8 +17,10 @@ import { Swords, RotateCcw, Shield, Users, Zap, TrendingUp, Target, BookOpen, Me
 import { type Position, type PositionNumber, NUMBER_TO_POSITION, POSITION_TO_NUMBER, getHeroRoles } from './data/heroPositions';
 import { getSlugFromPath, heroFromSlug } from './utils/heroSlug';
 import { useLanguage } from './context/useLanguage';
-import type { TranslationKey } from './i18n/translations';
+import type { Language, TranslationKey } from './i18n/translations';
 import { EsportsHub } from './esports/EsportsHub';
+import type { Hero } from './services/api';
+import { hasDraftShareParams, trackEvent, trackPageView } from './lib/analytics';
 
 const POSITION_FULL_KEYS = {
   Carry: 'posFullCarry',
@@ -58,6 +60,14 @@ const isEsportsPath = (pathname: string) => {
   const normalized = pathname.replace(/\/+$/, '').toLowerCase() || '/';
   return normalized === '/esports' || normalized.startsWith('/esports/');
 };
+
+function getInitialDraftCounts(search: string) {
+  const params = new URLSearchParams(search);
+  const enemyCount = params.get('e')?.split(',').filter(Boolean).length ?? 0;
+  const allyCount = params.get('t')?.split(',').filter(Boolean).length ?? 0;
+
+  return { enemyCount, allyCount };
+}
 
 function App() {
   return isEsportsPath(window.location.pathname) ? <EsportsHub /> : <DotaPickerApp />;
@@ -102,6 +112,46 @@ function DotaPickerApp() {
 
   const isUrlLoadedRef = useRef(false);
   const autoRevealPendingRef = useRef(false);
+  const initialLanguageRef = useRef(language);
+
+  useEffect(() => {
+    const pathInfo = getSlugFromPath();
+    const hasSharedDraftParams = hasDraftShareParams(window.location.search);
+    const { enemyCount, allyCount } = getInitialDraftCounts(window.location.search);
+    const landingType = pathInfo
+      ? 'hero_counter'
+      : hasSharedDraftParams
+        ? 'shared_draft'
+        : 'picker_home';
+    const landingLanguage = pathInfo?.lang
+      ?? (window.location.pathname.startsWith('/ru') ? 'ru' : initialLanguageRef.current);
+
+    trackPageView({
+      contentGroup: pathInfo ? 'hero_counter' : hasSharedDraftParams ? 'shared_draft' : 'picker',
+      pageTitle: hasSharedDraftParams ? 'Shared Dota 2 draft | Dota2Picker' : undefined,
+      params: {
+        app_section: 'counter_picker',
+        landing_type: landingType,
+        hero_slug: pathInfo?.slug,
+        language: landingLanguage,
+        enemy_count: enemyCount,
+        ally_count: allyCount,
+        guide_anchor: window.location.hash === '#guide',
+      },
+    });
+
+    if (hasSharedDraftParams) {
+      trackEvent('shared_draft_opened', {
+        enemy_count: enemyCount,
+        ally_count: allyCount,
+        language: landingLanguage,
+      });
+    }
+
+    if (window.location.hash === '#guide') {
+      trackEvent('guide_anchor_opened', { language: landingLanguage });
+    }
+  }, []);
 
   // Load hero from /counter/:slug path OR shared draft from URL parameters
   useEffect(() => {
@@ -114,6 +164,13 @@ function DotaPickerApp() {
       const hero = heroFromSlug(pathInfo.slug, heroes);
       if (hero) addEnemy(hero);
       if (pathInfo.lang === 'ru') setLanguage('ru');
+      if (hero) {
+        trackEvent('counter_page_opened', {
+          hero_id: hero.id,
+          hero_name: hero.localized_name,
+          language: pathInfo.lang,
+        });
+      }
       isUrlLoadedRef.current = true;
       return;
     }
@@ -167,8 +224,14 @@ function DotaPickerApp() {
     if (selectedEnemies.length === 0 && myTeam.length === 0) return;
 
     autoRevealPendingRef.current = false;
+    trackEvent('reveal_draft', {
+      trigger: 'shared_draft_auto',
+      enemy_count: selectedEnemies.length,
+      ally_count: myTeam.length,
+      target_role: targetRole,
+    });
     void revealDraft();
-  }, [selectedEnemies.length, myTeam.length, revealDraft]);
+  }, [selectedEnemies.length, myTeam.length, revealDraft, targetRole]);
 
   // Update document title dynamically
   useEffect(() => {
@@ -228,22 +291,102 @@ function DotaPickerApp() {
     : t(POSITION_FULL_KEYS[NUMBER_TO_POSITION[selectionMode.pos]]);
 
   const selectEnemyMode = () => {
+    trackEvent('draft_mode_selected', {
+      selection_mode: 'enemy',
+      enemy_count: selectedEnemies.length,
+      ally_count: myTeam.length,
+      language,
+    });
     setSelectionMode('enemy');
     setTargetRole('Any');
   };
 
   const selectPickSlot = (pos: PositionNumber) => {
+    trackEvent('draft_mode_selected', {
+      selection_mode: 'ally',
+      position_number: pos,
+      position: NUMBER_TO_POSITION[pos],
+      enemy_count: selectedEnemies.length,
+      ally_count: myTeam.length,
+      language,
+    });
     setSelectionMode({ pos });
     setTargetRole(NUMBER_TO_POSITION[pos]);
   };
 
   const selectRecommendationRole = (role: Position | 'Any') => {
+    trackEvent('role_selected', {
+      target_role: role,
+      enemy_count: selectedEnemies.length,
+      ally_count: myTeam.length,
+      language,
+    });
     setTargetRole(role);
     if (role === 'Any') {
       setSelectionMode('enemy');
       return;
     }
     setSelectionMode({ pos: POSITION_TO_NUMBER[role] });
+  };
+
+  const handleLanguageSelect = (nextLanguage: Language) => {
+    if (nextLanguage !== language) {
+      trackEvent('language_selected', {
+        previous_language: language,
+        language: nextLanguage,
+      });
+    }
+    setLanguage(nextLanguage);
+  };
+
+  const handleRevealDraft = () => {
+    trackEvent('reveal_draft', {
+      trigger: 'manual',
+      enemy_count: selectedEnemies.length,
+      ally_count: myTeam.length,
+      target_role: targetRole,
+      has_analysis: hasAnalysis,
+      analysis_current: isAnalysisCurrent,
+      language,
+    });
+    void revealDraft();
+  };
+
+  const handleHeroSelect = (hero: Hero) => {
+    if (selectionMode === 'enemy') {
+      trackEvent('hero_selected', {
+        selection_mode: 'enemy',
+        hero_id: hero.id,
+        hero_name: hero.localized_name,
+        enemy_count_after: selectedEnemies.length + 1,
+        ally_count: myTeam.length,
+        language,
+      });
+      addEnemy(hero);
+      return;
+    }
+
+    trackEvent('hero_selected', {
+      selection_mode: 'ally',
+      hero_id: hero.id,
+      hero_name: hero.localized_name,
+      position_number: selectionMode.pos,
+      position: NUMBER_TO_POSITION[selectionMode.pos],
+      enemy_count: selectedEnemies.length,
+      ally_count_after: myTeam.length + (myTeamSlots[selectionMode.pos - 1] ? 0 : 1),
+      language,
+    });
+    setMyTeamAt(selectionMode.pos, hero);
+  };
+
+  const handleClearAll = () => {
+    trackEvent('draft_reset', {
+      enemy_count: selectedEnemies.length,
+      ally_count: myTeam.length,
+      has_analysis: hasAnalysis,
+      language,
+    });
+    clearAll();
   };
 
   const copyDraftSummary = async () => {
@@ -275,6 +418,12 @@ function DotaPickerApp() {
 
     try {
       await navigator.clipboard.writeText(summary);
+      trackEvent('draft_summary_copied', {
+        enemy_count: selectedEnemies.length,
+        ally_count: myTeam.length,
+        recommendation_count: currentCounters.length,
+        language,
+      });
       setSummaryCopied(true);
       window.setTimeout(() => setSummaryCopied(false), 1800);
     } catch {
@@ -308,7 +457,7 @@ function DotaPickerApp() {
         {!isAnalysisCurrent && (
           <button
             type="button"
-            onClick={revealDraft}
+            onClick={handleRevealDraft}
             disabled={!canRevealDraft || loading}
             className={`flex min-h-[38px] w-full items-center justify-center gap-2 rounded-md px-3 text-[11px] font-black uppercase tracking-[0.14em] transition-all ${
               !canRevealDraft || loading
@@ -448,6 +597,7 @@ function DotaPickerApp() {
             {/* Esports Hub */}
             <a
               href="/esports"
+              onClick={() => trackEvent('esports_link_clicked', { source: 'picker_header', language })}
               className="toolbar-button-feature"
             >
               <Trophy className="h-3.5 w-3.5" />
@@ -456,8 +606,8 @@ function DotaPickerApp() {
             </a>
             {/* Language Toggle */}
             <div className="flex items-center gap-0.5 rounded-md border border-white/10 bg-obsidian-800/80 p-1">
-              <button onClick={() => setLanguage('en')} className={`rounded px-2.5 py-1.5 text-[11px] font-black transition-all duration-200 ease-expo-out ${language === 'en' ? 'bg-gold-400 text-obsidian-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]' : 'text-white/50 hover:text-white'}`}>EN</button>
-              <button onClick={() => setLanguage('ru')} className={`rounded px-2.5 py-1.5 text-[11px] font-black transition-all duration-200 ease-expo-out ${language === 'ru' ? 'bg-gold-400 text-obsidian-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]' : 'text-white/50 hover:text-white'}`}>RU</button>
+              <button onClick={() => handleLanguageSelect('en')} className={`rounded px-2.5 py-1.5 text-[11px] font-black transition-all duration-200 ease-expo-out ${language === 'en' ? 'bg-gold-400 text-obsidian-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]' : 'text-white/50 hover:text-white'}`}>EN</button>
+              <button onClick={() => handleLanguageSelect('ru')} className={`rounded px-2.5 py-1.5 text-[11px] font-black transition-all duration-200 ease-expo-out ${language === 'ru' ? 'bg-gold-400 text-obsidian-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]' : 'text-white/50 hover:text-white'}`}>RU</button>
             </div>
             {/* Ko-fi */}
             <a
@@ -479,7 +629,7 @@ function DotaPickerApp() {
             {/* Clear All */}
             {(selectedEnemies.length > 0 || myTeam.length > 0) && (
               <button
-                onClick={clearAll}
+                onClick={handleClearAll}
                 className="toolbar-button"
               >
                 <RotateCcw className="h-3 w-3" />
@@ -669,13 +819,7 @@ function DotaPickerApp() {
 
             <HeroGrid
               heroes={heroes}
-              onSelect={(hero) => {
-                if (selectionMode === 'enemy') {
-                  addEnemy(hero);
-                } else {
-                  setMyTeamAt(selectionMode.pos, hero);
-                }
-              }}
+              onSelect={handleHeroSelect}
               selectedIds={[...selectedEnemies, ...myTeam].map(e => e.id)}
               filterRole={selectionMode === 'enemy' ? null : NUMBER_TO_POSITION[selectionMode.pos]}
               hideOffRole={false}
