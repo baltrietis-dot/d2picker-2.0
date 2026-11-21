@@ -1,573 +1,258 @@
 {
-  "lastUpdated": "2026-11-21T19:37:51.329Z",
-  "expiresAt": "2026-11-21T20:37:51.329Z",
+  "lastUpdated": "2026-11-21T23:54:23.851Z",
+  "expiresAt": "2026-11-22T00:54:23.851Z",
   "gameId": "29595",
   "gameName": "Dota 2",
   "source": "twitch-helix",
   "streams": [
     {
-      "userLogin": "nix",
-      "userName": "Nix",
-      "title": "Spirit vs Xtreme bo3 1:0 BLAST SLAM IX (Group Stage) w/ Bratan",
-      "viewerCount": 34136,
+      "userLogin": "koma",
+      "userName": "Koma",
+      "title": "9K & RANK 100 & CARRY & NEW PATCH !vtb !tg",
+      "viewerCount": 4599,
       "language": "ru",
-      "startedAt": "2026-11-21T18:25:14Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nix-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T20:00:09Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_koma-{width}x{height}.jpg"
     },
     {
-      "userLogin": "solo",
-      "userName": "Solo",
-      "title": "🔴 OG [1:1] Play Time | BLAST SLAM IX: Group Stage w/ @геннадий @icebergdoto @vtunedota !tg !BETBOOM !розыгрыш",
-      "viewerCount": 12831,
+      "userLogin": "lizok_ssk",
+      "userName": "lizok_ssk",
+      "title": "ТРАЙХАРД  10К ММР, 139IQ PLAY, МИКРО МАКРО ИНТЕЛЛЕКТ",
+      "viewerCount": 3392,
       "language": "ru",
-      "startedAt": "2026-11-21T10:50:20Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_solo-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "betboom_dota_ru",
-      "userName": "betboom_dota_ru",
-      "title": "Team Spirit [1] vs [0] Xtreme Gaming | Bo3 | Group Stage Day 2 | BLAST SLAM IX | cast: @artem1daaa & @ArsZeqq !предикты",
-      "viewerCount": 10515,
-      "language": "ru",
-      "startedAt": "2026-11-21T10:06:52Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_betboom_dota_ru-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "gorgc",
-      "userName": "Gorgc",
-      "title": "(EN) OG vs Ptime - Blast Slam - Official Co-stream",
-      "viewerCount": 9628,
-      "language": "en",
-      "startedAt": "2026-11-21T11:07:09Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gorgc-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "zxcursed",
-      "userName": "zxcursed",
-      "title": "deadinside✓emo✓drain✓epileptic✓paranoid✓toxic✓bipolar✓depressed✓tilted✓antisocial w/ @Uniquee @mary_day @akumaqqe @avice",
-      "viewerCount": 8032,
-      "language": "ru",
-      "startedAt": "2026-11-21T16:39:38Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zxcursed-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "blastdota",
-      "userName": "BLASTDota",
-      "title": "[A] BLAST SLAM IX, Group Stage, Day 2 - Spirit vs XG",
-      "viewerCount": 6802,
-      "language": "en",
-      "startedAt": "2026-11-21T14:10:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_blastdota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "blastdotab",
-      "userName": "BLASTDotaB",
-      "title": "[B] BLAST SLAM IX, Group Stage, Day 2 - PlayTime vs OG",
-      "viewerCount": 5494,
-      "language": "en",
-      "startedAt": "2026-11-21T14:10:13Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_blastdotab-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "lenagol0vach",
-      "userName": "LenaGol0vach",
-      "title": "🏆 НОВЫЙ ПАТЧ 7.42 🏆 ПУТЬ В ТОП 100 🏆  ЖЕСТКИЙ АП ММР 🍔 БЫЛО 15к ММР 🍆 ТЕСТИМ НОВЫЙ ПАТЧ ⭐ НАШЕЛ ИМБУ ПАТЧА ⭐🧀🏆⭐",
-      "viewerCount": 4925,
-      "language": "ru",
-      "startedAt": "2026-11-21T17:15:04Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lenagol0vach-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "avice",
-      "userName": "avice",
-      "title": "секретный кв звездным составом w/ @Uniquee @mary_day @akumaqqe @zxcursed  !tg !BETBOOM !мерч !плеерок ДОНАТЫ ОФФ",
-      "viewerCount": 4727,
-      "language": "ru",
-      "startedAt": "2026-11-21T12:01:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_avice-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "betboom_dota_ru2",
-      "userName": "betboom_dota_ru2",
-      "title": "PlayTime [1] vs [1] OG | Bo3 | Group Stage Day 2 | BLAST SLAM IX | cast: @lasthero_dota2 & @grayne !предикты",
-      "viewerCount": 3281,
-      "language": "ru",
-      "startedAt": "2026-11-21T10:28:51Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_betboom_dota_ru2-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "vtmntswerk",
-      "userName": "vtmntswerk",
-      "title": "✅ work ✅ aura farm ✅ !tg !skinrave !ggsel",
-      "viewerCount": 2319,
-      "language": "other",
-      "startedAt": "2026-11-21T18:33:26Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vtmntswerk-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "judah_xx",
-      "userName": "judah_xx",
-      "title": "ИГРАЮ ЛОББАКИ СО ЗРИТЕЛЯМИ | promo JUDAH | !tg !xcase !1x !gta",
-      "viewerCount": 2279,
-      "language": "ru",
-      "startedAt": "2026-11-21T16:19:07Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_judah_xx-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "mary_day",
-      "userName": "mary_day",
-      "title": "battlecup w/ @zxcursed @avice @uniquee @akumaqqe",
-      "viewerCount": 983,
-      "language": "ru",
-      "startedAt": "2026-11-21T17:29:50Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mary_day-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "w33haa",
-      "userName": "w33haa",
-      "title": "Learn how to be a better player",
-      "viewerCount": 843,
-      "language": "en",
-      "startedAt": "2026-11-21T18:37:36Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_w33haa-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "witchblvde",
-      "userName": "WitchBlvde",
-      "title": "🏆топ 5 новых сборок в 7.420 патче🏆удалил доту (!дота)🏆скачал доту (!дота2) 🏆🐍 !wow 🐍!polymarket 🐍 !tg",
-      "viewerCount": 836,
-      "language": "ru",
-      "startedAt": "2026-11-21T18:24:43Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_witchblvde-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "joeypsychosocial",
-      "userName": "joeypsychosocial",
-      "title": "ЧЁ КАК ОНО ТАМ",
-      "viewerCount": 799,
-      "language": "ru",
-      "startedAt": "2026-11-21T19:05:19Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_joeypsychosocial-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "seucreysonreborn",
-      "userName": "seucreysonreborn",
-      "title": "9,5k ATUAL CAMPEÃO BRASILEIRO - VAMU RI - 322 Q.I. 1300 TESTOTERONE !site !social !bmbr !flow !pix !scorpion",
-      "viewerCount": 791,
-      "language": "pt",
-      "startedAt": "2026-11-21T18:49:35Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_seucreysonreborn-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "etoseregga",
-      "userName": "etosereGGa",
-      "title": "батл кап последний тир амор эд вася кэп сашкинс (без егора) игорек и я",
-      "viewerCount": 721,
-      "language": "ru",
-      "startedAt": "2026-11-21T17:55:43Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_etoseregga-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ns_art",
-      "userName": "NS_ART",
-      "title": "Team Yandex x Natus Vincere - BLAST SLAM IX, Grupo A, Dia 2 🏆 - !PIX !EXITLAG !MASTER !PAGODAO",
-      "viewerCount": 720,
-      "language": "pt",
-      "startedAt": "2026-11-21T12:11:02Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ns_art-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dota2_maincast",
-      "userName": "dota2_maincast",
-      "title": "[UA] Xtreme Gaming vs spirit (0-1) BO3 | BLAST SLAM IX | by @aelnis & @goblak333",
-      "viewerCount": 713,
-      "language": "uk",
-      "startedAt": "2026-11-21T10:46:06Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2_maincast-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "wantfromlondon",
-      "userName": "wantfromlondon",
-      "title": "7000 carry / андеграунд стример / анимешникам тут не рады",
-      "viewerCount": 616,
-      "language": "ru",
-      "startedAt": "2026-11-21T18:33:28Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wantfromlondon-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T20:17:03Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lizok_ssk-{width}x{height}.jpg"
     },
     {
       "userLogin": "ybicanoooobov",
       "userName": "ybicanoooobov",
       "title": "Новый ПАТЧ 7.42 🔥 ИЩЕМ ИМБУ ВМЕСТЕ",
-      "viewerCount": 585,
+      "viewerCount": 2739,
       "language": "ru",
       "startedAt": "2026-11-21T19:17:17Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ybicanoooobov-{width}x{height}.jpg"
     },
     {
-      "userLogin": "follow4ce",
-      "userName": "follow4ce",
-      "title": "Spirit - Xtreme | BLAST SLAM IX | СТАВКИ В ТЕЛЕГЕ !TG",
-      "viewerCount": 505,
+      "userLogin": "judah_xx",
+      "userName": "judah_xx",
+      "title": "8500(NO CHAT) | promo JUDAH | !tg !xcase !1x !gta",
+      "viewerCount": 2386,
       "language": "ru",
-      "startedAt": "2026-11-21T10:35:27Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_follow4ce-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T16:19:07Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_judah_xx-{width}x{height}.jpg"
     },
     {
-      "userLogin": "mansory1_avg",
-      "userName": "mansory1_avg",
-      "title": "3-4 games !tg !win !skin !ton",
-      "viewerCount": 499,
-      "language": "en",
-      "startedAt": "2026-11-21T18:45:52Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mansory1_avg-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "chubzarik_dota",
-      "userName": "chubzarik_dota",
-      "title": "ПОИСК ИМБА ОТ ТОП1! (скримеры вкл !донат) !курс (обновил курс) !fp !TG !курс !fp !TG !coach | !настройки !pc !1080 500р-герой 150р-пати",
-      "viewerCount": 477,
+      "userLogin": "abida666",
+      "userName": "abida666",
+      "title": "🔴🔴🔴 ОТЕЦ   Алексей   , Я ЗВЕЗДА  🔴🔴🔴 СКРЫТЫЙ ПУЛ ТВИЧА",
+      "viewerCount": 2270,
       "language": "ru",
-      "startedAt": "2026-11-21T16:56:18Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chubzarik_dota-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T18:30:44Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_abida666-{width}x{height}.jpg"
     },
     {
-      "userLogin": "n1lwastaken",
-      "userName": "n1lwastaken",
-      "title": "14kMMR TOP 1 МИРА МЕНЯ НЕ ОСТАНОВИТЬ / !tg !bb !втб",
-      "viewerCount": 475,
+      "userLogin": "betboom_dota_ru",
+      "userName": "betboom_dota_ru",
+      "title": "ПОВТОР | Bo3 | Group Stage Day 2 | BLAST SLAM IX",
+      "viewerCount": 1551,
       "language": "ru",
-      "startedAt": "2026-11-21T18:47:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_n1lwastaken-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T23:25:12Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_betboom_dota_ru-{width}x{height}.jpg"
     },
     {
-      "userLogin": "1possessed",
-      "userName": "1possessed",
-      "title": "игры с подписотой  !tg !клан",
-      "viewerCount": 441,
+      "userLogin": "versuta",
+      "userName": "VeRsuta",
+      "title": "ОТКРЫВАЕМ ПРАЙМ",
+      "viewerCount": 1079,
       "language": "ru",
-      "startedAt": "2026-11-21T14:59:39Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_1possessed-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T21:14:32Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_versuta-{width}x{height}.jpg"
     },
     {
-      "userLogin": "whysodestroy",
-      "userName": "whysodestroy",
-      "title": "опустить тебя",
-      "viewerCount": 426,
-      "language": "en",
-      "startedAt": "2026-11-21T18:33:38Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_whysodestroy-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "wxcdota",
-      "userName": "WXCDota",
-      "title": "[FIL] PTime vs OG Esports (BO3) | Blast Slam IX 2026 Group Stage",
-      "viewerCount": 409,
-      "language": "tl",
-      "startedAt": "2026-11-21T16:53:00Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wxcdota-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "wagamamatv",
-      "userName": "WagamamaTV",
-      "title": "NEW PATCH ENJOYER",
-      "viewerCount": 406,
-      "language": "en",
-      "startedAt": "2026-11-21T17:41:27Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wagamamatv-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "amor_ed",
-      "userName": "AMOR_ED",
-      "title": "бк !pl",
-      "viewerCount": 406,
-      "language": "ru",
-      "startedAt": "2026-11-21T17:58:11Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amor_ed-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "maelstorm",
-      "userName": "maelstorm",
-      "title": "Spirit [1]-[0] Xtreme | BLAST SLAM IX | !bb !tg",
-      "viewerCount": 390,
-      "language": "ru",
-      "startedAt": "2026-11-21T15:50:47Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maelstorm-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "absizee",
-      "userName": "absizee",
-      "title": "тесчу патч с тараканами и слушаю вашу музыку за 150 коричневых пати гейминг через 2 часика",
-      "viewerCount": 381,
-      "language": "ru",
-      "startedAt": "2026-11-21T16:48:34Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_absizee-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "nativmotiv",
-      "userName": "nativmotiv",
-      "title": "дота 3 гринд прайм близок | !up !fonbet",
-      "viewerCount": 375,
-      "language": "ru",
-      "startedAt": "2026-11-21T18:34:40Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nativmotiv-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "mantaq",
-      "userName": "MantaQ",
-      "title": "Spirits x XtremeGaming | Bo3 | BLAST SLAM IX | !tg !bb",
-      "viewerCount": 364,
-      "language": "ru",
-      "startedAt": "2026-11-21T10:42:25Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mantaq-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "embersp1rit",
-      "userName": "embersp1rit",
-      "title": "ПЛОТНАЯ РУБКАААА !fonbet !фрешбар",
-      "viewerCount": 321,
-      "language": "ru",
-      "startedAt": "2026-11-21T18:34:31Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_embersp1rit-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "loln3rdd",
-      "userName": "loln3rdd",
-      "title": "я беден",
-      "viewerCount": 320,
-      "language": "ru",
-      "startedAt": "2026-11-21T18:34:16Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_loln3rdd-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "wayfs_io",
-      "userName": "wayfs_io",
-      "title": "айацуйфацуй",
-      "viewerCount": 317,
-      "language": "en",
-      "startedAt": "2026-11-21T18:34:19Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wayfs_io-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "erikkaspik",
-      "userName": "erikkaspik",
-      "title": "ам",
-      "viewerCount": 311,
-      "language": "en",
-      "startedAt": "2026-11-21T18:34:25Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_erikkaspik-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "molodooyq",
-      "userName": "molodooyq",
-      "title": "ВЫШЕЛ ПАТЧ 7.42🔴road to team spirit",
-      "viewerCount": 304,
-      "language": "ru",
-      "startedAt": "2026-11-21T16:56:33Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_molodooyq-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "olagheparande",
-      "userName": "olagheparande",
-      "title": "Team Spirit vs Xtreme Gaming | Blast Slam 9 Group Stage !blast for main stream",
-      "viewerCount": 300,
-      "language": "other",
-      "startedAt": "2026-11-21T18:10:42Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_olagheparande-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "worldsaf4ck",
-      "userName": "worldsaf4ck",
-      "title": "попуск я.. !бб !апгрейдер",
-      "viewerCount": 280,
-      "language": "ru",
-      "startedAt": "2026-11-21T18:34:29Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_worldsaf4ck-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "dota2_maincast2",
-      "userName": "dota2_maincast2",
-      "title": "[UA] OG vs PlayTime (1-1) BO3 | BLAST SLAM IX | by @sl1me33 & @f3nRirtv",
-      "viewerCount": 274,
-      "language": "uk",
-      "startedAt": "2026-11-21T16:57:24Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2_maincast2-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "americaesportsdota2",
-      "userName": "AmericaEsportsDota2",
-      "title": "SPIRIT vs XTREME | BLAST Slam IX: Group Stage",
-      "viewerCount": 272,
-      "language": "es",
-      "startedAt": "2026-11-21T13:42:38Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_americaesportsdota2-{width}x{height}.jpg"
+      "userLogin": "seucreysonreborn",
+      "userName": "seucreysonreborn",
+      "title": "9,5k ATUAL CAMPEÃO BRASILEIRO - VAMU RI - 322 Q.I. 1300 TESTOTERONE !site !social !bmbr !flow !pix !scorpion",
+      "viewerCount": 948,
+      "language": "pt",
+      "startedAt": "2026-11-21T18:49:35Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_seucreysonreborn-{width}x{height}.jpg"
     },
     {
       "userLogin": "dubudota",
       "userName": "dubudota",
-      "title": "7.42 is out! Spamming OP heroes!?",
-      "viewerCount": 245,
+      "title": "Shameless ZOO PICKER",
+      "viewerCount": 879,
       "language": "en",
       "startedAt": "2026-11-21T17:44:15Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dubudota-{width}x{height}.jpg"
     },
     {
-      "userLogin": "maxon_live_3072019",
-      "userName": "MAXON_LIVE_3072019",
-      "title": "MAXON! теги для поиска: ЗУБАРЕВ ЛОРД БУСТЕР ЛУДОЖОП ЕГОРКРИД ЕГОРКРИД vitus vitus_tv медисон евелон zubarefff zubarev зубареффф хованский",
-      "viewerCount": 244,
-      "language": "ru",
-      "startedAt": "2026-11-21T19:30:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maxon_live_3072019-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "qsnake",
-      "userName": "qSnake",
-      "title": "7.42 ))",
-      "viewerCount": 239,
-      "language": "ru",
-      "startedAt": "2026-11-21T17:49:29Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_qsnake-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "420jenkins",
-      "userName": "420jenkins",
-      "title": "finding builds that lose me MMR.",
-      "viewerCount": 232,
+      "userLogin": "wagamamatv",
+      "userName": "WagamamaTV",
+      "title": "NEW PATCH ENJOYER",
+      "viewerCount": 831,
       "language": "en",
-      "startedAt": "2026-11-21T12:26:41Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_420jenkins-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T20:14:13Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wagamamatv-{width}x{height}.jpg"
     },
     {
-      "userLogin": "mmrdem0nn",
-      "userName": "MMRDEM0NN",
-      "title": "🟣PURPLE AURA🟣k1ng ¿?¿ 2nd канал(не дота) @wanted1437",
-      "viewerCount": 230,
+      "userLogin": "mrxsmurf",
+      "userName": "mrxsmurf",
+      "title": "НОВЫЙ ПАТЧ 7.42✅ TOP 1 TINKER 13000 ИГР ROAD TOP 100 !ЮТУБ✅ РОЗЫГРЫШ !TG !ДОНАТ !ЮТУБ",
+      "viewerCount": 500,
       "language": "ru",
-      "startedAt": "2026-11-21T15:33:29Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mmrdem0nn-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T20:03:42Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mrxsmurf-{width}x{height}.jpg"
     },
     {
-      "userLogin": "neret17",
-      "userName": "neret17",
-      "title": "Play Time - Team OG | BLAST SLAM IX | @neret17 @mariomax11",
-      "viewerCount": 219,
+      "userLogin": "justhatemeeecatq",
+      "userName": "JUSTHATEMEEECATQ",
+      "title": "СИЛЬНЕЙШИЙ МИДЕР ПАТЧА? ПУТЬ В ТОП 100!  !тг !пати !буст !донатх !донат",
+      "viewerCount": 408,
       "language": "ru",
-      "startedAt": "2026-11-21T10:14:04Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neret17-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T23:06:22Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_justhatemeeecatq-{width}x{height}.jpg"
     },
     {
-      "userLogin": "layme",
-      "userName": "layme",
-      "title": "8500 CARRY PLAYER🤬 🤬 🤬  ИММОРТАЛ ДРАФТ ЗДЕСЬ !! !!  🤬 🤬 🤬",
-      "viewerCount": 203,
+      "userLogin": "molodooyq",
+      "userName": "molodooyq",
+      "title": "ВЫШЕЛ ПАТЧ 7.42🔴road to team spirit",
+      "viewerCount": 403,
       "language": "ru",
-      "startedAt": "2026-11-21T18:59:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_layme-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T16:56:33Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_molodooyq-{width}x{height}.jpg"
     },
     {
-      "userLogin": "petushq",
-      "userName": "petushq",
-      "title": "Батлкап, потом тестим новый патч | !wow !stuff !POSOSI !помпа !tg !boosty",
-      "viewerCount": 177,
+      "userLogin": "yaneher",
+      "userName": "Yaneher",
+      "title": "Ты пчёлок уважаешь?",
+      "viewerCount": 334,
       "language": "ru",
-      "startedAt": "2026-11-21T18:10:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_petushq-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T20:23:26Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaneher-{width}x{height}.jpg"
     },
     {
-      "userLogin": "gilfanjo",
-      "userName": "gilfanjo",
-      "title": "опять стрим?, донат в описании аккаунта",
-      "viewerCount": 176,
+      "userLogin": "maddogsleague",
+      "userName": "maddogsleague",
+      "title": "🔴 Dota2: Mad Dogs League | Project Achilles vs Freedom Fighters  (1:1)",
+      "viewerCount": 307,
+      "language": "en",
+      "startedAt": "2026-11-21T17:12:09Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maddogsleague-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "maxon_live_4000853",
+      "userName": "MAXON_LIVE_4000853",
+      "title": "MAXON! теги для поиска: ЗУБАРЕВ ЛОРД БУСТЕР ЛУДОЖОП ЕГОРКРИД ЕГОРКРИД vitus vitus_tv медисон евелон zubarefff zubarev зубареффф хованский",
+      "viewerCount": 268,
       "language": "ru",
-      "startedAt": "2026-11-21T19:10:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gilfanjo-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T23:33:00Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maxon_live_4000853-{width}x{height}.jpg"
     },
     {
-      "userLogin": "4dr4dr",
-      "userName": "4dr4dr",
-      "title": "Rankeds road 9k - Patch 7.42! -  !pix !desafio !sorteio !pagodao !ad !replay",
-      "viewerCount": 170,
+      "userLogin": "qavivi",
+      "userName": "QAVIVI",
+      "title": "Жизнь и Страдания господина Егора 🏆 玩家 💜 vk.cc/cSEEjk - повторы стримов/больше контента! ⚡️",
+      "viewerCount": 246,
+      "language": "ru",
+      "startedAt": "2026-11-21T19:58:45Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_qavivi-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "plovv4",
+      "userName": "plovv4",
+      "title": "#grind...natures....",
+      "viewerCount": 222,
+      "language": "ru",
+      "startedAt": "2026-11-21T20:40:13Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_plovv4-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "magrathea",
+      "userName": "Magrathea",
+      "title": "(+18) [ARCONTE ☆☆ ] Lenda esse ano? Acho que não!",
+      "viewerCount": 199,
       "language": "pt",
-      "startedAt": "2026-11-21T13:36:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_4dr4dr-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T19:52:22Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magrathea-{width}x{height}.jpg"
     },
     {
-      "userLogin": "sqreenbets",
-      "userName": "sQreenbets",
-      "title": "BLAST SLAM мультистрим все игры аналитика и ставки Aurora - Astra, Natus Vincere - Yandex НОВЫЙ ЧЕЛЛЕНДЖ С 50К до миллиона !fon !650",
-      "viewerCount": 163,
-      "language": "ru",
-      "startedAt": "2026-11-21T11:14:02Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sqreenbets-{width}x{height}.jpg"
+      "userLogin": "dreeziinhoo",
+      "userName": "dreeziinhoo",
+      "title": "DESAFIO - PEGAR MEDALHA PRETA! | 7270 MMR | !Desafio !VendoSETS !SUBFree",
+      "viewerCount": 165,
+      "language": "pt",
+      "startedAt": "2026-11-21T19:26:27Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dreeziinhoo-{width}x{height}.jpg"
     },
     {
-      "userLogin": "markovka__777",
-      "userName": "markovka__777",
-      "title": "ДЕНЬ 4 | ПОКА ВСЕ ИГРАЮТ В ГТА ИГРАЮ В ДОТУ /w @Zaychik_off",
+      "userLogin": "lazyrazyman",
+      "userName": "Lazyrazyman",
+      "title": "⚡Пивная дотка! !tg !tgchat !bot !donate!",
       "viewerCount": 162,
       "language": "ru",
-      "startedAt": "2026-11-21T09:49:39Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_markovka__777-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T14:26:40Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lazyrazyman-{width}x{height}.jpg"
     },
     {
-      "userLogin": "rinat_lin",
-      "userName": "rinat_lin",
-      "title": "большой 1x1 турнир / !команды",
-      "viewerCount": 152,
+      "userLogin": "tonyarovka06",
+      "userName": "TonyaroVka06",
+      "title": "Это пубертатный или депрессивный стрим, не поняла...(дота вернулась)",
+      "viewerCount": 157,
       "language": "ru",
-      "startedAt": "2026-11-21T18:13:30Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinat_lin-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T19:41:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tonyarovka06-{width}x{height}.jpg"
     },
     {
-      "userLogin": "sysman_",
-      "userName": "sysman_",
-      "title": "Play Time - Team OG | BLAST SLAM IX | !tg | !тг | !бк",
-      "viewerCount": 149,
+      "userLogin": "rinlar",
+      "userName": "Rinlar",
+      "title": "Ищем на чем играть в патче  7.42 / 8600 mmr carry",
+      "viewerCount": 151,
       "language": "ru",
-      "startedAt": "2026-11-21T11:01:08Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sysman_-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T22:17:09Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinlar-{width}x{height}.jpg"
     },
     {
-      "userLogin": "mireadaa",
-      "userName": "Mireadaa",
-      "title": "ВЗЯЛ АЙФОН В КРИДИТ ДЛЯ ДЕВУШКИ. ДЕВУШКА БРОСИЛА, КРЕДИТ ОСТАЛСЯ",
-      "viewerCount": 137,
+      "userLogin": "kevin_kuraga",
+      "userName": "Kevin_Kuraga",
+      "title": "!музыка ВЫШЕЛ 7.42 Укладываю вас под звуки пилы и приятный голос на хайптс !роспись !sakeenkok",
+      "viewerCount": 147,
       "language": "ru",
-      "startedAt": "2026-11-21T18:05:52Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mireadaa-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T21:46:47Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kevin_kuraga-{width}x{height}.jpg"
     },
     {
-      "userLogin": "sanekingg",
-      "userName": "sanekingg",
-      "title": "!тг !плейлист че думаешь по поводу патча? )а знаешь а слышал а как тебе а че думаешь а смотрел ? а как относишься? а че без ? хотел бы?   7K",
-      "viewerCount": 136,
+      "userLogin": "barminmm",
+      "userName": "BarminMM",
+      "title": "🔴MAJESTIC GTA 5 RP ШЕФ LSPD | ДЕНЬ 161",
+      "viewerCount": 146,
       "language": "ru",
-      "startedAt": "2026-11-21T19:27:24Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sanekingg-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T18:54:52Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_barminmm-{width}x{height}.jpg"
     },
     {
-      "userLogin": "bananaslamjamma",
-      "userName": "BananaSlamJamma",
-      "title": "!qa In-houses on the NEW PATCH 7.42!",
-      "viewerCount": 129,
-      "language": "en",
-      "startedAt": "2026-11-21T18:30:50Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bananaslamjamma-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "uniquee",
-      "userName": "Uniquee",
-      "title": "battlecup w/ @zxcursed  @mary_day @avice @akumaqqe",
-      "viewerCount": 126,
+      "userLogin": "7jesu",
+      "userName": "7jesu",
+      "title": "Ночной (2й моник + 2катки луз в ряд = офф) |9к червяк",
+      "viewerCount": 140,
       "language": "ru",
-      "startedAt": "2026-11-21T18:05:42Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_uniquee-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T21:32:28Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_7jesu-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "waitureally",
+      "userName": "waitureally",
+      "title": "я врезался в необычную конструкцию из сплава железных. неустанно твержу себе обратное. не слышу ангелов. забыл где лежит мой паспорт.",
+      "viewerCount": 132,
+      "language": "ru",
+      "startedAt": "2026-11-21T22:55:33Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_waitureally-{width}x{height}.jpg"
     },
     {
       "userLogin": "otakerdota",
       "userName": "otakerdota",
       "title": "Абужу имбу | 150 rank carry  | бот 🤖 | прошел на лан, опять | новый патч 7.42",
-      "viewerCount": 123,
+      "viewerCount": 128,
       "language": "ru",
       "startedAt": "2026-11-21T14:40:21Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_otakerdota-{width}x{height}.jpg"
@@ -576,298 +261,640 @@
       "userLogin": "jahreher",
       "userName": "JahreHer",
       "title": "BEER B-DAY Dota2 GTA6 Stream.)))) We are in. Lets gooooo.))))",
-      "viewerCount": 121,
+      "viewerCount": 115,
       "language": "de",
       "startedAt": "2026-11-21T18:16:57Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jahreher-{width}x{height}.jpg"
     },
     {
-      "userLogin": "betbist",
-      "userName": "betbist",
-      "title": "Team Spirit - Xtreme Gaming | Bo3 | Group Stage Day 2 | BLAST SLAM IX | by @betbist",
-      "viewerCount": 119,
+      "userLogin": "cartmanzbs",
+      "userName": "CarTmaNzbs",
+      "title": "Шоколадный миракл",
+      "viewerCount": 112,
       "language": "ru",
-      "startedAt": "2026-11-21T10:37:57Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_betbist-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T22:03:04Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cartmanzbs-{width}x{height}.jpg"
     },
     {
-      "userLogin": "lamm1k",
-      "userName": "lamm1k",
-      "title": "Team Spirit - Xtreme Gaming | BLAST SLAM IX | | !tg @lamm1k",
-      "viewerCount": 109,
-      "language": "ru",
-      "startedAt": "2026-11-21T09:12:59Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lamm1k-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "maddogsleague",
-      "userName": "maddogsleague",
-      "title": "🔴 Dota2: Mad Dogs League | Moonlight Wispers vs Project Achilles  (1:1)",
-      "viewerCount": 108,
-      "language": "en",
-      "startedAt": "2026-11-21T17:12:09Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maddogsleague-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ricam",
-      "userName": "Ricam",
-      "title": "💥 Dota 5x5 w/GRIME 💥 | ⚙️ !tg !gta !fam !redux !settings",
-      "viewerCount": 107,
-      "language": "ru",
-      "startedAt": "2026-11-21T17:37:42Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ricam-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "6ma1ina9",
-      "userName": "6ma1ina9",
-      "title": "🐲 DOTA 2 | 👑 ПОКОРИТЕЛЬ 1150 ММР | 🟣 NOVA RP PROMO: MALINA | !tg !ds !promo",
-      "viewerCount": 106,
-      "language": "ru",
-      "startedAt": "2026-11-21T19:15:36Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_6ma1ina9-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "asds__games",
-      "userName": "ASDS__GAMES",
-      "title": "Sa1kyo 15лет 1к ранг Европы✅ !donate !kaspi !tg !mmr",
-      "viewerCount": 105,
-      "language": "ru",
-      "startedAt": "2026-11-21T06:31:21Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asds__games-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "raze1x6",
-      "userName": "raze1x6",
-      "title": "🔴АХХАХА ПАТЧ 7.42 А ТЫ В КЕПКЕ НА 7800 ммр✅ПУТЬ В ТОП-3000🟢ПОДНЯТИЕ РЕЙТИНГА(не будет)😎SIGMA👹Я ФРИК! и че вы ржете..😂 ПОКАЗЫВАЮ !tg",
-      "viewerCount": 103,
-      "language": "ru",
-      "startedAt": "2026-11-21T14:04:10Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_raze1x6-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "miliy_ubludoq",
-      "userName": "miliy_ubludoQ",
-      "title": "ПРОБУЕМ ПАТЧ НА ВКУС 6800 мейн",
-      "viewerCount": 100,
-      "language": "ru",
-      "startedAt": "2026-11-21T14:01:09Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_miliy_ubludoq-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "achilles7177",
-      "userName": "achilles7177",
-      "title": "10 lvl facit подпишись, я только учусь",
-      "viewerCount": 99,
-      "language": "ru",
-      "startedAt": "2026-11-21T15:05:53Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_achilles7177-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "ieazybreezyi",
-      "userName": "IEazyBreezyI",
-      "title": "GTA VI - не сегодня",
-      "viewerCount": 96,
-      "language": "ru",
-      "startedAt": "2026-11-21T16:22:29Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ieazybreezyi-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "syn0psia",
-      "userName": "syn0psia",
-      "title": "Мяяяу, будущая реанимация на месте ❤️‍🔥 !tg !donate !boosty",
-      "viewerCount": 96,
-      "language": "ru",
-      "startedAt": "2026-11-21T17:29:58Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_syn0psia-{width}x{height}.jpg"
+      "userLogin": "hovitey",
+      "userName": "HoviteY",
+      "title": "Micro Hero Abuser",
+      "viewerCount": 111,
+      "language": "de",
+      "startedAt": "2026-11-21T20:18:23Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hovitey-{width}x{height}.jpg"
     },
     {
       "userLogin": "zuyzyan",
       "userName": "zuyzyan",
       "title": "Ищем имбу на керри 9k mmr  !Воппер !coach",
-      "viewerCount": 94,
+      "viewerCount": 107,
       "language": "ru",
       "startedAt": "2026-11-21T16:33:03Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zuyzyan-{width}x{height}.jpg"
     },
     {
-      "userLogin": "mariomax11",
-      "userName": "mariomax11",
-      "title": "PlayTime - OG | BLAST SLAM IX | @neret17 @mariomax11",
-      "viewerCount": 93,
+      "userLogin": "zadoorn",
+      "userName": "ZadoorN",
+      "title": "Новый патч не читал... не ищи стримерш брат.",
+      "viewerCount": 104,
       "language": "ru",
-      "startedAt": "2026-11-21T10:33:16Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mariomax11-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T23:22:34Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zadoorn-{width}x{height}.jpg"
     },
     {
-      "userLogin": "avatar_romchik",
-      "userName": "avatar_romchik",
-      "title": "Винрейт 0 целых х..й 10-ых",
-      "viewerCount": 93,
+      "userLogin": "toyamakoichi",
+      "userName": "toyamakoichi",
+      "title": "девочка кери 15 лет 7к авг игры. самый народный стример. Я ВЕРНУЛАСЬ!",
+      "viewerCount": 88,
       "language": "ru",
-      "startedAt": "2026-11-21T15:11:18Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_avatar_romchik-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T22:11:45Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toyamakoichi-{width}x{height}.jpg"
     },
     {
-      "userLogin": "floopi",
-      "userName": "FLOOPI",
-      "title": "ВОПРОСЫ ПО СКИЛЛУ БУДУТ?твой карманный тренер прямо в телеграмме @creepidota_bot",
-      "viewerCount": 91,
-      "language": "ru",
-      "startedAt": "2026-11-21T18:17:22Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_floopi-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "doubleespresso",
-      "userName": "doubleespresso",
-      "title": "можливий бк о 21",
-      "viewerCount": 90,
-      "language": "uk",
-      "startedAt": "2026-11-21T16:21:44Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_doubleespresso-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "belonytv",
-      "userName": "BelonyTV",
-      "title": "Вибираюся з ТОП 900 ПОМИЙКИ у патчі 7.42",
-      "viewerCount": 90,
-      "language": "uk",
-      "startedAt": "2026-11-21T18:38:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_belonytv-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "eskobartv",
-      "userName": "EskobarTv",
-      "title": "Тинкер говно патча, абуз в прямом эфире !bet !турнир",
+      "userLogin": "ibubentsov",
+      "userName": "ibubentsov",
+      "title": "От Рекрута до Губернатора Самарской Области!",
       "viewerCount": 87,
       "language": "ru",
-      "startedAt": "2026-11-21T12:17:32Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eskobartv-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T19:34:39Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ibubentsov-{width}x{height}.jpg"
     },
     {
-      "userLogin": "kesikton",
-      "userName": "KesikTon",
-      "title": "100% ВИНРЕЙТ НА ПУДЖЕ !tg",
-      "viewerCount": 78,
+      "userLogin": "worick_4",
+      "userName": "Worick_4",
+      "title": "Ночная дотка  t.me/worickdota",
+      "viewerCount": 86,
       "language": "ru",
-      "startedAt": "2026-11-21T17:05:32Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kesikton-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T21:50:55Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_worick_4-{width}x{height}.jpg"
     },
     {
       "userLogin": "godwithashotgun",
       "userName": "GodWithAShotgun",
       "title": "Patch notes: Pugna -> S tier | Ability Draft ☕ 🐈 🎵",
-      "viewerCount": 76,
+      "viewerCount": 85,
       "language": "en",
       "startedAt": "2026-11-21T16:38:01Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godwithashotgun-{width}x{height}.jpg"
     },
     {
-      "userLogin": "korrossu",
-      "userName": "korrossu",
-      "title": "!ЛАВКА КОНФЕТ КОРРОСУ🎃🕯️👁️🍭 !конфеты !тыква !котак",
-      "viewerCount": 71,
-      "language": "ru",
-      "startedAt": "2026-11-21T12:17:01Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_korrossu-{width}x{height}.jpg"
+      "userLogin": "kalazard",
+      "userName": "Kalazard",
+      "title": "Sabadozard no Imortal. !pix !calibração",
+      "viewerCount": 84,
+      "language": "pt",
+      "startedAt": "2026-11-21T18:10:12Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kalazard-{width}x{height}.jpg"
     },
     {
-      "userLogin": "sheriff_journal",
-      "userName": "Sheriff_journal",
-      "title": "Неожиданный поворот <3 Сегодня стреляем под хорошую музыку! 9 из 10 хедшоты!",
-      "viewerCount": 71,
+      "userLogin": "mightypoot",
+      "userName": "MightyPoot",
+      "title": "глагя ΛI💏",
+      "viewerCount": 81,
       "language": "ru",
-      "startedAt": "2026-11-21T13:56:34Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sheriff_journal-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "vanilll1",
-      "userName": "vaniLLl1",
-      "title": "РАСКОДИРОВАЛСЯ. БУХЛОСТРИМ. ПОДПИСАТЬСЯ. | !коуч",
-      "viewerCount": 70,
-      "language": "ru",
-      "startedAt": "2026-11-21T14:26:02Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vanilll1-{width}x{height}.jpg"
-    },
-    {
-      "userLogin": "gulko",
-      "userName": "GULKO",
-      "title": "Поражение = 20 отжиманий | счётчик: 0W-0L",
-      "viewerCount": 68,
-      "language": "ru",
-      "startedAt": "2026-11-21T17:41:37Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gulko-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T16:32:20Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mightypoot-{width}x{height}.jpg"
     },
     {
       "userLogin": "kokiii4",
       "userName": "Kokiii4",
       "title": "Ratten Run  👽 КАК ПОБЕДИТЬ?😬 Мне 31 и Я не фрик 😬   💣",
-      "viewerCount": 68,
+      "viewerCount": 78,
       "language": "ru",
       "startedAt": "2026-11-21T17:59:08Z",
       "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kokiii4-{width}x{height}.jpg"
     },
     {
-      "userLogin": "23dotatv",
-      "userName": "23DOTATV",
-      "title": "TRỰC TIẾP: BLAST SLAM IX | Stream A | Groupstage |  Aurora, Yandex, Spirit, Xtreme",
-      "viewerCount": 67,
-      "language": "vi",
-      "startedAt": "2026-11-21T14:51:58Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_23dotatv-{width}x{height}.jpg"
+      "userLogin": "minhee929",
+      "userName": "minhee929",
+      "title": "Climb Mode ON♥Taking Back My MMR♥Chinese & English with subtitles♥ Support 5800mmr ♥Female♥",
+      "viewerCount": 77,
+      "language": "en",
+      "startedAt": "2026-11-21T19:40:14Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minhee929-{width}x{height}.jpg"
     },
     {
-      "userLogin": "cyberclasher",
-      "userName": "Cyberclasher",
-      "title": "[LIVE] 🏆BLAST SLAM IX - 21 Nov - ⚔️Aurora vs Astra ⚔️Nemesis vs GL ⚔️PT vs OG",
-      "viewerCount": 63,
-      "language": "th",
-      "startedAt": "2026-11-21T11:05:15Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cyberclasher-{width}x{height}.jpg"
+      "userLogin": "px11adium",
+      "userName": "px11adium",
+      "title": "⭐️Остатки былого величия⭐️",
+      "viewerCount": 69,
+      "language": "ru",
+      "startedAt": "2026-11-21T23:10:32Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_px11adium-{width}x{height}.jpg"
     },
     {
-      "userLogin": "lebowskidota",
-      "userName": "lebowskidota",
-      "title": "🌑BOOST🌑99.99% WR🌑RU/KZ/EU/UA/RB🌑LEBOWSKI🌑 IQ--> 666+ 🌑 ex top 400 eu | 🌑 !буст !пк !тгк !донат !плейлист !настройки 🌑 |",
+      "userLogin": "xenyplay",
+      "userName": "Xenyplay",
+      "title": "Вечерняя дотка !tg !fam",
+      "viewerCount": 66,
+      "language": "ru",
+      "startedAt": "2026-11-21T18:59:32Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xenyplay-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "benoitlouissaint",
+      "userName": "benoitlouissaint",
+      "title": "live monetizasyon",
       "viewerCount": 62,
-      "language": "ru",
-      "startedAt": "2026-11-21T10:10:36Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lebowskidota-{width}x{height}.jpg"
+      "language": "es",
+      "startedAt": "2026-11-21T22:59:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_benoitlouissaint-{width}x{height}.jpg"
     },
     {
-      "userLogin": "khasik09",
-      "userName": "KhaSIk09",
-      "title": "Dota1x6 на антивайбовом вайбе I !турик I LARPER. MOGGER. PLAYER. I !tg",
-      "viewerCount": 57,
+      "userLogin": "meowlonely",
+      "userName": "meowlonely",
+      "title": "нишевый (coaching pm) rank100+-",
+      "viewerCount": 59,
       "language": "ru",
-      "startedAt": "2026-11-21T18:07:18Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_khasik09-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T21:14:10Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_meowlonely-{width}x{height}.jpg"
     },
     {
-      "userLogin": "deman_game",
-      "userName": "deman_game",
-      "title": "НОВЫЙ ПАТЧ 7.42 !  Ищем имбу патча! Арканы за балы канала!  ! Dota 2| Дота 2|",
+      "userLogin": "painndota",
+      "userName": "painndota",
+      "title": "Carry Refugee Camp !freecoaching  !improvementcamp !coaching",
+      "viewerCount": 58,
+      "language": "en",
+      "startedAt": "2026-11-21T19:47:22Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_painndota-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "skywhyzovsky",
+      "userName": "skywhyzovsky",
+      "title": "!redbull  🔴 control server ✅",
+      "viewerCount": 54,
+      "language": "ru",
+      "startedAt": "2026-11-21T22:56:53Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_skywhyzovsky-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "icopperfield",
+      "userName": "icopperfield",
+      "title": "Играю Только На Дарк Сире | !donate !tg",
       "viewerCount": 52,
       "language": "ru",
-      "startedAt": "2026-11-21T18:35:21Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deman_game-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T22:15:28Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_icopperfield-{width}x{height}.jpg"
     },
     {
-      "userLogin": "neverfearadie",
-      "userName": "neverfearadie",
-      "title": "Эти😊блики✨ослепляют☀️эти🌻фоточки🖼с📷цепями⛓️тот🥰рефлекшн💎из↩️китая🇨🇳почему❓все🌌исчезает💨",
+      "userLogin": "magic546",
+      "userName": "magic546",
+      "title": "Шо? Зашел, сел, расслабился! Сел я сказал!",
       "viewerCount": 51,
       "language": "ru",
-      "startedAt": "2026-11-21T15:25:24Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neverfearadie-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T20:19:15Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magic546-{width}x{height}.jpg"
     },
     {
-      "userLogin": "misakisempaii",
-      "userName": "misakisempaii",
-      "title": "ИГРАЕМ БАТЛ КАП @kissmeeeeq @dyal4ik @sad_setsunai @buolen !tg",
-      "viewerCount": 50,
+      "userLogin": "ssav1k",
+      "userName": "ssav1k",
+      "title": "7.3k >_<",
+      "viewerCount": 44,
       "language": "ru",
-      "startedAt": "2026-11-21T18:09:46Z",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_misakisempaii-{width}x{height}.jpg"
+      "startedAt": "2026-11-21T20:21:06Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ssav1k-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "moreblood",
+      "userName": "moreblood",
+      "title": "течнис 3 минки помните",
+      "viewerCount": 44,
+      "language": "ru",
+      "startedAt": "2026-11-21T18:57:37Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_moreblood-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "tv0ibatia",
+      "userName": "Tv0iBatia",
+      "title": "заболела///как обы4но на ток$и4ном",
+      "viewerCount": 42,
+      "language": "ru",
+      "startedAt": "2026-11-21T18:58:37Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tv0ibatia-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "zxcpulsedx",
+      "userName": "zxcpulsedx",
+      "title": "jst k1l m9 alr9dy 1200smurf (main900) ( top1 after ban)",
+      "viewerCount": 42,
+      "language": "ru",
+      "startedAt": "2026-11-21T22:45:02Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zxcpulsedx-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lapshad",
+      "userName": "lapshad",
+      "title": "играем доту про командой | апаем ммр | сносим трон | отводим крипов | фармим ману | прожимаем посивку",
+      "viewerCount": 41,
+      "language": "ru",
+      "startedAt": "2026-11-21T18:31:31Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lapshad-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "rizeberry",
+      "userName": "RizeBerry",
+      "title": "нижний твич. 8300 эмэмэр",
+      "viewerCount": 41,
+      "language": "ru",
+      "startedAt": "2026-11-21T20:08:43Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rizeberry-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "alenamelody",
+      "userName": "AlenaMelody",
+      "title": "АЛКОСТРИМ😱ДВЕ СЕСТРИЧКИ ХОТЯТ С ТОБОЙ ПОЗНАКОМИТЬСЯ  😱 !ДОНАТ !ТГ !ПАТИ !ВЕБКА",
+      "viewerCount": 40,
+      "language": "ru",
+      "startedAt": "2026-11-21T19:05:49Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alenamelody-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "ev1lbstrd",
+      "userName": "ev1lbstrd",
+      "title": "ПАТЧ ВЫШЕЛ УРА 7K carry  30 morph , phantom lancer !tg !сборка !pc",
+      "viewerCount": 40,
+      "language": "ru",
+      "startedAt": "2026-11-21T21:04:03Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ev1lbstrd-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "purokiss",
+      "userName": "purokiss",
+      "title": "глобальный блэкаут",
+      "viewerCount": 39,
+      "language": "ru",
+      "startedAt": "2026-11-21T22:37:49Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_purokiss-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "m3npeek",
+      "userName": "m3npeek",
+      "title": "♿пожилой мужчина в турбо♿",
+      "viewerCount": 38,
+      "language": "ru",
+      "startedAt": "2026-11-21T19:52:45Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_m3npeek-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "keiyakushi",
+      "userName": "Keiyakushi",
+      "title": "газява 8000+ mmr 4\\3\\1 pos",
+      "viewerCount": 38,
+      "language": "ru",
+      "startedAt": "2026-11-21T23:11:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_keiyakushi-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "jesus_quintana",
+      "userName": "JesuS_QuintanA",
+      "title": "Bienvenue dans la décheterie",
+      "viewerCount": 37,
+      "language": "fr",
+      "startedAt": "2026-11-21T18:22:21Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jesus_quintana-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "terokvll",
+      "userName": "TerokVLL",
+      "title": "Приятного просмотра | Эмоциональные качели ! Мидер , Тестируем героев !",
+      "viewerCount": 37,
+      "language": "ru",
+      "startedAt": "2026-11-21T22:18:40Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_terokvll-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "talik_by",
+      "userName": "talik_by",
+      "title": "Легенда киберспорта нулевых вернулась",
+      "viewerCount": 36,
+      "language": "ru",
+      "startedAt": "2026-11-21T21:29:10Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_talik_by-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "paniniwoo",
+      "userName": "paniniwoo",
+      "title": "не гта 6 | !tg !inst !tt !напоминание !onlyfans",
+      "viewerCount": 35,
+      "language": "ru",
+      "startedAt": "2026-11-21T22:11:27Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paniniwoo-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "mizzake",
+      "userName": "mizzake",
+      "title": "Аук на игру или гта6 вот в чем вопрос | !funpay !тг",
+      "viewerCount": 35,
+      "language": "ru",
+      "startedAt": "2026-11-21T14:52:59Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mizzake-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "esl_dota2",
+      "userName": "ESL_DOTA2",
+      "title": "HIGHLIGHTS: PARIVISION vs. Aurora Gaming - DreamLeague S29",
+      "viewerCount": 35,
+      "language": "en",
+      "startedAt": "2026-11-20T20:37:01Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_esl_dota2-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "haki_dota",
+      "userName": "Haki_Dota",
+      "title": "[EN/DE 7.8k+ Pos 2] Back to top 1000",
+      "viewerCount": 33,
+      "language": "de",
+      "startedAt": "2026-11-21T20:29:18Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_haki_dota-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lkdotero",
+      "userName": "lkdotero",
+      "title": "MENGÃO FEZ A BOA, AGORA VAMOS FAZER A BOA NO DOTINHA   !pix !comandos !pagodao",
+      "viewerCount": 33,
+      "language": "pt",
+      "startedAt": "2026-11-21T22:04:10Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lkdotero-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "coyotao2",
+      "userName": "CoYoTao2",
+      "title": "🔥 PATCH 7.42🔥SABADO DO CARPINTEIRO 🔥TESTANDO AS MUDANÇAS NOS SUPORTES DO META🔥PSICOPATA DO FIND! 🔥 !pc",
+      "viewerCount": 32,
+      "language": "pt",
+      "startedAt": "2026-11-21T22:56:45Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_coyotao2-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "rdodota",
+      "userName": "rdodota",
+      "title": "PATCH 7.42 !dotaflix",
+      "viewerCount": 32,
+      "language": "pt",
+      "startedAt": "2026-11-21T23:17:00Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rdodota-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "pari_mixercup",
+      "userName": "pari_mixercup",
+      "title": "Mixer Cup #6  |  Delay 5 minutes | cast by @FlyToTheHeaven_TV",
+      "viewerCount": 31,
+      "language": "ru",
+      "startedAt": "2026-11-21T17:44:49Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pari_mixercup-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "coldfireball92",
+      "userName": "Coldfireball92",
+      "title": "Back to terrorize more games with Armlet Medusa",
+      "viewerCount": 31,
+      "language": "en",
+      "startedAt": "2026-11-21T21:21:18Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_coldfireball92-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "2celeration",
+      "userName": "2celeration",
+      "title": "3 POS. ROAD TO LADER",
+      "viewerCount": 31,
+      "language": "ru",
+      "startedAt": "2026-11-21T23:32:32Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_2celeration-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "garter",
+      "userName": "garter",
+      "title": "feedings and greeting from Kosova! ---- Discord invite ink: https://discord.gg/5e6QYHMva9",
+      "viewerCount": 30,
+      "language": "en",
+      "startedAt": "2026-11-21T18:36:40Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_garter-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "sinuni",
+      "userName": "Sinuni",
+      "title": "Мяу",
+      "viewerCount": 30,
+      "language": "ru",
+      "startedAt": "2026-11-21T20:45:40Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sinuni-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "reymiri",
+      "userName": "reymiri",
+      "title": "❀·✩₊˚♡ БОЛЬШЕ НЕ ВАНЯЮ, ПАМЫЛАС ˳☾⋆⁺₊˚✧ !донат !inst !tg !доскольки",
+      "viewerCount": 30,
+      "language": "ru",
+      "startedAt": "2026-11-21T21:56:50Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reymiri-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "valekotv",
+      "userName": "ValeKoTV",
+      "title": "🟢ШЛЯХ ДО 6К",
+      "viewerCount": 29,
+      "language": "uk",
+      "startedAt": "2026-11-21T21:37:17Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_valekotv-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "murmuwer",
+      "userName": "murmuwer",
+      "title": "привет, я скучала",
+      "viewerCount": 28,
+      "language": "ru",
+      "startedAt": "2026-11-21T10:31:15Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_murmuwer-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "orotayo",
+      "userName": "orotayo",
+      "title": "Хочу клаву @lunacy with @ramzes",
+      "viewerCount": 28,
+      "language": "ru",
+      "startedAt": "2026-11-21T21:00:56Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orotayo-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "qwerty_poiul",
+      "userName": "qwerty_poiul",
+      "title": "psycho but cute   !пати",
+      "viewerCount": 28,
+      "language": "ru",
+      "startedAt": "2026-11-21T20:15:56Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_qwerty_poiul-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "borker_ot_cjloba_bop",
+      "userName": "BORKER_OT_CJlOBA_BOP",
+      "title": "новый патч, все как надо, работаю асфальто укладчиком, не стыдно.",
+      "viewerCount": 26,
+      "language": "ru",
+      "startedAt": "2026-11-21T22:14:17Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_borker_ot_cjloba_bop-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lil",
+      "userName": "lil",
+      "title": "Декстер  Декстер морган",
+      "viewerCount": 26,
+      "language": "ru",
+      "startedAt": "2026-11-21T23:40:08Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lil-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "xamon25",
+      "userName": "xamon25",
+      "title": "Ніж\\Скіни за бали каналу + Розіграші скінів в Counter-Strike )) Залітай не соромся) тут всі свої)",
+      "viewerCount": 25,
+      "language": "uk",
+      "startedAt": "2026-11-21T16:49:11Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xamon25-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "ghean",
+      "userName": "ghean",
+      "title": "amigos do @fhinguem contra o mundo !cigarro",
+      "viewerCount": 25,
+      "language": "pt",
+      "startedAt": "2026-11-21T23:09:48Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ghean-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "qisayo",
+      "userName": "qisayo",
+      "title": "боюсь встретить ща мигалки    !tg !ds",
+      "viewerCount": 25,
+      "language": "ru",
+      "startedAt": "2026-11-21T17:57:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_qisayo-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "atomic_kylebyaka",
+      "userName": "atomic_kylebyaka",
+      "title": "они добавил в блудслингер две мантии чтобы челы стали умнее при покупке но не помогло",
+      "viewerCount": 25,
+      "language": "ru",
+      "startedAt": "2026-11-21T19:12:29Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_atomic_kylebyaka-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "velon1k",
+      "userName": "velon1k",
+      "title": "Тестим новый патч в доте✅Вернули комп через 4 дня✅Вечерний вайб | !тг !inst !донат",
+      "viewerCount": 24,
+      "language": "ru",
+      "startedAt": "2026-11-21T19:46:27Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_velon1k-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "demonyza_",
+      "userName": "demonyza_",
+      "title": "Dota de Rua -  Apoie <3 !pix !comandos Muitooo obrigada @g4tts e @BikeOriginal (#lutoZerbini 🖤)",
+      "viewerCount": 23,
+      "language": "pt",
+      "startedAt": "2026-11-21T18:20:17Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_demonyza_-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "vsnoopy",
+      "userName": "vSnoopy",
+      "title": "Bora se divertir nesse sábado🤪  | !pix💌| !interações 😳",
+      "viewerCount": 22,
+      "language": "pt",
+      "startedAt": "2026-11-21T19:31:16Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vsnoopy-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "flory10117",
+      "userName": "Flory10117",
+      "title": "Суббота/Бухота- патч 742 или 777?",
+      "viewerCount": 22,
+      "language": "ru",
+      "startedAt": "2026-11-21T20:15:46Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_flory10117-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "vstrimi",
+      "userName": "vStrimi",
+      "title": "FORSE HO RISOLTO",
+      "viewerCount": 21,
+      "language": "it",
+      "startedAt": "2026-11-21T21:40:33Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vstrimi-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "mamaz0glo",
+      "userName": "mamaz0glo",
+      "title": "СТРИМ 24 ЧАСА! ЛЮБЛЮ МОРФА! ВОДИЧКА ГАЗИРОВАННАЯ!  РОЗЫГРЫШ АРКАН В ТЕЛЕГЕ!",
+      "viewerCount": 21,
+      "language": "ru",
+      "startedAt": "2026-11-21T05:59:43Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mamaz0glo-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "memorynonsense",
+      "userName": "memorynonsense",
+      "title": "ищу папика🌸 девочка керри !tg",
+      "viewerCount": 20,
+      "language": "ru",
+      "startedAt": "2026-11-21T23:19:09Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_memorynonsense-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "marekdesigner",
+      "userName": "MarekDesigner",
+      "title": "🌸Patch od Gejba i nowa lepsza Dota2🍀☀️",
+      "viewerCount": 20,
+      "language": "pl",
+      "startedAt": "2026-11-21T17:46:41Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_marekdesigner-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "temychq",
+      "userName": "temychq",
+      "title": "ЖЕНА РАЗРЕШИЛА ИГРАТЬ. играю на смурфе 4к птс",
+      "viewerCount": 20,
+      "language": "ru",
+      "startedAt": "2026-11-21T20:42:59Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_temychq-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "teamoftilt_tv",
+      "userName": "TeamOfTilt_TV",
+      "title": "L'infernight - GGLeague playday 2 - Inside Revtel B [5min délai]",
+      "viewerCount": 20,
+      "language": "fr",
+      "startedAt": "2026-11-21T22:57:36Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_teamoftilt_tv-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "dozorqq",
+      "userName": "dozorqq",
+      "title": "3к монстр немного дифает I !донат !тг !девайсы !плейлист",
+      "viewerCount": 20,
+      "language": "ru",
+      "startedAt": "2026-11-21T22:22:24Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dozorqq-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "lothlorlen",
+      "userName": "Lothlorlen",
+      "title": "Не милашка и не добряшка) !Пати за баллы канала.",
+      "viewerCount": 20,
+      "language": "ru",
+      "startedAt": "2026-11-21T20:28:47Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lothlorlen-{width}x{height}.jpg"
+    },
+    {
+      "userLogin": "bezkorysna_kopalyna",
+      "userName": "bezkorysna_kopalyna",
+      "title": "непомірне вживання шугару може нашкодити вашому здоров'ю !ЗБІР (2:1)",
+      "viewerCount": 17,
+      "language": "uk",
+      "startedAt": "2026-11-21T21:00:38Z",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bezkorysna_kopalyna-{width}x{height}.jpg"
     }
   ]
 }
